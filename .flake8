@@ -1,0 +1,6 @@
+[flake8]
+exclude =
+    .git
+    __pycache__
+    output
+max-line-length = 120
