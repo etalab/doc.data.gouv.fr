@@ -1,0 +1,24 @@
+.faq-header {
+  $spacing: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 15px -#{$spacing};
+
+  a {
+    flex: 1 1 15%;
+    color: $brand-primary;
+    border: 2px solid $brand-primary;
+    border-radius: 0;
+    text-align: center;
+    margin: $spacing;
+    padding: 8px;
+    text-decoration: none;
+
+    &:hover, &:active {
+      color: white;
+      background: $brand-primary;
+      text-decoration: none;
+    }
+  }
+}

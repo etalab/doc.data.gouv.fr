@@ -1,0 +1,13 @@
+---
+-
+  name: Github
+  icon: github-square
+  url: https://github.com/etalab
+-
+  name: Twitter
+  icon: twitter-square
+  url: https://twitter.com/datagouv
+-
+  name: Facebook
+  icon: facebook-square
+  url: https://fb.me/etalab

@@ -1,0 +1,40 @@
+# Works on any Python 3. Use latest
+machine:
+  python:
+    version: 3.6.0
+  environment:
+    GIT_USER_NAME: CircleCI
+    GIT_USER_EMAIL: circleci@data.gouv.fr
+
+# No build for special gh-pages branch
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+# Required build dependencies
+dependencies:
+  override:
+    - pip install -r requirements.pip
+
+# Build the site
+compile:
+  override:
+    - inv build -v
+
+# No test to run
+test:
+  override:
+    - exit 0
+
+# Publish on github pages
+deployment:
+  ghpages:
+    branch: [master]
+    owner: etalab
+    commands:
+      - pip install ghp-import
+      - git config --global user.email "$GIT_USER_EMAIL"
+      - git config --global user.name "$GIT_USER_NAME"
+      - git fetch
+      - inv publish

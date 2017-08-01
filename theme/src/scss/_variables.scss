@@ -1,0 +1,20 @@
+@import "_bootstrap-variables";
+
+// paths
+$root: '../';
+$modules: $root + 'node_modules/';
+
+// Fonts
+// $fa-font-path: $folder-path + "fonts/" !default;
+// $fa-font-path: $modules + 'font-awesome/fonts';
+$fa-font-path: '../fonts';
+
+// Images
+$img-path: $root + 'images/';
+
+// Sprites
+@mixin bg-image($image) {
+  background-image: url(#{$img-path}#{$image});
+}
+
+$navbar-height: 50px;

@@ -1,0 +1,8 @@
+node_modules/rainbow-code/dist/rainbow.js
+node_modules/rainbow-code/src/language/generic.js
+node_modules/rainbow-code/src/language/python.js
+node_modules/rainbow-code/src/language/javascript.js
+node_modules/rainbow-code/src/language/html.js
+node_modules/rainbow-code/src/language/css.js
+node_modules/rainbow-code/src/language/json.js
+node_modules/rainbow-code/src/language/shell.js

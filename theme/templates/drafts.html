@@ -1,0 +1,29 @@
+{% extends "article_list.html" %}
+{% block title %}{{ _('Drafts') }} - {{ SITENAME }}{% endblock %}
+{% block breadcrumbs %}
+    {% if DISPLAY_BREADCRUMBS %}
+    <ol class="breadcrumb">
+        <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
+        <li class="active">{{ _('Drafts') }}</li>
+    </ol>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<h1>{{ _('Drafts') }}</h1>
+{% for article in drafts %}
+    <article>
+        <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
+        {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
+            <div class="well well-sm">
+                {% include "includes/article_info.html" %}
+            </div>
+        {% endif %}
+        <div class="summary">{{ article.summary }}
+            {% include 'includes/comment_count.html' %}
+            <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">{{ _('more') }} ...</a>
+        </div>
+    </article>
+    <hr/>
+{% endfor %}
+{% endblock %}
