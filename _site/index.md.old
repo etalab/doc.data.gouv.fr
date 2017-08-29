@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Data.gouv.fr Docs</title>
+    <meta name="description" content="La documentation du site data.gouv.fr" />
+
+  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="/index.md.old" />
+    <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
+  
+    
+</head>
+
+
+  <body>
+
+    <nav class="blue" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="/"><img class="brand-logo" src="../img/logo-header.svg" width="273" height="53"/></a>
+    
+    
+
+          <ul class="right hide-on-med-and-down">
+            <li>Découvrez l'OpenData en tant que : </li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/faq-citoyen.html">Citoyen</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-developpeur.html">Développeur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-integrateur.html">Intégrateur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-producteur.html">Producteur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-reutilisateur.html">Réutilisateur</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                          
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li>Découvrez l'OpenData en tant que : </li>
+                            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/faq-citoyen.html">Citoyen</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-developpeur.html">Développeur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-integrateur.html">Intégrateur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-producteur.html">Producteur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-reutilisateur.html">Réutilisateur</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+             
+          </ul>        
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+
+
+          <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Data.gouv.fr Docs</h1>
+      <div class="row center">
+        <h5 class="header col s12 light"></h5>
+      </div>
+        
+    </div>
+  </div>
+    </div>
+  </div>
+
+    <div style="background: #ddd">
+    <div class="container last-post">
+    <section>
+        <h5>Latest Post</h5>
+        <ul class="collection">
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/2016/05/20/welcome-to-jekyll.html">Welcome To Jekyll</a></span>
+          <p>
+             <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go...
+          </p>
+          <a href="/2016/05/20/welcome-to-jekyll.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/junk/2016/05/20/this-post-demonstrates-post-content-styles.html">This post demonstrates post content styles</a></span>
+          <p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum...
+          </p>
+          <a href="/junk/2016/05/20/this-post-demonstrates-post-content-styles.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/misc/2016/05/20/super-long-article.html">Some articles are just so long they deserve a really long title to see if things will break well</a></span>
+          <p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum...
+          </p>
+          <a href="/misc/2016/05/20/super-long-article.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        <li class="collection-item avatar">
+          
+          <div class="date-post">05/20</div>
+          <span class="title"><a class="post-link" href="/2016/05/20/my-example-post.html">My Example Post</a></span>
+          <p>
+             <p>Eos eu docendi tractatos sapientem, brute option menandri in vix,...
+          </p>
+          <a href="/2016/05/20/my-example-post.html" class="secondary-content"><i class="material-icons">navigate_next</i></a>
+        </li>
+        
+        </ul>  
+    </section>
+    </div>
+</div>
+
+  </div>
+
+
+    <footer class="page-footer blue">
+     <div class="footer-copyright">
+	<div class="container">
+            <div>
+                <span style="text-align: right; float: right">
+                Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
+                </span>
+            </div>
+	</div>
+    </div>
+</footer>
+
+      
+    <!--  Scripts-->                                                                               
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/init.js"></script>
+
+  </body>
+
+</html>

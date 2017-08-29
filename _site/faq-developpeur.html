@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Développeur</title>
+    <meta name="description" content="La documentation du site data.gouv.fr" />
+
+  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
+    <link rel="canonical" href="/faq-developpeur.html" />
+    <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
+  
+    
+</head>
+
+
+  <body>
+
+    <nav class="blue" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="/"><img class="brand-logo" src="../img/logo-header.svg" width="273" height="53"/></a>
+    
+    
+
+          <ul class="right hide-on-med-and-down">
+            <li>Découvrez l'OpenData en tant que : </li>
+            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/faq-citoyen.html">Citoyen</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-developpeur.html">Développeur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-integrateur.html">Intégrateur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-producteur.html">Producteur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-reutilisateur.html">Réutilisateur</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                          
+          </ul>
+
+          <ul id="nav-mobile" class="side-nav">
+            <li>Découvrez l'OpenData en tant que : </li>
+                            
+                
+                    
+                    
+                
+                    
+                    
+                    <li><a href="/faq-citoyen.html">Citoyen</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-developpeur.html">Développeur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-integrateur.html">Intégrateur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-producteur.html">Producteur</a></li>
+                    
+                
+                    
+                    
+                    <li><a href="/faq-reutilisateur.html">Réutilisateur</a></li>
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+                    
+                    
+                
+             
+          </ul>        
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+
+
+
+        <div class="container">
+
+    <h2 id="découvrir-lopendata-en-tant-que-développeur">Découvrir l’OpenData en tant que développeur</h2>
+
+<p>Cette default contient :</p>
+
+<ul>
+  <li><a href="#section-api">les informations relatives à l’API</a></li>
+  <li><a href="#section-moissonage">le moissonnage des dépôts de données ouvertes</a></li>
+  <li><a href="#section-code">le code source de la plateforme</a></li>
+</ul>
+
+<p><span id="section-api"></span></p>
+<h2 id="informations-relatives-à-lapi">Informations relatives à l’API</h2>
+
+<p>Le site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » propose différents moyen d’accéder au catalogue des données :</p>
+
+<ul>
+  <li>une <a href="https://www.data.gouv.fr/api/">API complète</a>, documentée avec <a href="http://swagger.io/">Swagger</a></li>
+  <li>des dumps au format CSV, mis à jour en temps réel
+    <ul>
+      <li>catalogue des jeux de données: <a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></li>
+      <li>catalogue des ressources: <a href="https://www.data.gouv.fr/resources.csv">https://www.data.gouv.fr/resources.csv</a></li>
+      <li>catalogue des organisations: <a href="https://www.data.gouv.fr/organizations.csv">https://www.data.gouv.fr/organizations.csv</a></li>
+      <li>catalogue des réutilisations: <a href="https://www.data.gouv.fr/reuses.csv">https://www.data.gouv.fr/reuses.csv</a></li>
+      <li>une liste des tags avec leur nombre d’occurences: <a href="https://www.data.gouv.fr/tags.csv">https://www.data.gouv.fr/tags.csv</a></li>
+    </ul>
+  </li>
+  <li>des <a href="https://stats.data.gouv.fr/">statistiques de fréquentation anonymisées</a>, mises à jour toutes les heures</li>
+</ul>
+
+<p>L’intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées
+(publication d’un jeu de données, création d’organisations, etc).
+Veuillez consulter la documentation dédiée pour y accéder.</p>
+
+<p><span id="section-moissonage"></span></p>
+<h2 id="moissonnage-des-dépôts-de-données-ouvertes">Moissonnage des dépôts de données ouvertes</h2>
+
+<p>« <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » met à disposition une infrastructure de moissonnage,
+permettant d’être automatiquement intégrée sur la plateforme.
+Il est ainsi possible d’écrire son propre moissonneur en s’inspirant
+du <a href="https://github.com/opendatateam/udata/tree/master/udata/harvest/backends">code des moissonneurs existants</a>,
+fournis en Open Source (comme tout le reste du site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> », distribué sous le nom <a href="https://github.com/opendatateam/udata">uData</a>).</p>
+
+<p>Aujourd’hui, les moissoneurs suivants sont disponibles :</p>
+
+<ul>
+  <li>CKAN (générique)</li>
+  <li>OpenDataSoft (générique)</li>
+  <li>maaf (spécifique Ministère de l’Agriculture, de l’Agroalimentaire et de la Forêt)</li>
+</ul>
+
+<p>Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr »,
+il est possible (voir recommandé) d’utiliser l’<a href="https://www.data.gouv.fr/api/">API</a> pour pousser ses données.</p>
+
+<p><span id="section-code"></span></p>
+<h2 id="le-code-source-de-la-plateforme">Le code source de la plateforme</h2>
+
+<p>L’intégralité du code de la plateforme est <a href="https://github.com/opendatateam/udata">gratuitement disponible en Open-Source</a>
+sous <a href="https://www.gnu.org/licenses/agpl-3.0.html">licence AGPL3</a>.
+Cet outil a été développé de façon modulaire pour permettre à tout un chacun de l’installer
+et de le personnaliser pour son usage propre en marque blanche.
+Nous avons par exemple développé les modules <a href="https://github.com/etalab/udata-gouvfr">udata-gouvfr</a> pour le rendu
+et <a href="https://github.com/opendatateam/udata-piwik">udata-piwik</a> pour les statistiques.</p>
+
+<p>Vous pouvez contribuer en suivant la documentation dédiée et en proposant des pull-requests.</p>
+
+
+
+</div>
+
+
+    <footer class="page-footer blue">
+     <div class="footer-copyright">
+	<div class="container">
+            <div>
+                <span style="text-align: right; float: right">
+                Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
+                </span>
+            </div>
+	</div>
+    </div>
+</footer>
+
+      
+    <!--  Scripts-->                                                                               
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/js/init.js"></script>
+
+  </body>
+
+</html>

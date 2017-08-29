@@ -1,0 +1,18 @@
+backend:
+  name: github
+  base_url: https://api.staticweb-01.etalab.gouv.fr
+  site_domain: staticweb-01.etalab.gouv.fr
+  repo: etalab/blog-data.gouv.fr
+
+media_folder: "img/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "/"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", default: "page"}
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
