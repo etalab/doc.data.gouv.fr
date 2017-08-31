@@ -9,7 +9,7 @@ media_folder: "img/uploads"
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "/"
+    folder: ""
     create: true
     fields:
       - {label: "Layout", name: "layout", default: "page"}
