@@ -4,8 +4,8 @@ machine:
 
 test:
   override:
-    - jekyll doctor
-    - jekyll build
+    - bundle exec jekyll doctor
+    - bundle exec jekyll build
 
 deployment:
   production:
