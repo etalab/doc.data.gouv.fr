@@ -8,12 +8,12 @@ machine:
 
 dependencies:
   post:
-    - bundle exec jekyll --version # print it out
+    - jekyll --version # print it out
     - sudo pip install html5validator
 test:
   override:
-    - bundle exec jekyll doctor
-    - bundle exec jekyll build
+    - jekyll doctor
+    - jekyll build
 
 deployment:
   production:
