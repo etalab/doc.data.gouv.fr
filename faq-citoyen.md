@@ -1,9 +1,12 @@
 ---
 title: Citoyen
+subtitle: Les fondamentaux de l'OpenData pour les citoyens
+label: Découvrir l'OpenData en tant que citoyen
 layout: page
+class: citoyen
 ---
 
-## Découvrir l'OpenData en tant que citoyen
+# Découvrir l'OpenData en tant que citoyen
 
 ## Quelles données sont publiées sur « data.gouv.fr » ?
 Des **données publiques produites ou reçues dans le cadre d’une mission de service public** :

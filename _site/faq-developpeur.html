@@ -8,11 +8,9 @@
     <title>Développeur</title>
     <meta name="description" content="La documentation du site data.gouv.fr" />
 
-  
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/materialize.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/template.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="/assets/main.css">
-    <link rel="canonical" href="/faq-developpeur.html" />
+    <link rel="canonical" href="http://localhost:4000/faq-developpeur.html" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
   
     
@@ -21,114 +19,90 @@
 
   <body>
 
-    <nav class="blue" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo" href="/"><img class="brand-logo" src="../img/logo-header.svg" width="273" height="53"/></a>
+    <nav class="nav" role="navigation">
+  <div class="nav__container">
+    <a href="/">
+      <img class="nav__logo" src="/img/logos/logo-header.svg" /></a>
     
     
-
-          <ul class="right hide-on-med-and-down">
-            <li>Découvrez l'OpenData en tant que : </li>
-            
-                
-                    
-                    
-                
-                    
-                    
-                    <li><a href="/faq-citoyen.html">Citoyen</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-developpeur.html">Développeur</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-integrateur.html">Intégrateur</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-producteur.html">Producteur</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-reutilisateur.html">Réutilisateur</a></li>
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                          
-          </ul>
-
-          <ul id="nav-mobile" class="side-nav">
-            <li>Découvrez l'OpenData en tant que : </li>
-                            
-                
-                    
-                    
-                
-                    
-                    
-                    <li><a href="/faq-citoyen.html">Citoyen</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-developpeur.html">Développeur</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-integrateur.html">Intégrateur</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-producteur.html">Producteur</a></li>
-                    
-                
-                    
-                    
-                    <li><a href="/faq-reutilisateur.html">Réutilisateur</a></li>
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-                    
-                    
-                
-             
-          </ul>        
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
+  </div>
 </nav>
 
-
-
-        <div class="container">
-
-    <h2 id="découvrir-lopendata-en-tant-que-développeur">Découvrir l’OpenData en tant que développeur</h2>
+    <div class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">data.gouv.fr - documentation</h1>
+  </div>
+</div>
+<div class="documentation">
+  <nav class="side-pane">
+    <ul>
+      <li class="side-pane__title"><h3>Découvrir l'OpenData en tant que</h3></li>
+      
+      
+      
+        
+          
+            
+        
+          
+            
+              
+                <li class="side-pane__link">
+                  
+                  <a href="/faq-citoyen.html">Citoyen</a>
+                </li>
+            
+        
+          
+            
+              
+                <li class="side-pane__link active">
+                  
+                  <a href="/faq-developpeur.html">Développeur</a>
+                </li>
+            
+        
+          
+            
+              
+                <li class="side-pane__link">
+                  
+                  <a href="/faq-integrateur.html">Intégrateur</a>
+                </li>
+            
+        
+          
+            
+              
+                <li class="side-pane__link">
+                  
+                  <a href="/faq-producteur.html">Producteur</a>
+                </li>
+            
+        
+          
+            
+              
+                <li class="side-pane__link">
+                  
+                  <a href="/faq-reutilisateur.html">Réutilisateur</a>
+                </li>
+            
+        
+          
+            
+        
+          
+            
+        
+          
+            
+        
+       
+    </ul>
+  </nav>
+  <div class="main-pane">
+    <h1 id="découvrir-lopendata-en-tant-que-développeur">Découvrir l’OpenData en tant que développeur</h1>
 
 <p>Cette default contient :</p>
 
@@ -194,27 +168,36 @@ et <a href="https://github.com/opendatateam/udata-piwik">udata-piwik</a> pour le
 <p>Vous pouvez contribuer en suivant la documentation dédiée et en proposant des pull-requests.</p>
 
 
-
+  </div>
 </div>
 
-
-    <footer class="page-footer blue">
-     <div class="footer-copyright">
-	<div class="container">
-            <div>
-                <span style="text-align: right; float: right">
-                Powered by <a target="_blank" href="http://jekyllrb.com/" class="orange-text text-lighten-3">Jekyll</a>
-                </span>
-            </div>
-	</div>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/img/logos/etalab.png">
+      <ul class="footer__social">
+        <li><a href="mailto:info@data.gouv.fr"><img src="/img/icons/envelop.svg" alt="Email"></a></li>
+        <li><a href="https://www.twitter.com/datagouvfr"><img src="/img/icons/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="https://www.facebook.com/etalab"><img src="/img/icons/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="https://plus.google.com/117902389749487955734"><img src="/img/icons/googleplus.svg" alt="Google +"></a></li>
+        <li><a href="https://www.github.com/etalab"><img src="/img/icons/github.svg" alt="Github"></a></li>
+        <li><a href="https://www.data.gouv.fr/fr/datasets/recent.atom"><img src="/img/icons/rss.svg" alt="RSS"></a></li>
+      </ul>
     </div>
+    <ul class="footer__links">
+      <li><h2>data.gouv.fr</h2></li>
+      <li><a href="">Données de référence</a></li>
+      <li><a href="">Conditions générales d'utilisation</a></li>
+      <li><a href="">API</a></li>
+    </ul>
+    <ul class="footer__links">
+    </ul>
+    <div></div>
+  </div>
 </footer>
 
       
-    <!--  Scripts-->                                                                               
-<script src="/js/jquery.min.js"></script>
-<script src="/js/materialize.min.js"></script>
-<script src="/js/init.js"></script>
+    <!--  Scripts-->                   
 
   </body>
 

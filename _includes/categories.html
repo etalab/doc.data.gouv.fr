@@ -1,0 +1,20 @@
+<div class="categories">
+  <h2 class="categories__title">Découvrez l'OpenData en tant que</h2>
+  <ul class="categories__list">
+  {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
+    {% if page_paths %}
+      {% for path in page_paths %}
+        {% assign my_page = site.pages | where: "path", path | first %}
+        {% if my_page.title and my_page.title != page.title %}
+          <li class="categories__item panel {{ my_page.class }}">
+            <a href="{{ my_page.url | relative_url }}">
+              <h3>{{ my_page.title | escape }}</h3>
+              <p>{{ my_page.subtitle }}</p>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %} 
+  </ul>
+</div>
