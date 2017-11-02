@@ -1,10 +1,13 @@
 ---
 title: Intégrateur
+subtitle: Quelles sont les intégrations tierces rendues possibles ?
+label: Découvrir l'OpenData en tant qu'intégrateur
 summary: Quelles sont les intégrations tierces rendues possibles ?
 layout: page
+class: integrateur
 ---
 
-## Découvrir l'OpenData en tant qu'intégrateur
+# Découvrir l'OpenData en tant qu'intégrateur
 
 
 La plateforme « [data.gouv.fr][] » vous offre plusieurs moyens plus ou moins avancés d’intégrer les données disponibles en open data sur vos propres sites :

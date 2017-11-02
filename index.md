@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 summary: Les questions essentielles sur Data.gouv.fr
 
 buttons:

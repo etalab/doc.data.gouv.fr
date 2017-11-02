@@ -1,9 +1,12 @@
 ---
 title: Producteur
+subtitle: Que faut-il savoir avant de publier des données ?
+label: Découvrir l'OpenData en tant que producteur
 summary: Que faut-il savoir avant de publier des données ?
 layout: page
+class: producteur
 ---
-## Découvrir l'OpenData en tant que producteur
+# Découvrir l'OpenData en tant que producteur
 
 ## Qui est considéré comme producteur de données ?
 Le producteur d'une base de données, entendu comme la personne qui prend l'initiative
