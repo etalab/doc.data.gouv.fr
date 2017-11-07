@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 summary: Les questions essentielles sur Data.gouv.fr
 
 buttons:
@@ -21,7 +21,7 @@ buttons:
 
 ---
 
-## Découvrir L'OpenData
+# Découvrir L'OpenData
 
 La mission Etalab, placée sous l’autorité du Premier ministre au sein du SGMAP,
 a pour mission d’accompagner l’ouverture des données publiques de l’Etat et des administrations.
