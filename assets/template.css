@@ -34,6 +34,31 @@ h4 {
   color: #8393a7;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: auto;
+  background: #ebeff3;
+}
+
+a,
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  color: #0081d5;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
 pre {
   display: block;
   margin-top: 1em;
@@ -43,10 +68,10 @@ code {
   background: #ebeff3;
   border-radius: 5px;
   padding: 0.5em;
-  font-size: 0.8em;
   font-family: 'Courier New';
   word-break: break-word;
-  white-space: pre;
+  white-space: pre-wrap;
+  vertical-align: middle;
   display: inline-block;
   max-width: 100%;
   overflow-x: auto;
@@ -252,31 +277,6 @@ a.button:active,
   color: #26353f;
   font-size: 1.2em;
   font-style: italic;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  position: relative;
-  overflow: auto;
-  background: #ebeff3;
-}
-
-a,
-button {
-  outline: none;
-  cursor: pointer;
-}
-
-a,
-a:hover,
-a:focus,
-a:visited,
-a:active {
-  color: #0081d5;
-  text-decoration: none;
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
 }
 
 .nav {
@@ -735,3 +735,6 @@ article {
   width: 100%;
   margin: 0 auto;
 }
+
+/* template-specific style 
+@import "template.css";*/
