@@ -2,9 +2,9 @@
 #!/bin/bash
 
 echo "Start deploy"
-ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/blog-data.gouv.fr && git pull'"
-ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/blog-data.gouv.fr && bundle exec jekyll doctor'"
-ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/blog-data.gouv.fr && bundle exec jekyll build'"
+ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && git pull'"
+ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && bundle exec jekyll doctor'"
+ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && bundle exec jekyll build'"
 echo "Deployed Successfully!"
 
 exit 0
