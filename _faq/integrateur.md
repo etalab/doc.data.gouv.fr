@@ -1,10 +1,8 @@
 ---
-title: Intégrateur
+title: Découvrir l'OpenData en tant qu'intégrateur
 subtitle: Quelles sont les intégrations tierces rendues possibles ?
-label: Découvrir l'OpenData en tant qu'intégrateur
+label: En tant qu'intégrateur
 summary: Quelles sont les intégrations tierces rendues possibles ?
-layout: page
-class: integrateur
 ---
 
 # Découvrir l'OpenData en tant qu'intégrateur

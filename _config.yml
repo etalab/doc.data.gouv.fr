@@ -17,3 +17,16 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+
+collections:
+  faq:
+    title: Découvrir l'OpenData
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
