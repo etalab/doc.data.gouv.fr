@@ -7,11 +7,12 @@ backend:
 media_folder: "img/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    folder: ""
+  - name: faq
+    label: FAQ
+    folder: _faq
     create: true
     fields:
-      - {label: "Layout", name: "layout", default: "page"}
       - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
       - {label: "Contenu", name: "body", widget: "markdown"}
