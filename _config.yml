@@ -1,9 +1,18 @@
 title: Data.gouv.fr Docs
-description: > 
-    La documentation du site data.gouv.fr 
+description: >
+    La documentation du site data.gouv.fr
 
 twitter_username: etalab
 github_username:  etalab
 
 sass:
     style: compressed
+
+
+exclude:
+  - README.md
+  - docker-compose.yml
+  - circle.yml
+  - deploy
+  - Gemfile
+  - Gemfile.lock
