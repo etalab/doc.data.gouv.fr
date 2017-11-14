@@ -21,5 +21,5 @@ Pour ce faire, il suffit simplement d'executer la commande:
 docker-compose up
 ```
 
-Ceci va télécharger l'image docker de [Jekyll](https://www.jekyll.io/) et installer les dépendances nécéssaire avant d'effectuer le rendu du site.
-Le résultat sera disponible sur <http://localhost:4000>. Les modifications sont automatiquement prises en compte et provoque un nouveau rendu du site.
+Ceci va télécharger l'image docker de [Jekyll](https://www.jekyll.io/) et installer les dépendances nécéssaires avant d'effectuer le rendu du site.
+Le résultat sera disponible sur <http://localhost:4000>. Les modifications sont automatiquement prises en compte et provoquent un nouveau rendu du site.
