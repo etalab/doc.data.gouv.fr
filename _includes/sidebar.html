@@ -1,0 +1,15 @@
+<nav class="side-pane">
+  <ul>
+    {% assign collections = site.collections | sort: 'order' %}
+    {% for collection in collections %}
+        {% if collection.docs %}
+        <li class="side-pane__title"><h3>{{ collection.title }}</h3></li>
+        {% for col_page in collection.docs %}
+        <li class="side-pane__link {% if page.id == col_page.id %}active{% endif %}">
+            <a href="{{ col_page.url | relative_url }}">{{ col_page.label| default: col_page.title | escape }}</a>
+        </li>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

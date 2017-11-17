@@ -23,6 +23,7 @@ collections:
   faq:
     title: Découvrir l'OpenData
     output: true
+    order: 1
 
 
 defaults:
