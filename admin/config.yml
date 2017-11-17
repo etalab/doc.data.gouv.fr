@@ -19,3 +19,11 @@ collections:
       - {label: "Sous-titre", name: "subtitle", widget: "string"}
       - {label: "Libellé (du menu)", name: "label", widget: "string"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: api
+    label: API
+    folder: _api
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}

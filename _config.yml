@@ -36,6 +36,10 @@ collections:
     title: Découvrir l'OpenData
     output: true
     order: 1
+  api:
+    title: API
+    output: true
+    order: 2
 
 
 defaults:
