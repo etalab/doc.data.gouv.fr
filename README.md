@@ -1,6 +1,6 @@
 # Documentation de data.gouv.fr
 
-Ce dépôt correspond au contenu du site doc.data.gouv.fr.
+Ce dépôt correspond au contenu du site doc.data.gouv.fr...
 
 ## Contribuer
 
