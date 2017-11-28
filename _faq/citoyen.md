@@ -1,9 +1,7 @@
 ---
-title: Citoyen
+title: Découvrir l'OpenData en tant que citoyen
 subtitle: Les fondamentaux de l'OpenData pour les citoyens
-label: Découvrir l'OpenData en tant que citoyen
-layout: page
-class: citoyen
+label: En tant que citoyen
 ---
 
 # Découvrir l'OpenData en tant que citoyen
@@ -27,7 +25,7 @@ et celles dont la publication contrevient à la loi
 **ne sont pas acceptées** sur la plateforme « [data.gouv.fr][] ».
 
 Pour plus d'informations sur les meilleures pratiques en matière de publication,
-consultez le [Guide de publication]({filename}./faq-producteur.md).
+consultez le [Guide de publication]({% link _faq/producteur.md %}).
 
 ## Quels acteurs contribuent sur « data.gouv.fr » ?
 L’écosystème de « [data.gouv.fr][] » est animé par les acteurs du mouvement de l’ouverture des données (Open Data).

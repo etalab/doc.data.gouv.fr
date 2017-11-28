@@ -1,10 +1,8 @@
 ---
-title: Réutilisateur
+title: Découvrir l'OpenData en tant que réutilisateur
 subtitle: Que faire avec les données ? Avec quels outils ?
-label: Découvrir l'OpenData en tant que réutilisateur
+label: En tant que réutilisateur
 summary: Que faire avec les données ? Avec quels outils ?
-layout: page
-class: reutilisateur
 ---
 
 # Découvrir l'OpenData en tant que réutilisateur

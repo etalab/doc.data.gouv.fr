@@ -5,19 +5,19 @@ summary: Les questions essentielles sur Data.gouv.fr
 buttons:
   -
     title: Citoyen
-    default: faq-citoyen
+    default: faq/citoyen
   -
     title: Producteur
-    default: faq-producteur
+    default: faq/producteur
   -
     title: Réutilisateur
-    default: faq-reutilisateur
+    default: faq/reutilisateur
   -
     title: Développeur
-    default: faq-developpeur
+    default: faq/developpeur
   -
     title: Intégrateur
-    default: faq-integrateur
+    default: faq/integrateur
 
 ---
 

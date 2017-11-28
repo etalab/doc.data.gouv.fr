@@ -1,10 +1,8 @@
 ---
-title: Producteur
+title: Découvrir l'OpenData en tant que producteur
 subtitle: Que faut-il savoir avant de publier des données ?
-label: Découvrir l'OpenData en tant que producteur
+label: En tant que producteur
 summary: Que faut-il savoir avant de publier des données ?
-layout: page
-class: producteur
 ---
 # Découvrir l'OpenData en tant que producteur
 
