@@ -16,3 +16,4 @@ exclude:
   - deploy
   - Gemfile
   - Gemfile.lock
+  - vendor
