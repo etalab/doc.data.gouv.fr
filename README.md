@@ -10,7 +10,22 @@ Ce dépôt correspond au contenu du site doc.data.gouv.fr...
 
 ### Ruby natif
 
-**TODO**
+Installer jekyll
+
+```
+gem install jekyll bundler
+```
+
+Compiler et démarrer un serveur de documentation
+
+```
+git clone https://github.com/etalab/doc.data.gouv.fr
+cd doc.data.gouv.fr
+bundle install
+bundle exec jekyll serve
+```
+
+La documentation sera disponible sur <a href="http://localhost:4000">http://localhost:4000</a>.
 
 ### Docker Compose
 
