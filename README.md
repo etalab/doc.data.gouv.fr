@@ -13,7 +13,7 @@ Ce dépôt correspond au contenu du site doc.data.gouv.fr...
 Installer jekyll
 
 ```
-gem install jekyll bundler
+gem install bundler
 ```
 
 Compiler et démarrer un serveur de documentation
