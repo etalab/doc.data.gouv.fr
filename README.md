@@ -10,7 +10,7 @@ Ce dépôt correspond au contenu du site doc.data.gouv.fr...
 
 ### Ruby natif
 
-Installer jekyll
+Installer bundler
 
 ```
 gem install bundler
