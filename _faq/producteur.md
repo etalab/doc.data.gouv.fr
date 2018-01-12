@@ -48,34 +48,6 @@ Un jeu de données peut être publié simplement avec un titre et une ressource.
 Pour autant, il sera mieux référencé s'il contient des informations supplémentaires qui le décrivent :
 période couverte, fréquence de mise à jour, territoire couvert, thématiques…
 
-### Le label qualité «référentiel national»
-La règle du jeu est simple :
-le producteur qui souhaite obtenir le label pour un de ses jeux de données s’engage à fournir la donnée brute,
-à respecter strictement son cycle de mise à jour, et à répondre à J+2 à tout signalement ou demande.
-
-De son côté, « [data.gouv.fr][] », met en avant le jeu de donnée, mais surtout le transforme en API,
-c’est à dire le rend requêtable.
-Votre application a besoin de saisir un nom d’établissement scolaire ?
-Plus besoin de recopier la table ou de développer des composants graphiques,
-il vous suffira d’utiliser les API « [data.gouv.fr][] » pour obtenir en quelques minutes d’intégration HTML,
-un sélecteur de collège/lycée totalement intégré à votre application,
-comme par exemple le sélecteur d’adresse réutilisable de adresse.data.gouv.fr.
-
-Cette décision va transformer « [data.gouv.fr][] » en composant critique, et c’est un choix assumé,
-car nous continuerons à offrir une disponibilité H24 aux applications
-qui souhaitent utiliser ces référentiels ouverts, comme la BAN,
-premier référentiel national à être distribué aujourd’hui.
-A vous maintenant de nous dire quels sont selon vous les jeux de données publiques
-qui devront obtenir ce label en priorité !
-
-## Quels sont les outils de mesure mis à disposition ?
-Du côté de l’engagement, le tableau de bord producteur (exemple) mesure l’activité en terme de defaults vues
-et de réutilisations. Le nombre de discussions ouvertes et le nombre de réponses y seront associés,
-ainsi que des éléments de comparaison permettant de se situer vis à vis des autres producteurs.
-L’engagement de la communauté n’est pas une fin en soi, mais une mesure indirecte de son activité.
-Il répond à un enjeu interne fort :
-limiter nos actions de support pour permettre aux acteurs de résoudre leurs problèmes entre eux.
-
 ## Que signifient les différents champs d'une fiche de jeu de données ?
 
 ### Titre (obligatoire)
