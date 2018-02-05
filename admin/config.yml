@@ -6,6 +6,9 @@ backend:
 
 media_folder: "img/uploads"
 
+# Editorial workflow: validate changes through pull requests
+publish_mode: editorial_workflow
+
 collections:
   - name: faq
     label: FAQ
