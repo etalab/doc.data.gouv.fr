@@ -5,6 +5,16 @@ description: >
 twitter_username: etalab
 github_username:  etalab
 
+github_repository: etalab/doc.data.gouv.fr
+
+lang: fr
+
+i18n:
+  en:
+    edit: Edit this page
+  fr:
+    edit: Editer cette page
+
 sass:
     style: compressed
 
