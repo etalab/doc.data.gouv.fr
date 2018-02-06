@@ -1,12 +1,13 @@
 
 .hero {
   width: 100%;
-  background: linear-gradient(180deg, #238DFF, #2870F4);
+  background: $color-blue;
   padding: 1em 0;
 }
 
 .hero__container {
   height: 8vh;
+  min-height: auto;
   padding-left: 2em;
   align-items: left;
 }

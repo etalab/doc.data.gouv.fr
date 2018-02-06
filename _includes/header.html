@@ -1,6 +1,6 @@
 <nav class="nav" role="navigation">
   <div class="nav__container">
-    <a href="{{ "/" | relative_url }}">
+    <a class="nav__link" href="{{ "/" | relative_url }}">
       <img class="nav__logo" src="{{file.path}}/img/logos/logo-header.svg" /></a>
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
