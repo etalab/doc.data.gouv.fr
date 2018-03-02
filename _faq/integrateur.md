@@ -22,7 +22,7 @@ Ces différents cas d’intégration correspondent généralement à différents
    par l’inclusion de jeux de données directement au sein de son page ;
 1. une mairie va être intéressée par l’intégration des jeux de données relatifs
    à son territoire sur son site internet ;
-1. une association pourrait être intéressée par la création d’une default personnalisée compilée
+1. une association pourrait être intéressée par la création d’une page personnalisée compilée
    à partir de données issues de sources multiples ;
 1. un pays se lançant dans l’open data va chercher à créer son propre portail.
 
@@ -31,14 +31,14 @@ nous sommes là pour vous accompagner dans votre démarche de diffusion de donn�
 Ci-dessous, la documentation technique correspondant à chacun des cas évoqués :
 
 ## Intégration ponctuelle de jeux de données
-Chaque jeu de données est intégrable sur n’importe quelle default en ajoutant deux lignes de HTML :
+Chaque jeu de données est intégrable sur n’importe quelle page en ajoutant deux lignes de HTML :
 
 ```html
 <div data-udata-dataset-id="IDENTIFIANT DU JEU DE DONNÉES"></div>
 <script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadDatasets()"></script>
 ```
 
-En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponible sur sa default dédiée
+En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponible sur sa page dédiée
 vous devriez voir apparaître sur votre site un cartouche contenant les informations
 relatives à ce jeux de données de la manière suivante :
 
@@ -66,11 +66,11 @@ est rendue possible par cette solution.
 <div data-udata-organization="IDENTIFIANT DE L’ORGANISATION"></div>
 <script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadOrganization()"></script>
 ```
-En remplaçant l’`IDENTIFIANT DE L’ORGANISATION` par l’identifiant disponible sur sa default dédiée
+En remplaçant l’`IDENTIFIANT DE L’ORGANISATION` par l’identifiant disponible sur sa page dédiée
 vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives
 aux jeux de données de cette organisation de la manière suivante :
 
-**WARNING: il doit manquer qqch ici**
+**TODO: screenshot embed organization**
 
 Optionnellement, il est possible d’afficher une barre de recherche pour laisser la possibilité
 au visiteur de filtrer la liste des jeux de données affichés.
@@ -95,12 +95,12 @@ Optionnellement, il est possible d’afficher une barre de recherche pour laisse
 au visiteur de filtrer la liste des jeux de données affichés.
 Cela est activé en passant l’option `{withSearch: true}` à la méthode `loadTerritory()` ci-dessus.
 
-## Intégration pour une default personnalisée
+## Intégration pour une page personnalisée
 Une [bibliothèque JavaScript][udata-js] a été développée pour faciliter la personnalisation
 de l’affichage des jeux de données sur un site tiers.
 Un système de gabarit permet d’intégrer les données que vous souhaitez issues de l’[API][]
 à vos couleurs et selon la disposition qui vous convient.
-Il s’agit d’un moyen de créer votre propre default open data à coûts réduits au sein de votre site.
+Il s’agit d’un moyen de créer votre propre page open data à coûts réduits au sein de votre site.
 
 ## Intégration d’un portail open data complet
 Les outils que nous développons sont disponibles en open-source.
