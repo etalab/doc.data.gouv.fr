@@ -5,7 +5,7 @@ label: En tant que développeur
 ---
 # Découvrir l’OpenData en tant que développeur
 
-Cette default contient :
+Cette page contient :
 
 * [les informations relatives à l’API](#section-api)
 * [le moissonnage des dépôts de données ouvertes](#section-moissonage)
