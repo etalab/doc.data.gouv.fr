@@ -15,7 +15,7 @@ Cette page contient :
 
 ## Informations relatives à l’API
 
-Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moyen d'accéder au catalogue des données :
+Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moyens d'accéder au catalogue des données :
 
 * une [API complète](https://www.data.gouv.fr/api/), documentée avec [Swagger](http://swagger.io/)
 * des dumps au format CSV, mis à jour en temps réel
@@ -24,7 +24,7 @@ Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moye
   * catalogue des organisations: <https://www.data.gouv.fr/organizations.csv>
   * catalogue des réutilisations: <https://www.data.gouv.fr/reuses.csv>
   * une liste des tags avec leur nombre d'occurences: <https://www.data.gouv.fr/tags.csv>
-* un catalogue en rdf/DCAT-AP exposé dans plusieurs format:
+* un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :
   * JSON-LD: <https://www.data.gouv.fr/catalog.jsonld>
   * Turtle: <https://www.data.gouv.fr/catalog.ttl>
   * N-Triples: <https://www.data.gouv.fr/catalog.nt>
@@ -42,7 +42,7 @@ Veuillez consulter la documentation dédiée pour y accéder.
 ## Moissonnage des dépôts de données ouvertes
 
 « [data.gouv.fr](https://www.data.gouv.fr/) » met à disposition une infrastructure de moissonnage,
-permettant d’être automatiquement intégrée sur la plateforme.
+permettant d’être automatiquement intégré sur la plateforme.
 
 Aujourd'hui, les moissoneurs suivants sont disponibles :
 
@@ -54,7 +54,7 @@ Aujourd'hui, les moissoneurs suivants sont disponibles :
 Il est aussi possible d'écrire ses propres moissonneurs en suivant [la documentation dédiée](http://udata.readthedocs.io/en/stable/harvesting/#custom).
 
 Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr »,
-il est possible (voir recommandé) d’utiliser l’[API](https://www.data.gouv.fr/api/) pour pousser ses données.
+il est possible (voire recommandé) d’utiliser l’[API](https://www.data.gouv.fr/api/) pour pousser ses données.
 
 <span id="section-code"></span>
 
