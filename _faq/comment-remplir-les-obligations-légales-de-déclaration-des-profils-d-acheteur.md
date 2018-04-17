@@ -5,7 +5,7 @@ title: >-
 subtitle: En tant que profil d'acheteur
 label: En tant que profil d'acheteur
 ---
-La déclaration du profil d'acheteur est effectuée par l'acheteur ou toute personne habilitée par celui-ci sur le portail unique interministériel destiné à rassembler et à mettre à disposition librement l'ensemble des informations publiques.
+La déclaration du profil d'acheteur est effectuée par l'acheteur ou toute personne habilitée par celui-ci sur le portail unique interministériel ([data.gouv.fr](https://data.gouv.fr)) destiné à rassembler et à mettre à disposition librement l'ensemble des informations publiques.
 
 * Impliquer les éditeurs de profils d’acheteurs afin qu’ils se créés un compte sur la plateforme data.gouv.fr et y publier au format .CSV un fichier contenant les informations suivantes :
   * le SIRET des acheteurs
