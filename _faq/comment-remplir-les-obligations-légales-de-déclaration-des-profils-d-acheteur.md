@@ -12,9 +12,9 @@ La déclaration du profil d'acheteur est effectuée par l'acheteur ou toute pers
 L'objectif est d'impliquer les éditeurs de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d'acheteurs initialement confiée aux acheteurs publics.
 
 Les éditeurs de profil d'acheteur sont invités à se créer un compte sur la plateforme data.gouv.fr afin d'y publier au format .CSV un fichier contenant les informations suivantes :
-  * le SIRET des acheteurs (colonne "siretAcheteur")
-  * l'adresse URL des profils d'acheteurs (colonne "urlProfilAcheteur")
-  * les coordonnées du ou des acheteurs concernés (colonne "coordonnnées")
+  * le SIRET des acheteurs (colonne `siretAcheteur`)
+  * l'adresse URL des profils d'acheteurs (colonne `urlProfilAcheteur`)
+  * les coordonnées du ou des acheteurs concernés (colonne `coordonnnées`)
 
 <strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant : 
 « DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
