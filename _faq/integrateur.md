@@ -34,33 +34,28 @@ Ci-dessous, la documentation technique correspondant à chacun des cas évoqués
 Chaque jeu de données est intégrable sur n’importe quelle page en ajoutant deux lignes de HTML :
 
 ```html
-<div data-udata-dataset-id="IDENTIFIANT DU JEU DE DONNÉES"></div>
-<script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadDatasets()"></script>
+<div data-udata-dataset="IDENTIFIANT DU JEU DE DONNÉES"></div>
+<script src="https://www.data.gouv.fr/static/oembed.js" async defer></script>
 ```
 
 En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponible sur sa page dédiée
 vous devriez voir apparaître sur votre site un cartouche contenant les informations
 relatives à ce jeux de données de la manière suivante :
 
-![Exemple d'intégration sur le blog Etalab](/img/faq/integration/exemple-integration-blog-etalab.png)
-*Exemple d’intégration sur le blog d’Etalab, ici avec les données de consommation d’électricité des ministères.*
+![Exemple d'intégration d'une jeu de données](/img/faq/integration/exemple-dataset.png)
+*Exemple d’intégration du jeu de données "Population" de l'INSEE.*
 
 Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément `<div>` avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS `dataset-card`.
 
-## Intégration pour une organisation ou un territoire
+## Intégration d’une organisation
+
 **Attention :** *ce type d’intégration est actuellement en cours de développement et l’API est susceptible de changer. Veuillez nous contacter si vous souhaitez participer aux tests préliminaires.*
 
-Le mécanisme pour afficher tous les jeux de données relatifs à une organisation ou un territoire
+Le mécanisme pour afficher tous les jeux de données relatifs à une organisation
 est le même que celui pour l’intégration d’un seul jeu de donnée décrit précédemment.
 
-Cet usage est recommandé si vous êtes responsable de cette organisation ou de ce territoire
+Cet usage est recommandé si vous êtes responsable de cette organisation
 et souhaitez faire la promotion des jeux de données associés.
-Par exemple dans la cadre de la loi Notre,
-il est demandé aux communes de plus de 3500 habitants de rendre accessible en open data certaines données.
-L’usage de la plateforme « [data.gouv.fr][] » pour déposer ces données puis les intégrer sur son propre site
-est rendue possible par cette solution.
-
-### Intégration d’une organisation
 
 ```html
 <div data-udata-organization="IDENTIFIANT DE L’ORGANISATION"></div>
@@ -70,30 +65,12 @@ En remplaçant l’`IDENTIFIANT DE L’ORGANISATION` par l’identifiant disponi
 vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives
 aux jeux de données de cette organisation de la manière suivante :
 
-**TODO: screenshot embed organization**
-
 Optionnellement, il est possible d’afficher une barre de recherche pour laisser la possibilité
 au visiteur de filtrer la liste des jeux de données affichés.
 Cela est activé en passant l’option `{withSearch: true}` à la méthode `loadOrganization()` ci-dessus.
 
-### Intégration d’un territoire
-
-```html
-<div data-udata-territory="IDENTIFIANT DU TERRITOIRE"></div>
-<script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadTerritory()"></script>
-```
-En construisant l’`IDENTIFIANT DU TERRITOIRE` qui doit être de la forme `fr-town-13004`
-où `13004` est le code INSEE de la commune (attention il diffère du code postal).
-Vous pouvez aussi récupérer les jeux de données relatifs à un département `fr-county-13`
-ou une région `fr-region-93`.
-Vous devriez alors voir apparaître sur votre site un cartouche contenant les informations
-relatives aux jeux de données de ce territoire de la manière suivante :
-
-**WARNING: il doit manquer qqch ici**
-
-Optionnellement, il est possible d’afficher une barre de recherche pour laisser la possibilité
-au visiteur de filtrer la liste des jeux de données affichés.
-Cela est activé en passant l’option `{withSearch: true}` à la méthode `loadTerritory()` ci-dessus.
+![Exemple d'intégration d'une organisation](/img/faq/integration/exemple-organisation.png)
+*Exemple d’intégration d'une organisation avec l'option barre de recherche.*
 
 ## Intégration pour une page personnalisée
 Une [bibliothèque JavaScript][udata-js] a été développée pour faciliter la personnalisation
