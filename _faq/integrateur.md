@@ -19,7 +19,7 @@ La plateforme « [data.gouv.fr][] » vous offre plusieurs moyens plus ou moins a
 Ces différents cas d’intégration correspondent généralement à différents profils :
 
 1. un journaliste traitant d’une problématique donnée va être intéressé
-   par l’inclusion de jeux de données directement au sein de son page ;
+   par l’inclusion de jeux de données directement au sein de sa page ;
 1. une mairie va être intéressée par l’intégration des jeux de données relatifs
    à son territoire sur son site internet ;
 1. une association pourrait être intéressée par la création d’une page personnalisée compilée
