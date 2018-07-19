@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.3-stretch
-     
+
     working_directory: ~/doc.data.gouv.fr
 
   steps:
@@ -23,4 +23,5 @@ jobs:
 
     - run:
         name: Deploy
-	command: ./deploy
+        command: ./deploy
+
