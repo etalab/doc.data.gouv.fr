@@ -6,22 +6,21 @@ jobs:
 
     working_directory: ~/doc.data.gouv.fr
 
-  steps:
-    - checkout
+    steps:
+      - checkout
 
-    - run:
-        name: Ruby dependencies
-        command: bundle install
+      - run:
+          name: Ruby dependencies
+          command: bundle install
 
-    - run:
-        name: Build
-        command: bundle exec jekyll build --verbose
+      - run:
+          name: Build
+          command: bundle exec jekyll build --verbose
 
-    - run:
-        name: Test
-        command: bundle exec htmlproofer ./_site --check-html --disable-external
+      - run:
+          name: Test
+          command: bundle exec htmlproofer ./_site --check-html --disable-external
 
-    - run:
-        name: Deploy
-        command: ./deploy
-
+      - run:
+          name: Deploy
+          command: ./deploy
