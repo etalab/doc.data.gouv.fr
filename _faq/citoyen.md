@@ -7,7 +7,7 @@ label: En tant que citoyen
 
 ## Quelles données sont publiées sur « data.gouv.fr » ?
 
-des **données publiques produites ou reçues dans le cadre d’une mission de service public** :
+Des **données publiques produites ou reçues dans le cadre d’une mission de service public** :
 impôts, budgets, subventions, dépenses, aménagement du territoire, chômage, rénovation de logements,
 mesures de qualité de l'air, adresses des services publics, délinquance et criminalité, statistiques du tourisme,
 résultats électoraux, dépenses de la Sécurité sociale, effectifs des fonctions publiques,
