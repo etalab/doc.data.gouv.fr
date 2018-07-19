@@ -2,10 +2,9 @@
 #!/bin/bash
 
 echo "Start deploy"
-ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null root@staticweb-01.etalab.gouv.fr
-ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && git pull'"
-ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && bundle exec jekyll doctor'"
-ssh -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && bundle exec jekyll build'"
+ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && git pull'"
+ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && bundle exec jekyll doctor'"
+ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null -tq root@staticweb-01.etalab.gouv.fr "bash -lc 'cd /var/www/doc.data.gouv.fr && bundle exec jekyll build'"
 echo "Deployed Successfully!"
 
 exit 0
