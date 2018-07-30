@@ -18,13 +18,19 @@ ou d'un autre droit sur la base de données ou un de ses éléments constitutifs
 
 Source [Legifrance][legifrance-producer]
 
+## Comment s'inscrire en tant que producteur sur data.gouv.fr
+
+L'inscription individuelle sur la plateforme « [data.gouv.fr][] » est libre.
+
+Une fois identifié avec votre compte individuel, vous pourrez, le cas échéant, demander à rejoindre l'organisation à laquelle vous appartenez ou créer cette organisation si elle n'existe pas encore. Si vous créez votre organisation, vous en serez par défaut l'administrateur. Vous pourrez ensuite accepter (ou refuser) les demandes d'autres utilisateurs individuels souhaitant être rattachés à cette organisation.
+
 ## Les services publics certifiés
 Les organisations inscrites sur la plateforme « [data.gouv.fr][] » estimant assurer une mission de service public
-peuvent effectuer une demande en ligne pour être reconnue comme tel.
+peuvent effectuer une demande en ligne pour être reconnue comme telles.
 Une organisation certifiée bénéficie d’un meilleur référencement.
 
-Pour devenir un service public certifié, inscrivez-vous sur le site en tant qu’organisation,
-puis effectuez la demande en envoyant un mail à l'adresse suivante : [certification@data.gouv.fr][].
+Pour obtenir le badge « service public certifié » , inscrivez-vous sur le site en tant qu’individu, créez ou rejoignez votre organisation, 
+puis effectuez la demande de certification en envoyant un mail à l'adresse suivante : [certification@data.gouv.fr][].
 Une vérification par email ou courrier vous sera demandée.
 Vous pouvez néanmoins commencer à publier vos jeux de données avant d’obtenir le badge de certification.
 
@@ -32,7 +38,7 @@ Vous pouvez néanmoins commencer à publier vos jeux de données avant d’obten
 Un jeu de données peut contenir plusieurs ressources (fichiers de données, fichiers d'explications, API, lien...)
 qui constituent un lot cohérent sur un thème donné.
 
-Par exemple «[La Réserve Parlementaire][]», contiendra plusieurs ressources, typiquement un fichier par année.
+Par exemple « [La Réserve Parlementaire][] », contiendra plusieurs ressources, typiquement un fichier par année.
 
 ### Les jeux de données «à la une»
 Les jeux de données à la une changent périodiquement.
@@ -41,10 +47,12 @@ fait une analyse exhaustive des jeux de données hébergés sur la plateforme af
 d’après l’actualité française, pourraient être utiles aux visiteurs de la plateforme.
 
 ## Comment en tant que producteur, puis-je publier des jeux de données ?
-Créez un compte sur « [data.gouv.fr][] ».
-Dès que vous serez inscrit, vous pourrez «contribuez» et «publier un jeu de données».
 
-Un jeu de données peut être publié simplement avec un titre et une ressource.
+Créez un compte individuel sur « [data.gouv.fr][] » puis, le cas échéant, demandez à rejoindre l'organisation à laquelle vous appartenez ou créez cette organisation si elle n'existe pas encore.
+
+Dès que vous serez inscrit, vous pourrez publier des jeu de données, soit en tant que personne privée, soit au nom de l'une des organisations auxquelles vous appartenez.
+
+Un jeu de données pour être publié doit comporter au minimum un titre et une ressource.
 Pour autant, il sera mieux référencé s'il contient des informations supplémentaires qui le décrivent :
 période couverte, fréquence de mise à jour, territoire couvert, thématiques…
 
