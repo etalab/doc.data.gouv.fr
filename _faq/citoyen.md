@@ -49,10 +49,10 @@ l’adresse <mailto:certification@data.gouv.fr>.
 ### Les personnes morales
 
 Les personnes morales (entreprise, association, EPIC) peuvent aussi contribuer sur « [data.gouv.fr](https://www.data.gouv.fr) ».
-Comme tout autre utilisateur de la plateforme, elles peuvent contribuer dans les defaults des autres producteurs,
+Comme tout autre utilisateur de la plateforme, elles peuvent contribuer dans les pages des autres producteurs,
 en enrichissant leurs données.
 Elles peuvent aussi proposer leurs propres jeux de données sous le nom de leur organisation,
-et animer leurs propres defaults en y attirant des contributions.
+et animer leurs propres pages en y attirant des contributions.
 
 ### La responsabilité et le rôle d’Etalab
 
@@ -123,7 +123,7 @@ qui ont aujourd’hui du mal à remonter en tant que “réutilisation”.
 ### Fin 2015, de nouveaux outils intensifieront les conversations entre réutilisateurs.
 
 Un bouton “partager” va désormais permettre d’intégrer un jeu de données
-ou une réutilisation sur n’importe quelle default web (blog, site de collectivités…).
+ou une réutilisation sur n’importe quelle page web (blog, site de collectivités…).
 Un tel “EMBED” favorise les conversations sur ce jeu de données ou cette réutilisation :
 il est possible d’interagir avec pour en faire un favori, commenter, signaler …
 Ces widgets, seront coproduits grâce à l’API avec l’Infrastructure de Données Géographique
@@ -137,7 +137,7 @@ Ces widgets ambitionnent donc d’accompagner les collectivités locales,
 et notamment les petites et moyennes, dans leur déploiement de l’open data.
 
 Deuxième aspect :
-le référencement d’outils, aujourd’hui sous la forme de defaults de téléchargement, va être amélioré,
+le référencement d’outils, aujourd’hui sous la forme de pages de téléchargement, va être amélioré,
 et il sera désormais possible d’intégrer une fonctionnalité externe par l’API « [data.gouv.fr](https://www.data.gouv.fr) ».
 Ce référencement, tel une “place de marché”, permettra à chacun de bénéficier des meilleurs outils pour visionner,
 éditer, analyser, redresser ou travailler en collaboratif sur des données.
@@ -165,7 +165,7 @@ des administrations de l'Etat et de ses établissements publics administratifs,
 à l'exclusion de toute autre licence.
 
 La licence ainsi que toutes les informations complémentaires sont disponibles
-sur [la default dédiée du site officiel d'Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
+sur [la page dédiée du site officiel d'Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
 
 ### La licence Open Data Base Licence (ODBL)
 
@@ -186,7 +186,7 @@ Les individus, les associations et les entreprises publient des données en Lice
 Les redevances sont autorisées dans des cas exceptionnels.
 
 Plus d'informations sur les redevances et leur cadre légal sont disponibles
-sur [la default dédiée au sujet des redevances](https://www.data.gouv.fr/fr/Redevances).
+sur [la page dédiée au sujet des redevances](https://www.data.gouv.fr/fr/Redevances).
 
 ## J’ai observé une inexactitude, un commentaire tendancieux, un contenu publicitaire que faire ?
 
