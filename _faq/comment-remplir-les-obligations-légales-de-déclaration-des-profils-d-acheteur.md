@@ -57,11 +57,13 @@ Exemple :
 
 La description attendue est un texte générique décrivant le contexte de publication des données essentielles ainsi que quelques liens utiles. Le texte suivant remplit ces conditions et peut être étendu par le producteur.
 
-> [L'arrêté du 14 avril 2017](https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo/texte), modifié par [l'arrêté du 27 juillet 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037282994&dateTexte=&categorieLien=id), impose à tous les acheteurs publics la publication des données essentielles de la commande publique. Ainsi, à partir du 1er octobre 2018, les acheteurs publics doivent publier les données d'attribution au plus tard deux mois après la notification du marché.
->
-> La structure des données est définie par [des schémas XML et JSON](https://github.com/etalab/format-commande-publique) qui appliquent les exigences des arrêtés.
->
-> Pour plus d'information, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques.
+```
+[L'arrêté du 14 avril 2017](https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo/texte), modifié par [l'arrêté du 27 juillet 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037282994&dateTexte=&categorieLien=id), impose à tous les acheteurs publics la publication des données essentielles de la commande publique. Ainsi, à partir du 1er octobre 2018, les acheteurs publics doivent publier les données d'attribution au plus tard deux mois après la notification du marché.
+
+La structure des données est définie par [des schémas XML et JSON](https://github.com/etalab/format-commande-publique) qui appliquent les exigences des arrêtés.
+
+Pour plus d'information, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques.
+```
 
 #### Mot-clés (`tags`)
 
