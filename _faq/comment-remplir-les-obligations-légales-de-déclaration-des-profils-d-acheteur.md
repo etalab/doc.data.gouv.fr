@@ -1,11 +1,12 @@
 ---
 title: >-
-  Comment remplir les obligations légales de déclaration des profils d'acheteur
+  Comment remplir les obligations légales des profils d'acheteur
   ?
 subtitle: En tant que profil d'acheteur
 label: En tant que profil d'acheteur
 ---
-# Comment remplir les obligations légales de déclaration des profils d'acheteur ?
+
+# Comment remplir les obligations légales des profils d'acheteur ?
 
 ## Un peu de contexte
 
@@ -18,12 +19,12 @@ Pour plus d'information, vous pouvez consulter [la page thématique](https://www
 Les données essentielles publiées sur data.gouv.fr proviennent de trois sources :
 
 - La **DGFiP (Direction générale des finances publiques)** propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données via Hélios ([PES Marché](https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0)), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous).
-- L'**AIFE (Agence Informatique des Finances de l'État)** publie sur [data.gouv.fr] les données essentielles provenant de la plateforme de marchés de l'Etat, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
-- Les données essentielles publiées sur les profils d'acheteurs (salles de marché) peuvent être publiées sur data.gouv.fr via l'API data.gouv.fr ou via un fichier DCAT moissonnable
+- L'**AIFE (Agence Informatique des Finances de l'État)** publie sur [data.gouv.fr](https://data.gouv.fr) les données essentielles provenant de la plateforme de marchés de l'Etat, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
+- Les données essentielles publiées sur les profils d'acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l'API data.gouv.fr ou via un fichier DCAT moissonnable
 
-## Structuration des données essentielles publiées via l'API
+## Publication des données essentielles via l'API data.gouv.fr
 
-La documentation de l'API est disponible [ici](https://www.data.gouv.fr/fr/apidoc), le détails des propriétés des objets est [en bas de la même page](https://www.data.gouv.fr/fr/apidoc/#!/datasets/create_dataset).
+La documentation de l'API est disponible [ici](https://www.data.gouv.fr/fr/apidoc), le détails des propriétés des jeux de données est [en bas de la même page](https://www.data.gouv.fr/fr/apidoc/#!/datasets/create_dataset).
 
 Afin de faciliter la localisation et donc l'utilisation des données essentielles, la publication de ces données doit respecter une certaine structure. Les deux structures proposées sont les suivantes :
 
@@ -135,6 +136,51 @@ Identique au nom de fichier.
 #### Type de ressource (`type`)
 
 Renseignez `main`.
+
+
+## Téléchargement des données essentielles transmises par la DGFiP via le PES Marché
+
+### Via un système de fichier
+
+Les données essentielles transmises par la DGFiP peuvent être téléchargées depuis leur emplacement sur un système de fichiers hébergé par Etalab. Cette méthode est particulièrement adaptée pour récupérer les données essentielles d'un acheteur qui passe beaucoup de marchés.
+
+
+Le format des URL est le suivant :
+
+http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/{siret}-{année}-{mois}-{jour}-{seq}.xml
+
+- `siret` : SIRET de l'acheteur
+- `année` : année de la récéption par Etalab
+- `mois` : mois de la récéption par Etalab
+- `jour` : jour de la récéption par Etalab
+- `numéro de séquence` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est `01`
+
+Exemple :
+
+> http://files.data.gouv.fr/decp/89764547841001/2018/11/28/89764547841001-2018-11-28-01.xml
+
+### Via l'API
+
+Cette méthode est particulièrement adaptée pour récupérer les données essentielles d'un acheteur qui ne passe pas beaucoup de marchés.
+
+Pour récupérer les données via l'API, il vous faut :
+
+1. Récupérer la liste des ressources du jeu de données
+2. Télécharger les ressources dont vous avez besoin
+
+#### Récupérer la liste des ressources du jeu de données
+
+Pour récupérer la liste des ressources d'un jeu de données, effectuez la requête suivante :
+
+```
+curl https://data.gouv.fr/api/1/datasets/<dataset id ou slug>
+```
+
+Exemples d'URL :
+
+> https://data.gouv.fr/api/1/datasets/56cc6d6988ee385864fa79d0
+> https://data.gouv.fr/api/1/datasets/referentiel-de-donnees-marches-publics
+
 
 ## Déclaration d'un profil d'acheteur
 
