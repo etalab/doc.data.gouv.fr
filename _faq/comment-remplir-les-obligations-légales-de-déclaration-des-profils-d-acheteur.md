@@ -179,6 +179,7 @@ curl https://data.gouv.fr/api/1/datasets/<dataset id ou slug>
 Exemples d'URL :
 
 > https://data.gouv.fr/api/1/datasets/56cc6d6988ee385864fa79d0
+>
 > https://data.gouv.fr/api/1/datasets/referentiel-de-donnees-marches-publics
 
 
