@@ -197,4 +197,4 @@ Les éditeurs de profil d'acheteur sont invités à se créer un compte sur la p
 <strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant :
 « DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
 
-Un modèle de fichier est disponible sur la page suivante: https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/ 
+Un modèle de fichier est disponible sur la page suivante : https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/ 
