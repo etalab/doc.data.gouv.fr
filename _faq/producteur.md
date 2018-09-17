@@ -26,10 +26,10 @@ Une fois identifié avec votre compte individuel, vous pourrez, le cas échéant
 
 ## Les services publics certifiés
 Les organisations inscrites sur la plateforme « [data.gouv.fr][] » estimant assurer une mission de service public
-peuvent effectuer une demande en ligne pour être reconnue comme telles.
+peuvent effectuer une demande en ligne pour être reconnues comme telles.
 Une organisation certifiée bénéficie d’un meilleur référencement.
 
-Pour obtenir le badge « service public certifié » , inscrivez-vous sur le site en tant qu’individu, créez ou rejoignez votre organisation, 
+Pour obtenir le badge « service public certifié » , inscrivez-vous sur le site en tant qu’individu, créez ou rejoignez votre organisation,
 puis effectuez la demande de certification en envoyant un mail à l'adresse suivante : [certification@data.gouv.fr][].
 Une vérification par email ou courrier vous sera demandée.
 Vous pouvez néanmoins commencer à publier vos jeux de données avant d’obtenir le badge de certification.
@@ -161,7 +161,7 @@ Préciser ici, de manière optionnelle, l'adresse mail du producteur,
 par exemple *contact@agriculture.fr*,
 si elle est différente de celle de l'utilisateur qui publie.
 Lorsque vous publiez un jeu de données au nom d'une organisation,
-tous les membres déclarés seront automatiquement notifiés d'éventuelles réutilisations sur la default
+tous les membres déclarés seront automatiquement notifiés d'éventuelles réutilisations sur la page
 du jeu de données (par exemple, la publication d'une visualisation ou d'un commentaire).
 
 ### Thématique (groupes)

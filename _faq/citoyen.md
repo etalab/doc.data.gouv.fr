@@ -90,7 +90,7 @@ permet d’enrichir le débat public et de renforcer la liberté d’information
 
 Lorsque se crée une série de données continue, temporelle et géographique, des usages inédits
 et des créations de valeur se produisent.
-Qu’ils s’agissent d'interprétations (graphique, carte, animation, page de blog)
+Qu’il s’agisse d'interprétations (graphique, carte, animation, page de blog)
 ou d'applications (site Web, logiciel professionnel),
 les réutilisations exploitent le potentiel de l’ouverture des données (Open Data).
 
@@ -116,7 +116,7 @@ Aujourd’hui les fils d’activité des membres, les notifications des producte
 ou sur publication de réutilisations, ou encore les fils de discussion sur les jeux de données
 ont ciblé les interactions entre producteurs et réutilisateurs.
 Nous allons poursuivre dans ce sens pour augmenter l’engagement des producteurs,
-et notamment le moissonnage automatique d’pages de presse de data journalistes comme DataGueule,
+et notamment le moissonnage automatique des pages de presse de data journalistes comme DataGueule,
 ou J’ai du Bon Data du Monde qui leur permettra d’être notifié des usages effectifs de leurs données,
 qui ont aujourd’hui du mal à remonter en tant que “réutilisation”.
 
@@ -165,7 +165,7 @@ des administrations de l'Etat et de ses établissements publics administratifs,
 à l'exclusion de toute autre licence.
 
 La licence ainsi que toutes les informations complémentaires sont disponibles
-sur [la page dédiée du site officiel d'Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
+sur [le site officiel d'Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
 
 ### La licence Open Data Base Licence (ODBL)
 
@@ -186,7 +186,7 @@ Les individus, les associations et les entreprises publient des données en Lice
 Les redevances sont autorisées dans des cas exceptionnels.
 
 Plus d'informations sur les redevances et leur cadre légal sont disponibles
-sur [la page dédiée au sujet des redevances](https://www.data.gouv.fr/fr/Redevances).
+sur [la page consacrée aux redevances](https://www.data.gouv.fr/fr/Redevances).
 
 ## J’ai observé une inexactitude, un commentaire tendancieux, un contenu publicitaire que faire ?
 
