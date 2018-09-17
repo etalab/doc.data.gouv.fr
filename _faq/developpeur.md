@@ -35,7 +35,7 @@ Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moye
 
 L'intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées
 (publication d'un jeu de données, création d'organisations, etc).
-Veuillez consulter la documentation dédiée pour y accéder.
+Veuillez consulter la documentation spécifique pour y accéder.
 
 <span id="section-moissonage"></span>
 
@@ -51,7 +51,7 @@ Aujourd'hui, les moissoneurs suivants sont disponibles :
 * DCAT-AP (générique)
 * maaf (spécifique Ministère de l'Agriculture, de l'Agroalimentaire et de la Forêt)
 
-Il est aussi possible d'écrire ses propres moissonneurs en suivant [la documentation dédiée](http://udata.readthedocs.io/en/stable/harvesting/#custom).
+Il est aussi possible d'écrire ses propres moissonneurs en suivant [la documentation spécifique](http://udata.readthedocs.io/en/stable/harvesting/#custom).
 
 Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr »,
 il est possible (voire recommandé) d’utiliser l’[API](https://www.data.gouv.fr/api/) pour pousser ses données.
@@ -67,4 +67,4 @@ et de le personnaliser pour son usage propre en marque blanche.
 Nous avons par exemple développé les modules [udata-gouvfr](https://github.com/etalab/udata-gouvfr) pour le rendu
 et [udata-piwik](https://github.com/opendatateam/udata-piwik) pour les statistiques.
 
-Vous pouvez contribuer en suivant la documentation dédiée et en proposant des pull-requests.
+Vous pouvez contribuer en suivant la documentation spécifique et en proposant des pull-requests.

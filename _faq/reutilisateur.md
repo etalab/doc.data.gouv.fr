@@ -8,7 +8,7 @@ summary: Que faire avec les données ? Avec quels outils ?
 # Découvrir l'OpenData en tant que réutilisateur
 
 
-Cette default contient :
+Cette page contient :
 
 - [la transformation des données](#transform)
 - [les outils pour les datavisualisations](#dataviz)
@@ -77,7 +77,7 @@ ou encore jointe à d'autres données (par exemple en divisant le tonnage de dé
 avant de pouvoir la traiter, notamment au travers d'un [outillage pour les datavisualisations](#dataviz).
 Parfois, elle doit être extraite de documents fermés, et nécessite par exemple
 d'[extraire des données PDF](http://www.open-contracting.org/exploring_senegal_public_procurements_how_we_turned_pdf_files_into_browsable_data)
-ou d'[extraire des données tabulaires à partir de defaults Web](http://tools.daemonservices.com/html_to_csv/).
+ou d'[extraire des données tabulaires à partir de pages Web](http://tools.daemonservices.com/html_to_csv/).
 
 Une fois dans un format tabulaire (tableur, fichier texte, etc.) ou dans un format structuré (XML, JSON, RDF, ..),
 [OpenRefine][] est un outil gratuit qui vous permettra de réaliser des transformations complexes
@@ -386,7 +386,7 @@ n'oubliez pas de la rendre publique en cliquant sur "Sharing Settings" dans le j
 L'outil RAW par Densitydesign permet de copier/coller très simplement des données issues d'un tableur,
 et de sélectionner son type de graphique.
 
-Le resultat peut être intégré ensuite à une default Web, par copier/coller.
+Le resultat peut être intégré ensuite à une page Web, par copier/coller.
 
 <span id="opendatacamps"></span>
 ## Qu'est-ce qu'un Open Data Camps ?

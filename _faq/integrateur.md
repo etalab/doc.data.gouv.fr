@@ -38,7 +38,7 @@ Chaque jeu de données est intégrable sur n’importe quelle page en ajoutant d
 <script src="https://www.data.gouv.fr/static/oembed.js" async defer></script>
 ```
 
-En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponible sur sa page dédiée
+En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponible sur sa page spécifique
 vous devriez voir apparaître sur votre site un cartouche contenant les informations
 relatives à ce jeux de données de la manière suivante :
 
@@ -61,7 +61,7 @@ et souhaitez faire la promotion des jeux de données associés.
 <div data-udata-organization="IDENTIFIANT DE L’ORGANISATION"></div>
 <script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadOrganization()"></script>
 ```
-En remplaçant l’`IDENTIFIANT DE L’ORGANISATION` par l’identifiant disponible sur sa page dédiée
+En remplaçant l’`IDENTIFIANT DE L’ORGANISATION` par l’identifiant disponible sur sa page spécifique
 vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives
 aux jeux de données de cette organisation de la manière suivante :
 
@@ -94,7 +94,7 @@ et nous vous recommandons de passer directement par « [data.gouv.fr][] »
 si vous avez des données issues de territoires francophones.
 
 Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser
-le [code source][udata-github] ainsi que la [documentation dédiée][udata-doc].
+le [code source][udata-github] ainsi que la [documentation spécifique][udata-doc].
 Vous pouvez également venir en [discuter avec la communauté][udata-gitter] (en anglais).
 
 [data.gouv.fr]: https://www.data.gouv.fr
