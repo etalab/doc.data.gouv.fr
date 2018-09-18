@@ -1,3 +1,7 @@
+.documentation {
+  padding: 0;
+}
+
 .markdown {
   // Remove top margin on code blocks following a title
   h1, h2, h3, h4, h5, h6 {
@@ -7,4 +11,8 @@
       }
     }
   }
+}
+
+.markdown img {
+  max-width: 100%;
 }
