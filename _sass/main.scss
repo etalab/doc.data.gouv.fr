@@ -1,97 +1,14 @@
-
-/* categories */
-
-.categories {
-  margin-bottom: 2em;
+ul {
+  line-height: 1.5em;
 }
 
-.categories__list {
-  display: flex;
-  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  // grid-column-gap: 2em;
-  padding: 0;
-  margin: 0;
-  align-items: stretch;
-}
-
-.categories__title {
-  text-align: center;
-}
-
-.categories__item {
-  flex: 1;
-  //border: 1px solid #238DFF;
-  text-align: center;
-  overflow: hidden;
-  background-position: bottom -30px right -20px;
-  background-repeat: no-repeat;
-  background-size: 100px;
-  padding: 0;
-  margin: 0 1em;
-}
-
-.categories__item:first-child {
-  margin-left: 0;
-}
-
-.categories__item:last-child {
-  margin-right: 0;
-}
-
-.categories__item a {
-  display: block;
-  padding: 1em;
-}
-
-.categories__item p {
-  color: #1C1C1C;
-  font-size: 1em;
-  font-style: normal;
-}
-
-.categories__item.citoyen {
-  background-image: url('../img/icons/user-circle.svg');
-}
-
-.categories__item.developpeur {
-  background-image: url('../img/icons/terminal.svg');
-}
-
-.categories__item.integrateur {
-  background-image: url('../img/icons/embed.svg');
-}
-
-.categories__item.producteur {
-  background-image: url('../img/icons/truck.svg');
-}
-
-.categories__item.reutilisateur {
-  background-image: url('../img/icons/loop.svg');
-}
-
-/* page */
-
-.page {
-  display: flex;
-}
-
-.page .content {
-  flex: 2 0px;
-}
-
-.page .categories__list {
-  flex-direction: column;
-}
-
-.page .categories__item {
-  margin: 1em 0;
+.side-pane__link {
+  text-decoration: none;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
-
-.edit-button {
-    padding: 5px 10px;
-    border: 1px solid #0081d5;
+.edit {
+  margin-top: 2em;
 }
