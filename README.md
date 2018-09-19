@@ -1,6 +1,6 @@
 # Documentation de data.gouv.fr
 
-Ce dépôt correspond au contenu du site [doc.data.gouv.fr](https://doc.data.gouv.fr), site consacrée à la documentation de la plateforme [data.gouv.fr](https://data.gouv.fr).
+Ce dépôt correspond au contenu du site [doc.data.gouv.fr](https://doc.data.gouv.fr), site consacré à la documentation de la plateforme [data.gouv.fr](https://data.gouv.fr).
 
 ## Contribuer
 
@@ -25,7 +25,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-La documentation sera apparaîtra alors à l’adresse suivante : <a href="http://localhost:4000">http://localhost:4000</a>.
+La documentation apparaîtra alors à l’adresse suivante : <a href="http://localhost:4000">http://localhost:4000</a>.
 
 ### Docker Compose
 
