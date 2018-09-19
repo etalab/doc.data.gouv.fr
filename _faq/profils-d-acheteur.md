@@ -16,7 +16,7 @@ Pour plus d'information, vous pouvez consulter [la page thématique](https://www
 Les données essentielles publiées sur data.gouv.fr proviennent de trois sources :
 
 * La **DGFiP (Direction générale des finances publiques)** propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données via Hélios ([PES Marché](https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0)), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous).
-* L'**AIFE (Agence Informatique des Finances de l'État)** publie sur [data.gouv.fr](https://data.gouv.fr) les données essentielles provenant de la plateforme de marchés de l'Etat, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
+* L'**AIFE (Agence Informatique des Finances de l'État)** publie sur [data.gouv.fr](https://data.gouv.fr) les données essentielles provenant des places de marchés qui utilisent son service, et notamment de la plateforme de marchés de l'Etat, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
 * Les données essentielles publiées sur les profils d'acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l'API data.gouv.fr ou via un fichier DCAT moissonnable
 
 ## Publication des données essentielles via l'API data.gouv.fr
