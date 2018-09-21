@@ -17,7 +17,7 @@ Les données essentielles publiées sur data.gouv.fr proviennent de trois source
 
 * La **DGFiP (Direction générale des finances publiques)** propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données via Hélios ([PES Marché](https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0)), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous).
 * L’**AIFE (Agence Informatique des Finances de l’État)** publie sur [data.gouv.fr](https://data.gouv.fr) les données essentielles provenant des places de marchés qui utilisent son service, et notamment de la plateforme de marchés de l’Etat, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
-* Les données essentielles publiées sur les profils d’acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l’API data.gouv.fr ou via un fichier DCAT moissonnable
+* Les données essentielles publiées sur les profils d’acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l’API data.gouv.fr ou via un fichier DCAT moissonnable.
 
 ## Publication des données essentielles via l’API data.gouv.fr
 
@@ -74,7 +74,7 @@ Si le jeu de données est spécifique à un **acheteur** et non à une plateform
 ```
 {
     "title": "Données essentielles des marchés publics - Conseil régional de Bretagne"
-    ...
+    …
     "extras": {
         "siret": "89764547841001"
 }
@@ -160,8 +160,8 @@ Cette méthode est particulièrement adaptée pour récupérer les données esse
 
 Pour récupérer les données via l’API, il vous faut :
 
-1. Récupérer la liste des ressources du jeu de données
-2. Télécharger les ressources dont vous avez besoin
+1. Récupérer la liste des ressources du jeu de données ;
+2. Télécharger les ressources dont vous avez besoin.
 
 #### Récupérer la liste des ressources du jeu de données
 
@@ -185,9 +185,9 @@ L’objectif est d’impliquer les éditeurs de profils d’acheteurs afin de si
 
 Les éditeurs de profil d’acheteur sont invités à se créer un compte sur la plateforme data.gouv.fr afin d’y publier au format .CSV un fichier contenant les informations suivantes :
 
-* le SIRET des acheteurs (colonne `siretAcheteur`)
-* l’adresse URL des profils d’acheteurs (colonne `urlProfilAcheteur`)
-* les coordonnées du ou des acheteurs concernés (colonne `coordonnnées`)
+* le SIRET des acheteurs (colonne `siretAcheteur`) ;
+* l’adresse URL des profils d’acheteurs (colonne `urlProfilAcheteur`) ;
+* les coordonnées du ou des acheteurs concernés (colonne `coordonnnées`).
 
 <strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant :
 « DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
