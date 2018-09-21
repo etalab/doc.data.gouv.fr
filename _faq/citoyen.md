@@ -1,21 +1,21 @@
 ---
-title: Découvrir l'OpenData en tant que citoyen
-subtitle: Les fondamentaux de l'OpenData pour les citoyens
+title: Découvrir l’OpenData en tant que citoyen
+subtitle: Les fondamentaux de l’OpenData pour les citoyens
 label: En tant que citoyen
 ---
-# Découvrir l'OpenData en tant que citoyen
+# Découvrir l’OpenData en tant que citoyen
 
 ## Quelles données sont publiées sur « data.gouv.fr » ?
 
 Des **données publiques produites ou reçues dans le cadre d’une mission de service public** :
 impôts, budgets, subventions, dépenses, aménagement du territoire, chômage, rénovation de logements,
-mesures de qualité de l'air, adresses des services publics, délinquance et criminalité, statistiques du tourisme,
+mesures de qualité de l’air, adresses des services publics, délinquance et criminalité, statistiques du tourisme,
 résultats électoraux, dépenses de la Sécurité sociale, effectifs des fonctions publiques,
-aides de la politique agricole commune, rejets de polluants dans l'air par les installations industrielles…
+aides de la politique agricole commune, rejets de polluants dans l’air par les installations industrielles…
 
 « [data.gouv.fr](https://www.data.gouv.fr) » poursuit également l’ambition d’être un outil à la disposition des citoyens
 pour leur permettre de **produire, d’enrichir ou de compléter ces données**
-ou de **partager des données d'intérêt public**,
+ou de **partager des données d’intérêt public**,
 qu’il s’agisse par exemple de l’inventaire d’une bibliothèque communale, de l’état de la voirie,
 de la composition nutritionnelle de produits alimentaires ou du bilan environnemental d’une entreprise.
 
@@ -24,8 +24,8 @@ et celles dont la publication contrevient à la loi
 (secret médical, secret de la défense nationale, secret statistique, secret des affaires, etc.)
 **ne sont pas acceptées** sur la plateforme « [data.gouv.fr](https://www.data.gouv.fr) ».
 
-Pour plus d'informations sur les meilleures pratiques en matière de publication,
-consultez le \[Guide de publication]({% link _faq/producteur.md %}).
+Pour plus d’informations sur les meilleures pratiques en matière de publication,
+consultez le [Guide de publication]({% link _faq/producteur.md %}).
 
 ## Quels acteurs contribuent sur « data.gouv.fr » ?
 
@@ -56,9 +56,9 @@ et animer leurs propres pages en y attirant des contributions.
 
 ### La responsabilité et le rôle d’Etalab
 
-Etalab a une responsabilité d’hébergeur et n'est pas responsable du contenu publié
+Etalab a une responsabilité d’hébergeur et n’est pas responsable du contenu publié
 sur la plateforme « [data.gouv.fr](https://www.data.gouv.fr) ».
-Toutefois, Etalab s'engage à supprimer dans des délais raisonnables les données qui font l’objet d’un signalement.
+Toutefois, Etalab s’engage à supprimer dans des délais raisonnables les données qui font l’objet d’un signalement.
 
 ## Pourquoi créer un compte sur « data.gouv.fr » ?
 
@@ -71,7 +71,7 @@ mais nécessaire pour effectuer des actions sur la plateforme telles que :
 * Faire un signalement ou discuter sur une publication
 * Voter pour une publication
 
-La création d'un compte utilisateur vous engage à respecter les [conditions d'utilisation](https://www.data.gouv.fr/fr/terms/).
+La création d’un compte utilisateur vous engage à respecter les [conditions d’utilisation](https://www.data.gouv.fr/fr/terms/).
 
 ### L’intérêt de publier et partager des données :
 
@@ -90,8 +90,8 @@ permet d’enrichir le débat public et de renforcer la liberté d’information
 
 Lorsque se crée une série de données continue, temporelle et géographique, des usages inédits
 et des créations de valeur se produisent.
-Qu’il s’agisse d'interprétations (graphique, carte, animation, page de blog)
-ou d'applications (site Web, logiciel professionnel),
+Qu’il s’agisse d’interprétations (graphique, carte, animation, page de blog)
+ou d’applications (site Web, logiciel professionnel),
 les réutilisations exploitent le potentiel de l’ouverture des données (Open Data).
 
 La qualité des données,
@@ -159,13 +159,13 @@ Dans le cadre de la politique du Gouvernement en faveur de l’ouverture des don
 Etalab a conçu la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)”.
 Cette licence, élaborée en concertation avec l’ensemble des acteurs concernés,
 facilite et encourage la réutilisation des données publiques mises à disposition gratuitement.
-Depuis novembre 2011, la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)” s'applique
-à l'ensemble des réutilisations libres et gratuites de données publiques issues
-des administrations de l'Etat et de ses établissements publics administratifs,
-à l'exclusion de toute autre licence.
+Depuis novembre 2011, la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)” s’applique
+à l’ensemble des réutilisations libres et gratuites de données publiques issues
+des administrations de l’Etat et de ses établissements publics administratifs,
+à l’exclusion de toute autre licence.
 
 La licence ainsi que toutes les informations complémentaires sont disponibles
-sur [le site officiel d'Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
+sur [le site officiel d’Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
 
 ### La licence Open Data Base Licence (ODBL)
 
@@ -185,7 +185,7 @@ Les individus, les associations et les entreprises publient des données en Lice
 
 Les redevances sont autorisées dans des cas exceptionnels.
 
-Plus d'informations sur les redevances et leur cadre légal sont disponibles
+Plus d’informations sur les redevances et leur cadre légal sont disponibles
 sur [la page consacrée aux redevances](https://www.data.gouv.fr/fr/Redevances).
 
 ## J’ai observé une inexactitude, un commentaire tendancieux, un contenu publicitaire que faire ?
@@ -196,7 +196,7 @@ contenu illégal, contenu en dehors du champ de la plateforme, contenu publicita
 
 Le signalement d’un contenu est notifié au producteur et à sa communauté.
 Le contenu peut être retiré automatiquement si le nombre de signalements est élevé
-ou si l'objectif manifeste de la publication est d'optimiser le référencement d'un site tiers (SEO)
+ou si l’objectif manifeste de la publication est d’optimiser le référencement d’un site tiers (SEO)
 sans apport de données de qualité.
-L'éditeur de la plateforme « [data.gouv.fr](https://www.data.gouv.fr) » se réserve **le droit de modérer** à tout moment
-un contenu qui contreviendrait aux règles de publication et/ou à l'éthique de la plateforme.
+L’éditeur de la plateforme « [data.gouv.fr](https://www.data.gouv.fr) » se réserve **le droit de modérer** à tout moment
+un contenu qui contreviendrait aux règles de publication et/ou à l’éthique de la plateforme.

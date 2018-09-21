@@ -1,11 +1,11 @@
 ---
-title: Découvrir l'OpenData en tant qu'intégrateur
+title: Découvrir l’OpenData en tant qu’intégrateur
 subtitle: Quelles sont les intégrations tierces rendues possibles ?
-label: En tant qu'intégrateur
+label: En tant qu’intégrateur
 summary: Quelles sont les intégrations tierces rendues possibles ?
 ---
 
-# Découvrir l'OpenData en tant qu'intégrateur
+# Découvrir l’OpenData en tant qu’intégrateur
 
 
 La plateforme « [data.gouv.fr][] » vous offre plusieurs moyens plus ou moins avancés d’intégrer les données disponibles en open data sur vos propres sites :
@@ -42,8 +42,8 @@ En remplaçant `l’IDENTIFIANT DU JEU DE DONNÉES` par l’identifiant disponib
 vous devriez voir apparaître sur votre site un cartouche contenant les informations
 relatives à ce jeux de données de la manière suivante :
 
-![Exemple d'intégration d'une jeu de données](/img/faq/integration/exemple-dataset.png)
-*Exemple d’intégration du jeu de données "Population" de l'INSEE.*
+![Exemple d’intégration d’une jeu de données](/img/faq/integration/exemple-dataset.png)
+*Exemple d’intégration du jeu de données "Population" de l’INSEE.*
 
 Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément `<div>` avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS `dataset-card`.
 
@@ -69,8 +69,8 @@ Optionnellement, il est possible d’afficher une barre de recherche pour laisse
 au visiteur de filtrer la liste des jeux de données affichés.
 Cela est activé en passant l’option `{withSearch: true}` à la méthode `loadOrganization()` ci-dessus.
 
-![Exemple d'intégration d'une organisation](/img/faq/integration/exemple-organisation.png)
-*Exemple d’intégration d'une organisation avec l'option barre de recherche.*
+![Exemple d’intégration d’une organisation](/img/faq/integration/exemple-organisation.png)
+*Exemple d’intégration d’une organisation avec l’option barre de recherche.*
 
 ## Intégration pour une page personnalisée
 Une [bibliothèque JavaScript][udata-js] a été développée pour faciliter la personnalisation

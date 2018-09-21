@@ -1,5 +1,5 @@
 ---
-title: Découvrir l'OpenData en tant que développeur
+title: Découvrir l’OpenData en tant que développeur
 subtitle: "Comment intéragir avec la plateforme\_? Avec quelles API\_?"
 label: En tant que développeur
 ---
@@ -15,7 +15,7 @@ Cette page contient :
 
 ## Informations relatives à l’API
 
-Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moyens d'accéder au catalogue des données :
+Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moyens d’accéder au catalogue des données :
 
 * une [API complète](https://www.data.gouv.fr/api/), documentée avec [Swagger](http://swagger.io/)
 * des dumps au format CSV, mis à jour en temps réel
@@ -23,7 +23,7 @@ Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moye
   * catalogue des ressources: <https://www.data.gouv.fr/resources.csv>
   * catalogue des organisations: <https://www.data.gouv.fr/organizations.csv>
   * catalogue des réutilisations: <https://www.data.gouv.fr/reuses.csv>
-  * une liste des tags avec leur nombre d'occurences: <https://www.data.gouv.fr/tags.csv>
+  * une liste des tags avec leur nombre d’occurences: <https://www.data.gouv.fr/tags.csv>
 * un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :
   * JSON-LD: <https://www.data.gouv.fr/catalog.jsonld>
   * Turtle: <https://www.data.gouv.fr/catalog.ttl>
@@ -33,8 +33,8 @@ Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moye
   * Trig: <https://www.data.gouv.fr/catalog.trig>
 * des [statistiques de fréquentation anonymisées](https://stats.data.gouv.fr/), mises à jour toutes les heures
 
-L'intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées
-(publication d'un jeu de données, création d'organisations, etc).
+L’intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées
+(publication d’un jeu de données, création d’organisations, etc).
 Veuillez consulter la documentation spécifique pour y accéder.
 
 <span id="section-moissonage"></span>
@@ -44,14 +44,14 @@ Veuillez consulter la documentation spécifique pour y accéder.
 « [data.gouv.fr](https://www.data.gouv.fr/) » met à disposition une infrastructure de moissonnage,
 permettant d’être automatiquement intégré sur la plateforme.
 
-Aujourd'hui, les moissoneurs suivants sont disponibles :
+Aujourd’hui, les moissoneurs suivants sont disponibles :
 
 * CKAN (générique)
 * OpenDataSoft (générique)
 * DCAT-AP (générique)
-* maaf (spécifique Ministère de l'Agriculture, de l'Agroalimentaire et de la Forêt)
+* maaf (spécifique Ministère de l’Agriculture, de l’Agroalimentaire et de la Forêt)
 
-Il est aussi possible d'écrire ses propres moissonneurs en suivant [la documentation spécifique](http://udata.readthedocs.io/en/stable/harvesting/#custom).
+Il est aussi possible d’écrire ses propres moissonneurs en suivant [la documentation spécifique](http://udata.readthedocs.io/en/stable/harvesting/#custom).
 
 Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr »,
 il est possible (voire recommandé) d’utiliser l’[API](https://www.data.gouv.fr/api/) pour pousser ses données.
