@@ -30,8 +30,6 @@ Pour obtenir le badge « service public certifié » , inscrivez-vous sur le sit
 
 ## Qu’est-ce qu’un jeu de données ?
 
-Un jeu de données peut contenir plusieurs ressources (fichiers de données, fichiers d'explications, API, lien...) qui constituent un lot cohérent sur un thème donné.
-
 Un jeu de données peut contenir plusieurs ressources (fichiers de données, fichiers d’explications, API, lien…) qui constituent un lot cohérent sur un thème donné. Par exemple « [La Réserve Parlementaire][] », contiendra plusieurs ressources, typiquement un fichier par année.
 
 ### Les jeux de données « à la une »
