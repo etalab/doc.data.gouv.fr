@@ -23,6 +23,7 @@ L’inscription individuelle sur la plateforme « [data.gouv.fr][] » est libre.
 Une fois identifié avec votre compte individuel, vous pourrez, le cas échéant, demander à rejoindre l’organisation à laquelle vous appartenez ou créer cette organisation si elle n’existe pas encore. Si vous créez votre organisation, vous en serez par défaut l’administrateur. Vous pourrez ensuite accepter (ou refuser) les demandes d’autres utilisateurs individuels souhaitant être rattachés à cette organisation.
 
 ## Les services publics certifiés
+
 Les organisations inscrites sur la plateforme « [data.gouv.fr][] » estimant assurer une mission de service public peuvent effectuer une demande en ligne pour être reconnues comme telles. Une organisation certifiée bénéficie d’un meilleur référencement.
 
 Pour obtenir le badge « service public certifié » , inscrivez-vous sur le site en tant qu’individu, créez ou rejoignez votre organisation, puis effectuez la demande de certification en envoyant un mail à l’adresse suivante : [certification@data.gouv.fr][]. Une vérification par email ou courrier vous sera demandée. Vous pouvez néanmoins commencer à publier vos jeux de données avant d’obtenir le badge de certification.
