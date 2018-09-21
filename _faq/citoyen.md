@@ -23,7 +23,7 @@ L’écosystème de « [data.gouv.fr](https://www.data.gouv.fr) » est animé pa
 
 ### Les services publics
 
-Les services publics font référence à l’Etat (administrations centrales, services déconcentrés et autorités administratives indépendantes : direction du Budget, préfecture du Finistère, Conseil Supérieur de l’Audiovisuel par exemple), les collectivités territoriales (Ville de Rennes, Conseil général d’Aquitaine, Conseil Régional Rhône-Alpes,…) et au sens large les entités de droit privé ou de droit public poursuivant une mission de service public (Pôle Emploi, SNCF, RATP, Caisse des Dépôts, etc.). Toute organisation inscrite sur le site « [data.gouv.fr](https://www.data.gouv.fr) » estimant assurer une mission de service public peut effectuer une demande en ligne pour être reconnue comme « service public certifié » à l’adresse <mailto:certification@data.gouv.fr>.
+Les services publics font référence à l’État (administrations centrales, services déconcentrés et autorités administratives indépendantes : direction du Budget, préfecture du Finistère, Conseil Supérieur de l’Audiovisuel par exemple), les collectivités territoriales (Ville de Rennes, Conseil général d’Aquitaine, Conseil Régional Rhône-Alpes,…) et au sens large les entités de droit privé ou de droit public poursuivant une mission de service public (Pôle Emploi, SNCF, RATP, Caisse des Dépôts, etc.). Toute organisation inscrite sur le site « [data.gouv.fr](https://www.data.gouv.fr) » estimant assurer une mission de service public peut effectuer une demande en ligne pour être reconnue comme « service public certifié » à l’adresse <mailto:certification@data.gouv.fr>.
 
 ### Les personnes morales
 
@@ -79,7 +79,7 @@ Le producteur du jeu de données doit préciser le type de licences applicables 
 
 ### La Licence Ouverte
 
-Dans le cadre de la politique du Gouvernement en faveur de l’ouverture des données publiques (“Open Data”), Etalab a conçu la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)”. Cette licence, élaborée en concertation avec l’ensemble des acteurs concernés, facilite et encourage la réutilisation des données publiques mises à disposition gratuitement. Depuis novembre 2011, la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)” s’applique à l’ensemble des réutilisations libres et gratuites de données publiques issues des administrations de l’Etat et de ses établissements publics administratifs, à l’exclusion de toute autre licence.
+Dans le cadre de la politique du Gouvernement en faveur de l’ouverture des données publiques (“Open Data”), Etalab a conçu la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)”. Cette licence, élaborée en concertation avec l’ensemble des acteurs concernés, facilite et encourage la réutilisation des données publiques mises à disposition gratuitement. Depuis novembre 2011, la “[Licence Ouverte / Open Licence](https://www.etalab.gouv.fr/licence-ouverte-open-licence)” s’applique à l’ensemble des réutilisations libres et gratuites de données publiques issues des administrations de l’État et de ses établissements publics administratifs, à l’exclusion de toute autre licence.
 
 La licence ainsi que toutes les informations complémentaires sont disponibles sur [le site officiel d’Etalab](https://www.etalab.gouv.fr/licence-ouverte-open-licence).
 
@@ -89,9 +89,9 @@ La licence ODbL prévoit en outre une obligation de partage à l’identique. Ce
 
 ### La politique de publication
 
-Les administrations de l’Etat et ses établissements publics administratifs publient systématiquement les données publiques en Open Data sous Licence Ouverte (permettant de reproduire, diffuser, adapter, et exploiter, y compris à titre commercial, sous réserve de mentionner la paternité).
+Les administrations de l’État et ses établissements publics administratifs publient systématiquement les données publiques en Open Data sous Licence Ouverte (permettant de reproduire, diffuser, adapter, et exploiter, y compris à titre commercial, sous réserve de mentionner la paternité).
 
-Les établissements publics à caractère industriel et commercial (EPIC) et les collectivités territoriales, choisissent par eux-mêmes une licence Open Data : Licence Ouverte ou ODbL (l’Etat recommande l’usage de la Licence Ouverte).
+Les établissements publics à caractère industriel et commercial (EPIC) et les collectivités territoriales, choisissent par eux-mêmes une licence Open Data : Licence Ouverte ou ODbL (l’État recommande l’usage de la Licence Ouverte).
 
 Les individus, les associations et les entreprises publient des données en Licence Ouverte et des réutilisations (applications, visualisations, services Web) dans la licence de leur choix, y compris pour permettre des usages commerciaux.
 
