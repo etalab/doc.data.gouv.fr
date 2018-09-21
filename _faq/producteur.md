@@ -34,7 +34,7 @@ puis effectuez la demande de certification en envoyant un mail à l'adresse suiv
 Une vérification par email ou courrier vous sera demandée.
 Vous pouvez néanmoins commencer à publier vos jeux de données avant d’obtenir le badge de certification.
 
-## Qu'est qu'un jeu de données ?
+## Qu'est ce qu'un jeu de données ?
 Un jeu de données peut contenir plusieurs ressources (fichiers de données, fichiers d'explications, API, lien...)
 qui constituent un lot cohérent sur un thème donné.
 
