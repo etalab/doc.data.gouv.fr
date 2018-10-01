@@ -2,11 +2,11 @@
 title: >-
   Comment remplir les obligations légales des profils d'acheteur
   ?
-subtitle: En tant que profil d'acheteur
-label: En tant que profil d'acheteur
+subtitle: En tant qu'acheteur public
+label: En tant qu'acheteur public
 ---
 
-# Comment remplir les obligations légales des profils d'acheteur ?
+# Comment remplir les obligations légales des acheteurs publics ?
 
 ## Un peu de contexte
 
