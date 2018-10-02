@@ -7,6 +7,8 @@ github_username:  etalab
 
 github_repository: etalab/doc.data.gouv.fr
 
+url: https://doc.data.gouv.fr
+
 lang: fr
 
 i18n:
@@ -41,3 +43,5 @@ defaults:
       path: ""
     values:
       layout: page
+
+theme: "jekyll-theme-gouvfr"
