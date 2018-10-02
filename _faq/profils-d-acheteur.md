@@ -11,7 +11,7 @@ label: En tant que profil d’acheteur
 
 La structure des données est définie par [des schémas XML et JSON](https://github.com/etalab/format-commande-publique) qui implémentent les arrêtés.
 
-Pour plus d’information, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques.
+Pour plus d’information, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques, ainsi que [l'article de blog consacré à ce sujet](https://www.data.gouv.fr/fr/posts/le-point-sur-les-donnees-essentielles-de-la-commande-publique/).
 
 Les données essentielles publiées sur data.gouv.fr proviennent de trois sources :
 
@@ -142,7 +142,7 @@ Les données essentielles transmises par la DGFiP peuvent être téléchargées 
 
 Le format des URL est le suivant :
 
-http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/{siret}-{année}-{mois}-{jour}-{seq}.xml
+http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/DECP-{siret}-{année}-{mois}-{jour}-{seq}.xml
 
 * `siret` : SIRET de l’acheteur
 * `année` : année de la récéption par Etalab
@@ -152,7 +152,7 @@ http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/{siret}-{année}-{
 
 Exemple :
 
-> http://files.data.gouv.fr/decp/89764547841001/2018/11/28/89764547841001-2018-11-28-01.xml
+> http://files.data.gouv.fr/decp/89764547841001/2018/11/28/DECP-89764547841001-2018-11-28-01.xml
 
 ### Via l’API
 
@@ -185,9 +185,12 @@ L’objectif est d’impliquer les éditeurs de profils d’acheteurs afin de si
 
 Les éditeurs de profil d’acheteur sont invités à se créer un compte sur la plateforme data.gouv.fr afin d’y publier au format .CSV un fichier contenant les informations suivantes :
 
-* le SIRET des acheteurs (colonne `siretAcheteur`) ;
-* l’adresse URL des profils d’acheteurs (colonne `urlProfilAcheteur`) ;
-* les coordonnées du ou des acheteurs concernés (colonne `coordonnnées`).
+  * le SIRET des acheteurs (colonne `siretAcheteur`)
+  * l'adresse URL des profils d'acheteurs (colonne `urlProfilAcheteur`)
+  * l'adresse URL du catalogue DCAT qui répértorie les données (colonne `urlDCAT`)
+  * les coordonnées du ou des acheteurs concernés (colonne `coordonnnees`)
+
+Vous trouverez un exemple de structure de fichier [sur data.gouv.fr](https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#).
 
 <strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant :
 « DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
