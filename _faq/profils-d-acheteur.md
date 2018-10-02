@@ -110,7 +110,7 @@ Format : DECP-`{SIRET}`-`{année}`-`{mois}`-`{jour}`-`{numéro de séquence}`.`{
 
 Exemple :
 
-> 89764547841001-2018-11-28-01.xml
+> DECP-89764547841001-2018-11-28-01.xml
 
 #### URL (`url`)
 
