@@ -11,6 +11,19 @@
       }
     }
   }
+
+  // {% highlight %} blocks
+  figure.highlight {
+    margin: 0;
+    width: 100%;
+
+      > pre {
+        width: 100%;
+        > code {
+          width: 100%;
+        }
+      }
+  }
 }
 
 .markdown img {
