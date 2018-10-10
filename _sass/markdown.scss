@@ -24,6 +24,32 @@
         }
       }
   }
+
+  ul#markdown-toc {
+    $margin: 20px;
+
+    &:before {
+      content: 'Sommaire';
+      display: block;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: $margin / 2;
+    }
+
+    display: inline-block;
+    background-color: #ebeff3;
+    border: 1px solid #c9d3df;
+    border-left-width: 8px;
+    padding: $margin/2 $margin;
+
+    li {
+      list-style-type: none;
+
+      ul {
+        padding-inline-start: $margin;
+      }
+    }
+  }
 }
 
 .markdown img {
