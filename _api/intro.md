@@ -22,12 +22,36 @@ Les appels d'API sont soumis aux même permissions que l'interface web.
 
 Par exemple, vous devez être membre de l'organisation pour modifier l'un de ses jeux de données.
 
-## Content-type
+## Formats de données
 
-Les différents opints d'entré de l'API attende du JSON en entrée et renvoient du JSON en sortie.
+### Content-type
 
-## Pagination
+Les différents points d'entrée de l'API attendent du JSON (`application/json`) en entrée et renvoient du JSON en sortie.
+Les seules exceptions sont les points d'entrée qui acceptent l'upload de fichiers: ils acceptent du `multipart/form-data`et renvoie du JSON. 
 
+### Listes
+
+### Pagination
+
+Certaines méthodes sont paginées et suivent le même modèle de pagination. La liste d'objets est encapsulée dans un objet `Page`.
+
+Vous n'avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponible dans la réponse dans les attributs `previous_page` et `next_page`. Ils seront définis à `null` si il n'y a pas de page précédente et/ou suivante.
+
+**Exemple:**
+```json
+{
+    "data": [{...}, {...}],
+    "page": 1,
+    "page_size": 20,
+    "total": 10,
+    "next_page": "https://www.data.gouv.fr/api/endpoint/?page=2",
+    "previous_page": null
+}
+```
+
+### Gestion d'erreurs
+
+`X-Sentry-ID`
 
 ## Documentation de référence
 

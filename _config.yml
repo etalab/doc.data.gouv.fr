@@ -48,4 +48,4 @@ defaults:
     values:
       layout: page
 
-theme: "jekyll-theme-gouvfr"
+theme: jekyll-theme-gouvfr
