@@ -15,21 +15,49 @@
     }
   }
 
-  // {% highlight %} blocks
-  figure.highlight {
+  img {
+    max-width: 100%;
+  }
+  
+  /**
+    * Inline code
+    */
+  code {
+    padding: 0 0.2em;
+    line-height: 1.2em;
+  }
+
+  /**
+   * {% highlight %} blocks and fenced codeblocks
+   */
+  .highlight {
     margin: 0;
     width: 100%;
 
-      > pre {
-        width: 100%;
-        margin: 0;
-        > code {
-          display: block;
-          width: 100%;
-        }
-      }
+    pre {
+      width: 100%;
+      margin: 0;
+    }
+
+    code {
+      display: block;
+      width: 100%;
+      padding: 1em;
+    }
   }
 
+  /**
+   * Non highlighted code block
+   */
+  pre > code {
+    display: block;
+    width: 100%;
+    padding: 1em;
+  }
+
+  /**
+   * Table of content
+   */
   ul#markdown-toc {
     $margin: 20px;
 
@@ -82,8 +110,6 @@
       width: 100%;
       display: none;
       background: #fff;
-      // border: 1px solid #c9d3df;
-      // border-top: none;
     }
     
     input[type="radio"] {
@@ -113,8 +139,4 @@
       border-top-right-radius: 0;
     }
   }
-}
-
-.markdown img {
-  max-width: 100%;
 }
