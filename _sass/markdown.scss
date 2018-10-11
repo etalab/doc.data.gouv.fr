@@ -3,6 +3,9 @@
 }
 
 .markdown {
+  $gray-border: #ebeff3;
+  $gray-background: #c9d3df;
+
   // Remove top margin on code blocks following a title
   h1, h2, h3, h4, h5, h6 {
     + .highlighter-rouge {
@@ -19,7 +22,9 @@
 
       > pre {
         width: 100%;
+        margin: 0;
         > code {
+          display: block;
           width: 100%;
         }
       }
@@ -37,8 +42,8 @@
     }
 
     display: inline-block;
-    background-color: #ebeff3;
-    border: 1px solid #c9d3df;
+    background-color: $gray-border;
+    border: 1px solid $gray-background;
     border-left-width: 8px;
     padding: $margin/2 $margin;
 
@@ -51,64 +56,62 @@
     }
   }
 
+  /**
+   * Tabs
+   */
   .tabs {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 700px;
-    background: #efefef;
-    box-shadow: 0 48px 80px -32px rgba(0,0,0,0.3);
+    flex-wrap: wrap; // make sure it wraps
 
-    .input {
-      position: absolute;
-      opacity: 0;
-      
-      &:focus + .label {
-        box-shadow: inset 0px 0px 0px 3px #2aa1c0;
-        z-index: 1;
-      }
-      
-      &:checked + .label {
-        background: #fff;
-        color: #000;
-      }
-    }
-
-    .label {
-      width: 100%;
-      padding: 20px 30px;
-      background: #e5e5e5;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 18px;
-      color: #7f7f7f;
-      transition: background 0.1s, color 0.1s;
-      &:hover {
-        background: #d8d8d8;
-      }
-      
-      &:active {
-        background: #ccc;
-      }
-
-      @media (min-width: 600px) {
-        width: auto;
-      }
-    }
-
-    .panel {
-      display: none;
-      padding: 20px 30px 30px;
-      background: #fff;
-
-      @media (min-width: 600px) {
-        order: 99;
-      }
-    }
-    
-    .input:checked + .label + .panel {
+    label {
+      order: 1; // Put the labels first
       display: block;
+      padding: 1rem 2rem;
+      margin: 0 0.2rem 0 0;
+      cursor: pointer;
+      background: #fff;
+      font-weight: bold;
+      transition: background ease 0.2s;
+      border: 1px solid $gray-border;
+      border-bottom: none;
     }
     
+    .tab {
+      order: 99; // Put the tabs last
+      flex-grow: 1;
+      width: 100%;
+      display: none;
+      background: #fff;
+      // border: 1px solid #c9d3df;
+      // border-top: none;
+    }
+    
+    input[type="radio"] {
+      display: none;
+
+      &:checked + label {
+        background: $gray-border;
+        + .tab {
+          display: block;
+        }
+      }
+    }
+  
+    @media (max-width: 45em) {
+      .tab, label {
+        order: initial;
+      }
+      label {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0.2rem;
+      }
+    }
+
+    code{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 }
 
