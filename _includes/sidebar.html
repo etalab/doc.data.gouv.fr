@@ -4,10 +4,10 @@
     {% for collection in collections %}
         {% if collection.docs %}
         <li class="side-pane__title"><h3>{{ collection.title }}</h3></li>
-        {% for col_page in collection.docs %}
+        {% assign docs =  collection.docs | sort: 'order', 'last' %}
+        {% for col_page in docs %}
         <li {% if page.id == col_page.id %}class="active"{% endif %}>
             <a class="side-pane__link" href="{{ col_page.url | relative_url }}">{{ col_page.label| default: col_page.title | escape }}</a>
-        </li>
         {% endfor %}
         {% endif %}
     {% endfor %}
