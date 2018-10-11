@@ -37,13 +37,13 @@ Les seules exceptions sont les points d'entrée qui acceptent l'upload de fichie
 
 À chaque fois que vous pouvez utiliser identifiant d'objet dans une URL de l'API, vous avez les choix suivants:
 - l'identifiant technique permanent (**ex:** `5bbb6d6cff66bd4dc17bfd5a`)
-- le slug (**ex:**  `mon-dataset)
+- le slug (**ex:**  `mon-dataset`)
 
 Par exemple, un dataset `5bbb6d6cff66bd4dc17bfd5a`dont le slug est `mon-dataset`, vous pouvez accéder à l'URL `$API/datasets/<dataset>`, par:
 - `$API/datasets/5bbb6d6cff66bd4dc17bfd5a`
 - `$API/datasets/mon-dataset`
 
-Attention toutefois, le slug d'un objet peut-être ammené à changé si le producteur change le nom de l'objet alors que l'identifiant technique ne change jamais. Il est donc préférable d'utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.
+**Attention** toutefois, le slug d'un objet peut-être ammené à changé si le producteur change le nom de l'objet alors que l'identifiant technique ne change jamais. Il est donc préférable d'utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.
 
 ### Listes simples
 
@@ -111,4 +111,4 @@ Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce 
 
 ## Documentation de référence
 
-Le point d'entrée racine de l'API est <https://www.data.gouv.fr/apidoc/>.
+Vous pouvez consulter la documentation de référence complète de l'API [ici]({{ site.baseurl }}{% link _api/reference.md %})
