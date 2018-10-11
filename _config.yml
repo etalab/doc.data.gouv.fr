@@ -10,6 +10,7 @@ github_repository: etalab/doc.data.gouv.fr
 url: https://doc.data.gouv.fr
 
 lang: fr
+permalink: pretty
 
 i18n:
   en:
@@ -40,6 +41,7 @@ collections:
     title: API
     output: true
     order: 2
+
 
 
 defaults:
