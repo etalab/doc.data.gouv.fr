@@ -7,6 +7,9 @@ options:
     displayOperationId: true
     docExpansion: none
 ---
+
+# Documentation de référence de l'API
+
 Ceci est la documentation de référence de l'API de [data.gouv.fr](https://www.data.gouv.fr).
 Elle est auto-générée et reflète exactement ce qui est effectivement en production.
 
