@@ -2,9 +2,12 @@
 title: Gestion d'un jeu de données
 order: 3
 snippets_types:
-    sh:
+    curl.sh:
         label: CURL
-        syntax: console
+        syntax: bash
+    httpie.sh:
+        label: HTTPie
+        syntax: bash
     py:
         label: Python
         syntax: python
@@ -36,14 +39,7 @@ Tous les examples qui suivent sont réalisé avec un compte:
 
 Ils utilisent les conventions suivantes pour chaque language:
 
-{% snippets convention %}
-
-### CURL
-{% highlight bash %}{% include_relative convention.sh %}{% endhighlight %}
-
-### Python
-{% highlight python %}{% include_relative convention.py %}{% endhighlight %}
-
+{% snippets api/convention %}
 
 ## Création d'un jeu de données
 
@@ -52,12 +48,7 @@ Pour créer un jeu de données, nous allons utiliser successivement ces API:
 - [création d'une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource)
 - [envoi d'une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_new_dataset_resource)
 
-### CURL
-{% highlight bash %}{% include_relative create-dataset.sh %}{% endhighlight %}
-
-### Python
-{% highlight python %}{% include_relative create-dataset.py %}{% endhighlight %}
-
+{% snippets api/create-dataset %}
 
 ## Modification d'un jeu de données
 

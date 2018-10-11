@@ -1,5 +1,3 @@
-# require 'jekyll/tags/highlight'
-
 module Jekyll
   class SnippetsTag < Liquid::Tag
     def initialize(tag_name, text, tokens)
@@ -11,7 +9,7 @@ module Jekyll
       page = context['page']
       types = page['snippets_types']
       out = '<div class="tabs">'
-      basename = File.join(File.dirname(page['path']), @text)
+      basename = File.join('snippets', @text)
       glob_snippets(basename, types).each_with_index { |row, index|
         out << render_tab(row['label'], row['filename'], row['syntax'], index == 0)
       }

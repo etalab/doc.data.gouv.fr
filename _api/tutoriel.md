@@ -155,11 +155,10 @@ Si vous tentez de modifier une ressource sans le token d'authentification, une e
 ```console
 $ http PUT $API'organizations/organization-uri-x/'
 ```
-```HTTP
+```json
 HTTP/1.1 401 UNAUTHORIZED
 ... LOTS OF HEADERS ...
-```
-```json
+
 {
     "message": "Unauthorized",
     "status": 401
@@ -171,11 +170,10 @@ Vous devez spécifier votre Clé d'API (voir ci-dessus) et utiliser le header HT
 ```console
 $ http PUT $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here
 ```
-```HTTP
+```json
 HTTP/1.1 401 UNAUTHORIZED
 ... LOTS OF HEADERS ...
-```
-```json
+
 {
     "message": "Invalid API Key",
     "status": 401
@@ -183,11 +181,10 @@ HTTP/1.1 401 UNAUTHORIZED
 ```
 C'est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d'API. C'est un autre message d'erreur potentiel que vous pouvez rencontrer.
 
-```HTTP
+```json
 HTTP/1.1 403 FORBIDDEN
 ... LOTS OF HEADERS ...
-```
-```json
+
 {
     "message": "You do not have the permission to modify that object.",
     "status": 403
@@ -196,7 +193,7 @@ HTTP/1.1 403 FORBIDDEN
 
 Cela arrive si vous essayez d'accéder à une ressource que vous ne pouvez éditer avec vos accréditations. Si votre clé est valide vous devriez obtenir quelque chose comme ça:
 
-```HTTP
+```json
 HTTP/1.1 200 OK
 ... LOTS OF HEADERS ...
 
