@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Découvrir l’OpenData en tant que réutilisateur</title>
+    <meta name="description" content="Découvrir l’OpenData en tant que réutilisateur" />
+
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
+    <link rel="canonical" href="https://doc.data.gouv.fr/faq/reutilisateur.html" />
+    <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
+</head>
+
+
+  <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-search">
+          <title>search</title>
+          <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+        </symbol>
+
+        <symbol id="icon-mail">
+          <title>mail</title>
+          <path d="M29,4l-26,0c-1.65,0 -3,1.35 -3,3l0,20c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-20c0,-1.65 -1.35,-3 -3,-3Zm-16.539,13.199l-8.461,6.59l0,-15.676l8.461,9.086Zm-6.949,-9.199l20.976,0l-10.488,7.875l-10.488,-7.875l0,0Zm7.278,9.553l3.21,3.447l3.21,-3.447l6.58,8.447l-19.579,0l6.58,-8.447l-0.001,0Zm6.749,-0.354l8.461,-9.086l0,15.676l-8.461,-6.59Z"/>
+        </symbol>
+
+        <symbol id="icon-fb">
+          <title>facebook</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l13,0l0,-14l-4,0l0,-4l4,0l0,-2c0,-3.306 2.694,-6 6,-6l4,0l0,4l-4,0c-1.1,0 -2,0.9 -2,2l0,2l6,0l-1,4l-5,0l0,14l9,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Z"/>
+        </symbol>
+
+        <symbol id="icon-github">
+          <title>github</title>
+          <path d="M16,0.395c-8.836,0 -16,7.163 -16,16c0,7.069 4.585,13.067 10.942,15.182c0.8,0.148 1.094,-0.347 1.094,-0.77c0,-0.381 -0.015,-1.642 -0.022,-2.979c-4.452,0.968 -5.391,-1.888 -5.391,-1.888c-0.728,-1.849 -1.776,-2.341 -1.776,-2.341c-1.452,-0.993 0.11,-0.973 0.11,-0.973c1.606,0.113 2.452,1.649 2.452,1.649c1.427,2.446 3.743,1.739 4.656,1.33c0.143,-1.034 0.558,-1.74 1.016,-2.14c-3.554,-0.404 -7.29,-1.777 -7.29,-7.907c0,-1.747 0.625,-3.174 1.649,-4.295c-0.166,-0.403 -0.714,-2.03 0.155,-4.234c0,0 1.344,-0.43 4.401,1.64c1.276,-0.355 2.645,-0.532 4.005,-0.539c1.359,0.006 2.729,0.184 4.008,0.539c3.054,-2.07 4.395,-1.64 4.395,-1.64c0.871,2.204 0.323,3.831 0.157,4.234c1.026,1.12 1.647,2.548 1.647,4.295c0,6.145 -3.743,7.498 -7.306,7.895c0.574,0.497 1.085,1.47 1.085,2.963c0,2.141 -0.019,3.864 -0.019,4.391c0,0.426 0.288,0.925 1.099,0.768c6.354,-2.118 10.933,-8.113 10.933,-15.18c0,-8.837 -7.164,-16 -16,-16l0,0Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Zm-20.281,25.975c-1.5,0 -2.719,-1.206 -2.719,-2.706c0,-1.488 1.219,-2.712 2.719,-2.712c1.506,0 2.719,1.225 2.719,2.712c0,1.5 -1.219,2.706 -2.719,2.706Zm6.825,0.025c0,-2.556 -0.994,-4.962 -2.794,-6.762c-1.806,-1.806 -4.2,-2.8 -6.75,-2.8l0,-3.912c7.425,0 13.475,6.044 13.475,13.475l-3.931,0l0,-0.001Zm6.944,0c0,-9.094 -7.394,-16.5 -16.481,-16.5l0,-3.912c11.25,0 20.406,9.162 20.406,20.413l-3.925,0l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path id="Checked-Icon" d="M13.23,0.307l-8.118,8.197l-3.345,-3.384c-0.405,-0.408 -1.06,-0.408 -1.464,0c-0.404,0.408 -0.404,1.071 0,1.479l4.055,4.101c0.208,0.21 0.481,0.31 0.754,0.305c0.272,0.005 0.545,-0.095 0.753,-0.305l8.829,-8.915c0.404,-0.408 0.404,-1.07 0,-1.478c-0.404,-0.409 -1.06,-0.409 -1.464,0Z"/>
+        </symbol>
+
+        <symbol id="icon-twitter">
+          <title>twitter</title>
+          <path d="M32,7.075c-1.175,0.525 -2.444,0.875 -3.769,1.031c1.356,-0.813 2.394,-2.1 2.887,-3.631c-1.269,0.75 -2.675,1.3 -4.169,1.594c-1.2,-1.275 -2.906,-2.069 -4.794,-2.069c-3.625,0 -6.563,2.938 -6.563,6.563c0,0.512 0.056,1.012 0.169,1.494c-5.456,-0.275 -10.294,-2.888 -13.531,-6.862c-0.563,0.969 -0.887,2.1 -0.887,3.3c0,2.275 1.156,4.287 2.919,5.463c-1.075,-0.031 -2.087,-0.331 -2.975,-0.819c0,0.025 0,0.056 0,0.081c0,3.181 2.263,5.838 5.269,6.437c-0.55,0.15 -1.131,0.231 -1.731,0.231c-0.425,0 -0.831,-0.044 -1.237,-0.119c0.838,2.606 3.263,4.506 6.131,4.563c-2.25,1.762 -5.075,2.813 -8.156,2.813c-0.531,0 -1.05,-0.031 -1.569,-0.094c2.913,1.869 6.362,2.95 10.069,2.95c12.075,0 18.681,-10.006 18.681,-18.681c0,-0.287 -0.006,-0.569 -0.019,-0.85c1.281,-0.919 2.394,-2.075 3.275,-3.394l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-googleplus">
+          <title>google +</title>
+          <path d="M29 0H3C1.35 0 0 1.35 0 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM12 24c-4.425 0-8-3.575-8-8s3.575-8 8-8c2.162 0 3.969.787 5.363 2.094l-2.175 2.088c-.594-.569-1.631-1.231-3.188-1.231-2.731 0-4.963 2.263-4.963 5.05s2.231 5.05 4.963 5.05c3.169 0 4.356-2.275 4.538-3.45h-4.537v-2.744h7.556c.069.4.125.8.125 1.325 0 4.575-3.063 7.819-7.681 7.819L12 24zm16-8h-2v2h-2v-2h-2v-2h2v-2h2v2h2v2z" fill="#fff" fill-rule="nonzero"/>
+        </symbol>
+
+        <symbol id="icon-cross">
+            <title>cross</title>
+            <path d="M10 0c5.519 0 10 4.481 10 10s-4.481 10-10 10S0 15.519 0 10 4.481 0 10 0zm3.975 7.56a4.673 4.673 0 0 0-1.535-1.535L10 8.465l-2.44-2.44A4.673 4.673 0 0 0 6.025 7.56L8.465 10l-2.44 2.44c.384.625.91 1.151 1.535 1.535l2.44-2.44 2.44 2.44a4.673 4.673 0 0 0 1.535-1.535L11.535 10l2.44-2.44z"/>
+        </symbol>
+      </defs>
+    </svg>
+      
+<header class="navbar">
+  <div class="navbar__container">
+    <a class="navbar__home" href="/">
+      <img class="navbar__logo" src="/assets/images/logo-marianne.svg"
+        alt="Data.gouv.fr Docs" /><span class="navbar__domain">doc</span><img src="/assets/images/pointdatagouvfr.svg" class="navbar__gouvfr" alt="gouv.fr" />
+    </a>
+    
+    <nav>
+      <ul class="nav__links">
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">data.gouv.fr - documentation</h1>
+  </div>
+</div>
+
+<section class="documentation">
+  <nav class="side-pane">
+  <ul class="side-pane__menu">
+    
+    
+        
+        <li class="side-pane__title"><h3></h3></li>
+        
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Découvrir l'OpenData</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/faq/citoyen.html">En tant que citoyen</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/developpeur.html">En tant que développeur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/integrateur.html">En tant qu’intégrateur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/producteur.html">En tant que producteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/profils-d-acheteur.html">En tant que profil d’acheteur</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/faq/reutilisateur.html">En tant que réutilisateur</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>API</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/api/intro.html">Introduction</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/tutoriel.html">Tutoriel</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/dataset-workflow.html">Gestion d&#39;un jeu de données</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/reference.html">Référence</a>
+        
+        
+    
+  </ul>
+</nav>
+
+  <div class="main-pane">
+    <div class="markdown">
+      <h1 id="découvrir-lopendata-en-tant-que-réutilisateur">Découvrir l’OpenData en tant que réutilisateur</h1>
+
+<p>Cette page contient :</p>
+
+<ul>
+  <li><a href="#transform">la transformation des données</a></li>
+  <li><a href="#dataviz">les outils pour les datavisualisations</a></li>
+  <li><a href="#opendatacamps">l’explication des OpenDataCamps</a></li>
+</ul>
+
+<p><span id="transform"></span></p>
+
+<h2 id="quest-ce-quune-réutilisation-des-données-publiques-">Qu’est ce qu’une réutilisation des données publiques ?</h2>
+
+<p>Depuis 2005, la loi relative à la liberté d’accès aux documents administratifs et à la réutilisation des informations publiques, prévoit la possibilité de réutiliser les informations publiques à d’autres fins que celles pour lesquelles elles sont détenues ou élaborées. Si leur obtention occasionne un coût pour l’administration (recherche, traitement automatisé…), ou si elle souhaite obtenir une rémunération de ses droits de propriété intellectuelle, celle-ci peut demander le paiement d’une redevance après avoir conclu une licence de réutilisation (préalable obligatoire).</p>
+
+<p>En conformité au principe général de réutilisation libre, facile et gratuite fixé par les circulaires du Premier ministre du 26 mai 2011 et du 13 septembre 2013 relatives à l’ouverture des données publiques, Etalab est engagée à promouvoir la réutilisation des données publiques ouvertes par le biais d’actions spécifiques.</p>
+
+<p>Exemples :</p>
+
+<ul>
+  <li>le concours <a href="https://www.data.gouv.fr/fr/dataconnexions">Dataconnexions</a>, organisé par <a href="https://www.etalab.gouv.fr">Etalab</a>, qui récompense les projets les plus innovants réutilisant des données publiques ;</li>
+  <li>la plateforme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » qui héberge 1299 réutilisations.</li>
+</ul>
+
+<h3 id="lintérêt-de-réutiliser-des-données-publiques-ouvertes">L’intérêt de réutiliser des données publiques ouvertes</h3>
+
+<p>La diversité des champs d’application de la politique d’ouverture des données est assez large. En réutilisant des jeux de données publiques, tout le monde peut créer des applications, des services ou des visualisations de données interactives. Ces réutilisations permettent, par exemple, d’améliorer l’action d’un service public ou de résoudre un problème.</p>
+
+<p>Exemples :</p>
+
+<ul>
+  <li><a href="https://www.data.gouv.fr/fr/datasets/produits-alimentaires-ingredients-nutrition-labels/">Open Food Facts</a>
+est une base de données ouverte sur les produits alimentaires du monde entier.
+Elle permet de décrypter les étiquettes (ingrédients, codes des additifs comme E150d, huile de palme, allergènes)
+et de comparer facilement les produits entre eux (apports nutritionnels, provenance et circuits de fabrication…).
+Il suffit de scanner le code barre avec l’app iPhone, Android ou Windows Phone
+pour obtenir les informations sur un produit ou en ajouter de nouveaux.</li>
+  <li><a href="https://www.data.gouv.fr/fr/reuses/medicatio/">Medica.io</a>
+a pour but d’améliorer l’accessibilité des informations liées aux médicaments disponibles en vente,
+afin d’accompagner le consommateur dans sa démarche préliminaire
+et de l’aider à mieux s’informer avant d’en discuter avec son pharmacien ou médecin.
+En réutilisant la « base de données publique des médicaments »
+et « le Fichier national des établissements sanitaires et sociaux (FINESS) »,
+la plateforme propose tout un ensemble de services qui visent à répondre aux différentes interrogations
+pouvant être soulevées durant cette démarche :
+Peut-on associer certains médicaments entre eux sans risque ?
+Où trouver une pharmacie de garde cette nuit ?</li>
+  <li><strong>City</strong> est un projet de représentation de la ville en 3D sur le Web. Les applications sont multiples:
+permettre de communiquer le plan local d’urbanisme aux citoyens,
+cartographier les sous-sols pour faire des travaux plus efficaces,
+représenter les transports publics en temps réel, proposer une modification de sa maison…
+Les modèles 3D urbains existent mais nécessitent des logiciels propriétaires et de grosses ressources.
+Le projet prouve qu’il est possible de mettre à disposition toute une métropole
+(ici la communauté urbaine de Bordeaux) à disposition dans le navigateur (Chrome, pour l’instant).</li>
+</ul>
+
+<h3 id="le-format-des-réutilisations-sur--datagouvfr-">Le format des réutilisations sur « <a href="https://www.data.gouv.fr">data.gouv.fr</a> »</h3>
+
+<p>Les réutilisations publiées sur « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » peuvent être des fichiers téléchargées directement (cartes, tableaux, graphiques, etc) sur le site web ou des liens qui redirigent le visiteur à voir la réutilisation (vers le site web de start-ups, l’AppStore, GooglePlay, etc).</p>
+
+<h2 id="comment-transformer-les-données-">Comment transformer les données ?</h2>
+
+<p>La donnée brute est souvent de qualité moyenne (informations manquantes, libellés à harmoniser… ),
+ou doit être enrichie (par exemple en transformant un code postal en coordonnées GPS), ou encore jointe à d’autres données (par exemple en divisant le tonnage de déchêts par le nombre d’habitants), avant de pouvoir la traiter, notamment au travers d’un <a href="#dataviz">outillage pour les datavisualisations</a>. Parfois, elle doit être extraite de documents fermés, et nécessite par exemple d’<a href="http://www.open-contracting.org/exploring_senegal_public_procurements_how_we_turned_pdf_files_into_browsable_data">extraire des données PDF</a> ou d’<a href="http://tools.daemonservices.com/html_to_csv/">extraire des données tabulaires à partir de pages Web</a>.</p>
+
+<p>Une fois dans un format tabulaire (tableur, fichier texte, etc.) ou dans un format structuré (XML, JSON, RDF, …), <a href="http://openrefine.org/">OpenRefine</a> est un outil gratuit qui vous permettra de réaliser des transformations complexes dans vos séries de données.</p>
+
+<p><strong>Note</strong> : si vous travaillez sur des bases de données de plusieurs dizaines de Mo,
+effectuez le <a href="https://github.com/OpenRefine/OpenRefine/wiki/FAQ%3A-Allocate-More-Memory">paramétrage suivant</a>.</p>
+
+<h3 id="fusionner-plusieurs-fichiers-en-une-seule-base-de-données">Fusionner plusieurs fichiers en une seule base de données</h3>
+
+<p>Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par <a href="http://openrefine.org/">OpenRefine</a>. Lancer l’outil et “créer un nouveau projet”. Dans la boîte de dialogue “sélectionner les fichiers”, sélectionner tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100. <a href="http://openrefine.org/">OpenRefine</a> va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne “département” ou “année”). Une fois vérifié, sélectionner “Export” et exporter votre base fusionnée au format CSV ou XLS.</p>
+
+<h3 id="travailler-à-plusieurs-sur-une-même-base-de-données">Travailler à plusieurs sur une même base de données</h3>
+
+<p>Il existe des tableurs en ligne qui permettent un travail collaboratif sur une seule et unique base de données. Notons notamment ces outils gratuits : <a href="https://framacalc.org/">Framacalc</a>, <a href="https://docs.google.com/">Google Docs</a> ou <a href="https://www.zoho.com/docs/">Zoho Docs</a>. Une fois votre travail terminé, vous pouvez l’exporter dans un fichier tableur classique, ou simplement utiliser son URL, en veillant à limiter les droits d’édition à vous seul.</p>
+
+<h3 id="géocoder-des-adresses">Géocoder des adresses</h3>
+
+<p>La <a href="https://adresse.data.gouv.fr/">Base Adresse Nationale (BAN)</a> propose un outil permettant de géocoder rapidement des données au format CSV.</p>
+
+<p><a href="https://adresse.data.gouv.fr/csv/">Le formulaire disponible en ligne</a> permet d’envoyer un fichier pour géocodage
+avec une limite d’approximativement 10000 adresses maximum.</p>
+
+<p>Une <a href="https://adresse.data.gouv.fr/api/">API publique</a> permet de géocoder les adresses une à une ou en lot
+(<a href="https://adresse.data.gouv.fr/api/">voir documentation de l’API</a>).</p>
+
+<p>L’IGN propose par ailleurs <a href="http://logiciels.ign.fr/?-Visualiseur-d-adresses-">un logiciel Windows gratuit</a> permettant de visualiser des données adresse, de les géocoder avec une précision à la plaque adresse grâce à la <a href="https://professionnels.ign.fr/bdadresse">BD Adresse</a>. Le résultat peut être imprimé ou exporté au format kml pour une exploitation dans de nombreux outils de visualisation.</p>
+
+<p>Les conditions d’utilisation sont adaptées à l’exploitation des données de « <a href="https://www.data.gouv.fr">data.gouv.fr</a> »
+puisque le résultat du géocodage de fichiers est librement réutilisable dès lors que les fichiers
+résultants sont republiés sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">Licence ouverte</a>.</p>
+
+<h3 id="transformer-des-données-géographiques-en-fichiers-texte-ou-kml">Transformer des données géographiques en fichiers texte ou kml</h3>
+
+<p>L’IGN propose <a href="https://logiciels.ign.fr/?-IGNMap,12-">IGN Map</a>, un logiciel gratuit permettant de visualiser des fichiers disponibles
+dans l’un des nombreux formats géographiques proposés sur « <a href="https://www.data.gouv.fr">data.gouv.fr</a> ».
+Pour traiter un fichier shapefile (.shp), il faut choisir <code class="highlighter-rouge">Fichier/Importer/Import d’un fichier Shapefile</code>. Pour un flux WMS, il faut choisir <code class="highlighter-rouge">Fichier/Importer/Connexion WMS</code>.</p>
+
+<p>Les fichiers, une fois ouverts, peuvent être inspectés, prévisualisés et exportés au format kml en vue d’être facilement exploités dans des outils de visualisation. IGN Map assure également la reprojection des données depuis des projections telles que le Lambert-93 vers des latitudes et longitudes.</p>
+
+<h3 id="transcoder-des-codes-postaux-en-codes-insee">Transcoder des codes postaux en codes INSEE</h3>
+
+<p>Cas classique : un fichier de données se présente en codification “Code Postal”,
+alors que le système de visualisation en carte attend des <a href="https://www.insee.fr/fr/methodes/nomenclatures/cog/">codes INSEE</a>.
+Pour transcoder des codes postaux en code INSEE
+(issu du <a href="https://github.com/OpenRefine/OpenRefine/wiki/Fetching-URLs-From-Web-Services">tutorial OpenRefine</a>) :</p>
+
+<ul>
+  <li>Add column by fetching URL, avec l’expression
+(diminuer l’intervalle entre 2 requêtes à 30 ms, par défaut il est réglé à 5 secondes) :
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"http://ou.comarquage.fr/api/v1/territory?kind=CommuneOfFrance&amp;postal_code="+value
+</code></pre></div>    </div>
+  </li>
+  <li>Puis <code class="highlighter-rouge">Edit Cell -&gt; Transform</code>, pour extraire le code INSEE du flux JSON avec l’expression
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"items"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"code"</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"items"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"code"</span><span class="p">],</span> <span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"code"</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="transformer-des-noms-de-commune-en-coordonnées-latitude-longitude">Transformer des noms de commune en coordonnées latitude-longitude</h3>
+
+<p>Là encore, même procédure en sélectionnant la colonne “nom de la commune” :</p>
+
+<ul>
+  <li>Add column by fetching URL, avec l’expression
+(diminuer l’intervalle entre 2 requêtes à 30 ms, par défaut il est réglé à 5 secondes) :
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"http://ou.comarquage.fr/api/v1/autocomplete-territory?&amp;term="+escape(value, "url")
+</code></pre></div>    </div>
+  </li>
+  <li>Puis <code class="highlighter-rouge">Edit Column -&gt; Add column based this column</code>, avec l’expression
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"items"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"latitude"</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"items"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"latitude"</span><span class="p">],</span> <span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"latitude"</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Puis <code class="highlighter-rouge">Edit Column -&gt; Add column based on this column</code>, avec l’expression
+    <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"items"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"longitude"</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"items"</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">"longitude"</span><span class="p">],</span> <span class="nx">value</span><span class="p">.</span><span class="nx">parseJson</span><span class="p">()[</span><span class="s2">"data"</span><span class="p">][</span><span class="s2">"longitude"</span><span class="p">])</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="géocoder-précisément-des-adresses">Géocoder précisément des adresses</h3>
+
+<p>Dans <a href="http://openrefine.org/">OpenRefine</a>, sélectionner la colonne “Adresse” de votre fichier :
+<code class="highlighter-rouge">Add column by fetching URL</code>, avec l’expression
+(diminuer l’intervalle entre 2 requêtes à 30 ms, par défaut il est réglé à 5 secondes) :</p>
+
+<ul>
+  <li>Si il existe une colonne <code class="highlighter-rouge">CP</code> contenant le code postal:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"http://ou.comarquage.fr/api/v1/geocode?postal_code="+cells["CP"].value+"&amp;street_address="+escape(value, "url")
+</code></pre></div>    </div>
+  </li>
+  <li>Si il existe une colonne <code class="highlighter-rouge">INSEE</code> contenant le code INSEE:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"http://ou.comarquage.fr/api/v1/geocode?code="+cells["INSEE"].value+"&amp;street_address="+escape(value, "url")
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="transformer-des-données-shape-shp-en-geojson">Transformer des données Shape (SHP) en GeoJSON</h3>
+
+<p>Les fichiers des outils géomatiques ne s’ouvrent pas aisément dans l’univers Internet, il faut les convertir en <a href="http://geojson.org/">GeoJSON</a>. Un convertisseur en ligne, <a href="http://ogre.adc4gis.com/">OGRE</a> permet simplement cette conversion. Utiliser EPSG:4326 comme système de projection cible (Target SRS). Le GeoJSON obtenu peut ensuite être intégré sur une carte OpenStreet Map grâce à l’outil <a href="https://umap.openstreetmap.fr/fr">uMap</a> en cliquant sur le bouton en forme de flèche “Importer des données” à droite.</p>
+
+<h3 id="transformer-les-fichiers-électoraux-du-ministère-de-lintérieur">Transformer les fichiers électoraux du ministère de l’Intérieur</h3>
+
+<p>Lorsque l’offre électorale n’est pas similaire sur l’ensemble du territoire, les fichiers de résultats électoraux diffusés par le Ministère de l’Intérieur ne sont pas tabulaires. Joël Gombin a développé <a href="https://github.com/joelgombin/LireMinInterieur/">un package sous R</a> pour transformer ces fichiers en données tabulaires, en agrégeant les résultats par nuance politique.</p>
+
+<p><span id="dataviz"></span></p>
+<h2 id="quels-outils-pour-les-datavisualisations-">Quels outils pour les datavisualisations ?</h2>
+
+<p>Une série de données peut souvent faire l’objet d’une représentation graphique, sous différentes formes, que nous détaillons ici. Avant d’utiliser un de ces moteurs de rendus, vous devrez peut-être transformer des données pour les nettoyer ou les enrichir.</p>
+
+<h3 id="des-graphiques-simples">Des graphiques simples</h3>
+
+<p><img src="/img/faq/outils/800px-Evolutionbio.png" alt="Évolution du nombre d’opérateurs bio" />
+<em>Exemple : évolution du nombre d’opérateurs bio</em></p>
+
+<p>Les tableurs du marché (<strong>OpenOffice Calc</strong>, <strong>Excel</strong>, <strong>Google Spreadsheet</strong>…) permettent de réaliser rapidement des graphiques classiques, comme des histogrammes ou des camemberts.
+Voir par exemple le <a href="http://www.data.gouv.fr/fr/datasets/agriculture-biologique-2008-2011-nombre-d-operateurs-engages-en-agriculture-biologique-30378896/">Nombre d’acteurs engagés dans l’agriculture bio</a>.</p>
+
+<p>Une fois votre graphique réalisé dans votre tableur, cliquez avec le bouton droit et sélectionner “Enregistrer en tant qu’image”. Publiez cette image sur un site Web, comme un blog, ou un dossier Public. Des outils strictement en ligne comme <a href="https://www.datawrapper.de/">DataWrapper</a> vous permettent également de partager en quelques clics un graphique en ligne. Il suffit de se créer un compte et de copier/coller les données issues du tableur…</p>
+
+<p>Vous pouvez alors créer un <strong>Elément lié</strong> dans le jeu de données concerné par votre visualisation. N’oubliez pas de renseigner un titre concis et clair, et une description permettant aux Internautes de découvrir votre travail.</p>
+
+<h3 id="des-cartes">Des cartes</h3>
+
+<p>Des cartes synthétiques par commune, département, région.</p>
+
+<p><img src="/img/faq/outils/PAC2012.jpg" alt="Carte de France de l’intensité des aides PAC par département" />
+<em>Exemple : Carte de France de l’intensité des aides PAC par département</em></p>
+
+<p><a href="https://franceo3.geoclip.fr/">FranceO3</a> permet de réaliser des cartes interactives et de les publier gratuitement.
+Cette solution charge <strong>une valeur par niveau d’agrégation</strong>
+(par exemple une dépense par commune, un nombre de naissance par département ou par région).</p>
+
+<p>En haut à droite, cliquer sur “Charger”, puis “Charger des données personnelles”. Sélectionner le niveau de granularité souhaité (commune avec arrondissements des grandes villes, département, région) et adaptez vos données sources aux exigences indiquées. Attention, au niveau commune, le moteur attend des codes INSEE, pas de codes postaux. Au niveau département, le moteur attend des numéros, pas des noms (et des ’01, ’09 pour les premiers départements). Enfin, supprimer tout formatage de type %, ne laisser que les chiffres.</p>
+
+<p>Ensuite, copiez-collez-les depuis votre tableur. Exportez votre résultat sous forme d’image A3, ou mieux, sous forme de carte interactive : avant la visualisation, sélectionner “Sauvegarder mon travail au format TJS”, et déposez le fichier généré (XML) sur un site Web, un blog ou un répertoire partagé. L’URL de votre dataviz est alors
+<code class="highlighter-rouge">http://franceo3.geoclip.fr/index.php?tjs_file=http://monsite.fr/toto.xml</code>.</p>
+
+<p>Il est aussi possible de charger des données ponctuelles, à partir de fichiers de points localisés par leurs coordonnées géographiques. La procédure d’import par copier-coller est similaire à celle de l’import de données localisées à partir d’un code géographique (code commune, code postal, code département…)</p>
+
+<p>Plus de détails :
+<a href="http://geoclip.fr/aide/o3/fr/geoclip_o3_utilisateur.htm">toute la documentation Geoclip</a>.</p>
+
+<h3 id="des-cartes-affichant-des-points-dintérêt">Des cartes affichant des points d’intérêt</h3>
+
+<p>Il s’agit d’afficher des points géocodés par adresse ou coordonnées latitude-longitude.
+Plusieurs solutions sont disponibles.</p>
+
+<p><img src="/img/faq/outils/800px-CartePOI.png" alt="Carte des immeubles protégés 1/2" />
+<em>Exemple : carte des immeubles protégés 1/2</em></p>
+
+<p><a href="https://www.batchgeo.com/fr/">Batchgeo</a> est une solution rapide et efficace pour copier/coller jusqu’à 250 points
+(un compte pro est nécessaire pour aller au-delà), en disposant simplement de leur adresse.
+Explorer les options avancées vous permet notamment de regrouper les points à forte densité,
+ou selon une de vos données (par exemple l’année de construction). Prenez le temps de travailler sur un échantillon pour valider le géocodage de vos données avant de lancer la totalité.</p>
+
+<p><img src="/img/faq/outils/800px-TileMill.png" alt="Carte des immeubles protégés 2/2" />
+<em>Exemple : carte des immeubles protégés 2/2</em></p>
+
+<p><a href="https://www.mapbox.com/">MapBox</a> permet de publier des cartes simplement. Pour importer de nombreux points, il faudra installer <a href="https://tilemill-project.github.io/tilemill/">TileMill</a>, un outil Mac/PC/Linux gratuit. Ajouter une “layer” (menu en bas à gauche) qui va utiliser votre source de données (elle doit contenir une colonne latitude et une colonne longitude) et cliquer sur “Save &amp; Style”. Attention utiliser l’option <code class="highlighter-rouge">encoding="cp1252"</code> dans l’import si vous exportez un fichier TXT Windows depuis Excel par exemple. Dans le menu en bas à gauche, sélectionner la “main” permet d’ajouter des labels sur vos points, en mode Rollover et au clic. Une fois votre travail terminé, le sauvegarder (attention à la taille du fichier) et l’exporter vers votre compte MapBox pour la diffuser, comme <a href="https://a.tiles.mapbox.com/v3/ppezziardi.z982gldi/default.html?secure=1#2/0/0">cet exemple</a>.</p>
+
+<h3 id="des-cartes-affichant-des-points-des-zones">Des cartes affichant des points, des zones</h3>
+
+<p><img src="/img/faq/outils/800px-OSM-cadastre.png" alt="Périmètres des monuments historiques Haut-Rhin" />
+<em>Périmètres des monuments historiques Haut-Rhin</em></p>
+
+<p><a href="https://umap.openstreetmap.fr/fr">uMap</a> permet de créer des cartes personnalisées sur des fonds OpenStreetMap en un instant.
+<a href="https://umap.openstreetmap.fr/fr">uMap</a> offre également la possibilité d’afficher votre carte sur votre site.
+Après avoir créé une carte pour votre projet, vous pourrez importer votre jeu de données depuis un fichier (formats supportés : geojson, csv, gpx, kml, osm), personnaliser les options d’affichage et sauvegarder votre carte dans un espace personnel. En particulier, il est très simple de changer de fonds de carte, y compris ceux distribués par l’IGN.</p>
+
+<p>Pour obtenir le fond de carte cadstral par exemple, dans “Editer les paramètres”, “Fonds de carte Custom” : indiquer l’URL <code class="highlighter-rouge">http://wxs.ign.fr/rmd2sk63vgo9ohhx0n2m0h3u/geoportail/wmts?SERVICE=WMTS&amp;REQUEST=GetTile&amp;VERSION=1.0.0&amp;LAYER=CADASTRALPARCELS.PARCELS&amp;STYLE=normal&amp;TILEMATRIXSET=PM&amp;TILEMATRIX={z}&amp;TILEROW={y}&amp;TILECOL={x}&amp;FORMAT=image%2Fpng</code>
+(il est possible de remplacer CADASTRALPARCELS.PARCELS par
+un des <a href="http://api.ign.fr/tech-docs-js/fr/webmaster/layers.html">fonds de carte IGN</a>.
+<em>Attention à penser à modifier l’extension de image/png de l’exemple en image/jpeg pour les couches ortho et scan</em>).</p>
+
+<p><a href="https://umap.openstreetmap.fr/fr">uMap</a> est aussi un logiciel libre,
+et vous pouvez donc installer votre propre instance sur vos serveurs et la personnaliser.</p>
+
+<p>Exemples d’utilisation :
+<a href="http://umap.openstreetmap.fr/fr/map/perimetres-monuments-historiques-sur-fond-cadastra_8355#11/48.0934/7.3193">périmètres des monuments historiques Haut-Rhin</a>,
+<a href="http://www.fao.org/emergencies/crisis/philippines-typhoon-haiyan/crop-damages-map/en/">carte de dommages aux cultures</a>,
+<a href="http://umap.openstreetmap.fr/fr/map/bureaux-de-vote-oullins_4039#16/45.7135/4.8042">bureaux de vote de la commune d’Oullins</a></p>
+
+<p><img src="/img/faq/outils/Heatmap-salons-coiffure-paris-opendatasoft.png" alt="répartition des salons de coiffure à Paris" />
+<em>Exemple : répartition des salons de coiffure à Paris</em></p>
+
+<p>Un outil de création de cartes interactives mis à disposition par <a href="https://www.opendatasoft.com/">OpenDataSoft</a>
+est disponible sur les portails de
+<a href="http://data.iledefrance.fr/map">la Région Île-de-France</a>,
+<a href="http://opendata.paris.fr/map">la Mairie de Paris</a>,
+<a href="http://data.issy.com/map">la Ville d’Issy-les-Moulineaux</a>,
+<a href="http://data.corse.fr/map">la Collectivité Territoriale de Corse</a>,
+<a href="http://data.enseignementsup-recherche.gouv.fr/map">le Ministère de l’Enseignement Supérieur et de la Recherche</a>
+et <a href="http://ressources.data.sncf.com/map">SNCF</a>.
+Il permet de superposer différents jeux de données avec une configuration fine
+(pictogrammes, clusters, heatmap…).
+Une fois terminée, pour diffuser votre carte, il suffit de copier-coller l’URL indiqué sous “Partager”.</p>
+
+<p><em>Exemple de réutilisation:</em>
+<a href="http://data.iledefrance.fr/map/embed/?layers=W3sidGl0bGUiOiJI9HRlbHMgMSDpdG9pbGUgZW4gSURGIiwicGljdG8iOiJvZHNwaWN0by1zdGFyLTEiLCJjb2xvciI6IiM0NTJCNzIiLCJhY3RpdmVEYXRhc2V0cyI6W3siZGF0YXNldGlkIjoibGVzX2hvdGVsc19jbGFzc2VzX2VuX2lsZS1kZS1mcmFuY2UiLCJjb2xvciI6IiM0NTJCNzIiLCJwaWN0byI6Im9kc3BpY3RvLXN0YXItMSIsImNsdXN0ZXJNb2RlIjoicG9seWdvbiIsImZ1bmMiOiJDT1VOVCIsIm1hcmtlciI6dHJ1ZSwic2VhcmNoUGFyYW1ldGVycyI6eyJyZWZpbmUuY2xhc3NlbWVudCI6IjEg6XRvaWxlIn0sImV4cHIiOiJkZXB0In1dLCJkaXNwbGF5ZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiU291cmNlOlxuaHR0cDovL2RhdGEuaWxlZGVmcmFuY2UuZnIvZXhwbG9yZS9kYXRhc2V0L2xlc19ob3RlbHNfY2xhc3Nlc19lbl9pbGUtZGUtZnJhbmNlLz90YWI9bWV0YXMifSx7InRpdGxlIjoiSPR0ZWxzIDIg6XRvaWxlcyBlbiBJREYiLCJwaWN0byI6Im9kc3BpY3RvLXN0YXItMiIsImNvbG9yIjoiIzEyN0E5NyIsImFjdGl2ZURhdGFzZXRzIjpbeyJkYXRhc2V0aWQiOiJsZXNfaG90ZWxzX2NsYXNzZXNfZW5faWxlLWRlLWZyYW5jZSIsImNvbG9yIjoiIzEyN0E5NyIsInBpY3RvIjoib2RzcGljdG8tc3Rhci0yIiwiY2x1c3Rlck1vZGUiOiJwb2x5Z29uIiwiZnVuYyI6IkNPVU5UIiwibWFya2VyIjp0cnVlLCJzZWFyY2hQYXJhbWV0ZXJzIjp7InJlZmluZS5jbGFzc2VtZW50IjoiMiDpdG9pbGVzIn0sImV4cHIiOiJkZXB0In1dLCJkaXNwbGF5ZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiU291cmNlOlxuaHR0cDovL2RhdGEuaWxlZGVmcmFuY2UuZnIvZXhwbG9yZS9kYXRhc2V0L2xlc19ob3RlbHNfY2xhc3Nlc19lbl9pbGUtZGUtZnJhbmNlLz90YWI9bWV0YXMifSx7InRpdGxlIjoiSPR0ZWxzIDMg6XRvaWxlcyBlbiBJREYiLCJwaWN0byI6Im9kc3BpY3RvLXN0YXItMyIsImNvbG9yIjoiIzEzODgwOCIsImFjdGl2ZURhdGFzZXRzIjpbeyJkYXRhc2V0aWQiOiJsZXNfaG90ZWxzX2NsYXNzZXNfZW5faWxlLWRlLWZyYW5jZSIsImNvbG9yIjoiIzEzODgwOCIsInBpY3RvIjoib2RzcGljdG8tc3Rhci0zIiwiY2x1c3Rlck1vZGUiOiJwb2x5Z29uIiwiZnVuYyI6IkNPVU5UIiwibWFya2VyIjp0cnVlLCJzZWFyY2hQYXJhbWV0ZXJzIjp7InJlZmluZS5jbGFzc2VtZW50IjoiMyDpdG9pbGVzIn0sImV4cHIiOiJkZXB0In1dLCJkaXNwbGF5ZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiU291cmNlOlxuaHR0cDovL2RhdGEuaWxlZGVmcmFuY2UuZnIvZXhwbG9yZS9kYXRhc2V0L2xlc19ob3RlbHNfY2xhc3Nlc19lbl9pbGUtZGUtZnJhbmNlLz90YWI9bWV0YXMifSx7InRpdGxlIjoiSPR0ZWxzIDQg6XRvaWxlcyBlbiBJREYiLCJwaWN0byI6Im9kc3BpY3RvLXN0YXItNCIsImNvbG9yIjoiI0ZGNzUxOCIsImFjdGl2ZURhdGFzZXRzIjpbeyJkYXRhc2V0aWQiOiJsZXNfaG90ZWxzX2NsYXNzZXNfZW5faWxlLWRlLWZyYW5jZSIsImNvbG9yIjoiI0ZGNzUxOCIsInBpY3RvIjoib2RzcGljdG8tc3Rhci00IiwiY2x1c3Rlck1vZGUiOiJwb2x5Z29uIiwiZnVuYyI6IkNPVU5UIiwibWFya2VyIjp0cnVlLCJzZWFyY2hQYXJhbWV0ZXJzIjp7InJlZmluZS5jbGFzc2VtZW50IjoiNCDpdG9pbGVzIn0sImV4cHIiOiJkZXB0In1dLCJkaXNwbGF5ZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiU291cmNlOlxuaHR0cDovL2RhdGEuaWxlZGVmcmFuY2UuZnIvZXhwbG9yZS9kYXRhc2V0L2xlc19ob3RlbHNfY2xhc3Nlc19lbl9pbGUtZGUtZnJhbmNlLz90YWI9bWV0YXMifSx7InRpdGxlIjoiSPR0ZWxzIDUg6XRvaWxlcyBlbiBJREYiLCJwaWN0byI6Im9kc3BpY3RvLXN0YXItNSIsImNvbG9yIjoiI0JGMEM0MyIsImFjdGl2ZURhdGFzZXRzIjpbeyJkYXRhc2V0aWQiOiJsZXNfaG90ZWxzX2NsYXNzZXNfZW5faWxlLWRlLWZyYW5jZSIsImNvbG9yIjoiI0JGMEM0MyIsInBpY3RvIjoib2RzcGljdG8tc3Rhci01IiwiY2x1c3Rlck1vZGUiOiJwb2x5Z29uIiwiZnVuYyI6IkNPVU5UIiwibWFya2VyIjp0cnVlLCJzZWFyY2hQYXJhbWV0ZXJzIjp7InJlZmluZS5jbGFzc2VtZW50IjoiNSDpdG9pbGVzIn0sImV4cHIiOiJkZXB0In1dLCJkaXNwbGF5ZWQiOnRydWUsImRlc2NyaXB0aW9uIjoiU291cmNlOlxuaHR0cDovL2RhdGEuaWxlZGVmcmFuY2UuZnIvZXhwbG9yZS9kYXRhc2V0L2xlc19ob3RlbHNfY2xhc3Nlc19lbl9pbGUtZGUtZnJhbmNlLz90YWI9bWV0YXMifV0%3D&amp;viewport=48.206371336358906,0.8184814453125,49.15656228453343,4.3341064453125">carte des hôtels classés en Île-de-France</a>
+(<a href="https://www.data.gouv.fr/dataset/la-carte-des-hotels-classes-en-ile-de-france-idf">Fiche du jeu de données</a>)</p>
+
+<p><a href="https://vimeo.com/84581978">Tutoriel vidéo</a></p>
+
+<p><a href="https://geoplay.fr">GEOPLAY.FR</a> est une application d’illustration cartographique en ligne.</p>
+
+<p><img src="/img/faq/outils/800px-Inventaire_du_patrimoine_Poitou-Charentes.png" alt="Inventaire Poitou-Charentes" />
+<em>Exemple : Inventaire Poitou-Charentes</em></p>
+
+<p>L’utilisation de la version 1.0 est gratuite et fourni les fonctionnalités suivantes:</p>
+
+<ul>
+  <li>Edition de lignes, de polygones et de formes.</li>
+  <li>Edition html simplifiée des marqueurs et légendes.</li>
+  <li>Intégration de points par .csv, .xls, .json, .kml ou placement direct.</li>
+  <li>Intégration d’itinéraires via .kml, .json.</li>
+  <li>Fonds Open Street Map, scriptable (.js), exports autonomes ou .pdf.</li>
+  <li>Géo-localisation des adresses postales via le module bano.</li>
+  <li>Permet de gérer plusieurs milliers de points d’intérêts.</li>
+  <li>Interface graphique et publication instantanée.</li>
+  <li>Multiples vues pour une même carte.</li>
+  <li>Définition des zooms par vues et par marqueurs.</li>
+  <li>Cartes hors ligne totalement indépendantes.</li>
+  <li>Cartes exportables sous forme d’archives.</li>
+</ul>
+
+<p><img src="/img/faq/outils/800px-Inventaire_du_patrimoine_vecteurs.png" alt="Inventaire Poitou-Charentes" />
+<em>Exemple : Inventaire Poitou-Charentes</em></p>
+
+<h3 id="des-infographies-animées">Des infographies animées</h3>
+
+<p><img src="/img/faq/outils/Dependencies.png" alt="Exemple : graphique à bulles" />
+<em>Exemple : graphique à bulles</em></p>
+
+<p>Certaines données correspondent à des séries temporelles qu’il est intéressant de visualiser dynamiquement, par exemple <a href="https://www.google.com/publicdata/explore?ds=z58rtgk6fal3a4_&amp;ctype=b&amp;strail=false&amp;bcs=d&amp;nselm=s&amp;met_y=Concentration&amp;scale_y=lin&amp;ind_y=false&amp;met_x=Exploitations&amp;scale_x=lin&amp;ind_x=false&amp;met_s=Total_aide&amp;scale_s=lin&amp;ind_s=false&amp;idim=Departement:Martinique:Reunion:Guadeloupe:Paris:Val-de-Marne:Guyane:Cotes+d%27Armor:Ille-et-Vilaine:Finistere:Maine-et-Loire&amp;ifdim=Departement&amp;ind=false&amp;icfg&amp;iconSize=0.5&amp;draft">L’intensité des aides de la PAC par année, par département</a>.</p>
+
+<p><a href="https://www.google.com/publicdata/directory">Google Public Data</a> est un outil gratuit permettant de réaliser de telles animations.</p>
+
+<p>Installez l’utilitaire <a href="https://developers.google.com/public-data/docs/dsplgen">DSPLGen</a>
+sur votre Mac ou votre PC.</p>
+
+<p>A partir de vos données, générez votre fichier dataset.xml et ses ressources tel qu’explicité dans le guide. Dans le fichier généré dataset.xml, prenez soin de remplacer les différentes lignes <code class="highlighter-rouge">*** INSERT PROVIDER NAME … ***</code>, <code class="highlighter-rouge">*** INSERT CONCEPT NAME … ***</code> par vos informations.</p>
+
+<p>Ensuite, téléchargez une archive des fichiers générés dans <a href="https://www.google.com/publicdata/directory">votre espace personnel Public Data</a>, en sélectionnant “Mes ensembles de données” dans le menu de gauche, en bas. Une fois le chargement réussi, et la visualisation testée (attention, vérifiez bien que l’URL fonctionne quand votre navigateur n’est pas connecté à Google), n’oubliez pas de la rendre publique en cliquant sur “Sharing Settings” dans le jeu de données.</p>
+
+<h3 id="des-treemaps-des-diagrammes-en-bulle-diagrammes-alluviaux">Des Treemaps, des diagrammes en bulle, diagrammes alluviaux</h3>
+
+<p><img src="/img/faq/outils/Alluvial.png" alt="Exemple : diagramme alluvial" />
+<em>Exemple : diagramme alluvial</em></p>
+
+<p>L’outil RAW par Densitydesign permet de copier/coller très simplement des données issues d’un tableur, et de sélectionner son type de graphique. Le résultat peut être intégré ensuite à une page Web, par copier/coller.</p>
+
+<p><span id="opendatacamps"></span></p>
+<h2 id="quest-ce-quun-open-data-camps-">Qu’est-ce qu’un Open Data Camps ?</h2>
+
+<p>Des passionnés de la donnée se retrouvent une journée entière pour améliorer les données de la plate-forme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> », c’est à dire les mettre en formats ouverts, fusionner des fichiers, détecter des erreurs, produire des visualisations et de nouvelles interprétations. Les travaux engagés aboutiront sur des résultats concrets, donc réalisables et démontrables sur la plate-forme à la fin de la journée.</p>
+
+<p>Vous êtes les acteurs de cette journée : producteurs de données issus de l’administration, datascientists, chercheurs, codeurs, designers, associations, experts du réseau Etalab, et toutes sortes de bonnes volontés travailleront ensemble dans des ateliers qu’ils auront choisis. Si vous possédez un ordinateur portable, n’oubliez pas de venir avec.</p>
+
+<h3 id="règles-du-jeu">Règles du jeu</h3>
+<ul>
+  <li>Les personnes présentes sont les bonnes personnes : 3 participants, c’est cool, 100 participants, c’est cool.</li>
+  <li>Notre <strong>BUT</strong> :
+    <ul>
+      <li>produire ou référencer de nouveaux jeux de données</li>
+      <li>améliorer un jeu de données existant : fusionner des fichiers, enrichir, nettoyer, géocoder, etc.</li>
+      <li>produire et référencer une réutilisation : un site web, un page de blog, une datavisualisation,
+un mini-site Web, une application mobile qui prouve son utilité ..</li>
+    </ul>
+  </li>
+  <li>Chacun peut proposer une <strong>Formation</strong> (démonstration d’un outil, ..)
+ou un <strong>Atelier</strong> (sourcer des données, fabriquer un nouveau jeu de données,
+créer une application exploitant des données)</li>
+  <li>Chacun choisit les ateliers ou les formations auxquels il participe,
+il en change à tout moment (on vote avec ses pieds)</li>
+  <li>Toute personne est une ressource potentielle pour un atelier, accueillez-la avec bienveillance</li>
+  <li>Si vous n’êtes pas d’accord, ne faites pas l’un <strong>ou</strong> l’autre, faites l’un <strong>et</strong> l’autre</li>
+  <li>C’est <strong>cool</strong></li>
+</ul>
+
+<p><a href="http://www.modernisation.gouv.fr/ladministration-change-avec-le-numerique/par-louverture-des-donnees-dans-les-administrations/video-un-open-data-camp-c-est-quoi">Voir la vidéo</a></p>
+
+
+      
+      <p class="edit text-center">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_faq/reutilisateur.md">
+              ✎ Editer cette page
+          </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/assets/images/etalab.svg" alt="Etalab">
+      
+      <ul class="footer__social">
+        
+        <li><a href=""><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+        
+      </ul>
+      
+    </div>
+    
+    <div class="footer__links">
+      
+      <h2>doc.data.gouv.fr</h2>
+      
+      <ul>
+        
+          
+            
+            <li><a href="">Données de référence</a></li>
+          
+        
+          
+            
+            <li><a href="">Condition générales d’utilisation</a></li>
+          
+        
+          
+            
+            <li><a href="">API</a></li>
+          
+        
+      </ul>
+    </div>
+    
+    <div></div>
+  </div>
+</footer>
+
+      
+    <!--  Scripts-->                   
+
+  </body>
+
+</html>

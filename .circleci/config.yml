@@ -1,0 +1,69 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.3-stretch
+
+    working_directory: ~/doc.data.gouv.fr
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install Ruby dependencies
+          command: bundle install
+
+      - run:
+          name: check for deprecations or configuration issues
+          command: bundle exec jekyll doctor
+
+      - run:
+          name: Build website
+          command: bundle exec jekyll build --verbose
+
+      - persist_to_workspace:
+          root: .
+          paths:
+          - _site
+
+  deploy:
+    docker:
+      - image: circleci/python:3.6
+
+    working_directory: ~/doc.data.gouv.fr
+
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "81:43:ff:eb:30:0a:85:4a:a1:cc:34:29:93:8d:6e:89"
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Expose user pip-installed binaries on path
+          command: echo 'export PATH=$HOME/.local/bin:$PATH' >> $BASH_ENV
+      - run:
+          name: Deploy to github pages
+          command: |
+            pip install --user ghp-import
+            cp -R .circleci _site/
+            git config --global user.name CircleCI
+            git config --global user.email circleci@data.gouv.fr
+            ghp-import --cname=doc.data.gouv.fr -m "Deploy doc.data.gouv.fr" --push _site
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      # Build on any branch except github pages
+      - build:
+          filters:
+            branches:
+              ignore: gh-pages
+      # Deploy only on master
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

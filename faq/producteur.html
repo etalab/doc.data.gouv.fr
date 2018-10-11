@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Découvrir l’OpenData en tant que producteur</title>
+    <meta name="description" content="Découvrir l’OpenData en tant que producteur" />
+
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
+    <link rel="canonical" href="https://doc.data.gouv.fr/faq/producteur.html" />
+    <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
+</head>
+
+
+  <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-search">
+          <title>search</title>
+          <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+        </symbol>
+
+        <symbol id="icon-mail">
+          <title>mail</title>
+          <path d="M29,4l-26,0c-1.65,0 -3,1.35 -3,3l0,20c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-20c0,-1.65 -1.35,-3 -3,-3Zm-16.539,13.199l-8.461,6.59l0,-15.676l8.461,9.086Zm-6.949,-9.199l20.976,0l-10.488,7.875l-10.488,-7.875l0,0Zm7.278,9.553l3.21,3.447l3.21,-3.447l6.58,8.447l-19.579,0l6.58,-8.447l-0.001,0Zm6.749,-0.354l8.461,-9.086l0,15.676l-8.461,-6.59Z"/>
+        </symbol>
+
+        <symbol id="icon-fb">
+          <title>facebook</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l13,0l0,-14l-4,0l0,-4l4,0l0,-2c0,-3.306 2.694,-6 6,-6l4,0l0,4l-4,0c-1.1,0 -2,0.9 -2,2l0,2l6,0l-1,4l-5,0l0,14l9,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Z"/>
+        </symbol>
+
+        <symbol id="icon-github">
+          <title>github</title>
+          <path d="M16,0.395c-8.836,0 -16,7.163 -16,16c0,7.069 4.585,13.067 10.942,15.182c0.8,0.148 1.094,-0.347 1.094,-0.77c0,-0.381 -0.015,-1.642 -0.022,-2.979c-4.452,0.968 -5.391,-1.888 -5.391,-1.888c-0.728,-1.849 -1.776,-2.341 -1.776,-2.341c-1.452,-0.993 0.11,-0.973 0.11,-0.973c1.606,0.113 2.452,1.649 2.452,1.649c1.427,2.446 3.743,1.739 4.656,1.33c0.143,-1.034 0.558,-1.74 1.016,-2.14c-3.554,-0.404 -7.29,-1.777 -7.29,-7.907c0,-1.747 0.625,-3.174 1.649,-4.295c-0.166,-0.403 -0.714,-2.03 0.155,-4.234c0,0 1.344,-0.43 4.401,1.64c1.276,-0.355 2.645,-0.532 4.005,-0.539c1.359,0.006 2.729,0.184 4.008,0.539c3.054,-2.07 4.395,-1.64 4.395,-1.64c0.871,2.204 0.323,3.831 0.157,4.234c1.026,1.12 1.647,2.548 1.647,4.295c0,6.145 -3.743,7.498 -7.306,7.895c0.574,0.497 1.085,1.47 1.085,2.963c0,2.141 -0.019,3.864 -0.019,4.391c0,0.426 0.288,0.925 1.099,0.768c6.354,-2.118 10.933,-8.113 10.933,-15.18c0,-8.837 -7.164,-16 -16,-16l0,0Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Zm-20.281,25.975c-1.5,0 -2.719,-1.206 -2.719,-2.706c0,-1.488 1.219,-2.712 2.719,-2.712c1.506,0 2.719,1.225 2.719,2.712c0,1.5 -1.219,2.706 -2.719,2.706Zm6.825,0.025c0,-2.556 -0.994,-4.962 -2.794,-6.762c-1.806,-1.806 -4.2,-2.8 -6.75,-2.8l0,-3.912c7.425,0 13.475,6.044 13.475,13.475l-3.931,0l0,-0.001Zm6.944,0c0,-9.094 -7.394,-16.5 -16.481,-16.5l0,-3.912c11.25,0 20.406,9.162 20.406,20.413l-3.925,0l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path id="Checked-Icon" d="M13.23,0.307l-8.118,8.197l-3.345,-3.384c-0.405,-0.408 -1.06,-0.408 -1.464,0c-0.404,0.408 -0.404,1.071 0,1.479l4.055,4.101c0.208,0.21 0.481,0.31 0.754,0.305c0.272,0.005 0.545,-0.095 0.753,-0.305l8.829,-8.915c0.404,-0.408 0.404,-1.07 0,-1.478c-0.404,-0.409 -1.06,-0.409 -1.464,0Z"/>
+        </symbol>
+
+        <symbol id="icon-twitter">
+          <title>twitter</title>
+          <path d="M32,7.075c-1.175,0.525 -2.444,0.875 -3.769,1.031c1.356,-0.813 2.394,-2.1 2.887,-3.631c-1.269,0.75 -2.675,1.3 -4.169,1.594c-1.2,-1.275 -2.906,-2.069 -4.794,-2.069c-3.625,0 -6.563,2.938 -6.563,6.563c0,0.512 0.056,1.012 0.169,1.494c-5.456,-0.275 -10.294,-2.888 -13.531,-6.862c-0.563,0.969 -0.887,2.1 -0.887,3.3c0,2.275 1.156,4.287 2.919,5.463c-1.075,-0.031 -2.087,-0.331 -2.975,-0.819c0,0.025 0,0.056 0,0.081c0,3.181 2.263,5.838 5.269,6.437c-0.55,0.15 -1.131,0.231 -1.731,0.231c-0.425,0 -0.831,-0.044 -1.237,-0.119c0.838,2.606 3.263,4.506 6.131,4.563c-2.25,1.762 -5.075,2.813 -8.156,2.813c-0.531,0 -1.05,-0.031 -1.569,-0.094c2.913,1.869 6.362,2.95 10.069,2.95c12.075,0 18.681,-10.006 18.681,-18.681c0,-0.287 -0.006,-0.569 -0.019,-0.85c1.281,-0.919 2.394,-2.075 3.275,-3.394l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-googleplus">
+          <title>google +</title>
+          <path d="M29 0H3C1.35 0 0 1.35 0 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM12 24c-4.425 0-8-3.575-8-8s3.575-8 8-8c2.162 0 3.969.787 5.363 2.094l-2.175 2.088c-.594-.569-1.631-1.231-3.188-1.231-2.731 0-4.963 2.263-4.963 5.05s2.231 5.05 4.963 5.05c3.169 0 4.356-2.275 4.538-3.45h-4.537v-2.744h7.556c.069.4.125.8.125 1.325 0 4.575-3.063 7.819-7.681 7.819L12 24zm16-8h-2v2h-2v-2h-2v-2h2v-2h2v2h2v2z" fill="#fff" fill-rule="nonzero"/>
+        </symbol>
+
+        <symbol id="icon-cross">
+            <title>cross</title>
+            <path d="M10 0c5.519 0 10 4.481 10 10s-4.481 10-10 10S0 15.519 0 10 4.481 0 10 0zm3.975 7.56a4.673 4.673 0 0 0-1.535-1.535L10 8.465l-2.44-2.44A4.673 4.673 0 0 0 6.025 7.56L8.465 10l-2.44 2.44c.384.625.91 1.151 1.535 1.535l2.44-2.44 2.44 2.44a4.673 4.673 0 0 0 1.535-1.535L11.535 10l2.44-2.44z"/>
+        </symbol>
+      </defs>
+    </svg>
+      
+<header class="navbar">
+  <div class="navbar__container">
+    <a class="navbar__home" href="/">
+      <img class="navbar__logo" src="/assets/images/logo-marianne.svg"
+        alt="Data.gouv.fr Docs" /><span class="navbar__domain">doc</span><img src="/assets/images/pointdatagouvfr.svg" class="navbar__gouvfr" alt="gouv.fr" />
+    </a>
+    
+    <nav>
+      <ul class="nav__links">
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">data.gouv.fr - documentation</h1>
+  </div>
+</div>
+
+<section class="documentation">
+  <nav class="side-pane">
+  <ul class="side-pane__menu">
+    
+    
+        
+        <li class="side-pane__title"><h3></h3></li>
+        
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Découvrir l'OpenData</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/faq/citoyen.html">En tant que citoyen</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/developpeur.html">En tant que développeur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/integrateur.html">En tant qu’intégrateur</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/faq/producteur.html">En tant que producteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/profils-d-acheteur.html">En tant que profil d’acheteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/reutilisateur.html">En tant que réutilisateur</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>API</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/api/intro.html">Introduction</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/tutoriel.html">Tutoriel</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/dataset-workflow.html">Gestion d&#39;un jeu de données</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/reference.html">Référence</a>
+        
+        
+    
+  </ul>
+</nav>
+
+  <div class="main-pane">
+    <div class="markdown">
+      <h1 id="découvrir-lopendata-en-tant-que-producteur">Découvrir l’OpenData en tant que producteur</h1>
+
+<h2 id="qui-est-considéré-comme-producteur-de-données-">Qui est considéré comme producteur de données ?</h2>
+
+<p>Le producteur d’une base de données, entendu comme la personne qui prend l’initiative
+et le risque des investissements correspondants, bénéficie d’une protection du contenu de la base lorsque la constitution, la vérification ou la présentation de celui-ci atteste d’un investissement financier, matériel ou humain substantiel.</p>
+
+<p>Cette protection est indépendante et s’exerce sans préjudice de celles résultant du droit d’auteur
+ou d’un autre droit sur la base de données ou un de ses éléments constitutifs.</p>
+
+<p>Source : <a href="http://www.legifrance.gouv.fr/affichCode.do?idArticle=LEGIARTI000006279245&amp;idSectionTA=LEGISCTA000006161660&amp;cidTexte=LEGITEXT000006069414&amp;dateTexte=20090613">Legifrance</a>.</p>
+
+<h2 id="comment-sinscrire-en-tant-que-producteur-sur-datagouvfr">Comment s’inscrire en tant que producteur sur data.gouv.fr</h2>
+
+<p>L’inscription individuelle sur la plateforme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » est libre.</p>
+
+<p>Une fois identifié avec votre compte individuel, vous pourrez, le cas échéant, demander à rejoindre l’organisation à laquelle vous appartenez ou créer cette organisation si elle n’existe pas encore. Si vous créez votre organisation, vous en serez par défaut l’administrateur. Vous pourrez ensuite accepter (ou refuser) les demandes d’autres utilisateurs individuels souhaitant être rattachés à cette organisation.</p>
+
+<h2 id="les-services-publics-certifiés">Les services publics certifiés</h2>
+
+<p>Les organisations inscrites sur la plateforme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » estimant assurer une mission de service public peuvent effectuer une demande en ligne pour être reconnues comme telles. Une organisation certifiée bénéficie d’un meilleur référencement.</p>
+
+<p>Pour obtenir le badge « service public certifié » , inscrivez-vous sur le site en tant qu’individu, créez ou rejoignez votre organisation, puis effectuez la demande de certification en envoyant un mail à l’adresse suivante : <a href="mailto:certification@data.gouv.fr">certification@data.gouv.fr</a>. Une vérification par email ou courrier vous sera demandée. Vous pouvez néanmoins commencer à publier vos jeux de données avant d’obtenir le badge de certification.</p>
+
+<h2 id="quest-ce-quun-jeu-de-données-">Qu’est-ce qu’un jeu de données ?</h2>
+
+<p>Un jeu de données peut contenir plusieurs ressources (fichiers de données, fichiers d’explications, API, lien…) qui constituent un lot cohérent sur un thème donné. Par exemple « <a href="https://www.data.gouv.fr/fr/datasets/reserve-parlementaire/">La Réserve Parlementaire</a> », contiendra plusieurs ressources, typiquement un fichier par année.</p>
+
+<h3 id="les-jeux-de-données-à-la-une">Les jeux de données « à la une »</h3>
+
+<p>Les jeux de données à la une changent périodiquement. Etalab, en tant qu’administrateur et éditeur de la plateforme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> », fait une analyse exhaustive des jeux de données hébergés sur la plateforme afin de mettre en avant ceux qui, d’après l’actualité française, pourraient être utiles aux visiteurs de la plateforme.</p>
+
+<h2 id="comment-en-tant-que-producteur-puis-je-publier-des-jeux-de-données-">Comment en tant que producteur, puis-je publier des jeux de données ?</h2>
+
+<p>Créez un compte individuel sur « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » puis, le cas échéant, demandez à rejoindre l’organisation à laquelle vous appartenez ou créez cette organisation si elle n’existe pas encore.</p>
+
+<p>Dès que vous serez inscrit, vous pourrez publier des jeu de données, soit en tant que personne privée, soit au nom de l’une des organisations auxquelles vous appartenez.</p>
+
+<p>Un jeu de données pour être publié doit comporter au minimum un titre et une ressource.
+Pour autant, il sera mieux référencé s’il contient des informations supplémentaires qui le décrivent : période couverte, fréquence de mise à jour, territoire couvert, thématiques…</p>
+
+<h2 id="que-signifient-les-différents-champs-dune-fiche-de-jeu-de-données-">Que signifient les différents champs d’une fiche de jeu de données ?</h2>
+
+<h3 id="titre-obligatoire">Titre (obligatoire)</h3>
+
+<p>Le titre est « l’accroche » éditoriale de votre contenu, son sujet. Pensez-y.
+Il doit être clair, précis et le plus court possible.
+Ne pas mettre d’indications temporelles ou de couverture géographique dans le titre,
+mais dans les champs prévus à cet effet.</p>
+
+<p><strong>Exemples</strong></p>
+
+<ul>
+  <li>Impôts locaux</li>
+  <li>Impact environnemental des sociétés minières</li>
+</ul>
+
+<p><strong>Contre exemples</strong></p>
+
+<ul>
+  <li>Impôts locaux en Lorraine pour l’année 2012</li>
+  <li>Impact environnemental des société minières dans le cadre de la campagne de réactualisation
+des faits opérés par la DATAR pour le compte de l’Institut.</li>
+</ul>
+
+<h3 id="description">Description</h3>
+
+<p>C’est ici qu’il faut mettre en avant le jeu de données, en citant les faits, les mots-clés qu’il recouvre, les sources et la méthodologie utilisée… Pour écrire une bonne description, il faut raisonner comme un moteur de recherche : quelles questions posées par les Internautes devraient mener à ce jeu de données ?</p>
+
+<p><em>Exemple</em> : pour l’impact environnemental, citer les mots-clés tonne-carbone, externalité environnementale, principaux facteurs négatifs et positifs de l’impact des mines sur l’environnement, etc.</p>
+
+<h3 id="licence">Licence</h3>
+
+<p>Sélectionner la licence Open Data sous laquelle vous publiez le jeu de données.
+Dans la plupart des cas, l’<a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence">Open Licence / Licence Ouverte</a>. Seuls les réutilisations publiées dans un jeu de données peuvent être sous licence fermée. Par exemple, un jeu de données Open Data « Annuaire des associations », et une réutilisation fermée, voire payante, permettant de consulter les adresses des dirigeants des associations.</p>
+
+<h3 id="fréquence-de-mise-à-jour">Fréquence de mise à jour</h3>
+
+<p>La fréquence indique le niveau de détail temporel à l’intérieur de cette période : indiquer “mois” si votre fichier détaille des évolutions mois par mois. Si votre flux d’information est mis à jour annuellement, indiquer « année ».</p>
+
+<h3 id="couverture-temporelle">Couverture temporelle</h3>
+
+<p>À l’image de la couverture géographique, la couverture temporelle permet de référencer correctement la période couverte. S’il s’agit d’une seule année, indiquez la même année pour le début et la fin. S’il s’agit d’une année scolaire, n’hésitez pas à indiquer 1/9/2013 au 31/6/2014 par exemple.</p>
+
+<h3 id="couverture-spatiale">Couverture spatiale</h3>
+
+<p>C’est dans ce champs qu’il convient de décrire le territoire couvert et permettra d’être correctement géo-référencé.</p>
+
+<h3 id="granularité-spatiale">Granularité spatiale</h3>
+
+<p>Préciser la granularité permet de préciser s’il s’agit d’un jeu de donnée très agrégé (par exemple couverture = France, granularité = France), ou au contraire très détaillé (couverture = région, granularité = commune, voire même point d’intérêt au niveau adresse).</p>
+
+<h3 id="mots-clés">Mots clés</h3>
+
+<p>Les mots-clés permettent des navigations transverses, c’est à dire qu’un internaute naviguant sur un jeu de données ayant pour mots clés « mines » sera susceptible de cliquer sur ce mot clé et de retrouver un autre jeu de données ayant le même mot clé. Si vous remplissez ce champs, la règle est donc d’utiliser des mots clés ayant déjà été utilisés par d’autres jeux de données.</p>
+
+<h3 id="visibilité">Visibilité</h3>
+
+<p>Sélectionner “privé” permet de sauvegarder un jeu sans qu’il soit visible. Ce peut être utile lorsque vous souhaitez publier plusieurs jeux à une date donnée, en ayant préparé leur publication en amont.</p>
+
+<p>Si vous avez bien remplie la fiche et vous souhaitez que votre jeu de donnée soit visible sur le site, ne cochez pas la case.</p>
+
+<h3 id="ressources-1-obligatoire">Ressources (1 obligatoire)</h3>
+
+<p>Les ressources de votre jeu de données. Si votre jeu concerne plusieurs départements, plusieurs années, il est possible de publier autant de fichiers que vous le souhaitez. Pour autant, sachez que du point de vue des réutilisateurs, il est <strong>toujours préférable de diffuser les fichiers les plus denses possibles</strong> : un fichier contenant en colonne 1 le département, en colonne 2 l’année et toutes les données ainsi classées, plutôt que 100 fichiers par département, puis autant par année.</p>
+
+<p>Chaque ressource possède un <strong>titre</strong>, dans lequel il convient surtout de <strong>préciser les critères,
+les unités, la granularité qui décrit le mieux la ressource</strong>, plutôt que de répéter le titre du jeu de donnée auquel il appartient.</p>
+
+<p>Par exemple :</p>
+
+<ul>
+  <li>Fichier détaillé des personnes morales, par département et par an</li>
+  <li>Fichier statistique par département, en k€ et en Tonne/Carbone</li>
+  <li>Site web permettant de sélectionner les données par ville et par type de trajet</li>
+</ul>
+
+<p>Une description de la ressource peut être ajoutée de manière optionnelle pour exprimer des compléments d’informations sur la méthodologie (sondage, enquête, données fiscales ..), des précisions sur les données en question (colonnes du fichiers ..), ou tout autre information renforçant le titre.</p>
+
+<h3 id="télécharger-un-fichier-ou-saisir-son-url-">Télécharger un fichier ou saisir son URL ?</h3>
+
+<p>Si vous ne possédez pas de site Web et que la fréquence de mise à jour de vos données est faible,
+« <a href="https://www.data.gouv.fr">data.gouv.fr</a> » permet de télécharger des fichiers depuis votre ordinateur. Néanmoins, si vous possédez un site Web, il est préférable de référencer vos données, évitant ainsi de devoir les mettre à jour régulièrement sur data.gouv. Par exemple, référencer la ressource <a href="http://monsite.fr/jeu_de_donnees_derniere_version.csv">http://monsite.fr/jeu_de_donnees_derniere_version.csv</a> vous permet de déclarer une fois pour toutes une donnée avec une fréquence de mise à jour temps réel.</p>
+
+<h3 id="bureau-département-ou-service">Bureau, département ou service</h3>
+
+<p>Préciser ici, de manière optionnelle, les indications sur l’organisation effectivement productrice,
+par exemple SGMAP/Service X.</p>
+
+<h3 id="courriel-de-contact">Courriel de contact</h3>
+
+<p>Préciser ici, de manière optionnelle, l’adresse mail du producteur, par exemple <em>contact@agriculture.fr</em>, si elle est différente de celle de l’utilisateur qui publie. Lorsque vous publiez un jeu de données au nom d’une organisation, tous les membres déclarés seront automatiquement notifiés d’éventuelles réutilisations sur la page du jeu de données (par exemple, la publication d’une visualisation ou d’un commentaire).</p>
+
+<h3 id="thématique-groupes">Thématique (groupes)</h3>
+
+<p>À l’image des mots clés, qui permettent d’accrocher votre jeu de données à d’autres dimensions,
+des thématiques sont à votre disposition pour ancrer vos jeux dans les grandes catégories éditoriales présentées à côté du moteur de recherche : Agriculture, Culture, Société, Territoires, etc. À noter, des thématiques conjoncturelles permettent de raccrocher certains jeux à des sujets d’actualité débattus sur « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » : égalité femmes-hommes, Grenelle de l’environnement, etc. Un jeu de données peut appartenir à 0, 1, ou 2 thématiques.</p>
+
+<h2 id="quest-ce-que-la-passerelle-inspire">Qu’est-ce que la passerelle Inspire</h2>
+
+<p>La directive INSPIRE est la directive 2007/2/CE du Parlement européen et du Conseil du 14 mars 2007 établissant une infrastructure d’information géographique dans la Communauté européenne (INSPIRE).</p>
+
+<p>INSPIRE s’applique à 34 domaines thématiques, se décomposant en trois groupes principaux :</p>
+
+<ol>
+  <li>Les données nécessaires au repérage sur le territoire, telles que :
+    <ul>
+      <li>systèmes de coordonnées,</li>
+      <li>unités adminsitratives,</li>
+      <li>réseaux de transport,</li>
+      <li>hydrographie,</li>
+      <li>parcellaire cadastral,</li>
+      <li>adresses et noms de lieux ainsi que des données relatives aux sites protégés.</li>
+    </ul>
+  </li>
+  <li>Les données générales complémentaires telles que:
+    <ul>
+      <li>l’altimétrie,</li>
+      <li>l’occupation des terres,</li>
+      <li>la géologie et l’horto-imagerie</li>
+    </ul>
+  </li>
+  <li>Les données thématiques telles que:
+    <ul>
+      <li>bâtiments,</li>
+      <li>vocation des sols,</li>
+      <li>santé et sécurité des personnes,</li>
+      <li>service d’utilité publique et services publics,</li>
+      <li>données sur l’environnement (nombreuses et variées),</li>
+      <li>installations industrielles, agricoles,</li>
+      <li>démographie,</li>
+      <li>périmètres de réglementation,</li>
+      <li>données météorologiques,</li>
+      <li>données maritimes,</li>
+      <li>sources d’énergie et ressources minérales.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Les standards de la géomatique ne sont pas ceux du Web et pourtant ils structurent l’immense capital
+d’informations accumulé depuis plusieurs dizaines d’années. D’un côté des normes comme Inspire, WFS, WCS, CSW, Shapefiles, GeoJSON, KML, de l’autre des outils gratuits comme OpenStreetMap ou Google Earth. La passerelle Inspire, en production depuis début 2015, permet aux producteurs et aux réutilisateurs d’exploiter au mieux ces gisements de données colossaux, en les rendant automatiquement disponibles dans les standards du Web.</p>
+
+<p>Besoin d’une carte des zones d’inondation en Bourgogne ? Cliquez sur le jeu de données et visualisez-le dans une carte OpenStreet Map n’a jamais été aussi simple.</p>
+
+<p>Fin 2015, le moteur Inspire de « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » permettra surtout de réunir les données géographiques produites au plus près du terrain par les collectivités dans des référentiels nationaux fédérés. Ce dispositif permettra notamment d’élargir le périmètre de l’API Carto, destiné à simplifier la création de démarches en ligne ayant une composante géographique (déclaration de travaux, demande d’autorisation de ruchers, action associative sur une zone Politique de la Ville, etc.). API Carto sera quant à lui amené à diffuser de la donnée non-publique, soumise au consentement de l’usager, comme des données cadastrales personnelles. API Carto sera donc un distributeur des référentiels nationaux géographiques.</p>
+
+<p>C’est une donnée géographique homogène qui permettra l’émergence d’algorithmes au service de la transition énergétique, de la transparence des politiques d’aménagement, des politiques agricoles…</p>
+
+<p>Enfin, l’intégration géographique permettra de projeter des jeux de données nationaux dans les territoires, promesse de territoire « <a href="https://www.data.gouv.fr">data.gouv.fr</a> ». Pour une organisation inscrite sur « <a href="https://www.data.gouv.fr">data.gouv.fr</a> », il suffira d’activer l’option, puis de choisir les jeux de données nationaux qu’elle souhaite diffuser sur son compte: comptabilité locale issue de la Direction Générale des Finances, indicateurs socio-économiques INSEE, élections, etc. En miroir, tout producteur national pourra suivre un guide simple pour rendre un jeu de données national compatible avec territoire.data.gouv.fr. Tout référentiel national est bien sûr naturellement intégré dans territoire.data.gouv.fr, par exemple les collèges et lycées sur votre département ou votre région.</p>
+
+<h3 id="pour-contribuer-à-la-passerelle-inspire-en-tant-quautorité-locale-géographique-ddt-dreal-ddtm-">Pour contribuer à la passerelle Inspire en tant qu’autorité locale géographique (DDT, DREAL, DDTM…) :</h3>
+
+<ol>
+  <li>Adoptez le plan de nommage suivant pour les producteurs de l’administration déconcentrée :
+    <ul>
+      <li><code class="highlighter-rouge">DR[xxx] [Nom de la région accents respectés, trait-d’union partout]</code>` :
+DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne…</li>
+      <li><code class="highlighter-rouge">DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22</code> …</li>
+      <li><code class="highlighter-rouge">Préfecture de [DOM/Nom Région/Nom Département]</code> : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire ..</li>
+    </ul>
+  </li>
+  <li>Rendez vos jeux de données INSPIRE accessibles depuis Internet.
+Si vous ne disposez pas de serveurs où les déposer, vous pourrez utiliser ceux de data.gouv.fr.</li>
+</ol>
+
+
+      
+      <p class="edit text-center">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_faq/producteur.md">
+              ✎ Editer cette page
+          </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/assets/images/etalab.svg" alt="Etalab">
+      
+      <ul class="footer__social">
+        
+        <li><a href=""><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+        
+      </ul>
+      
+    </div>
+    
+    <div class="footer__links">
+      
+      <h2>doc.data.gouv.fr</h2>
+      
+      <ul>
+        
+          
+            
+            <li><a href="">Données de référence</a></li>
+          
+        
+          
+            
+            <li><a href="">Condition générales d’utilisation</a></li>
+          
+        
+          
+            
+            <li><a href="">API</a></li>
+          
+        
+      </ul>
+    </div>
+    
+    <div></div>
+  </div>
+</footer>
+
+      
+    <!--  Scripts-->                   
+
+  </body>
+
+</html>

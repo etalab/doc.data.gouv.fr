@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Gestion d&#39;un jeu de données</title>
+    <meta name="description" content="Gestion d’un jeu de données par l’API" />
+
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
+    <link rel="canonical" href="https://doc.data.gouv.fr/api/dataset-workflow.html" />
+    <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
+</head>
+
+
+  <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-search">
+          <title>search</title>
+          <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+        </symbol>
+
+        <symbol id="icon-mail">
+          <title>mail</title>
+          <path d="M29,4l-26,0c-1.65,0 -3,1.35 -3,3l0,20c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-20c0,-1.65 -1.35,-3 -3,-3Zm-16.539,13.199l-8.461,6.59l0,-15.676l8.461,9.086Zm-6.949,-9.199l20.976,0l-10.488,7.875l-10.488,-7.875l0,0Zm7.278,9.553l3.21,3.447l3.21,-3.447l6.58,8.447l-19.579,0l6.58,-8.447l-0.001,0Zm6.749,-0.354l8.461,-9.086l0,15.676l-8.461,-6.59Z"/>
+        </symbol>
+
+        <symbol id="icon-fb">
+          <title>facebook</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l13,0l0,-14l-4,0l0,-4l4,0l0,-2c0,-3.306 2.694,-6 6,-6l4,0l0,4l-4,0c-1.1,0 -2,0.9 -2,2l0,2l6,0l-1,4l-5,0l0,14l9,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Z"/>
+        </symbol>
+
+        <symbol id="icon-github">
+          <title>github</title>
+          <path d="M16,0.395c-8.836,0 -16,7.163 -16,16c0,7.069 4.585,13.067 10.942,15.182c0.8,0.148 1.094,-0.347 1.094,-0.77c0,-0.381 -0.015,-1.642 -0.022,-2.979c-4.452,0.968 -5.391,-1.888 -5.391,-1.888c-0.728,-1.849 -1.776,-2.341 -1.776,-2.341c-1.452,-0.993 0.11,-0.973 0.11,-0.973c1.606,0.113 2.452,1.649 2.452,1.649c1.427,2.446 3.743,1.739 4.656,1.33c0.143,-1.034 0.558,-1.74 1.016,-2.14c-3.554,-0.404 -7.29,-1.777 -7.29,-7.907c0,-1.747 0.625,-3.174 1.649,-4.295c-0.166,-0.403 -0.714,-2.03 0.155,-4.234c0,0 1.344,-0.43 4.401,1.64c1.276,-0.355 2.645,-0.532 4.005,-0.539c1.359,0.006 2.729,0.184 4.008,0.539c3.054,-2.07 4.395,-1.64 4.395,-1.64c0.871,2.204 0.323,3.831 0.157,4.234c1.026,1.12 1.647,2.548 1.647,4.295c0,6.145 -3.743,7.498 -7.306,7.895c0.574,0.497 1.085,1.47 1.085,2.963c0,2.141 -0.019,3.864 -0.019,4.391c0,0.426 0.288,0.925 1.099,0.768c6.354,-2.118 10.933,-8.113 10.933,-15.18c0,-8.837 -7.164,-16 -16,-16l0,0Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Zm-20.281,25.975c-1.5,0 -2.719,-1.206 -2.719,-2.706c0,-1.488 1.219,-2.712 2.719,-2.712c1.506,0 2.719,1.225 2.719,2.712c0,1.5 -1.219,2.706 -2.719,2.706Zm6.825,0.025c0,-2.556 -0.994,-4.962 -2.794,-6.762c-1.806,-1.806 -4.2,-2.8 -6.75,-2.8l0,-3.912c7.425,0 13.475,6.044 13.475,13.475l-3.931,0l0,-0.001Zm6.944,0c0,-9.094 -7.394,-16.5 -16.481,-16.5l0,-3.912c11.25,0 20.406,9.162 20.406,20.413l-3.925,0l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path id="Checked-Icon" d="M13.23,0.307l-8.118,8.197l-3.345,-3.384c-0.405,-0.408 -1.06,-0.408 -1.464,0c-0.404,0.408 -0.404,1.071 0,1.479l4.055,4.101c0.208,0.21 0.481,0.31 0.754,0.305c0.272,0.005 0.545,-0.095 0.753,-0.305l8.829,-8.915c0.404,-0.408 0.404,-1.07 0,-1.478c-0.404,-0.409 -1.06,-0.409 -1.464,0Z"/>
+        </symbol>
+
+        <symbol id="icon-twitter">
+          <title>twitter</title>
+          <path d="M32,7.075c-1.175,0.525 -2.444,0.875 -3.769,1.031c1.356,-0.813 2.394,-2.1 2.887,-3.631c-1.269,0.75 -2.675,1.3 -4.169,1.594c-1.2,-1.275 -2.906,-2.069 -4.794,-2.069c-3.625,0 -6.563,2.938 -6.563,6.563c0,0.512 0.056,1.012 0.169,1.494c-5.456,-0.275 -10.294,-2.888 -13.531,-6.862c-0.563,0.969 -0.887,2.1 -0.887,3.3c0,2.275 1.156,4.287 2.919,5.463c-1.075,-0.031 -2.087,-0.331 -2.975,-0.819c0,0.025 0,0.056 0,0.081c0,3.181 2.263,5.838 5.269,6.437c-0.55,0.15 -1.131,0.231 -1.731,0.231c-0.425,0 -0.831,-0.044 -1.237,-0.119c0.838,2.606 3.263,4.506 6.131,4.563c-2.25,1.762 -5.075,2.813 -8.156,2.813c-0.531,0 -1.05,-0.031 -1.569,-0.094c2.913,1.869 6.362,2.95 10.069,2.95c12.075,0 18.681,-10.006 18.681,-18.681c0,-0.287 -0.006,-0.569 -0.019,-0.85c1.281,-0.919 2.394,-2.075 3.275,-3.394l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-googleplus">
+          <title>google +</title>
+          <path d="M29 0H3C1.35 0 0 1.35 0 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM12 24c-4.425 0-8-3.575-8-8s3.575-8 8-8c2.162 0 3.969.787 5.363 2.094l-2.175 2.088c-.594-.569-1.631-1.231-3.188-1.231-2.731 0-4.963 2.263-4.963 5.05s2.231 5.05 4.963 5.05c3.169 0 4.356-2.275 4.538-3.45h-4.537v-2.744h7.556c.069.4.125.8.125 1.325 0 4.575-3.063 7.819-7.681 7.819L12 24zm16-8h-2v2h-2v-2h-2v-2h2v-2h2v2h2v2z" fill="#fff" fill-rule="nonzero"/>
+        </symbol>
+
+        <symbol id="icon-cross">
+            <title>cross</title>
+            <path d="M10 0c5.519 0 10 4.481 10 10s-4.481 10-10 10S0 15.519 0 10 4.481 0 10 0zm3.975 7.56a4.673 4.673 0 0 0-1.535-1.535L10 8.465l-2.44-2.44A4.673 4.673 0 0 0 6.025 7.56L8.465 10l-2.44 2.44c.384.625.91 1.151 1.535 1.535l2.44-2.44 2.44 2.44a4.673 4.673 0 0 0 1.535-1.535L11.535 10l2.44-2.44z"/>
+        </symbol>
+      </defs>
+    </svg>
+      
+<header class="navbar">
+  <div class="navbar__container">
+    <a class="navbar__home" href="/">
+      <img class="navbar__logo" src="/assets/images/logo-marianne.svg"
+        alt="Data.gouv.fr Docs" /><span class="navbar__domain">doc</span><img src="/assets/images/pointdatagouvfr.svg" class="navbar__gouvfr" alt="gouv.fr" />
+    </a>
+    
+    <nav>
+      <ul class="nav__links">
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">data.gouv.fr - documentation</h1>
+  </div>
+</div>
+
+<section class="documentation">
+  <nav class="side-pane">
+  <ul class="side-pane__menu">
+    
+    
+        
+        <li class="side-pane__title"><h3></h3></li>
+        
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Découvrir l'OpenData</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/faq/citoyen.html">En tant que citoyen</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/developpeur.html">En tant que développeur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/integrateur.html">En tant qu’intégrateur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/producteur.html">En tant que producteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/profils-d-acheteur.html">En tant que profil d’acheteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/reutilisateur.html">En tant que réutilisateur</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>API</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/api/intro.html">Introduction</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/tutoriel.html">Tutoriel</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/api/dataset-workflow.html">Gestion d&#39;un jeu de données</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/reference.html">Référence</a>
+        
+        
+    
+  </ul>
+</nav>
+
+  <div class="main-pane">
+    <div class="markdown">
+      <h1 class="no_toc" id="gestion-dun-jeu-de-données-par-lapi">Gestion d’un jeu de données par l’API</h1>
+
+<p>Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.</p>
+
+<p>Il est recommandé d’avoir lu <a href="/api/intro.html">l’introduction</a> avant de consulter cette page.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#convention" id="markdown-toc-convention">Convention</a></li>
+  <li><a href="#création-dun-jeu-de-données" id="markdown-toc-création-dun-jeu-de-données">Création d’un jeu de données</a></li>
+  <li><a href="#modification-dun-jeu-de-données" id="markdown-toc-modification-dun-jeu-de-données">Modification d’un jeu de données</a></li>
+  <li><a href="#ajout-dune-ressource-distante" id="markdown-toc-ajout-dune-ressource-distante">Ajout d’une ressource distante</a></li>
+  <li><a href="#upload-dune-ressource" id="markdown-toc-upload-dune-ressource">Upload d’une ressource</a></li>
+  <li><a href="#mise-à-jour-dune-ressource" id="markdown-toc-mise-à-jour-dune-ressource">Mise à jour d’une ressource</a></li>
+  <li><a href="#suppression-dun-ressource" id="markdown-toc-suppression-dun-ressource">Suppression d’un ressource</a></li>
+  <li><a href="#supression-dun-jeu-de-données" id="markdown-toc-supression-dun-jeu-de-données">Supression d’un jeu de données</a></li>
+</ul>
+
+<h2 id="convention">Convention</h2>
+
+<p>Tous les examples qui suivent sont réalisé avec un compte:</p>
+<ul>
+  <li>un compte actif dont la clé d’API est <code class="highlighter-rouge">my-api-key</code></li>
+  <li>une organization dont l’identifiant est <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code>.</li>
+</ul>
+
+<p>Ils utilisent les conventions suivantes pour chaque language:</p>
+
+<div class="tabs">      <input name="snippet-api/convention" type="radio" id="snippet-api/convention-curl" checked="checked" />
+	    <label for="snippet-api/convention-curl">CURL</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># All curl snippets assume the following declarations</span>
+<span class="c"># curl needs to be installed</span>
+<span class="nb">export </span>API_KEY <span class="o">=</span> <span class="s1">'my-api-key'</span>
+<span class="nb">export </span>ORG <span class="o">=</span> <span class="s1">'5bbb6d6cff66bd4dc17bfd5a'</span>
+<span class="nb">export </span>API <span class="o">=</span> <span class="s1">'https://www.data.gouv.fr/api/1'</span>
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/convention" type="radio" id="snippet-api/convention-httpie" />
+	    <label for="snippet-api/convention-httpie">HTTPie</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># All HTTPie snippets assume the following declarations</span>
+<span class="c"># HTTPie needs to be installed</span>
+<span class="nb">export </span>API_KEY <span class="o">=</span> <span class="s1">'my-api-key'</span>
+<span class="nb">export </span>ORG <span class="o">=</span> <span class="s1">'5bbb6d6cff66bd4dc17bfd5a'</span>
+<span class="nb">export </span>API <span class="o">=</span> <span class="s1">'https://www.data.gouv.fr/api/1'</span>
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/convention" type="radio" id="snippet-api/convention-python" />
+	    <label for="snippet-api/convention-python">Python</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-python" data-lang="python"><span class="c1"># All python snippets assume the following declarations
+</span>
+<span class="kn">import</span> <span class="nn">requests</span>  <span class="c1"># Installed with `pip install requests`
+</span>
+<span class="n">API</span> <span class="o">=</span> <span class="s">'https://www.data.gouv.fr/api/1'</span>
+<span class="n">API_KEY</span> <span class="o">=</span> <span class="s">'my-api-key'</span>
+<span class="n">ORG</span> <span class="o">=</span> <span class="s">'5bbb6d6cff66bd4dc17bfd5a'</span>
+
+
+<span class="k">def</span> <span class="nf">api_url</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">API</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+</code></pre>
+        </figure>
+      </div>
+</div>
+
+<h2 id="création-dun-jeu-de-données">Création d’un jeu de données</h2>
+
+<p>Pour créer un jeu de données, nous allons utiliser successivement ces API:</p>
+<ul>
+  <li><a href="/api/reference.html#/datasets/create_dataset">création de jeu de données</a></li>
+  <li><a href="/api/reference.html#/datasets/create_resource">création d’une ressource</a></li>
+  <li><a href="/api/reference.html#/datasets/upload_new_dataset_resource">envoi d’une ressource</a></li>
+</ul>
+
+<div class="tabs">      <input name="snippet-api/create-dataset" type="radio" id="snippet-api/create-dataset-curl" checked="checked" />
+	    <label for="snippet-api/create-dataset-curl">CURL</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># Create a dataset using CURL</span>
+curl <span class="nt">-H</span> <span class="s2">"Content-Type:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">--data</span> <span class="s1">'{"title": "my title", "description": "My description"}'</span> <span class="se">\</span>
+     <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/create-dataset" type="radio" id="snippet-api/create-dataset-httpie" />
+	    <label for="snippet-api/create-dataset-httpie">HTTPie</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># Create a dataset using HTTPie</span>
+http POST <span class="nv">$API</span>/datasets/
+    Content-Type:application/json <span class="se">\</span>
+    Accept:application/json <span class="se">\</span>
+    X-Api-Key:<span class="nv">$API_KEY</span> <span class="se">\</span>
+    <span class="nv">title</span><span class="o">=</span><span class="s2">"Mon titre"</span> <span class="se">\</span>
+    <span class="nv">description</span><span class="o">=</span><span class="s1">'Ma description"
+</span></code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/create-dataset" type="radio" id="snippet-api/create-dataset-python" />
+	    <label for="snippet-api/create-dataset-python">Python</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-python" data-lang="python"><span class="c1"># Create a dataset with python requests
+</span>
+<span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/'</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+    <span class="s">'title'</span><span class="p">:</span> <span class="s">'Mon titre'</span><span class="p">,</span>
+    <span class="s">'description'</span><span class="p">:</span> <span class="s">'Ma description'</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre>
+        </figure>
+      </div>
+</div>
+
+<h2 id="modification-dun-jeu-de-données">Modification d’un jeu de données</h2>
+
+<h2 id="ajout-dune-ressource-distante">Ajout d’une ressource distante</h2>
+
+<h2 id="upload-dune-ressource">Upload d’une ressource</h2>
+
+<h2 id="mise-à-jour-dune-ressource">Mise à jour d’une ressource</h2>
+
+<h2 id="suppression-dun-ressource">Suppression d’un ressource</h2>
+
+<h2 id="supression-dun-jeu-de-données">Supression d’un jeu de données</h2>
+
+      
+      <p class="edit text-center">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_api/dataset-workflow.md">
+              ✎ Editer cette page
+          </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/assets/images/etalab.svg" alt="Etalab">
+      
+      <ul class="footer__social">
+        
+        <li><a href=""><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
+        
+        <li><a href=""><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+        
+      </ul>
+      
+    </div>
+    
+    <div class="footer__links">
+      
+      <h2>doc.data.gouv.fr</h2>
+      
+      <ul>
+        
+          
+            
+            <li><a href="">Données de référence</a></li>
+          
+        
+          
+            
+            <li><a href="">Condition générales d’utilisation</a></li>
+          
+        
+          
+            
+            <li><a href="">API</a></li>
+          
+        
+      </ul>
+    </div>
+    
+    <div></div>
+  </div>
+</footer>
+
+      
+    <!--  Scripts-->                   
+
+  </body>
+
+</html>

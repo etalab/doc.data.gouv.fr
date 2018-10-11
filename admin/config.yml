@@ -1,0 +1,29 @@
+backend:
+  name: github
+  base_url: https://api.staticweb-01.etalab.gouv.fr
+  site_domain: doc.data.gouv.fr
+  repo: etalab/doc.data.gouv.fr
+
+media_folder: "img/uploads"
+
+# Editorial workflow: validate changes through pull requests
+publish_mode: editorial_workflow
+
+collections:
+  - name: faq
+    label: FAQ
+    folder: _faq
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: api
+    label: API
+    folder: _api
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
