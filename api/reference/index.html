@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Data.gouv.fr Docs</title>
-    <meta name="description" content="La documentation du site data.gouv.fr" />
+    <title>Référence</title>
+    <meta name="description" content="Ceci est la documentation de référence de l’API de www.data.gouv.fr. Elle est auto-générée et reflète exactement ce qui est effectivement en production." />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/404.html" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/api/reference/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -80,14 +80,110 @@
   </div>
 </header>
 
-    <div class="container">
-    <div class="section txt-center">
-      <h1>404</h1>
-
-      <p><strong>Page not found :(</strong></p>
-      <p>The requested page could not be found.</p>
-    </div>
+    <div class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">data.gouv.fr - documentation</h1>
+  </div>
 </div>
+
+<section class="documentation">
+  <nav class="side-pane">
+  <ul class="side-pane__menu">
+    
+    
+        
+        <li class="side-pane__title"><h3></h3></li>
+        
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Découvrir l'OpenData</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/faq/citoyen/">En tant que citoyen</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/developpeur/">En tant que développeur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/integrateur/">En tant qu’intégrateur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/producteur/">En tant que producteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/profils-d-acheteur/">En tant que profil d’acheteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/reutilisateur/">En tant que réutilisateur</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>API</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/api/intro/">Introduction</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/tutoriel/">Tutoriel</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/dataset-workflow/">Gestion d&#39;un jeu de données</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/api/reference/">Référence</a>
+        
+        
+    
+  </ul>
+</nav>
+
+  <div class="main-pane">
+    <div class="markdown">
+      <p>Ceci est la documentation de référence de l’API de www.data.gouv.fr.
+Elle est auto-générée et reflète exactement ce qui est effectivement en production.</p>
+
+<p>Il est recommandé d’avoir lu <a href="/api/intro/">l’introduction</a> avant.</p>
+
+
+<link rel="stylesheet" type="text/css" href="//unpkg.com/swagger-ui-dist@3/swagger-ui.css" />
+
+<!-- Swagger UI container -->
+<div id="swagger-ui"></div>
+
+<script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-bundle.js"></script>
+<script src="//unpkg.com/swagger-ui-dist@3/swagger-ui-standalone-preset.js"></script>
+<script>
+const ui = SwaggerUIBundle({
+  url: 'https://www.data.gouv.fr/api/1/swagger.json',
+  dom_id: '#swagger-ui',
+  presets: [
+    SwaggerUIBundle.presets.apis,
+    SwaggerUIStandalonePreset
+  ],
+  deepLinking: true,
+  
+  displayOperationId: true,
+  
+  docExpansion: "none",
+  
+})
+</script>
+
+      
+      <p class="edit text-center">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_api/reference.md">
+              ✎ Editer cette page
+          </a>
+      </p>
+    </div>
+  </div>
+</section>
+
     <footer class="footer">
   <div class="container">
     <div class="footer__logo">

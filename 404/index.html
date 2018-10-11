@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Découvrir l’OpenData en tant que développeur</title>
-    <meta name="description" content="Découvrir l’OpenData en tant que développeur" />
+    <title>Data.gouv.fr Docs</title>
+    <meta name="description" content="La documentation du site data.gouv.fr" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/faq/developpeur.html" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/404/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -80,150 +80,14 @@
   </div>
 </header>
 
-    <div class="hero">
-  <div class="hero__container">
-    <h1 class="hero__title">data.gouv.fr - documentation</h1>
-  </div>
-</div>
+    <div class="container">
+    <div class="section txt-center">
+      <h1>404</h1>
 
-<section class="documentation">
-  <nav class="side-pane">
-  <ul class="side-pane__menu">
-    
-    
-        
-        <li class="side-pane__title"><h3></h3></li>
-        
-        
-        
-    
-        
-        <li class="side-pane__title"><h3>Découvrir l'OpenData</h3></li>
-        
-        
-        <li >
-            <a class="side-pane__link" href="/faq/citoyen.html">En tant que citoyen</a>
-        
-        <li class="active">
-            <a class="side-pane__link" href="/faq/developpeur.html">En tant que développeur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/integrateur.html">En tant qu’intégrateur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/producteur.html">En tant que producteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/profils-d-acheteur.html">En tant que profil d’acheteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/reutilisateur.html">En tant que réutilisateur</a>
-        
-        
-    
-        
-        <li class="side-pane__title"><h3>API</h3></li>
-        
-        
-        <li >
-            <a class="side-pane__link" href="/api/intro.html">Introduction</a>
-        
-        <li >
-            <a class="side-pane__link" href="/api/tutoriel.html">Tutoriel</a>
-        
-        <li >
-            <a class="side-pane__link" href="/api/dataset-workflow.html">Gestion d&#39;un jeu de données</a>
-        
-        <li >
-            <a class="side-pane__link" href="/api/reference.html">Référence</a>
-        
-        
-    
-  </ul>
-</nav>
-
-  <div class="main-pane">
-    <div class="markdown">
-      <h1 id="découvrir-lopendata-en-tant-que-développeur">Découvrir l’OpenData en tant que développeur</h1>
-
-<p>Cette page contient :</p>
-
-<ul>
-  <li><a href="#section-api">les informations relatives à l’API</a> ;</li>
-  <li><a href="#section-moissonage">le moissonnage des dépôts de données ouvertes</a> ;</li>
-  <li><a href="#section-code">le code source de la plateforme</a>.</li>
-</ul>
-
-<p><span id="section-api"></span></p>
-
-<h2 id="informations-relatives-à-lapi">Informations relatives à l’API</h2>
-
-<p>Le site « <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » propose différents moyens d’accéder au catalogue des données :</p>
-
-<ul>
-  <li>une <a href="https://www.data.gouv.fr/api/">API complète</a>, documentée avec <a href="http://swagger.io/">Swagger</a></li>
-  <li>des dumps au format CSV, mis à jour en temps réel
-    <ul>
-      <li>catalogue des jeux de données: <a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></li>
-      <li>catalogue des ressources: <a href="https://www.data.gouv.fr/resources.csv">https://www.data.gouv.fr/resources.csv</a></li>
-      <li>catalogue des organisations: <a href="https://www.data.gouv.fr/organizations.csv">https://www.data.gouv.fr/organizations.csv</a></li>
-      <li>catalogue des réutilisations: <a href="https://www.data.gouv.fr/reuses.csv">https://www.data.gouv.fr/reuses.csv</a></li>
-      <li>une liste des tags avec leur nombre d’occurences: <a href="https://www.data.gouv.fr/tags.csv">https://www.data.gouv.fr/tags.csv</a></li>
-    </ul>
-  </li>
-  <li>un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :
-    <ul>
-      <li>JSON-LD: <a href="https://www.data.gouv.fr/catalog.jsonld">https://www.data.gouv.fr/catalog.jsonld</a></li>
-      <li>Turtle: <a href="https://www.data.gouv.fr/catalog.ttl">https://www.data.gouv.fr/catalog.ttl</a></li>
-      <li>N-Triples: <a href="https://www.data.gouv.fr/catalog.nt">https://www.data.gouv.fr/catalog.nt</a></li>
-      <li>XML-RDF: <a href="https://www.data.gouv.fr/catalog.xml">https://www.data.gouv.fr/catalog.xml</a></li>
-      <li>N3: <a href="https://www.data.gouv.fr/catalog.n3">https://www.data.gouv.fr/catalog.n3</a></li>
-      <li>Trig: <a href="https://www.data.gouv.fr/catalog.trig">https://www.data.gouv.fr/catalog.trig</a></li>
-    </ul>
-  </li>
-  <li>des <a href="https://stats.data.gouv.fr/">statistiques de fréquentation anonymisées</a>, mises à jour toutes les heures</li>
-</ul>
-
-<p>L’intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées (publication d’un jeu de données, création d’organisations, etc). Veuillez consulter la documentation spécifique pour y accéder.</p>
-
-<p><span id="section-moissonage"></span></p>
-
-<h2 id="moissonnage-des-dépôts-de-données-ouvertes">Moissonnage des dépôts de données ouvertes</h2>
-
-<p>« <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » met à disposition une infrastructure de moissonnage,
-permettant d’être automatiquement intégré sur la plateforme.</p>
-
-<p>Aujourd’hui, les moissoneurs suivants sont disponibles :</p>
-
-<ul>
-  <li>CKAN (générique) ;</li>
-  <li>OpenDataSoft (générique) ;</li>
-  <li>DCAT-AP (générique) ;</li>
-  <li>maaf (spécifique Ministère de l’Agriculture, de l’Agroalimentaire et de la Forêt).</li>
-</ul>
-
-<p>Il est aussi possible d’écrire ses propres moissonneurs en suivant <a href="http://udata.readthedocs.io/en/stable/harvesting/#custom">la documentation spécifique</a>.</p>
-
-<p>Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr », il est possible (voire recommandé) d’utiliser l’<a href="https://www.data.gouv.fr/api/">API</a> pour pousser ses données.</p>
-
-<p><span id="section-code"></span></p>
-
-<h2 id="le-code-source-de-la-plateforme">Le code source de la plateforme</h2>
-
-<p>L’intégralité du code de la plateforme est <a href="https://github.com/opendatateam/udata">gratuitement disponible en Open-Source</a> sous <a href="https://www.gnu.org/licenses/agpl-3.0.html">licence AGPL3</a>. Cet outil a été développé de façon modulaire pour permettre à tout un chacun de l’installer et de le personnaliser pour son usage propre en marque blanche. Nous avons par exemple développé les modules <a href="https://github.com/etalab/udata-gouvfr">udata-gouvfr</a> pour le rendu et <a href="https://github.com/opendatateam/udata-piwik">udata-piwik</a> pour les statistiques.</p>
-
-<p>Vous pouvez contribuer en suivant la documentation spécifique et en proposant des pull-requests.</p>
-
-      
-      <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_faq/developpeur.md">
-              ✎ Editer cette page
-          </a>
-      </p>
+      <p><strong>Page not found :(</strong></p>
+      <p>The requested page could not be found.</p>
     </div>
-  </div>
-</section>
-
+</div>
     <footer class="footer">
   <div class="container">
     <div class="footer__logo">
