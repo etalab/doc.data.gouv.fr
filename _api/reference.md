@@ -7,7 +7,7 @@ options:
     displayOperationId: true
     docExpansion: none
 ---
-Ceci est la documentation de référence de l'API de www.data.gouv.fr.
+Ceci est la documentation de référence de l'API de [data.gouv.fr](https://www.data.gouv.fr).
 Elle est auto-générée et reflète exactement ce qui est effectivement en production.
 
 Il est recommandé d'avoir lu [l'introduction]({{ site.baseurl }}{% link _api/intro.md %}) avant.

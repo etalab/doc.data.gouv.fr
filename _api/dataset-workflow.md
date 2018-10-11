@@ -33,9 +33,10 @@ Il est recommandé d'avoir lu [l'introduction]({{ site.baseurl }}{% link _api/in
 
 ## Convention
 
-Tous les examples qui suivent sont réalisé avec un compte:
-- un compte actif dont la clé d'API est `my-api-key`
-- une organization dont l'identifiant est `5bbb6d6cff66bd4dc17bfd5a`.
+Tous les examples qui suivent sont réalisés avec un compte:
+- qui est actif
+- dont la clé d'API est `my-api-key`
+- qui est membre d'une organization dont l'identifiant est `5bbb6d6cff66bd4dc17bfd5a`.
 
 Ils utilisent les conventions suivantes pour chaque language:
 

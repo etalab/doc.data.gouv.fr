@@ -24,14 +24,14 @@ Cette clé doit être fournie dans l'entête HTTP `X-API-KEY` à chaque appel en
 ## Autorisations
 Les appels d'API sont soumis aux même permissions que l'interface web.
 
-Par exemple, vous devez être membre de l'organisation pour modifier l'un de ses jeux de données.
+Par exemple, vous devez être membre d'une organisation pour modifier l'un de ses jeux de données.
 
 ## Formats de données
 
 ### Content-type
 
 Les différents points d'entrée de l'API attendent du JSON (`application/json`) en entrée et renvoient du JSON en sortie.
-Les seules exceptions sont les points d'entrée qui acceptent l'upload de fichiers: ils acceptent du `multipart/form-data`et renvoie du JSON.
+Les seules exceptions sont les points d'entrée qui gèrent l'upload de fichiers: ils acceptent du `multipart/form-data`et renvoient du JSON.
 
 ### Identifiants d'URL
 
@@ -39,11 +39,11 @@ Les seules exceptions sont les points d'entrée qui acceptent l'upload de fichie
 - l'identifiant technique permanent (**ex:** `5bbb6d6cff66bd4dc17bfd5a`)
 - le slug (**ex:**  `mon-dataset`)
 
-Par exemple, un dataset `5bbb6d6cff66bd4dc17bfd5a`dont le slug est `mon-dataset`, vous pouvez accéder à l'URL `$API/datasets/<dataset>`, par:
+Par exemple, un dataset `5bbb6d6cff66bd4dc17bfd5a` dont le slug est `mon-dataset`, vous pouvez accéder à l'URL `$API/datasets/<dataset>`, par:
 - `$API/datasets/5bbb6d6cff66bd4dc17bfd5a`
 - `$API/datasets/mon-dataset`
 
-**Attention** toutefois, le slug d'un objet peut-être ammené à changé si le producteur change le nom de l'objet alors que l'identifiant technique ne change jamais. Il est donc préférable d'utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.
+**Attention** toutefois, le slug d'un objet peut-être amené à changer si le producteur change le nom de l'objet alors que l'identifiant technique lui ne change jamais. Il est donc préférable d'utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.
 
 ### Listes simples
 
@@ -107,7 +107,7 @@ Si vous n'arrivez pas à comprendre une erreur, que vous avez besoin de support 
 - un peu de contexte sur la raison de cette requête, son cadre
 
 Parfois, la réponse en erreur comprend une entête `X-Sentry-ID`.
-Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et si c'est un bug à le corriger.
+Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et, si c'est un bug, à le corriger.
 
 ## Documentation de référence
 
