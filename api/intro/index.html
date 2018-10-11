@@ -179,14 +179,14 @@
 <h2 id="autorisations">Autorisations</h2>
 <p>Les appels d’API sont soumis aux même permissions que l’interface web.</p>
 
-<p>Par exemple, vous devez être membre de l’organisation pour modifier l’un de ses jeux de données.</p>
+<p>Par exemple, vous devez être membre d’une organisation pour modifier l’un de ses jeux de données.</p>
 
 <h2 id="formats-de-données">Formats de données</h2>
 
 <h3 id="content-type">Content-type</h3>
 
 <p>Les différents points d’entrée de l’API attendent du JSON (<code class="highlighter-rouge">application/json</code>) en entrée et renvoient du JSON en sortie.
-Les seules exceptions sont les points d’entrée qui acceptent l’upload de fichiers: ils acceptent du <code class="highlighter-rouge">multipart/form-data</code>et renvoie du JSON.</p>
+Les seules exceptions sont les points d’entrée qui gèrent l’upload de fichiers: ils acceptent du <code class="highlighter-rouge">multipart/form-data</code>et renvoient du JSON.</p>
 
 <h3 id="identifiants-durl">Identifiants d’URL</h3>
 
@@ -196,13 +196,13 @@ Les seules exceptions sont les points d’entrée qui acceptent l’upload de fi
   <li>le slug (<strong>ex:</strong>  <code class="highlighter-rouge">mon-dataset</code>)</li>
 </ul>
 
-<p>Par exemple, un dataset <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code>dont le slug est <code class="highlighter-rouge">mon-dataset</code>, vous pouvez accéder à l’URL <code class="highlighter-rouge">$API/datasets/&lt;dataset&gt;</code>, par:</p>
+<p>Par exemple, un dataset <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code> dont le slug est <code class="highlighter-rouge">mon-dataset</code>, vous pouvez accéder à l’URL <code class="highlighter-rouge">$API/datasets/&lt;dataset&gt;</code>, par:</p>
 <ul>
   <li><code class="highlighter-rouge">$API/datasets/5bbb6d6cff66bd4dc17bfd5a</code></li>
   <li><code class="highlighter-rouge">$API/datasets/mon-dataset</code></li>
 </ul>
 
-<p><strong>Attention</strong> toutefois, le slug d’un objet peut-être ammené à changé si le producteur change le nom de l’objet alors que l’identifiant technique ne change jamais. Il est donc préférable d’utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.</p>
+<p><strong>Attention</strong> toutefois, le slug d’un objet peut-être amené à changer si le producteur change le nom de l’objet alors que l’identifiant technique lui ne change jamais. Il est donc préférable d’utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.</p>
 
 <h3 id="listes-simples">Listes simples</h3>
 
@@ -267,7 +267,7 @@ Les seules exceptions sont les points d’entrée qui acceptent l’upload de fi
 </ul>
 
 <p>Parfois, la réponse en erreur comprend une entête <code class="highlighter-rouge">X-Sentry-ID</code>.
-Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et si c’est un bug à le corriger.</p>
+Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et, si c’est un bug, à le corriger.</p>
 
 <h2 id="documentation-de-référence">Documentation de référence</h2>
 
