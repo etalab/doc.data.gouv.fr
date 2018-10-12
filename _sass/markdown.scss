@@ -13,12 +13,25 @@
         margin-top: 0;
       }
     }
+
+    a.anchor {
+      float: right;
+      text-decoration: none;
+
+      svg {
+        height: 0.8em;
+        width: 0.8em;
+        use {
+          fill: $color-darker-grey;
+        }
+      }
+    }
   }
 
   img {
     max-width: 100%;
   }
-  
+
   /**
     * Inline code
     */
@@ -103,7 +116,7 @@
       border: 1px solid $gray-border;
       border-bottom: none;
     }
-    
+
     .tab {
       order: 99; // Put the tabs last
       flex-grow: 1;
@@ -111,7 +124,7 @@
       display: none;
       background: #fff;
     }
-    
+
     input[type="radio"] {
       display: none;
 
@@ -122,7 +135,7 @@
         }
       }
     }
-  
+
     @media (max-width: 45em) {
       .tab, label {
         order: initial;
