@@ -1,5 +1,5 @@
 ---
-title: Gestion d'un jeu de données
+title: Gestion d’un jeu de données
 order: 3
 snippets_types:
     curl.sh:
