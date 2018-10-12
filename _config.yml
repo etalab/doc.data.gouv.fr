@@ -34,7 +34,7 @@ exclude:
 
 collections:
   faq:
-    title: Découvrir l'OpenData
+    title: Découvrir l’OpenData
     output: true
     order: 1
   api:
