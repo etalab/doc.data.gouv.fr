@@ -151,17 +151,27 @@
 <p>Il est recommandé d’avoir lu <a href="/api/intro/">l’introduction</a> avant de consulter cette page.</p>
 
 <ul id="markdown-toc">
-  <li><a href="#convention" id="markdown-toc-convention">Convention</a></li>
-  <li><a href="#création-dun-jeu-de-données" id="markdown-toc-création-dun-jeu-de-données">Création d’un jeu de données</a></li>
-  <li><a href="#modification-dun-jeu-de-données" id="markdown-toc-modification-dun-jeu-de-données">Modification d’un jeu de données</a></li>
-  <li><a href="#ajout-dune-ressource-distante" id="markdown-toc-ajout-dune-ressource-distante">Ajout d’une ressource distante</a></li>
-  <li><a href="#upload-dune-ressource" id="markdown-toc-upload-dune-ressource">Upload d’une ressource</a></li>
-  <li><a href="#mise-à-jour-dune-ressource" id="markdown-toc-mise-à-jour-dune-ressource">Mise à jour d’une ressource</a></li>
-  <li><a href="#suppression-dun-ressource" id="markdown-toc-suppression-dun-ressource">Suppression d’un ressource</a></li>
-  <li><a href="#supression-dun-jeu-de-données" id="markdown-toc-supression-dun-jeu-de-données">Supression d’un jeu de données</a></li>
+  <li><a href="#création-dun-jeu-de-données" id="markdown-toc-création-dun-jeu-de-données">Création d’un jeu de données</a>    <ul>
+      <li><a href="#création-dune-ressource" id="markdown-toc-création-dune-ressource">Création d’une ressource</a>        <ul>
+          <li><a href="#en-envoyant-un-fichier" id="markdown-toc-en-envoyant-un-fichier">En envoyant un fichier</a></li>
+          <li><a href="#en-référençant-une-url-existante" id="markdown-toc-en-référençant-une-url-existante">En référençant une URL existante</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#modification-dun-jeu-de-données" id="markdown-toc-modification-dun-jeu-de-données">Modification d’un jeu de données</a>    <ul>
+      <li><a href="#mise-à-jour-des-metadonnées-de-la-fiche" id="markdown-toc-mise-à-jour-des-metadonnées-de-la-fiche">Mise à jour des metadonnées de la fiche</a></li>
+      <li><a href="#mise-à-jour-des-métadonnées-dune-ressource" id="markdown-toc-mise-à-jour-des-métadonnées-dune-ressource">Mise à jour des métadonnées d’une ressource</a></li>
+      <li><a href="#remplacer-un-fichier-de-ressource" id="markdown-toc-remplacer-un-fichier-de-ressource">Remplacer un fichier de ressource</a></li>
+      <li><a href="#signaler-une-mise-à-jour-distante" id="markdown-toc-signaler-une-mise-à-jour-distante">Signaler une mise à jour distante</a></li>
+      <li><a href="#suppression-dun-ressource" id="markdown-toc-suppression-dun-ressource">Suppression d’un ressource</a></li>
+    </ul>
+  </li>
+  <li><a href="#suppression-dun-jeu-de-données" id="markdown-toc-suppression-dun-jeu-de-données">Suppression d’un jeu de données</a>    <ul>
+      <li><a href="#restauration-dun-jeu-de-données-supprimé-par-erreur" id="markdown-toc-restauration-dun-jeu-de-données-supprimé-par-erreur">Restauration d’un jeu de données supprimé par erreur</a></li>
+    </ul>
+  </li>
 </ul>
-
-<h2 id="convention">Convention</h2>
 
 <p>Tous les examples qui suivent sont réalisés avec un compte:</p>
 <ul>
@@ -170,7 +180,10 @@
   <li>qui est membre d’une organization dont l’identifiant est <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code>.</li>
 </ul>
 
-<p>Ils utilisent les conventions suivantes pour chaque language:</p>
+<p>Les exemples portants sur un jeu de données existant utilisent l’identifiant <code class="highlighter-rouge">5bc04b2cff66bd680e499f4a</code>.
+Ceux portants sur une ressource existante de ce jeu de données utilisent l’identifiant <code class="highlighter-rouge">54d47250-1daf-483b-965a-3013f8c76617</code>.</p>
+
+<p>Pour simplifier la lecture de ces exemples, il y sera fait référence par les variables suivantes pour chaque language:</p>
 
 <div class="tabs">      <input name="snippet-api/convention" type="radio" id="snippet-api/convention-curl" checked="checked" />
 	    <label for="snippet-api/convention-curl">CURL</label>
@@ -178,9 +191,11 @@
         <figure class="highlight">
           <pre><code class="language-bash" data-lang="bash"><span class="c"># All curl snippets assume the following declarations</span>
 <span class="c"># curl needs to be installed</span>
+<span class="nb">export </span>API <span class="o">=</span> <span class="s1">'https://www.data.gouv.fr/api/1'</span>
 <span class="nb">export </span>API_KEY <span class="o">=</span> <span class="s1">'my-api-key'</span>
 <span class="nb">export </span>ORG <span class="o">=</span> <span class="s1">'5bbb6d6cff66bd4dc17bfd5a'</span>
-<span class="nb">export </span>API <span class="o">=</span> <span class="s1">'https://www.data.gouv.fr/api/1'</span>
+<span class="nb">export </span>DATASET <span class="o">=</span> <span class="s1">'5bc04b2cff66bd680e499f4a'</span>
+<span class="nb">export </span>RESOURCE <span class="o">=</span> <span class="s1">'54d47250-1daf-483b-965a-3013f8c76617'</span>
 </code></pre>
         </figure>
       </div>
@@ -190,9 +205,11 @@
         <figure class="highlight">
           <pre><code class="language-bash" data-lang="bash"><span class="c"># All HTTPie snippets assume the following declarations</span>
 <span class="c"># HTTPie needs to be installed</span>
+<span class="nb">export </span>API <span class="o">=</span> <span class="s1">'https://www.data.gouv.fr/api/1'</span>
 <span class="nb">export </span>API_KEY <span class="o">=</span> <span class="s1">'my-api-key'</span>
 <span class="nb">export </span>ORG <span class="o">=</span> <span class="s1">'5bbb6d6cff66bd4dc17bfd5a'</span>
-<span class="nb">export </span>API <span class="o">=</span> <span class="s1">'https://www.data.gouv.fr/api/1'</span>
+<span class="nb">export </span>DATASET <span class="o">=</span> <span class="s1">'5bc04b2cff66bd680e499f4a'</span>
+<span class="nb">export </span>RESOURCE <span class="o">=</span> <span class="s1">'54d47250-1daf-483b-965a-3013f8c76617'</span>
 </code></pre>
         </figure>
       </div>
@@ -207,6 +224,8 @@
 <span class="n">API</span> <span class="o">=</span> <span class="s">'https://www.data.gouv.fr/api/1'</span>
 <span class="n">API_KEY</span> <span class="o">=</span> <span class="s">'my-api-key'</span>
 <span class="n">ORG</span> <span class="o">=</span> <span class="s">'5bbb6d6cff66bd4dc17bfd5a'</span>
+<span class="n">DATASET</span> <span class="o">=</span> <span class="s">'5bc04b2cff66bd680e499f4a'</span>
+<span class="n">RESOURCE</span> <span class="o">=</span> <span class="s">'54d47250-1daf-483b-965a-3013f8c76617'</span>
 
 
 <span class="k">def</span> <span class="nf">api_url</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
@@ -218,12 +237,7 @@
 
 <h2 id="création-dun-jeu-de-données">Création d’un jeu de données</h2>
 
-<p>Pour créer un jeu de données, nous allons utiliser successivement ces API:</p>
-<ul>
-  <li><a href="/api/reference/#/datasets/create_dataset">création de jeu de données</a></li>
-  <li><a href="/api/reference/#/datasets/create_resource">création d’une ressource</a></li>
-  <li><a href="/api/reference/#/datasets/upload_new_dataset_resource">envoi d’une ressource</a></li>
-</ul>
+<p>Pour créer un jeu de données, nous allons utiliser l’API de <a href="/api/reference/#/datasets/create_dataset">création de jeu de données</a>.</p>
 
 <div class="tabs">      <input name="snippet-api/create-dataset" type="radio" id="snippet-api/create-dataset-curl" checked="checked" />
 	    <label for="snippet-api/create-dataset-curl">CURL</label>
@@ -233,7 +247,7 @@
 curl <span class="nt">-H</span> <span class="s2">"Content-Type:application/json"</span> <span class="se">\</span>
      <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
      <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
-     <span class="nt">--data</span> <span class="s1">'{"title": "my title", "description": "My description"}'</span> <span class="se">\</span>
+     <span class="nt">--data</span> <span class="s1">'{"title": "my title", "description": "My description", "organization": "$ORG"}'</span> <span class="se">\</span>
      <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/
 </code></pre>
         </figure>
@@ -244,11 +258,10 @@ curl <span class="nt">-H</span> <span class="s2">"Content-Type:application/json"
         <figure class="highlight">
           <pre><code class="language-bash" data-lang="bash"><span class="c"># Create a dataset using HTTPie</span>
 http POST <span class="nv">$API</span>/datasets/
-    Content-Type:application/json <span class="se">\</span>
-    Accept:application/json <span class="se">\</span>
     X-Api-Key:<span class="nv">$API_KEY</span> <span class="se">\</span>
     <span class="nv">title</span><span class="o">=</span><span class="s2">"Mon titre"</span> <span class="se">\</span>
-    <span class="nv">description</span><span class="o">=</span><span class="s1">'Ma description"
+    <span class="nv">description</span><span class="o">=</span><span class="s1">'Ma description" \
+    organization="$ORG"
 </span></code></pre>
         </figure>
       </div>
@@ -262,6 +275,116 @@ http POST <span class="nv">$API</span>/datasets/
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
     <span class="s">'title'</span><span class="p">:</span> <span class="s">'Mon titre'</span><span class="p">,</span>
     <span class="s">'description'</span><span class="p">:</span> <span class="s">'Ma description'</span><span class="p">,</span>
+    <span class="s">'organization'</span><span class="p">:</span> <span class="n">ORG</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre>
+        </figure>
+      </div>
+</div>
+
+<p>La réponse en JSON contient les metadonnées du jeu de données créé, en particulier l’identifiant et le slug.</p>
+
+<p>La fiche du jeu de données est maintenant créée et il est maintenant possible d’y ajouter des ressources.</p>
+
+<h3 id="création-dune-ressource">Création d’une ressource</h3>
+
+<p>Pour créer une ressource, nous allons utiliser l’API  <a href="/api/reference/#/datasets/create_resource">création d’une ressource</a>.</p>
+
+<p>Il existe 2 cas de création de ressource</p>
+<ul>
+  <li>avec envoie d’un fichier, dit ressource locale</li>
+  <li>avec référencement d’un fichier distant, dit ressource distante</li>
+</ul>
+
+<h4 id="en-envoyant-un-fichier">En envoyant un fichier</h4>
+
+<p>Nous allons utiliser l’API d’<a href="/api/reference/#/datasets/upload_new_dataset_resource">envoi de ressource</a> pour envoyer le fichier.</p>
+
+<div class="tabs">      <input name="snippet-api/upload-resource" type="radio" id="snippet-api/upload-resource-curl" checked="checked" />
+	    <label for="snippet-api/upload-resource-curl">CURL</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># Envoie d'une nouvelle ressource</span>
+curl <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">-F</span> <span class="s1">'file=/chemin/vers/le/fichier'</span>
+     <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/5bc04b2cff66bd680e499f4a/upload
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/upload-resource" type="radio" id="snippet-api/upload-resource-httpie" />
+	    <label for="snippet-api/upload-resource-httpie">HTTPie</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># Envoie d'une nouvelle ressource</span>
+<span class="c"># Create a dataset using HTTPie</span>
+http <span class="nt">-f</span> POST <span class="nv">$API</span>/datasets/5bc04b2cff66bd680e499f4a/upload
+    X-Api-Key:<span class="nv">$API_KEY</span> <span class="se">\</span>
+    file@/chemin/vers/le/fichier
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/upload-resource" type="radio" id="snippet-api/upload-resource-python" />
+	    <label for="snippet-api/upload-resource-python">Python</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-python" data-lang="python"><span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/{}/upload'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">DATASET</span><span class="p">))</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span>
+    <span class="s">'file'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s">'/chemin/vers/le/fichier'</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span>
+<span class="p">})</span>
+</code></pre>
+        </figure>
+      </div>
+</div>
+
+<p>La ressource est automatiquement créée et il est possible de modifier à posteriori les metadonnées avec l’<a href="/api/reference/#/datasets/update_resource">API de mise à jour de ressource</a> comme décrit <a href="#mise-à-jour-des-métadonnées-dune-ressource">plus bas</a></p>
+
+<h4 id="en-référençant-une-url-existante">En référençant une URL existante</h4>
+
+<p>L’API de <a href="/api/reference/#/datasets/create_resource">création de ressource</a>  permet de créer une ressource distante.
+Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.csv.</p>
+
+<div class="tabs">      <input name="snippet-api/remote-resource" type="radio" id="snippet-api/remote-resource-curl" checked="checked" />
+	    <label for="snippet-api/remote-resource-curl">CURL</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># Create a dataset using CURL</span>
+curl <span class="nt">-H</span> <span class="s2">"Content-Type:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">--data</span> <span class="s1">'{"title": "my title", "description": "My description", "type": "main", filetype: "remote", "format": "csv",  "url": "https://url.to/ressource.csv"}'</span> <span class="se">\</span>
+     <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/remote-resource" type="radio" id="snippet-api/remote-resource-httpie" />
+	    <label for="snippet-api/remote-resource-httpie">HTTPie</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash"><span class="c"># Create a dataset using HTTPie</span>
+http POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/ressources/
+    X-Api-Key:<span class="nv">$API_KEY</span> <span class="se">\</span>
+    <span class="nv">title</span><span class="o">=</span><span class="s2">"Mon titre"</span> <span class="se">\</span>
+    <span class="nv">description</span><span class="o">=</span><span class="s2">"Ma description"</span> <span class="se">\</span>
+    <span class="nv">url</span><span class="o">=</span><span class="s2">"https://url.to/ressource.csv"</span> <span class="se">\</span>
+    <span class="nb">type</span><span class="o">=</span><span class="s2">"main"</span> <span class="nv">filetype</span><span class="o">=</span><span class="s2">"remote"</span> <span class="nv">format</span><span class="o">=</span><span class="s2">"csv"</span>
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/remote-resource" type="radio" id="snippet-api/remote-resource-python" />
+	    <label for="snippet-api/remote-resource-python">Python</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-python" data-lang="python"><span class="c1"># Create a dataset with python requests
+</span>
+<span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/{}/resources/'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">DATASET</span><span class="p">))</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+    <span class="s">'title'</span><span class="p">:</span> <span class="s">'Mon titre'</span><span class="p">,</span>
+    <span class="s">'description'</span><span class="p">:</span> <span class="s">'Ma description'</span><span class="p">,</span>
+    <span class="s">'url'</span><span class="p">:</span> <span class="s">'https://url.to/ressource.csv'</span><span class="p">,</span>
+    <span class="s">'type'</span><span class="p">:</span> <span class="s">'main'</span><span class="p">,</span>
+    <span class="s">'filetype'</span><span class="p">:</span> <span class="s">'remote'</span><span class="p">,</span>
+    <span class="s">'format'</span><span class="p">,</span> <span class="s">'csv'</span><span class="p">,</span>
 <span class="p">})</span>
 </code></pre>
         </figure>
@@ -270,15 +393,55 @@ http POST <span class="nv">$API</span>/datasets/
 
 <h2 id="modification-dun-jeu-de-données">Modification d’un jeu de données</h2>
 
-<h2 id="ajout-dune-ressource-distante">Ajout d’une ressource distante</h2>
+<p>La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est <code class="highlighter-rouge">5bc04b2cff66bd680e499f4a</code> sur lequel vous avez les permissions nécéssaires à la modification.
+Ce jeu de données possède une ressource <code class="highlighter-rouge">54d47250-1daf-483b-965a-3013f8c76617</code> qui soit distante soit locale suivant les examples.</p>
 
-<h2 id="upload-dune-ressource">Upload d’une ressource</h2>
+<h3 id="mise-à-jour-des-metadonnées-de-la-fiche">Mise à jour des metadonnées de la fiche</h3>
 
-<h2 id="mise-à-jour-dune-ressource">Mise à jour d’une ressource</h2>
+<center><strong>🚧 TODO 🚧</strong></center>
 
-<h2 id="suppression-dun-ressource">Suppression d’un ressource</h2>
+<div class="tabs"></div>
 
-<h2 id="supression-dun-jeu-de-données">Supression d’un jeu de données</h2>
+<h3 id="mise-à-jour-des-métadonnées-dune-ressource">Mise à jour des métadonnées d’une ressource</h3>
+
+<center><strong>🚧 TODO 🚧</strong></center>
+
+<div class="tabs"></div>
+
+<h3 id="remplacer-un-fichier-de-ressource">Remplacer un fichier de ressource</h3>
+
+<center><strong>🚧 TODO 🚧</strong></center>
+
+<div class="tabs"></div>
+
+<h3 id="signaler-une-mise-à-jour-distante">Signaler une mise à jour distante</h3>
+
+<center><strong>🚧 TODO 🚧</strong></center>
+
+<div class="tabs"></div>
+
+<h3 id="suppression-dun-ressource">Suppression d’un ressource</h3>
+
+<center><strong>🚧 TODO 🚧</strong></center>
+
+<div class="tabs"></div>
+
+<h2 id="suppression-dun-jeu-de-données">Suppression d’un jeu de données</h2>
+
+<p>Pour supprimer un jeu de données, il suffit d’utiliser l’API de <a href="/api/reference/#/datasets/delete_dataset">suppression de jeu de données</a>:</p>
+
+<center><strong>🚧 TODO 🚧</strong></center>
+<div class="tabs"></div>
+
+<p>Le jeu de données est maintenant <strong>marqué comme supprimé</strong>, il reste visible uniquement par vous et les membres de votre organisation,ainsi que par l’équipe d’administrateur de data.gouv.fr.
+Il sera purgé (supprimé définitivement de la plateforme), d’ici la fin de la journée.</p>
+
+<h3 id="restauration-dun-jeu-de-données-supprimé-par-erreur">Restauration d’un jeu de données supprimé par erreur</h3>
+
+<p>Tant que le jeu de donnéesn’a pas été purgé, vous avez la possibilité de le restaurer:</p>
+
+<center><strong>🚧 TODO 🚧</strong></center>
+<div class="tabs"></div>
 
       
       <p class="edit text-center">
