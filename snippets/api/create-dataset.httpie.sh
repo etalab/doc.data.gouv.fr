@@ -1,6 +1,5 @@
-# Create a dataset using HTTPie
-http POST $API/datasets/
-    X-Api-Key:$API_KEY \
-    title="Mon titre" \
-    description='Ma description" \
-    organization="$ORG"
+http POST $API/datasets/ \
+     X-Api-Key:$API_KEY \
+     title="Mon titre" \
+     description="Ma description" \
+     organization=$ORG

@@ -1,6 +1,6 @@
-# All python snippets assume the following declarations
+# Tous les examples Python sont executés avec cette convention
 
-import requests  # Installed with `pip install requests`
+import requests  # installé avec `pip install requests`
 
 API = 'https://www.data.gouv.fr/api/1'
 API_KEY = 'my-api-key'

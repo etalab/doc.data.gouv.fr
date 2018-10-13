@@ -1,5 +1,5 @@
-# All curl snippets assume the following declarations
-# curl needs to be installed
+# Tous les examples CURL sont executés avec cette convention
+# CURL doit être installé
 export API = 'https://www.data.gouv.fr/api/1'
 export API_KEY = 'my-api-key'
 export ORG = '5bbb6d6cff66bd4dc17bfd5a'
