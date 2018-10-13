@@ -6,4 +6,4 @@ response = requests.post(url, json={
     'type': 'main',
     'filetype': 'remote',
     'format': 'csv',
-})
+}, headers=HEADERS)

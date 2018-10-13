@@ -53,7 +53,7 @@ La réponse en JSON contient les metadonnées du jeu de données créé, en part
 
 La fiche du jeu de données est maintenant créée et il est maintenant possible d'y ajouter des ressources.
 
-### Création d'une ressource
+### Ajout d'une ressource
 
 Pour créer une ressource, nous allons utiliser l'API  [création d'une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource).
 
@@ -84,31 +84,32 @@ Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617`
 
 ### Mise à jour des metadonnées de la fiche
 
-<center><strong>🚧 TODO 🚧</strong></center>
+Cette requête permet de mettre à jour les métadonnées d'un jeu de données en utilisant [l'API de mise à jour de jeu de données]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_dataset)
 
-{% snippets api/update-dataset-meta %}
+{% snippets api/update-dataset %}
 
 ### Mise à jour des métadonnées d'une ressource
 
-<center><strong>🚧 TODO 🚧</strong></center>
+Cette requête permet de mettre à jour les métadonnées d'une ressource en utilisant [l'API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource)
 
 {% snippets api/update-resource-meta %}
 
 ### Remplacer un fichier de ressource
 
-<center><strong>🚧 TODO 🚧</strong></center>
+Dans le cas d'une mise à jour de fichier de ressource locale (correction, ajout de données...),il est possible d'utiliser [l'API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L'ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée surla page du jeu de données pointera vers le nouveau fichier.
 
 {% snippets api/update-resource-file %}
 
-### Signaler une mise à jour distante
+### Signaler une mise à jour de fichier distant
 
-<center><strong>🚧 TODO 🚧</strong></center>
+Dans le cas d'une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que le fiche soit mise à jour et que les usagers le sache.
 
+<center><strong>🚧 Bientôt 🚧</strong></center>
 {% snippets api/update-remote-resource %}
 
 ### Suppression d'un ressource
 
-<center><strong>🚧 TODO 🚧</strong></center>
+<center><strong>🚧 Bientôt 🚧</strong></center>
 
 {% snippets api/delete-resource %}
 
@@ -116,7 +117,7 @@ Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617`
 
 Pour supprimer un jeu de données, il suffit d'utiliser l'API de [suppression de jeu de données]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_dataset):
 
-<center><strong>🚧 TODO 🚧</strong></center>
+<center><strong>🚧 Bientôt 🚧</strong></center>
 {% snippets api/delete-dataset %}
 
 Le jeu de données est maintenant **marqué comme supprimé**, il reste visible uniquement par vous et les membres de votre organisation,ainsi que par l'équipe d'administrateur de data.gouv.fr.
@@ -126,5 +127,5 @@ Il sera purgé (supprimé définitivement de la plateforme), d'ici la fin de la 
 
 Tant que le jeu de donnéesn'a pas été purgé, vous avez la possibilité de le restaurer:
 
-<center><strong>🚧 TODO 🚧</strong></center>
+<center><strong>🚧 Bientôt 🚧</strong></center>
 {% snippets api/restore-dataset %}
