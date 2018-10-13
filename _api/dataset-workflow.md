@@ -96,20 +96,20 @@ Cette requête permet de mettre à jour les métadonnées d'une ressource en uti
 
 ### Remplacer un fichier de ressource
 
-Dans le cas d'une mise à jour de fichier de ressource locale (correction, ajout de données...),il est possible d'utiliser [l'API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L'ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée surla page du jeu de données pointera vers le nouveau fichier.
+Dans le cas d'une mise à jour de fichier de ressource locale (correction, ajout de données...),il est possible d'utiliser [l'API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L'ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée sur la page du jeu de données pointera vers le nouveau fichier.
 
 {% snippets api/update-resource-file %}
 
 ### Signaler une mise à jour de fichier distant
 
-Dans le cas d'une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que le fiche soit mise à jour et que les usagers le sache.
+Dans le cas d'une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que la fiche soit mise à jour et que les usagers le sache.
 
 <center><strong>🚧 Bientôt 🚧</strong></center>
 {% snippets api/update-remote-resource %}
 
 ### Suppression d'un ressource
 
-<center><strong>🚧 Bientôt 🚧</strong></center>
+[l'API de suppression de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_resource) permet de supprimer une ressource de la fiche d'un jeu de données. Le fichier lui n'est pas supprimé afin de ne pas pénaliser ceux qui en dépendent.
 
 {% snippets api/delete-resource %}
 
@@ -117,7 +117,6 @@ Dans le cas d'une ressource distante, lorsque le fichier distant est mis à jour
 
 Pour supprimer un jeu de données, il suffit d'utiliser l'API de [suppression de jeu de données]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_dataset):
 
-<center><strong>🚧 Bientôt 🚧</strong></center>
 {% snippets api/delete-dataset %}
 
 Le jeu de données est maintenant **marqué comme supprimé**, il reste visible uniquement par vous et les membres de votre organisation,ainsi que par l'équipe d'administrateur de data.gouv.fr.
