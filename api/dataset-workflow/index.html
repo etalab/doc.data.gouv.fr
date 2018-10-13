@@ -349,8 +349,7 @@ Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.cs
 	    <label for="snippet-api/remote-resource-curl">CURL</label>
       <div class="tab">
         <figure class="highlight">
-          <pre><code class="language-bash" data-lang="bash"><span class="c"># Create a dataset using CURL</span>
-curl <span class="nt">-H</span> <span class="s2">"Content-Type:application/json"</span> <span class="se">\</span>
+          <pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"Content-Type:application/json"</span> <span class="se">\</span>
      <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
      <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
      <span class="nt">--data</span> <span class="s1">'{"title": "my title", "description": "My description", "type": "main", filetype: "remote", "format": "csv",  "url": "https://url.to/ressource.csv"}'</span> <span class="se">\</span>
@@ -478,7 +477,7 @@ Ce jeu de données possède une ressource <code class="highlighter-rouge">54d472
 
 <h3 id="remplacer-un-fichier-de-ressource">Remplacer un fichier de ressource</h3>
 
-<p>Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données…),il est possible d’utiliser <a href="/api/reference/#/datasets/upload_dataset_resource">l’API de mise à jour de fichier</a>. L’ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée surla page du jeu de données pointera vers le nouveau fichier.</p>
+<p>Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données…),il est possible d’utiliser <a href="/api/reference/#/datasets/upload_dataset_resource">l’API de mise à jour de fichier</a>. L’ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée sur la page du jeu de données pointera vers le nouveau fichier.</p>
 
 <div class="tabs">      <input name="snippet-api/update-resource-file" type="radio" id="snippet-api/update-resource-file-curl" checked="checked" />
 	    <label for="snippet-api/update-resource-file-curl">CURL</label>
@@ -516,23 +515,76 @@ Ce jeu de données possède une ressource <code class="highlighter-rouge">54d472
 
 <h3 id="signaler-une-mise-à-jour-de-fichier-distant">Signaler une mise à jour de fichier distant</h3>
 
-<p>Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que le fiche soit mise à jour et que les usagers le sache.</p>
+<p>Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que la fiche soit mise à jour et que les usagers le sache.</p>
 
 <center><strong>🚧 Bientôt 🚧</strong></center>
 <div class="tabs"></div>
 
 <h3 id="suppression-dun-ressource">Suppression d’un ressource</h3>
 
-<center><strong>🚧 Bientôt 🚧</strong></center>
+<p><a href="/api/reference/#/datasets/delete_resource">l’API de suppression de ressource</a> permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier lui n’est pas supprimé afin de ne pas pénaliser ceux qui en dépendent.</p>
 
-<div class="tabs"></div>
+<div class="tabs">      <input name="snippet-api/delete-resource" type="radio" id="snippet-api/delete-resource-curl" checked="checked" />
+	    <label for="snippet-api/delete-resource-curl">CURL</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">-X</span> DELETE <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/<span class="nv">$RESOURCE</span>
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/delete-resource" type="radio" id="snippet-api/delete-resource-httpie" />
+	    <label for="snippet-api/delete-resource-httpie">HTTPie</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash">http DELETE <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/ressources/<span class="nv">$RESOURCE</span>/ X-Api-Key:<span class="nv">$API_KEY</span>
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/delete-resource" type="radio" id="snippet-api/delete-resource-python" />
+	    <label for="snippet-api/delete-resource-python">Python</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-python" data-lang="python"><span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/{}/resources/{}/'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">DATASET</span><span class="p">,</span> <span class="n">RESOURCE</span><span class="p">))</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
+</code></pre>
+        </figure>
+      </div>
+</div>
 
 <h2 id="suppression-dun-jeu-de-données">Suppression d’un jeu de données</h2>
 
 <p>Pour supprimer un jeu de données, il suffit d’utiliser l’API de <a href="/api/reference/#/datasets/delete_dataset">suppression de jeu de données</a>:</p>
 
-<center><strong>🚧 Bientôt 🚧</strong></center>
-<div class="tabs"></div>
+<div class="tabs">      <input name="snippet-api/delete-dataset" type="radio" id="snippet-api/delete-dataset-curl" checked="checked" />
+	    <label for="snippet-api/delete-dataset-curl">CURL</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
+     <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
+     <span class="nt">-X</span> DELETE <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/delete-dataset" type="radio" id="snippet-api/delete-dataset-httpie" />
+	    <label for="snippet-api/delete-dataset-httpie">HTTPie</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-bash" data-lang="bash">http DELETE <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/ X-Api-Key:<span class="nv">$API_KEY</span>
+</code></pre>
+        </figure>
+      </div>
+      <input name="snippet-api/delete-dataset" type="radio" id="snippet-api/delete-dataset-python" />
+	    <label for="snippet-api/delete-dataset-python">Python</label>
+      <div class="tab">
+        <figure class="highlight">
+          <pre><code class="language-python" data-lang="python"><span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/{}/'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">DATASET</span><span class="p">))</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
+</code></pre>
+        </figure>
+      </div>
+</div>
 
 <p>Le jeu de données est maintenant <strong>marqué comme supprimé</strong>, il reste visible uniquement par vous et les membres de votre organisation,ainsi que par l’équipe d’administrateur de data.gouv.fr.
 Il sera purgé (supprimé définitivement de la plateforme), d’ici la fin de la journée.</p>
