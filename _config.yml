@@ -4,11 +4,8 @@ description: >
 
 twitter_username: etalab
 github_username:  etalab
-
 github_repository: etalab/doc.data.gouv.fr
-
 url: https://doc.data.gouv.fr
-
 lang: fr
 permalink: pretty
 
@@ -21,7 +18,6 @@ i18n:
 sass:
     style: compressed
 
-
 exclude:
   - README.md
   - docker-compose.yml
@@ -31,18 +27,40 @@ exclude:
   - Gemfile.lock
   - vendor
 
+# Collection configuration
+# Specify a directory to store all our collections in the same place
+collections_dir: articles
 
+# Metadata for our collections
 collections:
   faq:
     title: Découvrir l’OpenData
     output: true
     order: 1
+  a-propos:
+    title: À propos
+    output: true
+    order: 2
+  gestion-du-compte:
+    title: Gestion du compte
+    output: true
+    order: 3
+  jeux-de-donnees:
+    title: Jeux de données
+    output: true
+    order: 4
+  organisations:
+    title: Organisation
+    output: true
+    order: 5
+  reutilisations-et-discussions:
+    title: Réutilisations et discussions
+    output: true
+    order: 6
   api:
     title: API
     output: true
-    order: 2
-
-
+    order: 7
 
 defaults:
   - scope:

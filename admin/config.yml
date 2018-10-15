@@ -27,3 +27,53 @@ collections:
     fields:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: a-propos
+    label: À propos
+    folder: _a-propos
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: gestion-du-compte
+    label: Gestion du compte
+    folder: _gestion-du-compte
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: jeux-de-donnes
+    label: Jeux de données
+    folder: _jeux-de-donnees
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: organisations
+    label: Organisations
+    folder: _organisation
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: reutilisations-et-discussions
+    label: Réutilisations et discussions
+    folder: _reutilisations-et-discussions
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
