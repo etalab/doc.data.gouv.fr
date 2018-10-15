@@ -36,10 +36,3 @@ Une ressource comporte :
 * un format (obligatoire) ;
 * un type mime (facultatif) ;
 * une somme de contrôle (facultative).
-
-***
-
-## Liens
-
-* Publier un jeu de données
-* Supprimer un jeu de données ou une ressource

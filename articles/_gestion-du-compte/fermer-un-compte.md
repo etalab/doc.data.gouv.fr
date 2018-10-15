@@ -13,9 +13,3 @@ Pour clôturer votre compte :
 5. Confirmez la suppression de votre compte en cliquant sur le bouton **Confirmer**, qui figure dans la boîte de dialogue rouge.
 
 La fermeture d’un compte est irréversible. Les informations associées à un compte supprimé sont définitivement effacées.
-
-***
-
-## Liens
-
-* Voir ou modifier un compte (lien vers : Voir ou modifier un compte existant)

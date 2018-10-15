@@ -36,9 +36,3 @@ Une fois le formulaire d’inscription validé, rendez-vous dans la boîte de r�
 
 1. Ouvrez l’e-mail qui vous a été envoyé par `no-reply@data.gouv.fr` et cliquez sur le bouton **CONFIRMER MAINTENANT** qu’il contient.
 2. L’e-mail vous redirige alors vers la [page d’accueil du site data.gouv.fr](https://www.data.gouv.fr/fr/) où vous avez désormais accès à votre compte utilisateur.
-
-***
-
-## Liens
-
-* Voir ou modifier un compte (lien vers : Voir ou modifier un compte existant)

@@ -24,10 +24,3 @@ Une organisation permet de :
 
 * rassembler des utilisateurs unis par un intérêt commun ;
 * publier des jeux de données au nom de l’organisation ;
-
-***
-
-## Liens
-
-* Gérer une organisation (lien vers la section Organisations)
-* Créer un nouveau compte (lien vers : Créer un nouveau compte)
