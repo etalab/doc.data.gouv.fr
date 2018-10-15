@@ -169,15 +169,7 @@ INSPIRE s’applique à 34 domaines thématiques, se décomposant en trois group
 Les standards de la géomatique ne sont pas ceux du Web et pourtant ils structurent l’immense capital
 d’informations accumulé depuis plusieurs dizaines d’années. D’un côté des normes comme Inspire, WFS, WCS, CSW, Shapefiles, GeoJSON, KML, de l’autre des outils gratuits comme OpenStreetMap ou Google Earth. La passerelle Inspire, en production depuis début 2015, permet aux producteurs et aux réutilisateurs d’exploiter au mieux ces gisements de données colossaux, en les rendant automatiquement disponibles dans les standards du Web.
 
-Besoin d’une carte des zones d’inondation en Bourgogne ? Cliquez sur le jeu de données et visualisez-le dans une carte OpenStreet Map n’a jamais été aussi simple.
-
-Fin 2015, le moteur Inspire de « [data.gouv.fr][] » permettra surtout de réunir les données géographiques produites au plus près du terrain par les collectivités dans des référentiels nationaux fédérés. Ce dispositif permettra notamment d’élargir le périmètre de l’API Carto, destiné à simplifier la création de démarches en ligne ayant une composante géographique (déclaration de travaux, demande d’autorisation de ruchers, action associative sur une zone Politique de la Ville, etc.). API Carto sera quant à lui amené à diffuser de la donnée non-publique, soumise au consentement de l’usager, comme des données cadastrales personnelles. API Carto sera donc un distributeur des référentiels nationaux géographiques.
-
-C’est une donnée géographique homogène qui permettra l’émergence d’algorithmes au service de la transition énergétique, de la transparence des politiques d’aménagement, des politiques agricoles…
-
-Enfin, l’intégration géographique permettra de projeter des jeux de données nationaux dans les territoires, promesse de territoire « [data.gouv.fr][] ». Pour une organisation inscrite sur « [data.gouv.fr][] », il suffira d’activer l’option, puis de choisir les jeux de données nationaux qu’elle souhaite diffuser sur son compte: comptabilité locale issue de la Direction Générale des Finances, indicateurs socio-économiques INSEE, élections, etc. En miroir, tout producteur national pourra suivre un guide simple pour rendre un jeu de données national compatible avec territoire.data.gouv.fr. Tout référentiel national est bien sûr naturellement intégré dans territoire.data.gouv.fr, par exemple les collèges et lycées sur votre département ou votre région.
-
-### Pour contribuer à la passerelle Inspire en tant qu’autorité locale géographique (DDT, DREAL, DDTM…) :
+### Pour contribuer à la passerelle Inspire en tant qu’autorité locale géographique (DDT, DREAL, DDTM…)
 
 1. Adoptez le plan de nommage suivant pour les producteurs de l’administration déconcentrée :
    - `DR[xxx] [Nom de la région accents respectés, trait-d’union partout]`` :
