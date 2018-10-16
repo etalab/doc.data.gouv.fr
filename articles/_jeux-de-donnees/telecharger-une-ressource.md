@@ -4,7 +4,7 @@ slug: telecharger-une-ressource
 ---
 # Télécharger une ressource
 
-Quand vous consultez un jeu de données sur data.gouv.fr, les ressources qu’ils contient sont hébergées sur un serveur. Pour ajouter les ressources sur votre propre machine, vous devez les télécharger. Il n’est pas nécessaire de posséder un compte sur data.gouv.fr pour télécharger des données qui y sont répertoriées.
+Quand vous consultez un jeu de données sur data.gouv.fr, les ressources qu’ils contient sont hébergées sur un serveur. Pour récupérer les ressources sur votre propre machine, vous devez les télécharger. Il n’est pas nécessaire de posséder un compte sur data.gouv.fr pour télécharger des données qui y sont répertoriées.
 
 Pour télécharger une ressource :
 
