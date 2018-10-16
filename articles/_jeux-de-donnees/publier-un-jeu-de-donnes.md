@@ -193,7 +193,7 @@ La somme de contrôle permet de calculer l’empreinte d’un fichier, pour s’
 Deux cas doivent ici être distingués :
 
 * si vous importez votre fichier, vous n’avez rien à faire, car la somme de contrôle est créée par data.gouv.fr ;
-* si vous référencez un fichier externe, vous pouvez indiquer ici votre propre somme de contrôle. Le menu déroulant permet de sélectionner l’algorithme utilisé pour créer la somme de contrôle, parmi : `sha1`, `sha2`, `sha256`, `md5`, `crc`.
+* si vous référencez un fichier externe, vous pouvez indiquer ici votre propre somme de contrôle. Le menu déroulant permet de sélectionner l’algorithme utilisé pour créer la somme de contrôle, parmi : `sha1`, `sha2`, `sha256`, `md5`, `crc` (nous vous conseillons d’utiliser `sha256`si vous en avez la possibilité).
 
 La somme de contrôle est facultative.
 
