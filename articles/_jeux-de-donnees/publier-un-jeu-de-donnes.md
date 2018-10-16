@@ -162,7 +162,7 @@ L’URL est obligatoire.
 Là encore, deux cas à distinguer :
 
 * si vous importez votre fichier, vous n’avez rien à faire, car nous calculons la taille de votre ressource pour vous ;
-* si vous référencez un fichier hébergé ailleurs, indiquez ici sa taille (en bytes).
+* si vous référencez un fichier hébergé ailleurs, indiquez ici sa taille (en octets).
 
 La taille est facultative.
 
