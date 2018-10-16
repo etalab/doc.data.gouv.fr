@@ -49,9 +49,9 @@ Le type est obligatoire.
 **Description**
 Saisissez ici des précisions sur :
 
-* ce que la réutilisation cherche à montrer ;
-* les conclusions que la réutilisation permet de tirer ;
-* l’auteur de la réutilisation.
+* la méthode de création de la réutilisation (les outils et traitements utilisés par exemple) ;
+* ce que la réutilisation permet de faire ou de montrer (les conclusions qu’on peut en tirer par exemple) ;
+* l’auteur de la réutilisation (ce qui vous a donné envie de réutiliser les données par exemple).
 
 La description est obligatoire.
 
