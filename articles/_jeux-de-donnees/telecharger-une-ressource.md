@@ -12,4 +12,4 @@ Pour télécharger une ressource :
 2. Repérez la ressource à obtenir et cliquez sur le bouton **Télécharger** qui s’y rapporte ;
 3. Votre téléchargement commence.
 
-S’il la ressource qui vous intéresse est un fichier CSV, vous pouvez prévisualiser le CSV avant de le télécharger en cliquant sur le bouton **Prévisualiser**.
+Dans certains cas, vous pouvez prévisualiser un fichier avant de le télécharger en cliquant sur le bouton **Prévisualiser** qui se trouve à côté du bouton **Télécharger**. Cette fonctionnalité n’est pas disponible pour tous les fichiers.
