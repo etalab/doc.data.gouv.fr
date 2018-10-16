@@ -24,3 +24,4 @@ Une organisation permet de :
 
 * rassembler des utilisateurs unis par un intérêt commun ;
 * publier des jeux de données au nom de l’organisation ;
+* devenir un producteur de données certifié par data.gouv.fr.
