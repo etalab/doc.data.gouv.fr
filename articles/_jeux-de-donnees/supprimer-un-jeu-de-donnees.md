@@ -4,7 +4,9 @@ slug: supprimer-un-jeu-de-donnees
 ---
 # Supprimer un jeu de données ou une ressource
 
-Vous pouvez supprimer un jeu de données, ou l’une des ressources qui le compose, si vous êtes l’auteur du jeu de données en question, ou si vous appartenez à l’organisation qui en est à l’origine. Supprimer un jeu de données ou une ressource est irréversible. Un jeu de données ou une ressource supprimé peut rester en ligne jusqu’à 24 heures supplémentaires avant de disparaître complètement.
+Vous pouvez supprimer un jeu de données, ou l’une des ressources qui le compose, si vous êtes l’auteur du jeu de données en question, ou si vous appartenez à l’organisation qui en est à l’origine. Supprimer un jeu de données ou une ressource est irréversible.
+
+Les données supprimées peuvent rester en ligne quelques heures jusqu’à ce qu’elles soient définitivement effacées, ce qui intervient généralement le jour même, un peu avant minuit. Pendant cette période de transition, les données supprimées ne sont visibles que par leur producteur et l’équipe de data.gouv.fr.
 
 ## Supprimer un jeu de données
 
