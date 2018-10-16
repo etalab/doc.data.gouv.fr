@@ -89,7 +89,7 @@ La couverture temporelle est facultative.
 
 ### Couverture spatiale
 
-La couverture spatiale de vos données correspond aux zones géographiques couvertes par vos données. Si vos données concerne une ville ou un pays en particulier, c’est ici que vous précisez le nom de la ville ou celui du pays en question. Si vos données concernent plusieurs zones géographiques, vous pouvez les ajouter les unes à la suite des autres, comme s’il s’agissait de mots clefs.
+La couverture spatiale de vos données correspond aux zones géographiques qu’elles couvrent et pour lesquelles elles sont pertinentes. Si vos données concernent une ville ou un pays en particulier, c’est ici que vous précisez le nom de la ville ou celui du pays en question. Si vos données concernent plusieurs zones géographiques, vous pouvez les ajouter les unes à la suite des autres, comme s’il s’agissait de mots clefs.
 
 La couverture spatiale est facultative.
 
