@@ -6,7 +6,7 @@ slug: creer-une-organisation
 
 Une organisation est une entité au travers de laquelle plusieurs utilisateurs peuvent collaborer sur des jeux de données. Une organisation peut contenir plusieurs utilisateurs ; un même utilisateur peut quant à lui appartenir à plusieurs organisations. Les administrateurs et les éditeurs d’une organisation peuvent en contrôler les membres et les publications au moyen d’une section spécifique de l’interface administrateur.
 
-La création d’une organisation est gratuite. Elle nécessite la création d’un compte utilisateur, car une organisation doit avoir au moins un membre.
+La création d’une organisation est gratuite, elle nécessite la posession d’un compte utilisateur. Une organisation doit avoir au moins un membre. Il n’y a pas de contrainte sur le nombre maximal de membres que peut accueillir une organisation.
 
 ## Pourquoi créer une organisation
 
