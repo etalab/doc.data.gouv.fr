@@ -26,10 +26,10 @@ L’étape 2 de la publication d’un jeu de données vous permet de décrire le
 
 ### Titre
 
-Le titre de votre jeu de données doit être spécifique, précis. Choisissez bien vos mots-clefs et restez fidèle à ce que contiennent vos données.
+La plupart des utilisateurs de data.gouv.fr trouvent des jeux de données grâce à un moteur de recherche. Afin que vos données soient faciles à trouver, employez le même vocabulaire que le public pour les décrire. Cela commence par un titre spécifique et précis, car le titre est l’élément qui a le plus d’importance aux yeux des moteurs de recherche.
 
 * **Mauvais titre** : Horaires des cars
-* **Bon titre** : Horaires des autobus de la ville de Brive
+* **Bon titre** : Horaires des autobus de la ville de Brive pour la période 2018 – 2019
 
 La présence d’un titre est obligatoire.
 
