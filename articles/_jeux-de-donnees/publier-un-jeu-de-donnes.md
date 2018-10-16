@@ -127,7 +127,7 @@ Pour chaque fichier importé sur data.gouv.fr, vous devez choisir une catégorie
 
 * **fichier principal** : désigne tous les fichiers qui contiennent vos données brutes ;
 * **documentation** : désigne les fichiers annexes, qui contiennent généralement des explications au sujet de vos fichiers principaux ;
-* **mise à jour** : permet d’indiquer que le fichier importé existe déjà sur data.gouv.fr, mais dans une version antérieure, datée ;
+* **mise à jour** : permet d’indiquer que le fichier importé met à jour un _fichier principal_ précédement mis en ligne ;
 * **API** : désigne l’API qui permet d’accéder à vos données et vers laquelle vous ajoutez un lien dans le champ **URL** qui se trouve plus bas ;
 * **dépôt de code** : désigne le dépôt de code (_repository_ en anglais) qui contient vos données et vers lequel vous ajoutez un lien dans le champ **URL** qui se trouve plus bas ;
 * **autre** : pour tous les autres types de fichier.
