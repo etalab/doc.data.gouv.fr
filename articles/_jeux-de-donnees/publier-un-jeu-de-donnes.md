@@ -75,7 +75,7 @@ Vous devez définir une fréquence _théorique_ de mise à jour pour votre jeu d
 
 La fréquence de mise à jour est obligatoire. La date de dernière mise à jour des données est facultative.
 
-### Mots-clefs
+### Mots clefs
 
 Vous pouvez ajouter des mots clefs à votre jeu de données. Les mots clefs peuvent indiquer le format de vos données, votre secteur d’activité, votre type de structure, ou encore votre sujet. Les mots clefs apparaissent sur la page de présentation de votre jeu de données. Vous pouvez cliquer sur un mots clef pour voir la liste des autres jeux de données auquel le mot clef en question a été assigné. Dit autrement, c’est un moyen de découvrir de nouveaux jeux de données.
 
