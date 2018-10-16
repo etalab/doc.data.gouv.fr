@@ -63,9 +63,11 @@ La présence d’une description est obligatoire.
 
 ### Licence
 
-Nous vous conseillons de choisir une licence sous laquelle publier vos données, mais rien ne vous y oblige. Si vos données sont ouvertes, nous vous recommandons la licence ouvert ; si elle contiennent une obligation de réciprocité, la licence oDbL convient bien. En choisissant une licence, vous permettez au public de savoir s’il peut adapter et réutiliser vos données et sous quelles conditions.
+Nous vous conseillons de choisir une licence sous laquelle publier vos données, mais rien ne vous y oblige. Si vos données sont ouvertes, nous vous recommandons [la licence ouverte](https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf) ; si elle contiennent une obligation de réciprocité, [la licence oDbL](https://spdx.org/licenses/ODbL-1.0.html#licenseText) convient bien. En choisissant une licence, vous permettez au public de savoir s’il peut adapter et réutiliser vos données et sous quelles conditions.
 
 La présence d’une licence est facultative.
+
+[Voir comment bien choisir une licence](https://www.data.gouv.fr/fr/licences)
 
 ### Fréquence de mise à jour
 
