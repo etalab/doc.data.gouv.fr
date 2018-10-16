@@ -170,8 +170,8 @@ La taille est facultative.
 
 Le format du fichier que vous ajoutez. Deux possibilités :
 
-* si vous importez votre fichier, nous détectons automatiquement son format. Vous n’avez donc rien à faire ;
-* si vous référencez un fichier externe, précisez ici son format, c’est-à-dire l’extension du nom de fichier.
+* si vous importez votre fichier, nous détectons automatiquement son format, vous n’avez donc rien à faire ;
+* si vous référencez un fichier externe, précisez ici son format.
 
 Le format est obligatoire.
 
