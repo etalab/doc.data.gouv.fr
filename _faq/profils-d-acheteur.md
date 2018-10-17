@@ -4,6 +4,10 @@ subtitle: En tant que profil d’acheteur
 label: En tant que profil d’acheteur
 ---
 # Comment remplir les obligations légales des profils d’acheteur ?
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ## Un peu de contexte
 
