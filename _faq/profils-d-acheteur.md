@@ -203,10 +203,10 @@ Vous trouverez un exemple de structure de fichier [sur data.gouv.fr](https://www
 <strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant :
 « DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
 
-La procédure complète pour déposer un ficher de déclaration de profil d'acheteur sur data.gouv.fr est la suivante :
+La procédure complète pour déposer un ficher de déclaration de profil d‘acheteur sur data.gouv.fr est la suivante :
 1. créer un compte individuel via https://www.data.gouv.fr/fr/register ;
-2. une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur via https://www.data.gouv.fr/fr/admin/organization/new/ ;
-3. créer un jeu de données via https://www.data.gouv.fr/fr/admin/dataset/new/ en choisissant lors de l'étape « Choisissez qui publie » l'organisation créée au point précédent ;
-4. à l'étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d'autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
-5. à l'étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.
+2. une fois celui-ci validé via l‘email de confirmation, créer une organisation correspondant à votre profil d’acheteur via https://www.data.gouv.fr/fr/admin/organization/new/ ;
+3. créer un jeu de données via https://www.data.gouv.fr/fr/admin/dataset/new/ en choisissant lors de l‘étape « Choisissez qui publie » l‘organisation créée au point précédent ;
+4. à l‘étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d'autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
+5. à l‘étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.
 
