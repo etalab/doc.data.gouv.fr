@@ -187,7 +187,7 @@ Exemples d’URL :
 
 La déclaration du profil d’acheteur est effectuée par l’acheteur ou toute personne habilitée par celui-ci sur le portail unique interministériel ([data.gouv.fr](https://data.gouv.fr)) destiné à rassembler et à mettre à disposition librement l’ensemble des informations publiques.
 
-L’objectif est d’impliquer les **éditeurs** de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l'éditeur n'est pas en mesure d'assurer la déclaration, le profil d'acheteur peut le faire directement.
+L’objectif est d’impliquer les **éditeurs** de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n'est pas en mesure d'assurer la déclaration, l’administrateur du profil d'acheteur ou l’acheteur peut le faire directement.
 
 ### Comment déclarer ?
 
