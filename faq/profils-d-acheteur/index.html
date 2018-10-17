@@ -149,7 +149,50 @@
 
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="comment-remplir-les-obligations-légales-des-profils-dacheteur-">Comment remplir les obligations légales des profils d’acheteur ?</h1>
+      <h1 class="no_toc" id="comment-remplir-les-obligations-légales-des-profils-dacheteur-">Comment remplir les obligations légales des profils d’acheteur ?</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#un-peu-de-contexte" id="markdown-toc-un-peu-de-contexte">Un peu de contexte</a></li>
+  <li><a href="#publication-des-données-essentielles-via-lapi-datagouvfr" id="markdown-toc-publication-des-données-essentielles-via-lapi-datagouvfr">Publication des données essentielles via l’API data.gouv.fr</a>    <ul>
+      <li><a href="#jeu-de-données" id="markdown-toc-jeu-de-données">Jeu de données</a>        <ul>
+          <li><a href="#nom-title-dans-lapi" id="markdown-toc-nom-title-dans-lapi">Nom (<code class="highlighter-rouge">title</code> dans l’API)</a></li>
+          <li><a href="#description-description" id="markdown-toc-description-description">Description (<code class="highlighter-rouge">description</code>)</a></li>
+          <li><a href="#mot-clés-tags" id="markdown-toc-mot-clés-tags">Mot-clés (<code class="highlighter-rouge">tags</code>)</a></li>
+          <li><a href="#extras-extras" id="markdown-toc-extras-extras">Extras (<code class="highlighter-rouge">extras</code>)</a></li>
+          <li><a href="#licence-license" id="markdown-toc-licence-license">Licence (<code class="highlighter-rouge">license</code>)</a></li>
+          <li><a href="#organisation-organization" id="markdown-toc-organisation-organization">Organisation (<code class="highlighter-rouge">organization</code>)</a></li>
+          <li><a href="#fréquence-frequency" id="markdown-toc-fréquence-frequency">Fréquence (<code class="highlighter-rouge">frequency</code>)</a></li>
+        </ul>
+      </li>
+      <li><a href="#ressource" id="markdown-toc-ressource">Ressource</a>        <ul>
+          <li><a href="#nom-du-fichier" id="markdown-toc-nom-du-fichier">Nom du fichier</a></li>
+          <li><a href="#url-url" id="markdown-toc-url-url">URL (<code class="highlighter-rouge">url</code>)</a></li>
+          <li><a href="#nom-title-dans-lapi-1" id="markdown-toc-nom-title-dans-lapi-1">Nom (<code class="highlighter-rouge">title</code> dans l’API)</a></li>
+          <li><a href="#type-de-fichier-filetype" id="markdown-toc-type-de-fichier-filetype">Type de fichier (<code class="highlighter-rouge">filetype</code>)</a></li>
+          <li><a href="#type-mime-mime" id="markdown-toc-type-mime-mime">Type MIME (<code class="highlighter-rouge">mime</code>)</a></li>
+          <li><a href="#type-de-ressource-type" id="markdown-toc-type-de-ressource-type">Type de ressource (<code class="highlighter-rouge">type</code>)</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#téléchargement-des-données-essentielles-transmises-par-la-dgfip-via-le-pes-marché" id="markdown-toc-téléchargement-des-données-essentielles-transmises-par-la-dgfip-via-le-pes-marché">Téléchargement des données essentielles transmises par la DGFiP via le PES Marché</a>    <ul>
+      <li><a href="#via-un-système-de-fichier" id="markdown-toc-via-un-système-de-fichier">Via un système de fichier</a></li>
+      <li><a href="#via-lapi" id="markdown-toc-via-lapi">Via l’API</a>        <ul>
+          <li><a href="#récupérer-la-liste-des-ressources-du-jeu-de-données" id="markdown-toc-récupérer-la-liste-des-ressources-du-jeu-de-données">Récupérer la liste des ressources du jeu de données</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#déclaration-dun-profil-dacheteur" id="markdown-toc-déclaration-dun-profil-dacheteur">Déclaration d’un profil d’acheteur</a>    <ul>
+      <li><a href="#qui-doit-déclarer-" id="markdown-toc-qui-doit-déclarer-">Qui doit déclarer ?</a></li>
+      <li><a href="#comment-déclarer-" id="markdown-toc-comment-déclarer-">Comment déclarer ?</a>        <ul>
+          <li><a href="#format-de-fichier" id="markdown-toc-format-de-fichier">Format de fichier</a></li>
+          <li><a href="#dépôt-sur-datagouvfr" id="markdown-toc-dépôt-sur-datagouvfr">Dépôt sur data.gouv.fr</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 <h2 id="un-peu-de-contexte">Un peu de contexte</h2>
 
@@ -345,11 +388,17 @@ Pour plus d’informations, vous pouvez consulter [la page thématique](https://
 
 <h2 id="déclaration-dun-profil-dacheteur">Déclaration d’un profil d’acheteur</h2>
 
+<h3 id="qui-doit-déclarer-">Qui doit déclarer ?</h3>
+
 <p>La déclaration du profil d’acheteur est effectuée par l’acheteur ou toute personne habilitée par celui-ci sur le portail unique interministériel (<a href="https://data.gouv.fr">data.gouv.fr</a>) destiné à rassembler et à mettre à disposition librement l’ensemble des informations publiques.</p>
 
-<p>L’objectif est d’impliquer les éditeurs de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics.</p>
+<p>L’objectif est d’impliquer les <strong>éditeurs</strong> de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n’est pas en mesure d’assurer la déclaration, l’administrateur du profil d’acheteur ou l’acheteur peut le faire directement.</p>
 
-<p>Les éditeurs de profil d’acheteur sont invités à se créer un compte sur la plateforme data.gouv.fr afin d’y publier au format .CSV un fichier contenant les informations suivantes :</p>
+<h3 id="comment-déclarer-">Comment déclarer ?</h3>
+
+<h4 id="format-de-fichier">Format de fichier</h4>
+
+<p>Les éditeurs de profil d’acheteur sont invités à créer un fichier au format .CSV contenant les informations suivantes :</p>
 
 <ul>
   <li>le SIRET des acheteurs (colonne <code class="highlighter-rouge">siretAcheteur</code>)</li>
@@ -360,10 +409,20 @@ Pour plus d’informations, vous pouvez consulter [la page thématique](https://
 
 <p>Vous trouverez un exemple de structure de fichier <a href="https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#">sur data.gouv.fr</a>.</p>
 
+<h4 id="dépôt-sur-datagouvfr">Dépôt sur data.gouv.fr</h4>
+
 <p><strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant :
 « DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong></p>
 
-<p>Un modèle de fichier est disponible sur la page suivante : https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/</p>
+<p>La procédure complète pour déposer un ficher de déclaration de profil d‘acheteur sur data.gouv.fr est la suivante :</p>
+<ol>
+  <li>Créer un compte individuel via https://www.data.gouv.fr/fr/register ;</li>
+  <li>Une fois celui-ci validé via l‘email de confirmation, créer une organisation correspondant à votre profil d’acheteur via https://www.data.gouv.fr/fr/admin/organization/new/ ;</li>
+  <li>Créer un jeu de données via https://www.data.gouv.fr/fr/admin/dataset/new/ en choisissant lors de l‘étape « Choisissez qui publie » l‘organisation créée au point précédent ;</li>
+  <li>À l‘étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d’autres métadonnées (couverture spatiale, fréquence de mise à jour…) et <strong>renseigner le tag (mot clé) « decp »</strong> ;</li>
+  <li>À l‘étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.</li>
+</ol>
+
 
       
       <p class="edit text-center">
