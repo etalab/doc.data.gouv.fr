@@ -189,7 +189,7 @@ L’objectif est d’impliquer les **éditeurs** de profils d’acheteurs afin d
 
 #### Format de fichier
 
-Les éditeurs de profil d’acheteur sont à créer un fichier au format .CSV contenant les informations suivantes :
+Les éditeurs de profil d’acheteur sont invités à créer un fichier au format .CSV contenant les informations suivantes :
 
   * le SIRET des acheteurs (colonne `siretAcheteur`)
   * l'adresse URL des profils d'acheteurs (colonne `urlProfilAcheteur`)
