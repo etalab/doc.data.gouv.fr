@@ -15,10 +15,11 @@ Pour mettre en ligne un nouveau jeu de données :
 ## 1. Définissez qui publie les données
 
 Sur data.gouv.fr, vous pouvez mettre en ligne des jeux de données :
+
 * sous votre propre nom, à titre individuel ;
 * pour le compte d’une organisation, à titre collectif.
 
-L’étape 1 de la publication d’un jeu de données vous permet de choisir si les données doivent être publiées à votre nom ou sous la bannière de votre organisation.
+L’étape 1 de la publication d’un jeu de données vous permet de choisir si les données doivent être publiées à votre nom ou sous la bannière de votre organisation. Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom, lorsque cela vous semble pertinent, dans le but d’éviter l’éparpillement de vos publications.
 
 ## 2. Décrivez votre jeu de données
 
