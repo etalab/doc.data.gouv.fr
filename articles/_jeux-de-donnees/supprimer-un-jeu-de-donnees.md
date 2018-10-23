@@ -38,7 +38,7 @@ Pour supprimer un jeu de données publié au nom d’une organisation à laquell
 
 ## Supprimer une ressource
 
-La suppression d’une ressources n’entraîne pas la suppression du jeu de données dont la ressource fait partie.
+La suppression d’une ressources n’entraîne pas la suppression du jeu de données dont la ressource fait partie. Pour éviter les erreurs de redirection, l’URL a laquelle la ressource supprimée était disponible reste valable même après la suppression de la ressource en question. Dit autrement, une ressource supprimée est toujours accessibles aux utilisateurs qui disposent de son lien direct.
 
 ### Supprimer une ressource publiée en votre nom
 
