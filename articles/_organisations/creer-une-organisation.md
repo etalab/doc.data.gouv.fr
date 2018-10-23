@@ -66,8 +66,7 @@ Si votre organisation possède un logo, ou une image de profil, importez-la ici.
 
 Les formats d’image suivant sont acceptés :
 * png ;
-* jpg ;
-* jpeg.
+* jpg/jpeg.
 
 Cliquez sur **Suivant** pour boucler la création de votre organisation.
 
