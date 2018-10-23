@@ -1,8 +1,8 @@
 ---
-title: Voir ou modifier un compte
-slug: voir-ou-modifier-un-compte-existant
+title: Voir ou modifier votre compte
+slug: voir-ou-modifier-votre-compte
 ---
-# Voir ou modifier un compte
+# Voir ou modifier votre compte
 
 Votre page de profil contient des informations au sujet de vos contributions, vos jeux de données, et vos abonnements. Cette page est visible par tout le monde, elle ne nécessite pas de compte utilisateur pour être consultée.
 
