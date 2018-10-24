@@ -2,6 +2,8 @@
 title: Comment remplir les obligations légales des profils d’acheteur ?
 subtitle: En tant que profil d’acheteur
 label: En tant que profil d’acheteur
+redirect_from:
+  - /faq/profils-d-acheteur.html
 ---
 # Comment remplir les obligations légales des profils d’acheteur ?
 {:.no_toc}
@@ -213,4 +215,3 @@ La procédure complète pour déposer un ficher de déclaration de profil d‘ac
 3. Créer un jeu de données via <https://www.data.gouv.fr/fr/admin/dataset/new/> en choisissant lors de l‘étape « Choisissez qui publie » l‘organisation créée au point précédent ;
 4. À l‘étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d'autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
 5. À l‘étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.
-
