@@ -69,3 +69,6 @@ defaults:
       layout: page
 
 theme: jekyll-theme-gouvfr
+
+plugins:
+  - jekyll-redirect-from
