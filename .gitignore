@@ -93,3 +93,6 @@ output/
 theme/node_modules/
 
 .sass-cache/
+
+# DS Store (Mac OS)
+*.DS_Store
