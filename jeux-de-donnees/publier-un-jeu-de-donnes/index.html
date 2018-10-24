@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+
+    <title>Publier un jeu de données</title>
+    <meta name="description" content="Publier un jeu de données" />
+
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
+    <link rel="canonical" href="https://doc.data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnes/" />
+    <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
+</head>
+
+
+  <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-search">
+          <title>search</title>
+          <path d="M15.504 13.616l-3.79-3.223c-0.392-0.353-0.811-0.514-1.149-0.499 0.895-1.048 1.435-2.407 1.435-3.893 0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6c1.486 0 2.845-0.54 3.893-1.435-0.016 0.338 0.146 0.757 0.499 1.149l3.223 3.79c0.552 0.613 1.453 0.665 2.003 0.115s0.498-1.452-0.115-2.003zM6 10c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path>
+        </symbol>
+
+        <symbol id="icon-mail">
+          <title>mail</title>
+          <path d="M29,4l-26,0c-1.65,0 -3,1.35 -3,3l0,20c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-20c0,-1.65 -1.35,-3 -3,-3Zm-16.539,13.199l-8.461,6.59l0,-15.676l8.461,9.086Zm-6.949,-9.199l20.976,0l-10.488,7.875l-10.488,-7.875l0,0Zm7.278,9.553l3.21,3.447l3.21,-3.447l6.58,8.447l-19.579,0l6.58,-8.447l-0.001,0Zm6.749,-0.354l8.461,-9.086l0,15.676l-8.461,-6.59Z"/>
+        </symbol>
+
+        <symbol id="icon-fb">
+          <title>facebook</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l13,0l0,-14l-4,0l0,-4l4,0l0,-2c0,-3.306 2.694,-6 6,-6l4,0l0,4l-4,0c-1.1,0 -2,0.9 -2,2l0,2l6,0l-1,4l-5,0l0,14l9,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Z"/>
+        </symbol>
+
+        <symbol id="icon-github">
+          <title>github</title>
+          <path d="M16,0.395c-8.836,0 -16,7.163 -16,16c0,7.069 4.585,13.067 10.942,15.182c0.8,0.148 1.094,-0.347 1.094,-0.77c0,-0.381 -0.015,-1.642 -0.022,-2.979c-4.452,0.968 -5.391,-1.888 -5.391,-1.888c-0.728,-1.849 -1.776,-2.341 -1.776,-2.341c-1.452,-0.993 0.11,-0.973 0.11,-0.973c1.606,0.113 2.452,1.649 2.452,1.649c1.427,2.446 3.743,1.739 4.656,1.33c0.143,-1.034 0.558,-1.74 1.016,-2.14c-3.554,-0.404 -7.29,-1.777 -7.29,-7.907c0,-1.747 0.625,-3.174 1.649,-4.295c-0.166,-0.403 -0.714,-2.03 0.155,-4.234c0,0 1.344,-0.43 4.401,1.64c1.276,-0.355 2.645,-0.532 4.005,-0.539c1.359,0.006 2.729,0.184 4.008,0.539c3.054,-2.07 4.395,-1.64 4.395,-1.64c0.871,2.204 0.323,3.831 0.157,4.234c1.026,1.12 1.647,2.548 1.647,4.295c0,6.145 -3.743,7.498 -7.306,7.895c0.574,0.497 1.085,1.47 1.085,2.963c0,2.141 -0.019,3.864 -0.019,4.391c0,0.426 0.288,0.925 1.099,0.768c6.354,-2.118 10.933,-8.113 10.933,-15.18c0,-8.837 -7.164,-16 -16,-16l0,0Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path d="M29,0l-26,0c-1.65,0 -3,1.35 -3,3l0,26c0,1.65 1.35,3 3,3l26,0c1.65,0 3,-1.35 3,-3l0,-26c0,-1.65 -1.35,-3 -3,-3Zm-20.281,25.975c-1.5,0 -2.719,-1.206 -2.719,-2.706c0,-1.488 1.219,-2.712 2.719,-2.712c1.506,0 2.719,1.225 2.719,2.712c0,1.5 -1.219,2.706 -2.719,2.706Zm6.825,0.025c0,-2.556 -0.994,-4.962 -2.794,-6.762c-1.806,-1.806 -4.2,-2.8 -6.75,-2.8l0,-3.912c7.425,0 13.475,6.044 13.475,13.475l-3.931,0l0,-0.001Zm6.944,0c0,-9.094 -7.394,-16.5 -16.481,-16.5l0,-3.912c11.25,0 20.406,9.162 20.406,20.413l-3.925,0l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-rss">
+          <title>rss</title>
+          <path id="Checked-Icon" d="M13.23,0.307l-8.118,8.197l-3.345,-3.384c-0.405,-0.408 -1.06,-0.408 -1.464,0c-0.404,0.408 -0.404,1.071 0,1.479l4.055,4.101c0.208,0.21 0.481,0.31 0.754,0.305c0.272,0.005 0.545,-0.095 0.753,-0.305l8.829,-8.915c0.404,-0.408 0.404,-1.07 0,-1.478c-0.404,-0.409 -1.06,-0.409 -1.464,0Z"/>
+        </symbol>
+
+        <symbol id="icon-twitter">
+          <title>twitter</title>
+          <path d="M32,7.075c-1.175,0.525 -2.444,0.875 -3.769,1.031c1.356,-0.813 2.394,-2.1 2.887,-3.631c-1.269,0.75 -2.675,1.3 -4.169,1.594c-1.2,-1.275 -2.906,-2.069 -4.794,-2.069c-3.625,0 -6.563,2.938 -6.563,6.563c0,0.512 0.056,1.012 0.169,1.494c-5.456,-0.275 -10.294,-2.888 -13.531,-6.862c-0.563,0.969 -0.887,2.1 -0.887,3.3c0,2.275 1.156,4.287 2.919,5.463c-1.075,-0.031 -2.087,-0.331 -2.975,-0.819c0,0.025 0,0.056 0,0.081c0,3.181 2.263,5.838 5.269,6.437c-0.55,0.15 -1.131,0.231 -1.731,0.231c-0.425,0 -0.831,-0.044 -1.237,-0.119c0.838,2.606 3.263,4.506 6.131,4.563c-2.25,1.762 -5.075,2.813 -8.156,2.813c-0.531,0 -1.05,-0.031 -1.569,-0.094c2.913,1.869 6.362,2.95 10.069,2.95c12.075,0 18.681,-10.006 18.681,-18.681c0,-0.287 -0.006,-0.569 -0.019,-0.85c1.281,-0.919 2.394,-2.075 3.275,-3.394l0,-0.001Z"/>
+        </symbol>
+
+        <symbol id="icon-googleplus">
+          <title>google +</title>
+          <path d="M29 0H3C1.35 0 0 1.35 0 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM12 24c-4.425 0-8-3.575-8-8s3.575-8 8-8c2.162 0 3.969.787 5.363 2.094l-2.175 2.088c-.594-.569-1.631-1.231-3.188-1.231-2.731 0-4.963 2.263-4.963 5.05s2.231 5.05 4.963 5.05c3.169 0 4.356-2.275 4.538-3.45h-4.537v-2.744h7.556c.069.4.125.8.125 1.325 0 4.575-3.063 7.819-7.681 7.819L12 24zm16-8h-2v2h-2v-2h-2v-2h2v-2h2v2h2v2z" fill="#fff" fill-rule="nonzero"/>
+        </symbol>
+
+        <symbol id="icon-cross">
+            <title>cross</title>
+            <path d="M10 0c5.519 0 10 4.481 10 10s-4.481 10-10 10S0 15.519 0 10 4.481 0 10 0zm3.975 7.56a4.673 4.673 0 0 0-1.535-1.535L10 8.465l-2.44-2.44A4.673 4.673 0 0 0 6.025 7.56L8.465 10l-2.44 2.44c.384.625.91 1.151 1.535 1.535l2.44-2.44 2.44 2.44a4.673 4.673 0 0 0 1.535-1.535L11.535 10l2.44-2.44z"/>
+        </symbol>
+
+        <symbol id="icon-link" viewBox="0 0 512 512">
+            <title>link</title>
+            <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"/>
+        </symbol>
+      </defs>
+    </svg>
+      
+<header class="navbar">
+  <div class="navbar__container">
+    <a class="navbar__home" href="/">
+      <img class="navbar__logo" src="/assets/images/logo-marianne.svg"
+        alt="Data.gouv.fr Docs" /><span class="navbar__domain">doc</span><img src="/assets/images/pointdatagouvfr.svg" class="navbar__gouvfr" alt="gouv.fr" />
+    </a>
+    
+    <nav>
+      <ul class="nav__links">
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div class="hero">
+  <div class="hero__container">
+    <h1 class="hero__title">data.gouv.fr - documentation</h1>
+  </div>
+</div>
+
+<section class="documentation">
+  <nav class="side-pane">
+  <ul class="side-pane__menu">
+    
+    
+        
+        <li class="side-pane__title"><h3></h3></li>
+        
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Découvrir l’OpenData</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/faq/citoyen/">En tant que citoyen</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/developpeur/">En tant que développeur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/integrateur/">En tant qu’intégrateur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/producteur/">En tant que producteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/profils-d-acheteur/">En tant que profil d’acheteur</a>
+        
+        <li >
+            <a class="side-pane__link" href="/faq/reutilisateur/">En tant que réutilisateur</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>À propos</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/a-propos/differences-utilisateur-organisatoion/">Différences entre un utilisateur et une organisation</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Gestion du compte</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/gestion-du-compte/creer-un-compte/">Créer un compte</a>
+        
+        <li >
+            <a class="side-pane__link" href="/gestion-du-compte/supprimer-un-compte/">Supprimer un compte</a>
+        
+        <li >
+            <a class="side-pane__link" href="/gestion-du-compte/voir-ou-modifier-votre-compte/">Voir ou modifier votre compte</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Jeux de données</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/difference-jeu-de-donnees-et-ressource/">Différences entre un jeu de données et une ressource</a>
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/">Mettre à jour un jeu de données ou une ressource</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/jeux-de-donnees/publier-un-jeu-de-donnes/">Publier un jeu de données</a>
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/supprimer-un-jeu-de-donnees/">Supprimer un jeu de données ou une ressource</a>
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/telecharger-une-ressource/">Télécharger une ressource</a>
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/transferer-un-jeu-de-donnees/">Transférer un jeu de données</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Organisation</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/organisations/creer-une-organisation/">Créer une organisation</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>Réutilisations et discussions</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/reutilisations-et-discussions/associer-une-reutilisation-a-un-jeu-de-donnees/">Associer une réutilisation à un jeu de données</a>
+        
+        
+    
+        
+        <li class="side-pane__title"><h3>API</h3></li>
+        
+        
+        <li >
+            <a class="side-pane__link" href="/api/intro/">Introduction</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/tutoriel/">Tutoriel</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/dataset-workflow/">Gestion d’un jeu de données</a>
+        
+        <li >
+            <a class="side-pane__link" href="/api/reference/">Référence</a>
+        
+        
+    
+  </ul>
+</nav>
+
+  <div class="main-pane">
+    <div class="markdown">
+      <h1 id="publier-un-jeu-de-données">Publier un jeu de données</h1>
+
+<p>La publication d’un jeu de données sur data.gouv.fr nécessite la création d’un compte gratuit.</p>
+
+<p>Pour mettre en ligne un nouveau jeu de données :</p>
+<ol>
+  <li><a href="https://www.data.gouv.fr/fr/login">Connectez-vous à votre compte</a> ;</li>
+  <li>Rendez-vous sur <a href="https://www.data.gouv.fr/fr/admin/dataset/new/">la page de création d’un jeu de données</a>, en cliquant sur le bouton <strong>CONTRIBUEZ !</strong> qui se trouve au centre de votre écran.</li>
+</ol>
+
+<p>À partir de là, la publication se déroule en 4 étapes.</p>
+
+<h2 id="1-définissez-qui-publie-les-données">1. Définissez qui publie les données</h2>
+
+<p>Sur data.gouv.fr, vous pouvez mettre en ligne des jeux de données :</p>
+
+<ul>
+  <li>sous votre propre nom, à titre individuel ;</li>
+  <li>pour le compte d’une organisation, à titre collectif.</li>
+</ul>
+
+<p>L’étape 1 de la publication d’un jeu de données vous permet de choisir si les données doivent être publiées à votre nom ou sous la bannière de votre organisation. Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom, lorsque cela vous semble pertinent, dans le but d’éviter l’éparpillement de vos publications.</p>
+
+<h2 id="2-décrivez-votre-jeu-de-données">2. Décrivez votre jeu de données</h2>
+
+<p>L’étape 2 de la publication d’un jeu de données vous permet de décrire les données que vous publiez. Cette étape est cruciale pour que vos données soient bien référencées et facile à réutiliser.</p>
+
+<h3 id="titre">Titre</h3>
+
+<p>La plupart des utilisateurs de data.gouv.fr trouvent des jeux de données grâce à un moteur de recherche. Afin que vos données soient faciles à trouver, employez le même vocabulaire que le public pour les décrire. Cela commence par un titre spécifique et précis, car le titre est l’élément qui a le plus d’importance aux yeux des moteurs de recherche.</p>
+
+<ul>
+  <li><strong>Mauvais titre</strong> : Horaires des cars</li>
+  <li><strong>Bon titre</strong> : Horaires des autobus de la ville de Brive pour la période 2018 – 2019</li>
+</ul>
+
+<p>La présence d’un titre est obligatoire.</p>
+
+<h3 id="sigle">Sigle</h3>
+
+<p>Vous pouvez associer un sigle à votre jeu de données. Par exemple, à la <a href="https://www.data.gouv.fr/fr/datasets/5862206588ee38254d3f4e5e">base des entreprises et de leurs établissements</a>, produite par l’INSEE, est associé le sigle SIRENE. Les lettres qui composent votre sigle n’ont pas besoin d’être séparées par des points.</p>
+
+<ul>
+  <li><strong>Mauvais sigle</strong> : I.R.V.E.</li>
+  <li><strong>Bon sigle</strong> : IRVE</li>
+</ul>
+
+<p>La présence d’un sigle est facultative.</p>
+
+<h3 id="description">Description</h3>
+
+<p>Chaque jeu de données publié sur data.gouv.fr doit être accompagné d’une description. Cette dernière permet aux personnes qui consultent votre jeu de données de comprendre, en quelques lignes, ce qu’il est possible de faire avec vos données, pourquoi elles sont utiles, et comment les manipuler. La description est importante, car c’est généralement la première chose que les gens lisent quand ils découvrent vos données.</p>
+
+<p>Les descriptions répondent généralement aux questions suivantes :</p>
+
+<ul>
+  <li>Que contient le jeu de données ? Combien y a-t-il de fichiers ?</li>
+  <li>Comment les données sont-elles structurées ? À quoi correspondent les colonnes des fichiers CSV ou les tables de la base ?</li>
+  <li>À quoi sert le jeu de données ? Quelle est sa raison d’être ?</li>
+  <li>Qui est à l’origine du jeu de données ? Qui le tient à jour ?</li>
+  <li>Comment lire le jeu de données ? Comment ouvrir les fichiers ?</li>
+  <li>Comment contacter le producteur des données ? À qui s’adresser en cas de problème ?</li>
+</ul>
+
+<p>Répondre à ces questions dans votre description permet aux utilisateurs de récupérer et manipuler vos données facilement.</p>
+
+<p>La <a href="https://fr.wikipedia.org/wiki/Markdown">syntaxe Markdown</a> est prise en charge dans le champ de saisie de la description. Elle vous permet de mettre en forme le texte de votre description, pour y ajouter des titres, des sous-titres, des listes à puces, du gras, ou encore des liens vers d’autres pages web.</p>
+
+<p>La présence d’une description est obligatoire.</p>
+
+<h3 id="licence">Licence</h3>
+
+<p>Nous vous conseillons de choisir une licence sous laquelle publier vos données, mais rien ne vous y oblige. Si vos données sont ouvertes, nous vous recommandons <a href="https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf">la licence ouverte</a> ; si elle contiennent une obligation de réciprocité, <a href="https://spdx.org/licenses/ODbL-1.0.html#licenseText">la licence oDbL</a> convient bien. En choisissant une licence, vous permettez au public de savoir s’il peut adapter et réutiliser vos données et sous quelles conditions. Si vous ne choisissez pas de licence, vos données sont alors soumises au cadre légal définit dans le <a href="https://www.legifrance.gouv.fr/affichCode.do;jsessionid=E4583EBE2857A0DF9056D5D0082F8F2D.tplgfr31s_2?idSectionTA=LEGISCTA000032255212&amp;cidTexte=LEGITEXT000031366350&amp;dateTexte=20181016">Code des relations entre le public et l’administration</a>.</p>
+
+<p>La présence d’une licence est facultative.</p>
+
+<p><a href="https://www.data.gouv.fr/fr/licences">Voir comment bien choisir une licence</a></p>
+
+<h3 id="fréquence-de-mise-à-jour">Fréquence de mise à jour</h3>
+
+<p>Vous devez définir une fréquence <em>théorique</em> de mise à jour pour votre jeu de données. Il s’agit de la fréquence à laquelle vous prévoyez de vous reconnecter sur data.gouv.fr pour mettre à vos données. Cette fréquence est indicative.</p>
+
+<p>La fréquence de mise à jour est obligatoire. La date de dernière mise à jour des données est facultative.</p>
+
+<h3 id="mots-clefs">Mots clefs</h3>
+
+<p>Vous pouvez ajouter des mots clefs à votre jeu de données. Les mots clefs peuvent indiquer votre secteur d’activité (par exemple <code class="highlighter-rouge">agriculture</code>), votre type de structure (par exemple <code class="highlighter-rouge">ministère</code>), ou encore votre sujet (par exemple <code class="highlighter-rouge">élevage</code>). Les mots clefs apparaissent sur la page de présentation de votre jeu de données. Vous pouvez cliquer sur un mots clef pour voir la liste des autres jeux de données auquel le mot clef en question a été assigné. Dit autrement, c’est un moyen de découvrir de nouveaux jeux de données.</p>
+
+<p>Les mots clefs sont facultatifs.</p>
+
+<h3 id="couverture-temporelle">Couverture temporelle</h3>
+
+<p>Vous avez la possibilité de préciser la période couverte par vos données, c’est-à-dire les dates qu’elles concernent. Par exemple, si vous publiez un calendrier, utilisez ce champ pour préciser les années couvertes par votre calendrier.</p>
+
+<p>La couverture temporelle est facultative.</p>
+
+<h3 id="couverture-spatiale">Couverture spatiale</h3>
+
+<p>La couverture spatiale de vos données correspond aux zones géographiques qu’elles couvrent et pour lesquelles elles sont pertinentes. Si vos données concernent une ville ou un pays en particulier, c’est ici que vous précisez le nom de la ville ou celui du pays en question. Si vos données concernent plusieurs zones géographiques, vous pouvez les ajouter les unes à la suite des autres, comme s’il s’agissait de mots clefs.</p>
+
+<p>La couverture spatiale est facultative.</p>
+
+<h3 id="granularité-spatiale">Granularité spatiale</h3>
+
+<p>La granularité spatiale complète la couverture spatiale. Si la couverture spatiale fixe le cadre de la zone géographique couverte par les données, la granularité spatiale décrit le niveau de zoom auquel il est possible de descendre à l’intérieur des données en question. Dit autrement, il s’agit du niveau de finesse de vos données, du plus petit dénominateur qu’elles contiennent.</p>
+
+<p>Par exemple, si vous avez un fichier CSV qui contient les coordonnées géographiques de tous les gymnases du territoire français, alors :</p>
+<ul>
+  <li>votre couverture spatiale correspond à la France, car vos données couvrent l’ensemble du territoire ;</li>
+  <li>votre granularité spatiale se situe au niveau du point d’intérêt (le gymnase étant ici considéré comme un point d’intérêt).</li>
+</ul>
+
+<p>La granularité spatiale est facultative.</p>
+
+<h3 id="privé">Privé</h3>
+
+<p>Si vous souhaitez créer un jeu de données, mais que vous ne souhaitez pas le mettre en ligne tout de suite, vous pouvez cocher la case <strong>Privé</strong>. Quand votre jeu de données est prêt pour le grand soir, décochez la case.</p>
+
+<p>Une fois l’étape 2 complétée, cliquez sur le bouton <strong>Suivant</strong>, présent en bas à droite de la page, pour passer à la dernière étape de la publication : celle de l’importation de vos fichiers.</p>
+
+<h2 id="3-importez-vos-fichiers">3. Importez vos fichiers</h2>
+
+<p>Une fois votre jeu de données décrit, vient le temps d’importer les fichiers ou ressources qui le composent. Pour importer votre premier fichier, cliquez sur le bouton <strong>Choisissez un fichier de votre ordinateur</strong>. Une fois votre fichier importé, vous pouvez le décrire en complétant le formulaire qui apparaît alors sur votre écran. Si votre jeu de données contient plusieurs fichiers, remplissez un formulaire par fichier.</p>
+
+<h3 id="titre-1">Titre</h3>
+
+<p>Le titre de votre fichier doit être descriptif. Par défaut, nous reprenons le titre qu’avait votre fichier au moment de l’importation, mais rien ne vous empêche de le modifier à cette étape si vous souhaitez le préciser.</p>
+
+<p>Si vous référencez un fichier hébergé ailleurs que sur data.gouv.fr, ce champ correspond au nom donné à votre fichier lors de sa mise en ligne.</p>
+
+<p>Le titre est obligatoire.</p>
+
+<h3 id="type">Type</h3>
+
+<p>Pour chaque fichier importé sur data.gouv.fr, vous devez choisir une catégorie dans laquelle le ranger, parmi :</p>
+
+<ul>
+  <li><strong>fichier principal</strong> : désigne tous les fichiers qui contiennent vos données brutes ;</li>
+  <li><strong>documentation</strong> : désigne les fichiers annexes, qui contiennent généralement des explications au sujet de vos fichiers principaux ;</li>
+  <li><strong>mise à jour</strong> : permet d’indiquer que le fichier importé met à jour un <em>fichier principal</em> précédement mis en ligne ;</li>
+  <li><strong>API</strong> : désigne l’API qui permet d’accéder à vos données et vers laquelle vous ajoutez un lien dans le champ <strong>URL</strong> qui se trouve plus bas ;</li>
+  <li><strong>dépôt de code</strong> : désigne le dépôt de code (<em>repository</em> en anglais) qui contient vos données et vers lequel vous ajoutez un lien dans le champ <strong>URL</strong> qui se trouve plus bas ;</li>
+  <li><strong>autre</strong> : pour tous les autres types de fichier.</li>
+</ul>
+
+<p>La désignation du type de fichier est obligatoire.</p>
+
+<h3 id="description-1">Description</h3>
+
+<p>Vous pouvez décrire votre fichier pour indiquer ce qu’il contient. La description prend en compte la syntaxe Markdown.</p>
+
+<p>La description est facultative, mais conseillée.</p>
+
+<h3 id="date-de-publication">Date de publication</h3>
+
+<p>Par défaut, il s’agit de la date à laquelle vous importez votre fichier sur data.gouv.fr, mais vous êtes libre de la changer.</p>
+
+<p>Si vous référencez un fichier hébergé ailleurs que sur data.gouv.fr, il s’agit de la date à laquelle votre fichier a été mis en ligne.</p>
+
+<p>La date de publication est facultative.</p>
+
+<h3 id="url">URL</h3>
+
+<p>Deux cas possibles :</p>
+
+<ul>
+  <li>si vous importez un fichier, vous ne pouvez pas modifier ce champ, car il s’agit alors de l’URL assignée par data.gouv.fr à votre ressource ;</li>
+  <li>si vous référencez un fichier hébergé ailleurs, sur un autre site, ajoutez ici l’URL canonique (qui ne varie pas) permettant d’accéder directement au fichier en question.</li>
+</ul>
+
+<p>L’URL est obligatoire.</p>
+
+<h3 id="taille">Taille</h3>
+
+<p>Là encore, deux cas à distinguer :</p>
+
+<ul>
+  <li>si vous importez votre fichier, vous n’avez rien à faire, car nous calculons la taille de votre ressource pour vous ;</li>
+  <li>si vous référencez un fichier hébergé ailleurs, indiquez ici sa taille (en octets).</li>
+</ul>
+
+<p>La taille est facultative.</p>
+
+<h3 id="format">Format</h3>
+
+<p>Le format du fichier que vous ajoutez. Deux possibilités :</p>
+
+<ul>
+  <li>si vous importez votre fichier, nous détectons automatiquement son format, vous n’avez donc rien à faire ;</li>
+  <li>si vous référencez un fichier externe, précisez ici son format.</li>
+</ul>
+
+<p>Le format est obligatoire.</p>
+
+<h3 id="type-mime">Type MIME</h3>
+
+<p>Le type MIME est un <a href="https://fr.wikipedia.org/wiki/Type_de_médias">identifiant de format de données</a> à la syntaxe assez stricte.</p>
+
+<p>Là encore :</p>
+
+<ul>
+  <li>si vous importez votre fichier, votre type MIME est pré-rempli, vous n’avez donc rien à faire ;</li>
+  <li>si vous référencez un fichier externe, sélectionnez le type MIME qui s’y rapporte parmi <a href="https://fr.wikipedia.org/wiki/Type_de_médias">la liste des types MIME</a>.</li>
+</ul>
+
+<p>Le type MIME est facultatif.</p>
+
+<h3 id="somme-de-contrôle">Somme de contrôle</h3>
+
+<p>La somme de contrôle permet de calculer l’empreinte d’un fichier, pour s’assurer que ce dernier ne varie pas au gré des copies, transferts, ou restaurations.</p>
+
+<p>Deux cas doivent ici être distingués :</p>
+
+<ul>
+  <li>si vous importez votre fichier, vous n’avez rien à faire, car la somme de contrôle est créée par data.gouv.fr ;</li>
+  <li>si vous référencez un fichier externe, vous pouvez indiquer ici votre propre somme de contrôle. Le menu déroulant permet de sélectionner l’algorithme utilisé pour créer la somme de contrôle, parmi : <code class="highlighter-rouge">sha1</code>, <code class="highlighter-rouge">sha2</code>, <code class="highlighter-rouge">sha256</code>, <code class="highlighter-rouge">md5</code>, <code class="highlighter-rouge">crc</code> (nous vous conseillons d’utiliser <code class="highlighter-rouge">sha256</code>si vous en avez la possibilité).</li>
+</ul>
+
+<p>La somme de contrôle est facultative.</p>
+
+<p>Une fois votre fichier décrit, cliquez sur le bouton <strong>Suivant</strong> qui se trouve en bas à droite de la page pour l’importer et publier votre jeu de données.</p>
+
+<h2 id="4-voir-et-compléter-un-jeu-de-données-existant">4. Voir et compléter un jeu de données existant</h2>
+
+<p>Une fois votre première ressource publiée, votre jeu de données devient accessible en ligne, vous pouvez alors :</p>
+
+<ul>
+  <li>voir votre jeu de données sur data.gouv.fr en cliquant sur le bouton <strong>Voir sur le site</strong> ;</li>
+  <li>ajouter d’autres ressources à votre jeu de données en cliquant sur le bouton <strong>Voir dans l’administration</strong> ;</li>
+  <li>partager votre jeu de données sur les réseaux sociaux en cliquant sur l’icône associée au réseau social qui vous concerne.</li>
+</ul>
+
+<h3 id="ajouter-dautres-ressources-à-un-jeu-de-données-existant">Ajouter d’autres ressources à un jeu de données existant</h3>
+
+<p>Pour ajouter des ressources supplémentaires à un jeu de données déjà en ligne, cliquez sur le nom du jeu de données que vous souhaitez enrichir quand vous vous situez <a href="https://www.data.gouv.fr/fr/admin/me/">sur la page Moi</a>.</p>
+
+<p>Une fois sur la page du jeu de données à modifier :</p>
+
+<ol>
+  <li>Naviguez jusqu’au bloc intitulé <strong>Ressources</strong> ;</li>
+  <li>Cliquez sur le bouton <strong>Ajouter</strong> ;</li>
+  <li>Cliquez sur le bouton <strong>Choisissez un fichier de votre ordinateur</strong> ;</li>
+  <li>Complétez les informations associées à votre ressources, comme vous l’avez fait à l’étape 3 de la création de votre jeu de données ;</li>
+  <li>Cliquez sur le bouton <strong>Enregistrer</strong>.</li>
+</ol>
+
+<p>Refaites la procédure ci-dessus autant de fois que vous souhaitez ajouter de ressources à votre jeu de données.</p>
+
+      
+      <p class="edit text-center">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_jeux-de-donnees/publier-un-jeu-de-donnes.md">
+              ✎ Editer cette page
+          </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo">
+      <img src="/assets/images/etalab.svg" alt="Etalab">
+      
+      <ul class="footer__social">
+        
+        <li><a href="mailto:info@data.gouv.fr"><svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg></a></li>
+        
+        <li><a href="https://www.twitter.com/datagouvfr"><svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg></a></li>
+        
+        <li><a href="https://www.facebook.com/etalab"><svg class="icon icon-fb"><use xlink:href="#icon-fb"></use></svg></a></li>
+        
+        <li><a href="https://www.github.com/etalab"><svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg></a></li>
+        
+        <li><a href="https://www.data.gouv.fr/fr/datasets/recent.atom"><svg class="icon icon-rss"><use xlink:href="#icon-rss"></use></svg></a></li>
+        
+      </ul>
+      
+    </div>
+    
+    <div class="footer__links">
+      
+      <h2>doc.data.gouv.fr</h2>
+      
+      <ul>
+        
+          
+            <li><a href="https://www.data.gouv.fr/">Data.gouv.fr</a></li>
+          
+        
+          
+            <li><a href="https://www.data.gouv.fr/reference">Données de référence</a></li>
+          
+        
+          
+            <li><a href="https://www.data.gouv.fr/terms">Condition générales d’utilisation</a></li>
+          
+        
+      </ul>
+    </div>
+    
+    <div></div>
+  </div>
+</footer>
+
+      
+    <!-- Scripts -->
+<script async defer src="/assets/main.js"></script>
+
+
+  </body>
+
+</html>

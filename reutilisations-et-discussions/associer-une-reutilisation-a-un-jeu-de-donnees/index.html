@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Introduction</title>
-    <meta name="description" content="Introduction" />
+    <title>Associer une réutilisation à un jeu de données</title>
+    <meta name="description" content="Associer une réutilisation à un jeu de données" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/api/intro/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/reutilisations-et-discussions/associer-une-reutilisation-a-un-jeu-de-donnees/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -187,7 +187,7 @@
         <li class="side-pane__title"><h3>Réutilisations et discussions</h3></li>
         
         
-        <li >
+        <li class="active">
             <a class="side-pane__link" href="/reutilisations-et-discussions/associer-une-reutilisation-a-un-jeu-de-donnees/">Associer une réutilisation à un jeu de données</a>
         
         
@@ -196,7 +196,7 @@
         <li class="side-pane__title"><h3>API</h3></li>
         
         
-        <li class="active">
+        <li >
             <a class="side-pane__link" href="/api/intro/">Introduction</a>
         
         <li >
@@ -215,138 +215,103 @@
 
   <div class="main-pane">
     <div class="markdown">
-      <h1 class="no_toc" id="introduction">Introduction</h1>
+      <h1 id="associer-une-réutilisation-à-un-jeu-de-données">Associer une réutilisation à un jeu de données</h1>
 
-<ul id="markdown-toc">
-  <li><a href="#racine" id="markdown-toc-racine">Racine</a></li>
-  <li><a href="#authentification" id="markdown-toc-authentification">Authentification</a></li>
-  <li><a href="#autorisations" id="markdown-toc-autorisations">Autorisations</a></li>
-  <li><a href="#formats-de-données" id="markdown-toc-formats-de-données">Formats de données</a>    <ul>
-      <li><a href="#content-type" id="markdown-toc-content-type">Content-type</a></li>
-      <li><a href="#identifiants-durl" id="markdown-toc-identifiants-durl">Identifiants d’URL</a></li>
-      <li><a href="#listes-simples" id="markdown-toc-listes-simples">Listes simples</a></li>
-      <li><a href="#pagination" id="markdown-toc-pagination">Pagination</a></li>
-      <li><a href="#gestion-derreurs" id="markdown-toc-gestion-derreurs">Gestion d’erreurs</a>        <ul>
-          <li><a href="#support" id="markdown-toc-support">Support</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#documentation-de-référence" id="markdown-toc-documentation-de-référence">Documentation de référence</a></li>
-</ul>
+<p>Les données publiées sur data.gouv.fr peuvent être réutilisées selon les termes définis dans la licence qui leur est associée. Si vous êtes à l’origine d’une réutilisation, vous pouvez la référencer sur la page du jeu de données qui vous a servi de matière première. Pour référencer une réutilisation vous devez posséder un compte (gratuit) sur data.gouv.fr.</p>
 
-<h2 id="racine">Racine</h2>
+<h2 id="pourquoi-référencer-une-réutilisation">Pourquoi référencer une réutilisation</h2>
 
-<p>Le point d’entrée racine de l’API est <a href="https://www.data.gouv.fr/api/1/">https://www.data.gouv.fr/api/1/</a>.</p>
-
-<p>Dans la suite de cette documentation, il y sera fait référence par <code class="highlighter-rouge">$API</code>.</p>
-
-<h2 id="authentification">Authentification</h2>
-
-<p>De façon à pouvoir exécuter des opérations d’écriture, vous devez commencer par obtenir une <a href="https://www.data.gouv.fr/fr/admin/me/#apikey">clé d’API</a> dans les paramètres de votre profil.</p>
-
-<p>Cette clé doit être fournie dans l’entête HTTP <code class="highlighter-rouge">X-API-KEY</code> à chaque appel en écriture (<code class="highlighter-rouge">POST</code>,<code class="highlighter-rouge">PUT</code>, <code class="highlighter-rouge">PATCH</code> et <code class="highlighter-rouge">DELETE</code>).</p>
-
-<h2 id="autorisations">Autorisations</h2>
-<p>Les appels d’API sont soumis aux même permissions que l’interface web.</p>
-
-<p>Par exemple, vous devez être membre d’une organisation pour modifier l’un de ses jeux de données.</p>
-
-<h2 id="formats-de-données">Formats de données</h2>
-
-<h3 id="content-type">Content-type</h3>
-
-<p>Les différents points d’entrée de l’API attendent du JSON (<code class="highlighter-rouge">application/json</code>) en entrée et renvoient du JSON en sortie.
-Les seules exceptions sont les points d’entrée qui gèrent l’upload de fichiers: ils acceptent du <code class="highlighter-rouge">multipart/form-data</code>et renvoient du JSON.</p>
-
-<h3 id="identifiants-durl">Identifiants d’URL</h3>
-
-<p>À chaque fois que vous pouvez utiliser identifiant d’objet dans une URL de l’API, vous avez les choix suivants:</p>
-<ul>
-  <li>l’identifiant technique permanent (<strong>ex:</strong> <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code>)</li>
-  <li>le slug (<strong>ex:</strong>  <code class="highlighter-rouge">mon-dataset</code>)</li>
-</ul>
-
-<p>Par exemple, un dataset <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code> dont le slug est <code class="highlighter-rouge">mon-dataset</code>, vous pouvez accéder à l’URL <code class="highlighter-rouge">$API/datasets/&lt;dataset&gt;</code>, par:</p>
-<ul>
-  <li><code class="highlighter-rouge">$API/datasets/5bbb6d6cff66bd4dc17bfd5a</code></li>
-  <li><code class="highlighter-rouge">$API/datasets/mon-dataset</code></li>
-</ul>
-
-<p><strong>Attention</strong> toutefois, le slug d’un objet peut-être amené à changer si le producteur change le nom de l’objet alors que l’identifiant technique lui ne change jamais. Il est donc préférable d’utiliser les identifiants techniques dans les scripts qui doivent être durables et rejouables.</p>
-
-<h3 id="listes-simples">Listes simples</h3>
-
-<p>Les listes simples sont renvoyées sous forme d’une liste JSON.</p>
-
-<p>Par exemple, <a href="/api/reference/#/reuses/reuse_types">la liste des types de réutilisations</a>:</p>
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"paper"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Papier"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Application"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hardware"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Objet connecté"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"api"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"visualization"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Visualisation"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"post"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Article de blog"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"news_article"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Article de presse"</span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"idea"</span><span class="p">,</span><span class="w"> </span><span class="s2">"label"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Idée"</span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div></div>
-
-<h3 id="pagination">Pagination</h3>
-
-<p>Certaines méthodes sont paginées et suivent le même modèle de pagination. La liste d’objets est encapsulée dans un objet <code class="highlighter-rouge">Page</code>.</p>
-
-<p>Vous n’avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponible dans la réponse dans les attributs <code class="highlighter-rouge">previous_page</code> et <code class="highlighter-rouge">next_page</code>. Ils seront définis à <code class="highlighter-rouge">null</code> si il n’y a pas de page précédente et/ou suivante.</p>
-
-<p><strong>Exemple:</strong></p>
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="err">...</span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="err">...</span><span class="p">}],</span><span class="w">
-    </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"page_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"next_page"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://www.data.gouv.fr/api/endpoint/?page=2"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"previous_page"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h3 id="gestion-derreurs">Gestion d’erreurs</h3>
-
-<p>La gestion d’erreur de l’API utilise les codes d’erreur HTTP standards:</p>
+<p>Référencer une réutilisation sur la page d’un jeu de données ne prend que quelques secondes et permet de :</p>
 
 <ul>
-  <li><strong>400</strong>: requête invalide</li>
-  <li><strong>401</strong>: authentification requise</li>
-  <li><strong>403</strong>: permissions insuffisantes</li>
-  <li><strong>500</strong>: erreur indéfinie côté serveur</li>
-  <li><strong>502</strong>: le serveur ne répond pas</li>
+  <li>donner de la visibilité à la réutilisation ;</li>
+  <li>montrer à quoi le jeu de données peut servir ;</li>
+  <li>inspirer d’autres réutilisations potentielles ;</li>
+  <li>remercier le producteur des données réutilisées.</li>
 </ul>
 
-<p>Lorsque c’est possible, l’API répondra en JSON avec le format suivant:</p>
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"un message d'erreur"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
+<h2 id="comment-référencer-une-réutilisation">Comment référencer une réutilisation</h2>
 
-<h4 id="support">Support</h4>
+<p>Pour référencer une réutilisation :</p>
 
-<p>Si vous n’arrivez pas à comprendre une erreur, que vous avez besoin de support et souhaitez contacter l’équipe de data.gouv.fr, pensez à fournir les éléments suivants:</p>
+<ol>
+  <li><a href="https://www.data.gouv.fr/fr/login">Connectez-vous à votre compte</a> ;</li>
+  <li>Rendez-vous sur la page du jeu de données réutilisé ;</li>
+  <li>Naviguez jusqu’à la section <strong>Réutilisations</strong> qui figure en bas de la page et cliquez sur <strong>Ajouter une réutilisation</strong> ;</li>
+</ol>
+
+<h3 id="1-choisir-qui-publie">1. Choisir qui publie</h3>
+
+<p>Choisissez si vous souhaitez publier la réutilisation sous votre propre nom, à titre individuel, ou pour le compte d’une organisation, à titre collectif. C’est le nom qui apparaîtra à côté de la réutilisation sur la page du jeu de données.</p>
+
+<h3 id="2-décrire-la-réutilisation">2. Décrire la réutilisation</h3>
+
+<p>Pour bien décrire la réutilisation, remplissez les champs suivants :</p>
+
+<p><strong>Nom</strong>
+C’est le titre de la réutilisation. Précisez quelle forme prend la réutilisation : carte, graphique, tableau…</p>
+
+<p>Le nom est obligatoire.</p>
+
+<p><strong>URL</strong>
+Saisissez ici le lien hypertexte de la page web sur laquelle la réutilisation est visible.</p>
+
+<p>L’URL est obligatoire.</p>
+
+<p><strong>Type</strong>
+Indiquez le type dans lequel ranger la réutilisation.</p>
+
+<p>Le type est obligatoire.</p>
+
+<p><strong>Description</strong>
+Saisissez ici des précisions sur :</p>
+
 <ul>
-  <li>la requête HTTP effectuée (avec les entêtes HTTP)</li>
-  <li>la réponse éventuelle du serveur (avec ses entêtes)</li>
-  <li>la date et l’heure de la requête</li>
-  <li>un peu de contexte sur la raison de cette requête, son cadre</li>
+  <li>la méthode de création de la réutilisation (les outils et traitements utilisés par exemple) ;</li>
+  <li>ce que la réutilisation permet de faire ou de montrer (les conclusions qu’on peut en tirer par exemple) ;</li>
+  <li>l’auteur de la réutilisation (ce qui vous a donné envie de réutiliser les données par exemple).</li>
 </ul>
 
-<p>Parfois, la réponse en erreur comprend une entête <code class="highlighter-rouge">X-Sentry-ID</code>.
-Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et, si c’est un bug, à le corriger.</p>
+<p>La description est obligatoire.</p>
 
-<h2 id="documentation-de-référence">Documentation de référence</h2>
+<p><strong>Mots clés</strong>
+Entrez ici les mots clés associés à votre réutilisation. Ils permettront aux autres utilisateurs de consulter des réutilisations ou des jeux de données du même type que les vôtres.</p>
 
-<p>Vous pouvez consulter la documentation de référence complète de l’API <a href="/api/reference/">ici</a></p>
+<p>Les mots clefs sont facultatifs</p>
+
+<p>Une fois votre réutilisation décrite, sauvegardez-la et passez à l’étape suivante en cliquant sur le bouton <strong>Suivant</strong>.</p>
+
+<h3 id="3-associer-des-jeux-de-données-à-la-réutilisation">3. Associer des jeux de données à la réutilisation</h3>
+
+<p>Par défaut, votre réutilisation sera liée au jeu de données qui vous a servi de point de départ. Mais si votre réutilisation a exploité d’autres jeu de données, vous pouvez les associer à votre réutilisation à cette étape.</p>
+
+<p>Pour lier d’autres jeux de données à votre réutilisation :</p>
+
+<ol>
+  <li>Saisissez leurs titre dans le champ <strong>Trouver votre jeu de données</strong> ;</li>
+  <li>Cliquez sur leur nom quand ils apparaissent à l’écran.</li>
+</ol>
+
+<h3 id="4-insérer-une-image">4. Insérer une image</h3>
+
+<p>Si votre réutilisation prend la forme d’une représentation graphique, vous pouvez en donner un aperçu aux autres utilisateurs au moyen d’une image ou d’une capture d’écran. Cette image figurera dans la partie <strong>Réutilisations</strong> de la page du jeu de donnée associé.</p>
+
+<p>Pour ajouter une image à votre réutilisation, cliquez sur le bouton <strong>Choisissez un fichier de votre ordinateur</strong> puis cliquez sur <strong>Suivant</strong>.</p>
+
+<h3 id="5-partager-la-réutilisation">5. Partager la réutilisation</h3>
+
+<p>Votre réutilisation est en ligne. Elle est visible sur la page du jeu de données qui lui a servi de base.</p>
+
+<p>Vous pouvez :</p>
+
+<ul>
+  <li>voir la réutilisation sur le site, en cliquant sur <strong>Voir sur le site</strong> ;</li>
+  <li>modifier la réutilisation depuis votre interface administrateur, en cliquant sur <strong>Voir dans l’administration</strong>.</li>
+</ul>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_api/intro.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_reutilisations-et-discussions/associer-une-reutilisation-a-un-jeu-de-donnees.md">
               ✎ Editer cette page
           </a>
       </p>
