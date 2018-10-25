@@ -71,7 +71,10 @@ Pour plus d’informations, vous pouvez consulter [la page thématique](https://
 
 #### Mot-clés (`tags`)
 
-Renseignez le mot-clé `données-essentielles-commande-publique`.
+Renseignez les mot-clés suivants :
+
+- `données-essentielles`
+- `commande-publique`
 
 #### Extras (`extras`)
 
@@ -154,7 +157,7 @@ http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/DECP-{siret}-{ann�
 * `année` : année de la récéption par Etalab
 * `mois` : mois de la récéption par Etalab
 * `jour` : jour de la récéption par Etalab
-* `numéro de séquence` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est `01`
+* `seq` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est `01`
 
 Exemple :
 
@@ -206,8 +209,8 @@ Vous trouverez un exemple de structure de fichier [sur data.gouv.fr](https://www
 
 #### Dépôt sur data.gouv.fr
 
-<strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot clé (« tag ») suivant :
-« DECP » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
+<strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot-clé (« tag ») suivant :
+« decp » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
 
 La procédure complète pour déposer un ficher de déclaration de profil d‘acheteur sur data.gouv.fr est la suivante :
 1. Créer un compte individuel via <https://www.data.gouv.fr/fr/register>;
