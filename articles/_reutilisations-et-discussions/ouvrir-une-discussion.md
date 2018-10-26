@@ -9,9 +9,10 @@ Tous les utilisateurs qui disposent d’un compte sur data.gouv.fr peuvent ouvri
 Les discussions peuvent être ouvertes à plusieurs endroits :
 
 * sur la page d’un jeu de données ;
-* sur la page d’une réutilisation.
+* sur la page d’une réutilisation ;
+* sur la page d’un article publié sur le blog.
 
- Les discussions ouvertes sur data.gouv.fr et les réponses dans les commentaires qui s’en suivent sont visibles par tout le monde.
+Les discussions ouvertes sur data.gouv.fr et les réponses dans les commentaires qui s’en suivent sont visibles par tout le monde.
 
 ## Démarrer une nouvelle discussion
 
