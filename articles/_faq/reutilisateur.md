@@ -189,7 +189,7 @@ Des cartes synthétiques par commune, département, région.
 Cette solution charge **une valeur par niveau d’agrégation**
 (par exemple une dépense par commune, un nombre de naissance par département ou par région).
 
-En haut à droite, cliquer sur "Charger", puis "Charger des données personnelles". Sélectionner le niveau de granularité souhaité (commune avec arrondissements des grandes villes, département, région) et adaptez vos données sources aux exigences indiquées. Attention, au niveau commune, le moteur attend des codes INSEE, pas de codes postaux. Au niveau département, le moteur attend des numéros, pas des noms (et des ’01, ’09 pour les premiers départements). Enfin, supprimer tout formatage de type %, ne laisser que les chiffres.
+En haut à droite, cliquez sur "Charger", puis "Charger des données personnelles". Sélectionner le niveau de granularité souhaité (commune avec arrondissements des grandes villes, département, région) et adaptez vos données sources aux exigences indiquées. Attention, au niveau commune, le moteur attend des codes INSEE, pas de codes postaux. Au niveau département, le moteur attend des numéros, pas des noms (et des ’01, ’09 pour les premiers départements). Enfin, supprimer tout formatage de type %, ne laisser que les chiffres.
 
 Ensuite, copiez-collez-les depuis votre tableur. Exportez votre résultat sous forme d’image A3, ou mieux, sous forme de carte interactive : avant la visualisation, sélectionner "Sauvegarder mon travail au format TJS", et déposez le fichier généré (XML) sur un site Web, un blog ou un répertoire partagé. L’URL de votre dataviz est alors
 `http://franceo3.geoclip.fr/index.php?tjs_file=http://monsite.fr/toto.xml`.

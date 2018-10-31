@@ -19,7 +19,7 @@ Pour mettre à jour un jeu de données publié avec votre propre compte, à titr
 3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Moi**, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données que vous souhaitez modifier ;
-6. Cliquer sur le bouton **Éditer**, en haut à droite de votre écran ;
+6. Cliquez sur le bouton **Éditer**, en haut à droite de votre écran ;
 7. Modifiez les champs que vous souhaitez mettre à jour ;
 8. Pour sauvegarder vos modifications, cliquez sur le bouton **Enregistrer** qui se trouve en bas à droite de la page.
 
