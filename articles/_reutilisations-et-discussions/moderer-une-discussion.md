@@ -53,20 +53,3 @@ Pour fermer une discussion :
 6. Faites défiler l’écran jusque’à la section **Discussions** ;
 7. Repérez la discussion à clore et cliquez sur son titre ;
 8. Dans la fenêtre qui s’ouvre alors, saisissez un commentaire (par exemple : _Je ferme la discussion car elle me semble terminée._ ), puis cliquez sur **Commenter et clore la discussion**.
-
-## Supprimer tout un fil de discussion
-
-À l’heure actuelle, il n’est pas possible de supprimer les commentaires d’une discussion un par un, au coup par coup. En tant que producteur d’un jeu de données ou créateur d’une réutilisation, si vous souhaitez retirer des commentaires de vos pages, vous devez supprimer l’intégralité des discussions dans lesquelles les commentaires à retirer apparaissent.
-
-Une discussion supprimée ne sera plus affichée sur la page à laquelle elle est associée. Tous les commentaires que contenaient la discussion seront supprimés, sans exception. Cette action est irréversible.
-
-Pour supprimer toute une discussion :
-
-1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
-3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit) (ou sur celle de votre organisation), en cliquant sur **Moi** (ou sur le nom de votre organisation), dans la colonne de gauche ;
-4. Naviguez jusqu’à la section **Jeux de données** (ou **Réutilisations**) située en milieu de page ;
-5. Cliquez sur le jeu de données (ou la réutilisation) auquel est associé la discussion à fermer ;
-6. Faites défiler l’écran jusque’à la section **Discussions** ;
-7. Repérez la discussion à clore et cliquez sur son titre ;
-8. Dans la fenêtre qui s’ouvre alors, cliquez sur **Supprimer**, puis sur **Confirmer** pour valider la suppression.
