@@ -8,7 +8,7 @@ Si vous mettez en ligne des données publiques sur une plateforme ouverte, dans 
 
 Le service de moissonnage permet de référencer sur data.gouv.fr des jeux de données publiés ailleurs sur le web. De cette manière, vous n’avez pas besoin d’importer à la main sur data.gouv.fr les jeux de données que vous avez déjà importés sur votre propre plateforme.
 
-Un seul moissonneur permet d’importer toutes les données d’un portail d’open data. Il n’est pas nécessaire de créer un moissonneur par jeu de données à importer sur data.gouv.fr.
+Un moissonneur permet d’importer toutes les données d’un portail d’open data. Vous pouvez aussi demander au moissonneur de n’importer que certains jeux de données, au moyen de filtres. Dit autrement, il n’est pas nécessaire de créer un moissonneur par jeu de données à importer sur data.gouv.fr, un seul moissonneur par portail suffit.
 
 ## Comment se déroule le moissonnage
 
