@@ -13,7 +13,7 @@ L’utilisateur qui créé une organisation en devient l’administrateur. Il pe
 Au sein d’une organisation, un éditeur peut :
 
 * publier des jeux de données au nom de l’organisation ;
-* référence des réutilisations au nom de l’organisation ;
+* référencer des réutilisations au nom de l’organisation ;
 * modifier des jeux de données existants ;
 * consulter les demandes d’adhésion à l’organisation.
 
