@@ -30,7 +30,7 @@ Pour transférer un jeu de données publié pour le compte d’une organisation 
 3. Allez sur la page de suivi de votre organisation, en cliquant sur le nom de votre organisation, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données que vous souhaitez transférer ;
-6. Cliquer sur la flèche située à côté du bouton **Éditer**, en haut à droite de votre écran, puis sur **Transférer** dans le menu déroulant qui apparaît alors ;
+6. Cliquez sur la flèche située à côté du bouton **Éditer**, en haut à droite de votre écran, puis sur **Transférer** dans le menu déroulant qui apparaît alors ;
 7. Sélectionnez le type de compte vers lequel vous souhaitez transférer le jeu de données (individu ou organisation) ;
 8. Saisissez le nom de l’utilisateur ou de l’organisation vers lequel vous souhaitez transférer les données, puis cliquez sur son profil quand il apparaît à l’écran ;
 9. Indiquez une raison éventuelle pour ce transfert dans la zone **Raison** puis cliquez sur **Confirmer** pour valider la demande de transfert ;

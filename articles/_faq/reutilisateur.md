@@ -73,7 +73,7 @@ effectuez le [paramétrage suivant](https://github.com/OpenRefine/OpenRefine/wik
 
 ### Fusionner plusieurs fichiers en une seule base de données
 
-Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par [OpenRefine][]. Lancer l’outil et "créer un nouveau projet". Dans la boîte de dialogue "sélectionner les fichiers", sélectionner tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100. [OpenRefine][] va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne "département" ou "année"). Une fois vérifié, sélectionner "Export" et exporter votre base fusionnée au format CSV ou XLS.
+Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par [OpenRefine][]. Lancez l’outil et "créer un nouveau projet". Dans la boîte de dialogue « sélectionner les fichiers », sélectionnez tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100. [OpenRefine][] va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne "département" ou "année"). Une fois vérifié, sélectionnez "Export" et exportez votre base fusionnée au format CSV ou XLS.
 
 ### Travailler à plusieurs sur une même base de données
 
@@ -189,7 +189,7 @@ Des cartes synthétiques par commune, département, région.
 Cette solution charge **une valeur par niveau d’agrégation**
 (par exemple une dépense par commune, un nombre de naissance par département ou par région).
 
-En haut à droite, cliquer sur "Charger", puis "Charger des données personnelles". Sélectionner le niveau de granularité souhaité (commune avec arrondissements des grandes villes, département, région) et adaptez vos données sources aux exigences indiquées. Attention, au niveau commune, le moteur attend des codes INSEE, pas de codes postaux. Au niveau département, le moteur attend des numéros, pas des noms (et des ’01, ’09 pour les premiers départements). Enfin, supprimer tout formatage de type %, ne laisser que les chiffres.
+En haut à droite, cliquez sur "Charger", puis "Charger des données personnelles". Sélectionnez le niveau de granularité souhaité (commune avec arrondissements des grandes villes, département, région) et adaptez vos données sources aux exigences indiquées. Attention, au niveau commune, le moteur attend des codes INSEE, pas de codes postaux. Au niveau département, le moteur attend des numéros, pas des noms (et des ’01, ’09 pour les premiers départements). Enfin, supprimer tout formatage de type %, ne laisser que les chiffres.
 
 Ensuite, copiez-collez-les depuis votre tableur. Exportez votre résultat sous forme d’image A3, ou mieux, sous forme de carte interactive : avant la visualisation, sélectionner "Sauvegarder mon travail au format TJS", et déposez le fichier généré (XML) sur un site Web, un blog ou un répertoire partagé. L’URL de votre dataviz est alors
 `http://franceo3.geoclip.fr/index.php?tjs_file=http://monsite.fr/toto.xml`.
