@@ -73,7 +73,7 @@ effectuez le [paramétrage suivant](https://github.com/OpenRefine/OpenRefine/wik
 
 ### Fusionner plusieurs fichiers en une seule base de données
 
-Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par [OpenRefine][]. Lancer l’outil et "créer un nouveau projet". Dans la boîte de dialogue "sélectionner les fichiers", sélectionner tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100. [OpenRefine][] va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne "département" ou "année"). Une fois vérifié, sélectionner "Export" et exporter votre base fusionnée au format CSV ou XLS.
+Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par [OpenRefine][]. Lancez l’outil et "créer un nouveau projet". Dans la boîte de dialogue « sélectionner les fichiers », sélectionnez tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100. [OpenRefine][] va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne "département" ou "année"). Une fois vérifié, sélectionnez "Export" et exportez votre base fusionnée au format CSV ou XLS.
 
 ### Travailler à plusieurs sur une même base de données
 
