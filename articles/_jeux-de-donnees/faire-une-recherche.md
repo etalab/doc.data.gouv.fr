@@ -14,7 +14,8 @@ Vous pouvez chercher les choses suivantes au sein du catalogue de data.gouv.fr :
 
 * jeux de données ;
 * réutilisations ;
-* organisations.
+* organisations ;
+* territoires (régions, départements, communes).
 
 Vous ne pouvez pas chercher les choses suivantes :
 
