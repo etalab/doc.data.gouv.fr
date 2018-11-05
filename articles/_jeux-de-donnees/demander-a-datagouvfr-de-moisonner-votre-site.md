@@ -81,7 +81,7 @@ L’URL est obligatoire.
 
 Choisissez ici le format des métadonnées associées aux jeux de données publiés sur votre plateforme. Ce format permet au moissonneur de savoir comment lire et interpréter vos métadonnées, pour bien les retranscrire sur data.gouv.fr.
 
-Pour les données de type ODS et CKAN, vous pouvez aussi ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage automatique.
+Pour les données de type ODS et CKAN, vous pouvez aussi ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage automatique. Peuvent faire l’objet de filtres : les éditeurs et les mots-clefs dans le cas d’ODS ; les organisations et les mots-clefs dans le cas de CKAN.
 
 Le type d’implémentation est obligatoire.
 
