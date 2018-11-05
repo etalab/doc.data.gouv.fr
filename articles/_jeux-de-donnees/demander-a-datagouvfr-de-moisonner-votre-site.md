@@ -97,4 +97,10 @@ Une fois tous les champs obligatoires remplis, cliquez sur le bouton **Suivant**
 
 Une fois votre moissonneur configuré, ce dernier passe en attente de validation. Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.
 
+De votre côté, vous pouvez vérifier que votre moissonneur moissonne correctement votre site. Pour ce faire :
+
+1. Cliquez sur le bouton **Voir dans l’administration** une fois votre moissonneur créé ;
+2. Cliquez sur le bouton **Prévisualiser** ;
+3. Vérifiez que le moissonneur récupère bien des jeux de données.
+
 Tant que votre moissonneur n’est pas validé, il ne référence aucun jeu de données sur data.gouv.fr.
