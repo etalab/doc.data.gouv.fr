@@ -4,7 +4,7 @@ slug: demander-a-datagouvfr-de-moissonner-votre-site
 ---
 # Demander à data.gouv.fr de moissonner votre site
 
-Si vous mettez en ligne des données publiques sur une plateforme ouverte, dans un format dont les métadonnées correspondent à la syntaxe [ODS](https://www.opendatasoft.com), [CKAN](https://ckan.org), [DCAT](https://www.w3.org/TR/vocab-dcat/), ou MAAF (agriculture), vous pouvez les référencer _automatiquement_ sur data.gouv.fr en utilisant notre service de moissonnage.
+Si vous mettez en ligne des données publiques sur une plateforme ouverte, dans un format dont les métadonnées correspondent à la syntaxe [ODS](https://www.opendatasoft.com), [CKAN](https://ckan.org), [DCAT](https://www.w3.org/TR/vocab-dcat/), ou MAAF (spécifique au ministère de l’agriculture), vous pouvez les référencer _automatiquement_ sur data.gouv.fr en utilisant notre service de moissonnage.
 
 Le service de moissonnage permet de référencer sur data.gouv.fr des jeux de données publiés ailleurs sur le web. De cette manière, vous n’avez pas besoin d’importer à la main sur data.gouv.fr les jeux de données que vous avez déjà importés sur votre propre plateforme.
 
