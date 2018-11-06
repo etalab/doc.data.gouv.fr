@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Créer un compte</title>
-    <meta name="description" content="Créer un compte" />
+    <title>Demander à data.gouv.fr de moissonner votre site</title>
+    <meta name="description" content="Demander à data.gouv.fr de moissonner votre site" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/gestion-du-compte/creer-un-compte/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -142,7 +142,7 @@
         <li class="side-pane__title"><h3>Gestion du compte</h3></li>
         
         
-        <li class="active">
+        <li >
             <a class="side-pane__link" href="/gestion-du-compte/creer-un-compte/">Créer un compte</a>
         
         <li >
@@ -157,7 +157,7 @@
         <li class="side-pane__title"><h3>Jeux de données</h3></li>
         
         
-        <li >
+        <li class="active">
             <a class="side-pane__link" href="/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/">Demander à data.gouv.fr de moissonner votre site</a>
         
         <li >
@@ -245,50 +245,126 @@
 
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="créer-un-compte">Créer un compte</h1>
+      <h1 id="demander-à-datagouvfr-de-moissonner-votre-site">Demander à data.gouv.fr de moissonner votre site</h1>
 
-<p>L’inscription sur la plateforme data.gouv.fr est gratuite.</p>
+<p>Si vous mettez en ligne des données publiques sur une plateforme ouverte, dans un format dont les métadonnées correspondent à la syntaxe <a href="https://www.opendatasoft.com">ODS</a>, <a href="https://ckan.org">CKAN</a>, <a href="https://www.w3.org/TR/vocab-dcat/">DCAT</a>, ou MAAF (spécifique au ministère de l’agriculture), vous pouvez les référencer <em>automatiquement</em> sur data.gouv.fr en utilisant notre service de moissonnage.</p>
 
-<h2 id="avant-de-vous-inscrire">Avant de vous inscrire</h2>
+<p>Le service de moissonnage permet de référencer sur data.gouv.fr des jeux de données publiés ailleurs sur le web. De cette manière, vous n’avez pas besoin d’importer à la main sur data.gouv.fr les jeux de données que vous avez déjà importés sur votre propre plateforme.</p>
 
-<p>Avant que vous ne vous lanciez dans la création d’un compte, sachez que les données publiées sur data.gouv.fr peuvent être téléchargées par tout le monde, avec ou sans compte.</p>
+<p>Un moissonneur permet d’importer toutes les données d’un portail d’open data. Vous pouvez aussi demander au moissonneur de n’importer que certains jeux de données, au moyen de filtres. Dit autrement, il n’est pas nécessaire de créer un moissonneur par jeu de données à importer sur data.gouv.fr, un seul moissonneur par portail suffit.</p>
 
-<p>La création d’un compte n’est nécessaire que si vous souhaitez :</p>
+<h2 id="comment-se-déroule-le-moissonnage">Comment se déroule le moissonnage</h2>
+
+<ol>
+  <li>Vous créez un moissonneur sur data.gouv.fr pour nous demander de surveiller votre plateforme ;</li>
+  <li>Vous publiez des données sur votre plateforme d’open-data sans vous préoccuper de data.gouv.fr ;</li>
+  <li>Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;</li>
+  <li>Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.</li>
+</ol>
+
+<h2 id="formats-de-métadonnées-compatibles">Formats de métadonnées compatibles</h2>
+
+<p>Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de métadonnées :</p>
 
 <ul>
-  <li>mettre en ligne un jeu de données ;</li>
-  <li>associer une réutilisation à un jeu de données ;</li>
-  <li>ouvrir une discussion sur un jeu de données ;</li>
-  <li>créer ou rejoindre une organisation.</li>
+  <li>Open Data Soft (ODS) ;</li>
+  <li>Comprehensive Knowledge Archive Network (CKAN) ;</li>
+  <li>Data Catalog Vocabulary (DCAT) ;</li>
+  <li>Ministère de l’agriculture, de l’alimentation, et des forets (MAAF).</li>
 </ul>
 
-<h2 id="comment-sinscrire">Comment s’inscrire</h2>
+<h2 id="créer-un-moissonneur">Créer un moissonneur</h2>
 
-<h3 id="créer-un-compte-1">Créer un compte</h3>
+<p>La création d’un moissonneur sur data.gouv.fr nécessite la création d’un compte gratuit.</p>
 
-<p>Pour créer un compte sur la plateforme data.gouv.fr :</p>
-
+<p>Pour créer un nouveau moissonneur :</p>
 <ol>
-  <li>Rendez-vous sur : <a href="https://www.data.gouv.fr/fr/register">https://www.data.gouv.fr/fr/register</a> ;</li>
-  <li>Saisissez votre <strong>Prénom</strong>, <strong>Nom</strong> et <strong>Adresse e-mail</strong> ;</li>
-  <li>Saisissez votre <strong>Mot de passe</strong> et confirmez-le ;</li>
-  <li>Acceptez les <a href="https://www.data.gouv.fr/fr/terms/">conditions générales d’utilisation du service</a> ;</li>
-  <li>Cliquez sur le bouton <strong>S’ENREGISTRER</strong> ;</li>
-  <li>Un message va alors apparaître à l’écran, vous demandant de confirmer votre adresse e-mail.</li>
+  <li><a href="https://www.data.gouv.fr/fr/login">Connectez-vous à votre compte</a> ;</li>
+  <li>Rendez-vous sur <a href="https://www.data.gouv.fr/fr/admin/">votre tableau de bord</a>, en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur <strong>Administration</strong> ;</li>
+  <li>Cliquez sur l’icône en forme de plus (<code class="highlighter-rouge">+</code>) qui se trouve à gauche de votre avatar ;</li>
+  <li>Cliquez sur <strong>Un moissonneur</strong>.</li>
 </ol>
 
-<h3 id="confirmer-votre-compte">Confirmer votre compte</h3>
+<p>À partir de là, la création du moissonneur se déroule en 3 étapes.</p>
 
-<p>Une fois le formulaire d’inscription validé, rendez-vous dans la boîte de réception associée à l’adresse e-mail que vous avez saisie plus haut, puis :</p>
+<h3 id="1-définir-qui-publie-les-données-moissonnées">1. Définir qui publie les données moissonnées</h3>
+
+<p>Une fois moissonnées, c’est-à-dire récupérées sur votre plateforme, vos données sont publiées sur data.gouv.fr. L’étape 1 vous permet de choisir le compte qui sera associé à la publication sur data.gouv.fr des données moissonnées sur votre site.</p>
+
+<p>Il peut s’agir de :</p>
+
+<ul>
+  <li>votre propre compte, pour une publication à titre individuel, sous votre propre nom ;</li>
+  <li>le compte d’une organisation dont vous êtes membre, pour une publication à titre collectif.</li>
+</ul>
+
+<p>Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom. Une fois votre choix effectué, cliquez sur le bouton <strong>Suivant</strong> pour accéder à l’étape 2.</p>
+
+<h3 id="2-configurer-le-moissonneur">2. Configurer le moissonneur</h3>
+
+<p>L’étape 2 vous permet de configurer votre moissonneur. Cette étape est importante pour que les données récupérées par data.gouv.fr soient aussi complètes que celles publiées sur votre plateforme à l’origine.</p>
+
+<h4 id="nom">Nom</h4>
+
+<p>Donnez un nom à votre moissonneur. Il s’agit d’une référence interne, qui vous permet de vous y retrouver si vous créez plusieurs moissonneurs. Le nom de votre moissonneur ne sera pas public.</p>
+
+<ul>
+  <li><strong>Mauvais nom</strong> : Moissonneur de mon portail</li>
+  <li><strong>Bon nom</strong> : Plateforme open data Grand Lyon</li>
+</ul>
+
+<p>Le nom du moissonneur est obligatoire.</p>
+
+<h3 id="description">Description</h3>
+
+<p>Vous pouvez ajouter des précisions sur votre moissonneur dans le champ description. Là encore, il s’agit d’une référence interne qui n’a de valeur que pour vous.</p>
+
+<p>La description est facultative.</p>
+
+<h3 id="url">URL</h3>
+
+<p>Saisissez ici l’URL du portail à moissonner. Il s’agit généralement de l’URL de la page d’accueil de votre portail d’open data. L’URL permet au moissonneur de parcourir et récupérer tous vos jeux de données.</p>
+
+<ul>
+  <li><strong>Mauvaise source</strong> :  <code class="highlighter-rouge">data.angers.fr</code></li>
+  <li><strong>Bonne source</strong> : <code class="highlighter-rouge">https://data.angers.fr</code></li>
+</ul>
+
+<p>L’URL est obligatoire.</p>
+
+<h3 id="implémentation">Implémentation</h3>
+
+<p>Choisissez ici le format des métadonnées associées aux jeux de données publiés sur votre plateforme. Ce format permet au moissonneur de savoir comment lire et interpréter vos métadonnées, pour bien les retranscrire sur data.gouv.fr.</p>
+
+<p>Pour les données de type ODS et CKAN, vous pouvez aussi ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage automatique. Peuvent faire l’objet de filtres : les éditeurs et les mots-clefs dans le cas d’ODS ; les organisations et les mots-clefs dans le cas de CKAN.</p>
+
+<p>Le type d’implémentation est obligatoire.</p>
+
+<h3 id="actif">Actif</h3>
+
+<p>Cochez la case pour que votre moissonneur se mette au travail dès qu’il aura été validé par l’équipe en charge de data.gouv.fr. Laissez-la décochée pour activer votre moissonneur à la main.</p>
+
+<p>Ce champ est obligatoire.</p>
+
+<p>Une fois tous les champs obligatoires remplis, cliquez sur le bouton <strong>Suivant</strong> pour terminer la création de votre moissonneur.</p>
+
+<h3 id="3-demander-la-validation-du-moissonneur">3. Demander la validation du moissonneur</h3>
+
+<p>Une fois votre moissonneur configuré, ce dernier passe en attente de validation. Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.</p>
+
+<p>De votre côté, vous pouvez vérifier que votre moissonneur moissonne correctement votre site. Pour ce faire :</p>
 
 <ol>
-  <li>Ouvrez l’e-mail qui vous a été envoyé par <code class="highlighter-rouge">no-reply@data.gouv.fr</code> et cliquez sur le bouton <strong>CONFIRMER MAINTENANT</strong> qu’il contient.</li>
-  <li>L’e-mail vous redirige alors vers la <a href="https://www.data.gouv.fr/fr/">page d’accueil du site data.gouv.fr</a> où vous avez désormais accès à votre compte utilisateur.</li>
+  <li>Cliquez sur le bouton <strong>Voir dans l’administration</strong> une fois votre moissonneur créé ;</li>
+  <li>Cliquez sur le bouton <strong>Prévisualiser</strong> ;</li>
+  <li>Vérifiez que le moissonneur récupère bien des jeux de données.</li>
 </ol>
+
+<p>Tant que votre moissonneur n’est pas validé, il ne référence aucun jeu de données sur data.gouv.fr.</p>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_gestion-du-compte/creer-un-compte.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site.md">
               ✎ Editer cette page
           </a>
       </p>
