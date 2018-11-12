@@ -124,7 +124,7 @@ Avant de publier vos données sur data.gouv.fr, vérifiez bien que :
 
 Les métadonnées sont des données au sujet des données, en l’occurrence il s’agit des données qui servent à décrire votre jeu de données et qui permettent à d’autres personne de le trouver. Voyez ça comme la première de couverture de votre jeu de données, un moyen d’informer rapidement les utilisateurs sur le contenu de votre jeu de données.
 
-[Voir notre article d’aide sur la publication d’un jeu de données](../_jeux-de-donnees/publier-un-jeu-de-donnes.md)
+[Voir notre article d’aide sur la publication d’un jeu de données](/jeux-de-donnees/publier-un-jeu-de-donnees)
 
 ## Et après ?
 
