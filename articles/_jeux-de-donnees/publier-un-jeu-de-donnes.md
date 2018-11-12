@@ -1,6 +1,6 @@
 ---
 title: Publier un jeu de données
-slug: publier-un-jeu-de-donnes
+slug: publier-un-jeu-de-donnees
 ---
 # Publier un jeu de données
 
