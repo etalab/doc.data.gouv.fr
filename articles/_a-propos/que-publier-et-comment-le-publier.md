@@ -4,7 +4,7 @@ slug: que-publier-et-comment-le-publier
 ---
 # Que publier sur data.gouv.fr et comment le publier
 
-data.gouv.fr est la plateforme ouverte des données publiques française. En ce sens, elle met en relation des producteurs et des utilisateurs de données. Une donnée est considérée comme ouverte quand elle peut être consultée, utilisée, et partagée par tous, sans restriction.
+data.gouv.fr est la plateforme ouverte des données publiques française. En ce sens, elle met en relation des producteurs et des utilisateurs de données. Une donnée est considérée comme ouverte quand elle peut être consultée, utilisée, et partagée par tous.
 
 ## Qui peut publier
 
