@@ -75,11 +75,11 @@ Si vos données comportent une structure interne, alors nous vous recommandons l
 * XML ;
 * YAML.
 
-#### Images et vidéos
+#### Images, vidéos et son
 
-Les images et les vidéos ne constituent pas des jeux de données à part entière, il s’agit de simples documents, des fichiers statiques. Par conséquent, nous vous déconseillons d’importer des images ou des vidéos sur data.gouv.fr, sauf rares exceptions.
+Les images, les vidéos, et les sons ne constituent pas des jeux de données à part entière, il s’agit de simples documents, des fichiers statiques. Par conséquent, nous vous déconseillons d’importer des images, des vidéos, ou des sons sur data.gouv.fr, sauf rares exceptions.
 
-En revanche, une _liste_ de photographies peut être considérée comme un jeu de données, à condition que cette liste prennent la forme d’un CSV, dans lequel chaque ligne contient des informations sur chaque photo : lieu de la prise de vue, date, URL du fichier, auteur du cliché, et ainsi de suite…
+En revanche, une _liste_ de photographies peut être considérée comme un jeu de données, à condition que cette liste prenne la forme d’un CSV, dans lequel chaque ligne contient des informations sur chaque photographie : lieu de la prise de vue, date, URL du fichier, auteur du cliché, et ainsi de suite…
 
 #### Documents bureautiques
 
