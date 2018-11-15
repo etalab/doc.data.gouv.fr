@@ -167,7 +167,7 @@ Exemple :
 
 Aujourd'hui, les données essentielles transmises par la DGFiP ne sont pas référencées sur data.gouv.fr sous forme de ressources. Elles sont hébergées sur un serveur de fichier annexe, [https://files.data.gouv.fr](https://files.data.gouv.fr/decp). L'utilisation de l'API n'est donc pas pertinente, et nous vous conseillons par conséquent de consulter la section [Via un système de fichiers](#via-un-syst%C3%A8me-de-fichier).
 
-Cependant, nous avons créé [un jeu de données](https://www.data.gouv.fr/fr/datasets/5bd0b6fd8b4c413d0801dc57/) pour récapituler le contexte et fournir un lien vers les fichiers. Ce jeu de données a vocation a être pérenne.
+Cependant, nous avons créé [un jeu de données](https://www.data.gouv.fr/fr/datasets/5bd0b6fd8b4c413d0801dc57/) pour récapituler le contexte et fournir un lien vers les fichiers. Ce jeu de données a vocation à être pérenne.
 
 ## Déclaration d’un profil d’acheteur
 
