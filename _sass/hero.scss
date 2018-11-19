@@ -14,3 +14,8 @@
 .hero h1 {
   color: white;
 }
+
+// Vertically align "doc" part of the logo with "data.gouv.fr" one
+.navbar__domain {
+ -webkit-padding-after: 4px;
+}
