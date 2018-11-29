@@ -83,7 +83,7 @@ En revanche, une _liste_ de photographies peut être considérée comme un jeu d
 
 #### Documents bureautiques
 
-Même raisonnement que pour les images et les vidéos : les fichiers Word, PowerPoint, ou PDF, ne constituent pas nécessairement des jeux de données, par conséquent leur importation sur data.gouv.fr est déconseillée. Cela dit, une liste de fichiers PDF peut constituer un jeu de données, si la liste prend la forme d’un CSV qui contient des informations supplémentaires sur chaque PDF.
+Même raisonnement que pour les images et les vidéos : les fichiers Word, PowerPoint, ou PDF, ne constituent pas nécessairement des jeux de données, par conséquent leur importation sur data.gouv.fr est déconseillée. Cela dit, une liste de fichiers PDF peut constituer un jeu de données, surtout si la liste est accompagnée d’un CSV qui contient des informations supplémentaires sur chaque PDF.
 
 #### Autres types de données
 
