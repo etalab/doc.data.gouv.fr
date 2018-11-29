@@ -2,6 +2,7 @@
 title: Signaler un contenu
 slug: signaler-un-contenu
 ---
+
 # Signaler un contenu
 
 Si vous possédez un compte utilisateur, vous pouvez signaler des jeux de données ou des réutilisations qui enfreignent les [conditions générales d’utilisation](https://www.data.gouv.fr/fr/terms/) de data.gouv.fr.

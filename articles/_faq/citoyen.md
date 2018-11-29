@@ -3,6 +3,7 @@ title: Découvrir l’OpenData en tant que citoyen
 subtitle: Les fondamentaux de l’OpenData pour les citoyens
 label: En tant que citoyen
 ---
+
 # Découvrir l’OpenData en tant que citoyen
 
 ## Quelles données sont publiées sur « data.gouv.fr » ?
@@ -15,7 +16,7 @@ ou de **partager des données d’intérêt public**, qu’il s’agisse par exe
 Les données à caractère personnel (données fiscales ou patrimoniales, données médicales, etc.)
 et celles dont la publication contrevient à la loi (secret médical, secret de la défense nationale, secret statistique, secret des affaires, etc.) **ne sont pas acceptées** sur la plateforme « [data.gouv.fr](https://www.data.gouv.fr) ».
 
-Pour plus d’informations sur les meilleures pratiques en matière de publication, consultez le [Guide de publication]({% link _faq/producteur.md %}).
+Pour plus d’informations sur les meilleures pratiques en matière de publication, consultez le [Guide de publication](<{% link _faq/producteur.md %}>).
 
 ## Quels acteurs contribuent sur « data.gouv.fr » ?
 
@@ -38,11 +39,11 @@ Etalab a une responsabilité d’hébergeur et n’est pas responsable du conten
 Créer un compte sur « [data.gouv.fr](https://www.data.gouv.fr) » est facultatif pour la consultation
 mais nécessaire pour effectuer des actions sur la plateforme telles que :
 
-* publier un jeu de données ;
-* publier une réutilisation ;
-* créer ou rejoindre une organisation ;
-* faire un signalement ou discuter sur une publication ;
-* voter pour une publication.
+-   publier un jeu de données ;
+-   publier une réutilisation ;
+-   créer ou rejoindre une organisation ;
+-   faire un signalement ou discuter sur une publication ;
+-   voter pour une publication.
 
 La création d’un compte utilisateur vous engage à respecter les [conditions d’utilisation](https://www.data.gouv.fr/fr/terms/).
 

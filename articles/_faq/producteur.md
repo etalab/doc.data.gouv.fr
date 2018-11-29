@@ -4,6 +4,7 @@ subtitle: Que faut-il savoir avant de publier des données ?
 label: En tant que producteur
 summary: Que faut-il savoir avant de publier des données ?
 ---
+
 # Découvrir l’OpenData en tant que producteur
 
 ## Qui est considéré comme producteur de données ?
@@ -56,20 +57,20 @@ mais dans les champs prévus à cet effet.
 
 **Exemples**
 
-- Impôts locaux
-- Impact environnemental des sociétés minières
+-   Impôts locaux
+-   Impact environnemental des sociétés minières
 
 **Contre exemples**
 
-- Impôts locaux en Lorraine pour l’année 2012
-- Impact environnemental des société minières dans le cadre de la campagne de réactualisation
-  des faits opérés par la DATAR pour le compte de l’Institut.
+-   Impôts locaux en Lorraine pour l’année 2012
+-   Impact environnemental des société minières dans le cadre de la campagne de réactualisation
+    des faits opérés par la DATAR pour le compte de l’Institut.
 
 ### Description
 
 C’est ici qu’il faut mettre en avant le jeu de données, en citant les faits, les mots-clés qu’il recouvre, les sources et la méthodologie utilisée… Pour écrire une bonne description, il faut raisonner comme un moteur de recherche : quelles questions posées par les Internautes devraient mener à ce jeu de données ?
 
-*Exemple* : pour l’impact environnemental, citer les mots-clés tonne-carbone, externalité environnementale, principaux facteurs négatifs et positifs de l’impact des mines sur l’environnement, etc.
+_Exemple_ : pour l’impact environnemental, citer les mots-clés tonne-carbone, externalité environnementale, principaux facteurs négatifs et positifs de l’impact des mines sur l’environnement, etc.
 
 ### Licence
 
@@ -111,9 +112,9 @@ les unités, la granularité qui décrit le mieux la ressource**, plutôt que de
 
 Par exemple :
 
-- Fichier détaillé des personnes morales, par département et par an
-- Fichier statistique par département, en k€ et en Tonne/Carbone
-- Site web permettant de sélectionner les données par ville et par type de trajet
+-   Fichier détaillé des personnes morales, par département et par an
+-   Fichier statistique par département, en k€ et en Tonne/Carbone
+-   Site web permettant de sélectionner les données par ville et par type de trajet
 
 Une description de la ressource peut être ajoutée de manière optionnelle pour exprimer des compléments d’informations sur la méthodologie (sondage, enquête, données fiscales ..), des précisions sur les données en question (colonnes du fichiers ..), ou tout autre information renforçant le titre.
 
@@ -129,7 +130,7 @@ par exemple SGMAP/Service X.
 
 ### Courriel de contact
 
-Préciser ici, de manière optionnelle, l’adresse mail du producteur, par exemple *contact@agriculture.fr*, si elle est différente de celle de l’utilisateur qui publie. Lorsque vous publiez un jeu de données au nom d’une organisation, tous les membres déclarés seront automatiquement notifiés d’éventuelles réutilisations sur la page du jeu de données (par exemple, la publication d’une visualisation ou d’un commentaire).
+Préciser ici, de manière optionnelle, l’adresse mail du producteur, par exemple _contact@agriculture.fr_, si elle est différente de celle de l’utilisateur qui publie. Lorsque vous publiez un jeu de données au nom d’une organisation, tous les membres déclarés seront automatiquement notifiés d’éventuelles réutilisations sur la page du jeu de données (par exemple, la publication d’une visualisation ou d’un commentaire).
 
 ### Thématique (groupes)
 
@@ -142,45 +143,49 @@ La directive INSPIRE est la directive 2007/2/CE du Parlement européen et du Con
 
 INSPIRE s’applique à 34 domaines thématiques, se décomposant en trois groupes principaux :
 
-1. Les données nécessaires au repérage sur le territoire, telles que :
-   - systèmes de coordonnées,
-   - unités adminsitratives,
-   - réseaux de transport,
-   - hydrographie,
-   - parcellaire cadastral,
-   - adresses et noms de lieux ainsi que des données relatives aux sites protégés.
-2. Les données générales complémentaires telles que:
-   - l’altimétrie,
-   - l’occupation des terres,
-   - la géologie et l’horto-imagerie
-3. Les données thématiques telles que:
-   - bâtiments,
-   - vocation des sols,
-   - santé et sécurité des personnes,
-   - service d’utilité publique et services publics,
-   - données sur l’environnement (nombreuses et variées),
-   - installations industrielles, agricoles,
-   - démographie,
-   - périmètres de réglementation,
-   - données météorologiques,
-   - données maritimes,
-   - sources d’énergie et ressources minérales.
+1.  Les données nécessaires au repérage sur le territoire, telles que :
+    -   systèmes de coordonnées,
+    -   unités adminsitratives,
+    -   réseaux de transport,
+    -   hydrographie,
+    -   parcellaire cadastral,
+    -   adresses et noms de lieux ainsi que des données relatives aux sites protégés.
+2.  Les données générales complémentaires telles que:
+    -   l’altimétrie,
+    -   l’occupation des terres,
+    -   la géologie et l’horto-imagerie
+3.  Les données thématiques telles que:
+    -   bâtiments,
+    -   vocation des sols,
+    -   santé et sécurité des personnes,
+    -   service d’utilité publique et services publics,
+    -   données sur l’environnement (nombreuses et variées),
+    -   installations industrielles, agricoles,
+    -   démographie,
+    -   périmètres de réglementation,
+    -   données météorologiques,
+    -   données maritimes,
+    -   sources d’énergie et ressources minérales.
 
 Les standards de la géomatique ne sont pas ceux du Web et pourtant ils structurent l’immense capital
 d’informations accumulé depuis plusieurs dizaines d’années. D’un côté des normes comme Inspire, WFS, WCS, CSW, Shapefiles, GeoJSON, KML, de l’autre des outils gratuits comme OpenStreetMap ou Google Earth. La passerelle Inspire, en production depuis début 2015, permet aux producteurs et aux réutilisateurs d’exploiter au mieux ces gisements de données colossaux, en les rendant automatiquement disponibles dans les standards du Web.
 
 ### Pour contribuer à la passerelle Inspire en tant qu’autorité locale géographique (DDT, DREAL, DDTM…)
 
-1. Adoptez le plan de nommage suivant pour les producteurs de l’administration déconcentrée :
-   - `DR[xxx] [Nom de la région accents respectés, trait-d’union partout]`` :
-     DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne…
-   - `DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22` …
-   - `Préfecture de [DOM/Nom Région/Nom Département]` : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire ..
-2. Rendez vos jeux de données INSPIRE accessibles depuis Internet.
-   Si vous ne disposez pas de serveurs où les déposer, vous pourrez utiliser ceux de data.gouv.fr.
+1.  Adoptez le plan de nommage suivant pour les producteurs de l’administration déconcentrée :
+    -   \`DR[xxx][nom de la région accents respectés, trait-d’union partout]`` :
+        DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne…
+    -   `DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22` …
+    -   `Préfecture de [DOM/Nom Région/Nom Département]` : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire ..
+2.  Rendez vos jeux de données INSPIRE accessibles depuis Internet.
+    Si vous ne disposez pas de serveurs où les déposer, vous pourrez utiliser ceux de data.gouv.fr.
 
 [data.gouv.fr]: https://www.data.gouv.fr
+
 [certification@data.gouv.fr]: mailto:certification@data.gouv.fr
-[La Réserve Parlementaire]: https://www.data.gouv.fr/fr/datasets/reserve-parlementaire/
+
+[la réserve parlementaire]: https://www.data.gouv.fr/fr/datasets/reserve-parlementaire/
+
 [lo]: https://www.etalab.gouv.fr/licence-ouverte-open-licence
+
 [legifrance-producer]: http://www.legifrance.gouv.fr/affichCode.do?idArticle=LEGIARTI000006279245&idSectionTA=LEGISCTA000006161660&cidTexte=LEGITEXT000006069414&dateTexte=20090613
