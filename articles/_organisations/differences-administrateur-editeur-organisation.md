@@ -11,17 +11,17 @@ L’utilisateur qui créé une organisation en devient l’administrateur. Il pe
 
 ## Éditeur
 
-Au sein d’une organisation, un éditeur peut :
+Au sein d’une organisation, un éditeur peut :
 
--   publier des jeux de données au nom de l’organisation ;
--   référencer des réutilisations au nom de l’organisation ;
--   modifier des jeux de données existants ;
+-   publier des jeux de données au nom de l’organisation ;
+-   référencer des réutilisations au nom de l’organisation ;
+-   modifier des jeux de données existants ;
 -   consulter les demandes d’adhésion à l’organisation.
 
 ## Administrateur
 
-Un administrateur possède les mêmes droits qu’un éditeur, mais il peut, en plus :
+Un administrateur possède les mêmes droits qu’un éditeur, mais il peut, en plus :
 
--   ajouter des utilisateurs à l’organisation ;
--   accepter ou valider les demandes d’adhésion à l’organisation ;
+-   ajouter des utilisateurs à l’organisation ;
+-   accepter ou valider les demandes d’adhésion à l’organisation ;
 -   supprimer l’organisation dont il est administrateur.

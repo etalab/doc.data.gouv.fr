@@ -11,17 +11,17 @@ Après avoir fait une recherche sur data.gouv.fr, vous pouvez trier les résulta
 
 ## Ce que vous pouvez chercher
 
-Vous pouvez chercher les choses suivantes au sein du catalogue de data.gouv.fr :
+Vous pouvez chercher les choses suivantes au sein du catalogue de data.gouv.fr :
 
--   jeux de données ;
--   réutilisations ;
--   organisations ;
+-   jeux de données ;
+-   réutilisations ;
+-   organisations ;
 -   territoires (régions, départements, communes).
 
-Vous ne pouvez pas chercher les choses suivantes :
+Vous ne pouvez pas chercher les choses suivantes :
 
--   utilisateurs individuels ;
--   ressources ;
+-   utilisateurs individuels ;
+-   ressources ;
 -   discussions.
 
 ## Utiliser la page de recherche
@@ -32,7 +32,7 @@ Vous avez ensuite la possibilité de trier les résultats d’une recherche selo
 
 ## Trier les résultats de recherche
 
-Utiliser le menu déroulant de tri pour trier vos résultats en fonction de plusieurs critères qui varient selon le type de ressource recherché : jeux de données, réutilisation, ou organisation.
+Utiliser le menu déroulant de tri pour trier vos résultats en fonction de plusieurs critères qui varient selon le type de ressource recherché : jeux de données, réutilisation, ou organisation.
 
 Par défaut, les tris sont effectués par ordre alphabétique quand il s’agit de textes et par ordre décroissant quand il s’agit de chiffres ou de dates. Pour effectuer un tri dans un ordre inverse, cliquez sur l’icône en forme de flèche qui pointe vers le bas, celle qui se trouve à droite du menu **Trier par**.
 
@@ -40,7 +40,7 @@ Par défaut, les tris sont effectués par ordre alphabétique quand il s’agit 
 
 Quand vous faites une recherche sur data.gouv.fr, la page de résultat affiche l’onglet des jeux de données par défaut.
 
-Vous pouvez trier les jeux de données trouvés selon plusieurs critères :
+Vous pouvez trier les jeux de données trouvés selon plusieurs critères :
 
 | Critère du tri                  | Effet du tri                                                                                    |
 | ------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -54,7 +54,7 @@ Vous pouvez trier les jeux de données trouvés selon plusieurs critères :
 
 Si vous cliquez sur l’onglet réutilisations après avoir fait une recherche, vous ne verrez que les réutilisations correspondant à vos critères de recherche.
 
-Vous pouvez trier les réutilisations selon plusieurs critères :
+Vous pouvez trier les réutilisations selon plusieurs critères :
 
 | Critère du tri                  | Effet du tri                                                                         |
 | ------------------------------- | ------------------------------------------------------------------------------------ |
@@ -68,7 +68,7 @@ Vous pouvez trier les réutilisations selon plusieurs critères :
 
 Si vous cliquez sur l’onglet organisations après avoir fait une recherche, vous ne verrez que les organisations correspondant à vos critères de recherche.
 
-Vous pouvez trier les organisations selon plusieurs critères :
+Vous pouvez trier les organisations selon plusieurs critères :
 
 | Critère du tri    | Effet du tri                                                                                                       |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -83,7 +83,7 @@ Que vous cherchiez un jeu de données, une réutilisation ou une organisation, l
 
 ### Filtrer les jeux de données
 
-Pour les résultats de recherche qui apparaissent sur l’onglet jeux de données, voici les filtres disponibles et leurs effets sur les résultats affichés :
+Pour les résultats de recherche qui apparaissent sur l’onglet jeux de données, voici les filtres disponibles et leurs effets sur les résultats affichés :
 
 | Nom du filtre            | Effet du filtre                                                                           |
 | ------------------------ | ----------------------------------------------------------------------------------------- |
@@ -99,7 +99,7 @@ Pour les résultats de recherche qui apparaissent sur l’onglet jeux de donnée
 
 ### Filtrer les réutilisations
 
-Pour les résultats de recherche qui apparaissent sur l’onglet réutilisations, voici les filtres disponibles et leurs effets sur les résultats affichés :
+Pour les résultats de recherche qui apparaissent sur l’onglet réutilisations, voici les filtres disponibles et leurs effets sur les résultats affichés :
 
 | Nom du filtre     | Effet du filtre                                                                                |
 | ----------------- | ---------------------------------------------------------------------------------------------- |
@@ -111,7 +111,7 @@ Pour les résultats de recherche qui apparaissent sur l’onglet réutilisations
 
 ### Filtrer les organisations
 
-Pour les résultats de recherche qui apparaissent sur l’onglet organisations, voici les filtres disponibles et leurs effets sur les résultats affichés :
+Pour les résultats de recherche qui apparaissent sur l’onglet organisations, voici les filtres disponibles et leurs effets sur les résultats affichés :
 
 | Nom du filtre            | Effet du filtre                                                                                       |
 | ------------------------ | ----------------------------------------------------------------------------------------------------- |

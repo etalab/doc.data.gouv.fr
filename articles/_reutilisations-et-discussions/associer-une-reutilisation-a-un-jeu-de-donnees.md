@@ -9,20 +9,20 @@ Les données publiées sur data.gouv.fr peuvent être réutilisées selon les te
 
 ## Pourquoi référencer une réutilisation
 
-Référencer une réutilisation sur la page d’un jeu de données ne prend que quelques secondes et permet de :
+Référencer une réutilisation sur la page d’un jeu de données ne prend que quelques secondes et permet de :
 
--   donner de la visibilité à la réutilisation ;
--   montrer à quoi le jeu de données peut servir ;
--   inspirer d’autres réutilisations potentielles ;
+-   donner de la visibilité à la réutilisation ;
+-   montrer à quoi le jeu de données peut servir ;
+-   inspirer d’autres réutilisations potentielles ;
 -   remercier le producteur des données réutilisées.
 
 ## Comment référencer une réutilisation
 
-Pour référencer une réutilisation :
+Pour référencer une réutilisation :
 
-1.  [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2.  Rendez-vous sur la page du jeu de données réutilisé ;
-3.  Naviguez jusqu’à la section **Réutilisations** qui figure en bas de la page et cliquez sur **Ajouter une réutilisation** ;
+1.  [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
+2.  Rendez-vous sur la page du jeu de données réutilisé ;
+3.  Naviguez jusqu’à la section **Réutilisations** qui figure en bas de la page et cliquez sur **Ajouter une réutilisation** ;
 
 ## 1. Choisir qui publie
 
@@ -30,11 +30,11 @@ Choisissez si vous souhaitez publier la réutilisation sous votre propre nom, à
 
 ## 2. Décrire la réutilisation
 
-Pour bien décrire la réutilisation, remplissez les champs suivants :
+Pour bien décrire la réutilisation, remplissez les champs suivants :
 
 ### Nom
 
-C’est le titre de la réutilisation. Précisez quelle forme prend la réutilisation : carte, graphique, tableau…
+C’est le titre de la réutilisation. Précisez quelle forme prend la réutilisation : carte, graphique, tableau…
 
 Le nom est obligatoire.
 
@@ -52,9 +52,9 @@ Le type est obligatoire.
 
 ### Description
 
-Saisissez ici des précisions sur :
+Saisissez ici des précisions sur :
 
--   la méthode de création de la réutilisation (les outils et traitements utilisés par exemple) ;
+-   la méthode de création de la réutilisation (les outils et traitements utilisés par exemple) ;
 -   ce que la réutilisation permet de faire ou de montrer (les conclusions qu’on peut en tirer par exemple) ;
 -   l’auteur de la réutilisation (ce qui vous a donné envie de réutiliser les données par exemple).
 
@@ -72,9 +72,9 @@ Une fois votre réutilisation décrite, sauvegardez-la et passez à l’étape s
 
 Par défaut, votre réutilisation sera liée au jeu de données qui vous a servi de point de départ. Mais si votre réutilisation a exploité d’autres jeu de données, vous pouvez les associer à votre réutilisation à cette étape.
 
-Pour lier d’autres jeux de données à votre réutilisation :
+Pour lier d’autres jeux de données à votre réutilisation :
 
-1.  Saisissez leurs titre dans le champ **Trouver votre jeu de données** ;
+1.  Saisissez leurs titre dans le champ **Trouver votre jeu de données** ;
 2.  Cliquez sur leur nom quand ils apparaissent à l’écran.
 
 ## 4. Insérer une image
@@ -87,7 +87,7 @@ Pour ajouter une image à votre réutilisation, cliquez sur le bouton **Choisiss
 
 Votre réutilisation est en ligne. Elle est visible sur la page du jeu de données qui lui a servi de base.
 
-Vous pouvez :
+Vous pouvez :
 
--   voir la réutilisation sur le site, en cliquant sur **Voir sur le site** ;
+-   voir la réutilisation sur le site, en cliquant sur **Voir sur le site** ;
 -   modifier la réutilisation depuis votre interface administrateur, en cliquant sur **Voir dans l’administration**.

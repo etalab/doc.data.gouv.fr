@@ -9,20 +9,20 @@ Quand vous créez un compte sur data.gouv.fr, vous devenez utilisateur de la pla
 
 ## Compte utilisateur
 
-Chaque individu qui contribue sur data.gouv.fr possède un compte utilisateur. Ce compte permet de :
+Chaque individu qui contribue sur data.gouv.fr possède un compte utilisateur. Ce compte permet de :
 
--   mettre en ligne des données gratuitement ;
--   référencer des réutilisations de données ;
--   ouvrir une discussion au sujet d’un jeu de données ;
--   suivre les publication d’un autre utilisateur ;
+-   mettre en ligne des données gratuitement ;
+-   référencer des réutilisations de données ;
+-   ouvrir une discussion au sujet d’un jeu de données ;
+-   suivre les publication d’un autre utilisateur ;
 -   créer, rejoindre, ou suivre une organisation.
 
 ## Organisations
 
 Les organisations permettent à plusieurs utilisateurs de publier des données sous le même nom, la même bannière. Les administrateurs d’une organisation peuvent choisir d’ajouter ou de retirer des utilisateurs au sein de leur organisation au moyen de fonctionnalités spécifiques.
 
-Une organisation permet de :
+Une organisation permet de :
 
--   rassembler des utilisateurs unis par un intérêt commun ;
--   publier des jeux de données au nom de l’organisation ;
+-   rassembler des utilisateurs unis par un intérêt commun ;
+-   publier des jeux de données au nom de l’organisation ;
 -   devenir un producteur de données certifié par data.gouv.fr.

@@ -11,29 +11,29 @@ La plateforme data.gouv.fr permet de créer et de consulter des jeux de données
 
 ## Jeu de données
 
-Un jeu de données comporte :
+Un jeu de données comporte :
 
--   un titre (obligatoire) ;
+-   un titre (obligatoire) ;
 -   un sigle (facultatif)
--   une description (obligatoire) ;
--   une licence (facultative) ;
--   une fréquence de mise à jour (obligatoire) ;
--   une date de dernière mise à jour (facultative) ;
--   des mots-clefs (facultatifs) ;
--   un intervalle de couverture temporelle (facultatif) ;
--   une zone de couverture spatiale (facultative) ;
+-   une description (obligatoire) ;
+-   une licence (facultative) ;
+-   une fréquence de mise à jour (obligatoire) ;
+-   une date de dernière mise à jour (facultative) ;
+-   des mots-clefs (facultatifs) ;
+-   un intervalle de couverture temporelle (facultatif) ;
+-   une zone de couverture spatiale (facultative) ;
 -   un niveau de granularité spatiale (facultatif).
 
 ## Ressources
 
-Une ressource comporte :
+Une ressource comporte :
 
--   un titre (obligatoire) ;
--   un type (obligatoire) ;
--   une description (facultative) ;
--   une date de publication (facultative) ;
--   une URL (obligatoire) ;
--   une taille en bytes (facultative) ;
--   un format (obligatoire) ;
--   un type mime (facultatif) ;
+-   un titre (obligatoire) ;
+-   un type (obligatoire) ;
+-   une description (facultative) ;
+-   une date de publication (facultative) ;
+-   une URL (obligatoire) ;
+-   une taille en bytes (facultative) ;
+-   un format (obligatoire) ;
+-   un type mime (facultatif) ;
 -   une somme de contrôle (facultative).
