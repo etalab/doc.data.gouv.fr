@@ -9,13 +9,13 @@ Tous les exemples utilisent [httpie](http://httpie.org/) et [jq](http://stedolan
 
 ## Vérifier que httpie fonctionne
 
-Une fois httpie installé, vous pouvez vérifier qu'il fonctionne comme convenu en tapant cette commande dans votre terminal :
+Une fois httpie installé, vous pouvez vérifier qu'il fonctionne comme convenu en tapant cette commande dans votre terminal :
 
 ```console
 $ http 'https://www.data.gouv.fr/api/1/organizations/?page_size=1'
 ```
 
-Cela doit retourner une réponse de ce style :
+Cela doit retourner une réponse de ce style :
 
 ```json
 HTTP/1.1 200 OK
@@ -47,25 +47,25 @@ C'est très verbeux et nous n'avons pas besoin de toute cette information pour l
 
 ## Vérifier que jq fonctionne
 
-Une fois jq installé, vous pouvez vérifier qu'il fonctionne en tapant cette commande dans votre terminal :
+Une fois jq installé, vous pouvez vérifier qu'il fonctionne en tapant cette commande dans votre terminal :
 
 ```console
 $ http 'https://www.data.gouv.fr/api/1/organizations/?page_size=1' | jq '.data[].name'
 ```
 
-Cela doit retourner une réponse de ce style :
+Cela doit retourner une réponse de ce style :
 
 ```json
 "mairie de toulon"
 ```
 
-C'est bien mieux ! Maintenant que tout fonctionne bien, réduisons un peu la taille de notre ligne de commande :
+C'est bien mieux ! Maintenant que tout fonctionne bien, réduisons un peu la taille de notre ligne de commande :
 
 ```console
 $ export API="https://www.data.gouv.fr/api/1/"
 ```
 
-La commande précédente est maintenant équivalente à la commande plus lisible (ne pas oublier les apostrophes) :
+La commande précédente est maintenant équivalente à la commande plus lisible (ne pas oublier les apostrophes) :
 
 ```console
 $ http $API'organizations/?page_size=1' | jq '.data[].name'
@@ -75,11 +75,12 @@ C'est un bon début, maintenant plongeons dans l'API en elle-même. Nous ne le s
 
 ## Parcourir et récupérer des données
 
-Vous pouvez récupérer une liste d'organisations (filtrée ou non) ou une organisation unitaire. Lorsque vous récupérez un point d'accès, le nombre d'éléments par page par défaut est de 20. Récupérons les 20 premières organisations via l'API :
+Vous pouvez récupérer une liste d'organisations (filtrée ou non) ou une organisation unitaire. Lorsque vous récupérez un point d'accès, le nombre d'éléments par page par défaut est de 20\. Récupérons les 20 premières organisations via l'API :
 
 ```console
 $ http $API'organizations/' | jq '.data[].name'
 ```
+
 ```json
 "mairie de toulon"
 "SMIC DES VOSGES"
@@ -93,7 +94,7 @@ $ http $API'organizations/' | jq '.data[].name'
 "Et voilà !"
 ```
 
-C'est une bonne chose d'avoir cette liste mais que se passe-t-il si nous souhaitons parcourir les organisations retournées ? Récupérons les 5 premières URI d'organisations.
+C'est une bonne chose d'avoir cette liste mais que se passe-t-il si nous souhaitons parcourir les organisations retournées ? Récupérons les 5 premières URI d'organisations.
 
 ```console
 $ http $API'organizations/?page_size=5' | jq '.data[].uri'
@@ -113,7 +114,7 @@ Maintenant, nous sommes capables de récupérer une organisation seulement via l
 $ http $API'organizations/5ba0b9f5634f4150f31579dd/' | jq '.'
 ```
 
-Cela fait beaucoup de données à parcourir. Affinons ces données, si nous voulons seulement extraire les métriques :
+Cela fait beaucoup de données à parcourir. Affinons ces données, si nous voulons seulement extraire les métriques :
 
 ```console
 $ http $API'organizations/5ba0b9f5634f4150f31579dd/' | jq '.metrics'
@@ -130,11 +131,11 @@ $ http $API'organizations/5ba0b9f5634f4150f31579dd/' | jq '.metrics'
  "reuse_views": 0,
  "followers": 0,
  "resource_downloads": 0,
- 
+
 }
 ```
 
-Ou peut-être juste le nom des membres de cette organisation :
+Ou peut-être juste le nom des membres de cette organisation :
 
 ```console
 $ http $API'organizations/5ba0b9f5634f4150f31579dd/' | jq '.members[].user.last_name'
@@ -150,11 +151,12 @@ Il est vraiment de votre ressort de récupérer les données pertinentes pour vo
 
 Attention, vous entrez dans une zone de danger. Les modifications et suppressions de données via l'API sont définitives et nous ne proposons pas de bac à sable pour faire des tests avant de les exécuter (pour l'instant). Soyez conscient de ces responsabilités avant d'utiliser vos super pouvoirs.
 
-Si vous tentez de modifier une ressource sans le token d'authentification, une erreur 401 sera renvoyée :
+Si vous tentez de modifier une ressource sans le token d'authentification, une erreur 401 sera renvoyée :
 
 ```console
 $ http PUT $API'organizations/organization-uri-x/'
 ```
+
 ```json
 HTTP/1.1 401 UNAUTHORIZED
 ... LOTS OF HEADERS ...
@@ -165,11 +167,12 @@ HTTP/1.1 401 UNAUTHORIZED
 }
 ```
 
-Vous devez spécifier votre Clé d'API (voir ci-dessus) et utiliser le header HTTP `X-API-KEY`. Si vous tentez de modifier une ressource que vous ne contrôlez pas, une erreur 400 sera retournée :
+Vous devez spécifier votre Clé d'API (voir ci-dessus) et utiliser le header HTTP `X-API-KEY`. Si vous tentez de modifier une ressource que vous ne contrôlez pas, une erreur 400 sera retournée :
 
 ```console
 $ http PUT $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here
 ```
+
 ```json
 HTTP/1.1 401 UNAUTHORIZED
 ... LOTS OF HEADERS ...
@@ -179,6 +182,7 @@ HTTP/1.1 401 UNAUTHORIZED
     "status": 401
 }
 ```
+
 C'est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d'API. C'est un autre message d'erreur potentiel que vous pouvez rencontrer.
 
 ```json
@@ -201,6 +205,7 @@ HTTP/1.1 200 OK
     ...
 }
 ```
+
 Mais ça ne change pas tout ! C'est parfaitement normal, nous avons oublié de spécifier la bonne donnée à envoyer au serveur.
 
 ```console
@@ -210,6 +215,7 @@ $ http PUT $API'organizations/organization-uri-x/' \
     description="The quick brown fox jumps over the lazy dog." \
     | jq '{name: .name, description: .description}'
 ```
+
 ```json
 {
   "name": "Lorem ipsum",
@@ -222,7 +228,8 @@ La ressource a été modifiée avec vos nouvelles valeurs. Finalement, vous pouv
 ```console
 $ http DELETE $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here
 ```
-```HTTP
+
+```http
 HTTP/1.0 204 NO CONTENT
 ... LOTS OF HEADERS ...
 ```
@@ -232,6 +239,7 @@ Une fois effectué, vous pouvez vérifier que c'est effectif en envoyant un GET 
 ```console
 $ http GET $API'organizations/organization-uri-x/'
 ```
+
 ```json
 HTTP/1.0 410 GONE
 ... LOTS OF HEADERS ...

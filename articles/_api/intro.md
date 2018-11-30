@@ -4,10 +4,10 @@ order: 1
 ---
 
 # Introduction
+
 {:.no_toc}
 
-* TOC
-{:toc}
+- TOC {:toc}
 
 ## Racine
 
@@ -22,6 +22,7 @@ De façon à pouvoir exécuter des opérations d'écriture, vous devez commencer
 Cette clé doit être fournie dans l'entête HTTP `X-API-KEY` à chaque appel en écriture (`POST`,`PUT`, `PATCH` et `DELETE`).
 
 ## Autorisations
+
 Les appels d'API sont soumis aux même permissions que l'interface web.
 
 Par exemple, vous devez être membre d'une organisation pour modifier l'un de ses jeux de données.
@@ -30,16 +31,17 @@ Par exemple, vous devez être membre d'une organisation pour modifier l'un de se
 
 ### Content-type
 
-Les différents points d'entrée de l'API attendent du JSON (`application/json`) en entrée et renvoient du JSON en sortie.
-Les seules exceptions sont les points d'entrée qui gèrent l'upload de fichiers: ils acceptent du `multipart/form-data`et renvoient du JSON.
+Les différents points d'entrée de l'API attendent du JSON (`application/json`) en entrée et renvoient du JSON en sortie. Les seules exceptions sont les points d'entrée qui gèrent l'upload de fichiers: ils acceptent du `multipart/form-data`et renvoient du JSON.
 
 ### Identifiants d'URL
 
 À chaque fois que vous pouvez utiliser identifiant d'objet dans une URL de l'API, vous avez les choix suivants:
+
 - l'identifiant technique permanent (**ex:** `5bbb6d6cff66bd4dc17bfd5a`)
-- le slug (**ex:**  `mon-dataset`)
+- le slug (**ex:** `mon-dataset`)
 
 Par exemple, un dataset `5bbb6d6cff66bd4dc17bfd5a` dont le slug est `mon-dataset`, vous pouvez accéder à l'URL `$API/datasets/<dataset>`, par:
+
 - `$API/datasets/5bbb6d6cff66bd4dc17bfd5a`
 - `$API/datasets/mon-dataset`
 
@@ -50,6 +52,7 @@ Par exemple, un dataset `5bbb6d6cff66bd4dc17bfd5a` dont le slug est `mon-dataset
 Les listes simples sont renvoyées sous forme d'une liste JSON.
 
 Par exemple, [la liste des types de réutilisations]({{ site.baseurl }}{% link _api/reference.md %}#/reuses/reuse_types):
+
 ```json
 [
   {"id": "paper", "label": "Papier"},
@@ -70,6 +73,7 @@ Certaines méthodes sont paginées et suivent le même modèle de pagination. La
 Vous n'avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponible dans la réponse dans les attributs `previous_page` et `next_page`. Ils seront définis à `null` si il n'y a pas de page précédente et/ou suivante.
 
 **Exemple:**
+
 ```json
 {
     "data": [{...}, {...}],
@@ -92,6 +96,7 @@ La gestion d'erreur de l'API utilise les codes d'erreur HTTP standards:
 - **502**: le serveur ne répond pas
 
 Lorsque c'est possible, l'API répondra en JSON avec le format suivant:
+
 ```json
 {
     "message": "un message d'erreur"
@@ -101,13 +106,13 @@ Lorsque c'est possible, l'API répondra en JSON avec le format suivant:
 #### Support
 
 Si vous n'arrivez pas à comprendre une erreur, que vous avez besoin de support et souhaitez contacter l'équipe de data.gouv.fr, pensez à fournir les éléments suivants:
+
 - la requête HTTP effectuée (avec les entêtes HTTP)
 - la réponse éventuelle du serveur (avec ses entêtes)
 - la date et l'heure de la requête
 - un peu de contexte sur la raison de cette requête, son cadre
 
-Parfois, la réponse en erreur comprend une entête `X-Sentry-ID`.
-Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et, si c'est un bug, à le corriger.
+Parfois, la réponse en erreur comprend une entête `X-Sentry-ID`. Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et, si c'est un bug, à le corriger.
 
 ## Documentation de référence
 
