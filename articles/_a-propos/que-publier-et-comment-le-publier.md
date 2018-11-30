@@ -15,7 +15,7 @@ Plus précisément, vous pouvez publier des données sur data.gouv.fr :
 
 - Si vous produisez ou collectez des données dans le cadre d’une mission de service public, à condition que ces données ne contiennent pas d’informations personnelles et qu’elles ne révèlent pas de secrets.
 - Si vous enrichissez ou complétez des données publiques pour le compte d’une association, d’un projet de recherche, ou sur votre temps libre.
-- Si vous produisez des données d’intérêt publique de votre côté, même hors du cadre d’une mission de service public.
+- Si vous produisez des données d’intérêt public de votre côté, même hors du cadre d’une mission de service public.
 
 ## Que publier
 
