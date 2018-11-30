@@ -2,6 +2,7 @@
 title: Que publier et comment le publier
 slug: que-publier-et-comment-le-publier
 ---
+
 # Que publier sur data.gouv.fr et comment le publier
 
 data.gouv.fr est la plateforme ouverte des données publiques française. En ce sens, elle met en relation des producteurs et des utilisateurs de données. Une donnée est considérée comme ouverte quand elle peut être consultée, utilisée, et partagée par tous.
@@ -12,9 +13,9 @@ Tout le monde peut publier des données sur data.gouv.fr, du moment qu’il s’
 
 Plus précisément, vous pouvez publier des données sur data.gouv.fr :
 
-* Si vous produisez ou collectez des données dans le cadre d’une mission de service public, à condition que ces données ne contiennent pas d’informations personnelles et qu’elles ne révèlent pas de secrets.
-* Si vous enrichissez ou complétez des données publiques pour le compte d’une association, d’un projet de recherche, ou sur votre temps libre.
-* Si vous produisez des données d’intérêt publique de votre côté, même hors du cadre d’une mission de service public.
+- Si vous produisez ou collectez des données dans le cadre d’une mission de service public, à condition que ces données ne contiennent pas d’informations personnelles et qu’elles ne révèlent pas de secrets.
+- Si vous enrichissez ou complétez des données publiques pour le compte d’une association, d’un projet de recherche, ou sur votre temps libre.
+- Si vous produisez des données d’intérêt publique de votre côté, même hors du cadre d’une mission de service public.
 
 ## Que publier
 
@@ -24,10 +25,10 @@ Plus concrètement, un fichier Word qui contient des informations sur un projet 
 
 Si vous ne savez pas par où commencer, voici quelques idées de jeux de données à publier :
 
-* la liste des délibérations adoptées par une assemblée locale — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5a8f387988ee381bb2a62a46) ;
-* la liste des subventions attribuées par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5bd8fb5706e3e72ba58c0ec2) ;
-* la liste des équipements publics gérés par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/595c271ca3a7296408d69b92) ;
-* la liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5407f862a3a7292ef9c20a61).
+- la liste des délibérations adoptées par une assemblée locale — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5a8f387988ee381bb2a62a46) ;
+- la liste des subventions attribuées par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5bd8fb5706e3e72ba58c0ec2) ;
+- la liste des équipements publics gérés par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/595c271ca3a7296408d69b92) ;
+- la liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5407f862a3a7292ef9c20a61).
 
 ## Comment le publier
 
@@ -45,16 +46,16 @@ Les données tabulaires (feuilles de calcul), gagnent à être publiées sous la
 
 Quand vous créez votre fichier CSV, nous vous conseillons de :
 
-* inclure les noms des colonnes sur votre première, en les séparant par des virgules ;
-* séparer chacune de vos valeurs par une virgule, comme s’il s’agissait de colonnes ;
-* encoder votre fichier en UTF-8 (Unicode) pour garantir un bon encodage des caractères accentués.
+- inclure les noms des colonnes sur votre première, en les séparant par des virgules ;
+- séparer chacune de vos valeurs par une virgule, comme s’il s’agissait de colonnes ;
+- encoder votre fichier en UTF-8 (Unicode) pour garantir un bon encodage des caractères accentués.
 
 #### Données de transport
 
 Nous conseillons les formats suivants pour la publication des données de transport :
 
-* GTFS ;
-* NeTEx.
+- GTFS ;
+- NeTEx.
 
 [Voir la documentation de transport.data.gouv.fr](https://transport.data.gouv.fr/guide)
 
@@ -62,8 +63,8 @@ Nous conseillons les formats suivants pour la publication des données de transp
 
 Nous conseillons les formats suivants pour la publication des données géographiques :
 
-* GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs ;
-* ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster).
+- GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs ;
+- ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster).
 
 [Voir la documentation de geo.data.gouv.fr](https://geo.data.gouv.fr/fr/doc/publish-your-data)
 
@@ -71,9 +72,9 @@ Nous conseillons les formats suivants pour la publication des données géograph
 
 Si vos données comportent une structure interne, alors nous vous recommandons les formats suivants :
 
-* JSON ;
-* XML ;
-* YAML.
+- JSON ;
+- XML ;
+- YAML.
 
 #### Images, vidéos et son
 
@@ -103,8 +104,8 @@ Nous vous conseillons donc de publier vos données sous une licence ouverte, sau
 
 Avant de publier vos données sur data.gouv.fr, vérifiez bien que :
 
-* elles ne contiennent pas d’informations qui permettraient d’identifier des individus ;
-* elles ne révèlent pas de secret médical, défense, statistique, ou autre secret couvert par la loi.
+- elles ne contiennent pas d’informations qui permettraient d’identifier des individus ;
+- elles ne révèlent pas de secret médical, défense, statistique, ou autre secret couvert par la loi.
 
 ### Soigner les métadonnées
 
