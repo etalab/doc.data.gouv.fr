@@ -92,13 +92,26 @@ Pour approfondir la question des formats, nous vous conseillons de jeter un œil
 
 ### Choisir une licence
 
-Par défaut, les données publiées sur data.gouv.fr tombent sous le coup du [Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=E4583EBE2857A0DF9056D5D0082F8F2D.tplgfr31s_2?idSectionTA=LEGISCTA000032255212&cidTexte=LEGITEXT000031366350&dateTexte=20181016), qui stipule notamment que :
+Nous vous conseillons de publier vos données sous une licence ouverte :
+
+– si vous êtes une administration, pour simplifier le travail des réutilisateurs ;
+– si vous êtes un particulier, pour que vos données puissent être réutilisées par d’autres personnes.
+
+Etalab recommande la [Licence Ouverte](https://github.com/etalab/licence-ouverte/blob/master/LO.md).
+
+#### Quand la publication est faite par une administration
+
+Par défaut, les données publiées sur data.gouv.fr *par des administrations* tombent sous le coup du [Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=E4583EBE2857A0DF9056D5D0082F8F2D.tplgfr31s_2?idSectionTA=LEGISCTA000032255212&cidTexte=LEGITEXT000031366350&dateTexte=20181016), qui stipule notamment que :
 
 > Les informations publiques figurant dans des documents communiqués ou publiés par les administrations (…) peuvent être utilisées par toute personne qui le souhaite à d'autres fins que celles de la mission de service public pour les besoins de laquelle les documents ont été produits ou reçus.
 
 Si tout est déjà écrit dans le Code des relations entre le public et l’administration, pourquoi choisir une licence au moment de la publication des données alors ? Pour faire simple. Les licences permettent à d’autres personnes de savoir ce qu’il est permis de faire avec vos données, sans pour autant devoir lire l’intégralité du Code des relations entre le public et l'administration.
 
-Nous vous conseillons donc de publier vos données sous une licence ouverte, sauf si vous souhaitez inclure une notion de réciprocité, auquel cas la licence ODBl est tout indiquée.
+#### Quand la publication est faite par un particulier
+
+Quand un particulier publie des données sur https://www.data.gouv.fr, les données mises en lignes sont soumises au droit commun, c’est-à-dire au code de la propriété intellectuelle. Le particulier a l’origine de la publication détient alors la propriété intellectuelle des données. Mais comment donner à d’autres le droit d’utiliser les données en question ? C‘est là qu’interviennent les licences.
+
+Choisir une licence, c’est permettre à d’autres personnes d’utiliser et de modifier des données, sans pour autant en perdre la propriété intellectuelle. Dit autrement, sans licence, les données publiées sur https://www.data.gouv.fr par un particulier ne peuvent pas être réutilisées par d’autres personnes, car elles ne tombent pas par défaut sous le coup de la loi CADA.
 
 ### Retirer les informations personnelles et les secrets
 
