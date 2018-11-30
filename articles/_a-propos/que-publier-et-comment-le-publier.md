@@ -94,8 +94,8 @@ Pour approfondir la question des formats, nous vous conseillons de jeter un œil
 
 Nous vous conseillons de publier vos données sous une licence ouverte :
 
-– si vous êtes une administration, pour simplifier le travail des réutilisateurs ;
-– si vous êtes un particulier, pour que vos données puissent être réutilisées par d’autres personnes.
+- si vous êtes une administration, pour simplifier le travail des réutilisateurs ;
+- si vous êtes un particulier, pour que vos données puissent être réutilisées par d’autres personnes.
 
 Etalab recommande la [Licence Ouverte](https://github.com/etalab/licence-ouverte/blob/master/LO.md).
 
