@@ -18,7 +18,7 @@ Votre profil contient les informations suivantes :
 - votre **activité**, c’est-à-dire un relevé des actions effectuées par votre compte, de la plus récente à la plus anciennes ;
 - vos **abonnés**, c’est-à-dire les profils des autres personnes qui suivent vos publications ;
 - vos **suivis**, c’est-à-dire les individus et les organisations dont vous suivez les publications ;
-- vos **jeux de données**, c’est-à-dire les données que vous avez publiées en votre nom -- les données publiées pour le compte d’une organisation n’apparaissent pas sur votre profil personnel ;
+- vos **jeux de données**, c’est-à-dire les données que vous avez publiées en votre nom — les données publiées pour le compte d’une organisation n’apparaissent pas sur votre profil personnel ;
 - vos **réutilisations**, c’est-à-dire les références des pages web sur lesquelles vous avez publié des choses créées à partir de données présentes sur data.gouv.fr ;
 - vos **organisations**, c’est-à-dire la liste des organisations dont vous êtes membre.
 
@@ -42,5 +42,5 @@ Pour modifier les informations associées à un compte existant :
 Depuis la page **Moi**, vous pouvez :
 
 - ajouter ou modifier votre **image de profil**, en la survolant avec le pointeur de votre souris puis en cliquant sur **Changer** ;
-- changer votre **prénom**, **nom**, **site web**, et **à propos** (biographie), en cliquant sur le bouton **Éditer**, qui se trouve en haut à droite de votre écran -- une fois vos modifications effectuées, cliquez sur le bouton **Enregistrer** ;
+- changer votre **prénom**, **nom**, **site web**, et **à propos** (biographie), en cliquant sur le bouton **Éditer**, qui se trouve en haut à droite de votre écran — une fois vos modifications effectuées, cliquez sur le bouton **Enregistrer** ;
 - changer votre **mot de passe**, en cliquant sur la flèche orientée vers le bas qui se situe à droite du bouton Éditer, puis en sélectionnant **Changer le mot de passe** dans le menu déroulant.

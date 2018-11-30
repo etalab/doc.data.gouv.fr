@@ -21,7 +21,7 @@ Pour créer une nouvelle discussion :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
 2. Rendez-vous sur la page du jeu de données (ou de la réutilisation) pour lequel vous souhaitez créer une discussion et naviguez jusqu’en bas de la page ;
-3. Cliquez sur la zone intitulée **Démarrer une nouvelle discussion** -- un formulaire s’ouvre alors ;
+3. Cliquez sur la zone intitulée **Démarrer une nouvelle discussion** — un formulaire s’ouvre alors ;
 4. Dans le champ **Titre** du formulaire, saisissez l’objet de votre message, par exemple : _Question sur les noms des colonnes du fichier CSV_ ;
 5. Dans le champ **Commenter**, saisissez votre message ;
 6. Pour publier votre message sur la page, cliquez sur le bouton bleu **DÉMARRER UNE DISCUSSION** ;

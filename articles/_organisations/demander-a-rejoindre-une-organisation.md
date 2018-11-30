@@ -25,6 +25,6 @@ Pour accepter un nouvel utilisateur dans votre organisation suite à une demande
 2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
 3. Cliquez sur l’icône en forme d’enveloppe qui se trouve en haut à droite de votre écran ;
 4. Cliquez sur la ligne _Demande d’adhésion en attente_ ;
-5. Dans le bloc **Membres**, cliquez sur le bouton vert en forme de `v` pour accepter la demande -- ou sur le bouton rouge (`x`) pour la rejeter
+5. Dans le bloc **Membres**, cliquez sur le bouton vert en forme de `v` pour accepter la demande — ou sur le bouton rouge (`x`) pour la rejeter
 
 Tous les membres d’une organisation peuvent voir les demandes d’adhésion en attente, mais seuls les administrateurs peuvent les accepter ou les refuser.
