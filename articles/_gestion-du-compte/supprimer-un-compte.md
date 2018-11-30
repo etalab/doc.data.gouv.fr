@@ -13,7 +13,7 @@ Pour clôturer votre compte :
 4. Cliquez sur la flèche située à côté du bouton **Éditer**, en haut à droite de votre écran, puis sur **Supprimer le profil** dans le menu déroulant qui apparaît alors ;
 5. Confirmez la suppression de votre compte en cliquant sur le bouton **Confirmer**, qui figure dans la boîte de dialogue rouge.
 
-La suppression d'un compte est irréversible. La suppression d'un compte efface le compte en question, mais pas les jeux de données ou les réutilisations publiées par ce dernier. Les contenus publiés restent en ligne, mais sous une forme anonyme :
+La suppression d’un compte est irréversible. La suppression d’un compte efface le compte en question, mais pas les jeux de données ou les réutilisations publiées par ce dernier. Les contenus publiés restent en ligne, mais sous une forme anonyme :
 
-- les jeux de données publiés et les réutilisations référencées ne seront plus associées au producteur ou à l'auteur ;
-- le nom de l'utilisateur dont le compte est supprimé n'apparaîtra plus dans les discussions ou les signalements.
+- les jeux de données publiés et les réutilisations référencées ne seront plus associées au producteur ou à l’auteur ;
+- le nom de l’utilisateur dont le compte est supprimé n’apparaîtra plus dans les discussions ou les signalements.

@@ -15,14 +15,14 @@ Votre profil contient les informations suivantes :
 - votre **prénom** et votre **nom** ;
 - votre **biographie**, si vous avez [complété votre profil](https://www.data.gouv.fr/fr/admin/me/edit) ;
 - votre **site web**, si vous avez [complété votre profil](https://www.data.gouv.fr/fr/admin/me/edit) ;
-- votre **activité**, c'est-à-dire un relevé des actions effectuées par votre compte, de la plus récente à la plus anciennes ;
-- vos **abonnés**, c'est-à-dire les profils des autres personnes qui suivent vos publications ;
-- vos **suivis**, c'est-à-dire les individus et les organisations dont vous suivez les publications ;
-- vos **jeux de données**, c'est-à-dire les données que vous avez publiées en votre nom -- les données publiées pour le compte d'une organisation n'apparaissent pas sur votre profil personnel ;
-- vos **réutilisations**, c'est-à-dire les références des pages web sur lesquelles vous avez publié des choses créées à partir de données présentes sur data.gouv.fr ;
-- vos **organisations**, c'est-à-dire la liste des organisations dont vous êtes membre.
+- votre **activité**, c’est-à-dire un relevé des actions effectuées par votre compte, de la plus récente à la plus anciennes ;
+- vos **abonnés**, c’est-à-dire les profils des autres personnes qui suivent vos publications ;
+- vos **suivis**, c’est-à-dire les individus et les organisations dont vous suivez les publications ;
+- vos **jeux de données**, c’est-à-dire les données que vous avez publiées en votre nom -- les données publiées pour le compte d’une organisation n’apparaissent pas sur votre profil personnel ;
+- vos **réutilisations**, c’est-à-dire les références des pages web sur lesquelles vous avez publié des choses créées à partir de données présentes sur data.gouv.fr ;
+- vos **organisations**, c’est-à-dire la liste des organisations dont vous êtes membre.
 
-L'adresse e-mail associée à votre compte n'est pas affichée sur votre profil public.
+L’adresse e-mail associée à votre compte n’est pas affichée sur votre profil public.
 
 ## Voir votre profil
 

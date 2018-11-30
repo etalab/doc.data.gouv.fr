@@ -43,7 +43,7 @@ Access-Control-Allow-Credentials: true
 }
 ```
 
-C'est très verbeux et nous n'avons pas besoin de toute cette information pour l'instant. C'est la raison pour laquelle nous utilisons jq.
+C’est très verbeux et nous n'avons pas besoin de toute cette information pour l'instant. C’est la raison pour laquelle nous utilisons jq.
 
 ## Vérifier que jq fonctionne
 
@@ -59,7 +59,7 @@ Cela doit retourner une réponse de ce style :
 "mairie de toulon"
 ```
 
-C'est bien mieux ! Maintenant que tout fonctionne bien, réduisons un peu la taille de notre ligne de commande :
+C’est bien mieux ! Maintenant que tout fonctionne bien, réduisons un peu la taille de notre ligne de commande :
 
 ```console
 $ export API="https://www.data.gouv.fr/api/1/"
@@ -71,7 +71,7 @@ La commande précédente est maintenant équivalente à la commande plus lisible
 $ http $API'organizations/?page_size=1' | jq '.data[].name'
 ```
 
-C'est un bon début, maintenant plongeons dans l'API en elle-même. Nous ne le savons pas encore mais nous avons déjà récupéré notre première organisation.
+C’est un bon début, maintenant plongeons dans l'API en elle-même. Nous ne le savons pas encore mais nous avons déjà récupéré notre première organisation.
 
 ## Parcourir et récupérer des données
 
@@ -94,7 +94,7 @@ $ http $API'organizations/' | jq '.data[].name'
 "Et voilà !"
 ```
 
-C'est une bonne chose d'avoir cette liste mais que se passe-t-il si nous souhaitons parcourir les organisations retournées ? Récupérons les 5 premières URI d'organisations.
+C’est une bonne chose d'avoir cette liste mais que se passe-t-il si nous souhaitons parcourir les organisations retournées ? Récupérons les 5 premières URI d'organisations.
 
 ```console
 $ http $API'organizations/?page_size=5' | jq '.data[].uri'
@@ -183,7 +183,7 @@ HTTP/1.1 401 UNAUTHORIZED
 }
 ```
 
-C'est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d'API. C'est un autre message d'erreur potentiel que vous pouvez rencontrer.
+C’est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d'API. C’est un autre message d'erreur potentiel que vous pouvez rencontrer.
 
 ```json
 HTTP/1.1 403 FORBIDDEN
@@ -206,7 +206,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-Mais ça ne change pas tout ! C'est parfaitement normal, nous avons oublié de spécifier la bonne donnée à envoyer au serveur.
+Mais ça ne change pas tout ! C’est parfaitement normal, nous avons oublié de spécifier la bonne donnée à envoyer au serveur.
 
 ```console
 $ http PUT $API'organizations/organization-uri-x/' \
@@ -234,7 +234,7 @@ HTTP/1.0 204 NO CONTENT
 ... LOTS OF HEADERS ...
 ```
 
-Une fois effectué, vous pouvez vérifier que c'est effectif en envoyant un GET sur l'URL précédente:
+Une fois effectué, vous pouvez vérifier que c’est effectif en envoyant un GET sur l'URL précédente:
 
 ```console
 $ http GET $API'organizations/organization-uri-x/'
