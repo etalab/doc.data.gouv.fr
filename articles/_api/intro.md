@@ -35,7 +35,7 @@ Les différents points d’entrée de l’API attendent du JSON (`application/js
 
 ### Identifiants d’URL
 
-À chaque fois que vous pouvez utiliser identifiant d’objet dans une URL de l’API, vous avez les choix suivants:
+À chaque fois que vous pouvez utiliser identifiant d’objet dans une URL de l’API, vous avez les choix suivants :
 
 - l’identifiant technique permanent (**ex:** `5bbb6d6cff66bd4dc17bfd5a`)
 - le slug (**ex:** `mon-dataset`)
@@ -87,7 +87,7 @@ Vous n’avez pas à calculer vous-même les pages précédentes et suivantes pu
 
 ### Gestion d’erreurs
 
-La gestion d’erreur de l’API utilise les codes d’erreur HTTP standards:
+La gestion d’erreur de l’API utilise les codes d’erreur HTTP standards :
 
 - **400**: requête invalide
 - **401**: authentification requise
@@ -95,7 +95,7 @@ La gestion d’erreur de l’API utilise les codes d’erreur HTTP standards:
 - **500**: erreur indéfinie côté serveur
 - **502**: le serveur ne répond pas
 
-Lorsque c’est possible, l’API répondra en JSON avec le format suivant:
+Lorsque c’est possible, l’API répondra en JSON avec le format suivant :
 
 ```json
 {
@@ -105,7 +105,7 @@ Lorsque c’est possible, l’API répondra en JSON avec le format suivant:
 
 #### Support
 
-Si vous n’arrivez pas à comprendre une erreur, que vous avez besoin de support et souhaitez contacter l’équipe de data.gouv.fr, pensez à fournir les éléments suivants:
+Si vous n’arrivez pas à comprendre une erreur, que vous avez besoin de support et souhaitez contacter l’équipe de data.gouv.fr, pensez à fournir les éléments suivants :
 
 - la requête HTTP effectuée (avec les entêtes HTTP)
 - la réponse éventuelle du serveur (avec ses entêtes)
