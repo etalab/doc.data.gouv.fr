@@ -75,7 +75,7 @@ C’est un bon début, maintenant plongeons dans l'API en elle-même. Nous ne le
 
 ## Parcourir et récupérer des données
 
-Vous pouvez récupérer une liste d'organisations (filtrée ou non) ou une organisation unitaire. Lorsque vous récupérez un point d'accès, le nombre d'éléments par page par défaut est de 20\. Récupérons les 20 premières organisations via l'API :
+Vous pouvez récupérer une liste d'organisations (filtrée ou non) ou une organisation unitaire. Lorsque vous récupérez un point d'accès, le nombre d'éléments par page par défaut est de 20. Récupérons les 20 premières organisations via l'API :
 
 ```console
 $ http $API'organizations/' | jq '.data[].name'
