@@ -55,10 +55,10 @@ La fiche du jeu de données est maintenant créée et il est maintenant possible
 
 Pour créer une ressource, nous allons utiliser l’API [création d’une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource).
 
-Il existe 2 cas de création de ressource
+Il existe 2 cas de création de ressource :
 
-- avec envoie d’un fichier, dit ressource locale
-- avec référencement d’un fichier distant, dit ressource distante
+- avec envoi d’un fichier, dit ressource locale ;
+- avec référencement d’un fichier distant, dit ressource distante.
 
 #### En envoyant un fichier
 
