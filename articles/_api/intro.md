@@ -31,7 +31,7 @@ Par exemple, vous devez être membre d’une organisation pour modifier l’un d
 
 ### Content-type
 
-Les différents points d’entrée de l’API attendent du JSON (`application/json`) en entrée et renvoient du JSON en sortie. Les seules exceptions sont les points d’entrée qui gèrent l’upload de fichiers: ils acceptent du `multipart/form-data`et renvoient du JSON.
+Les différents points d’entrée de l’API attendent du JSON (`application/json`) en entrée et renvoient du JSON en sortie. Les seules exceptions sont les points d’entrée qui gèrent l’upload de fichiers : ils acceptent du `multipart/form-data` et renvoient du JSON.
 
 ### Identifiants d’URL
 
