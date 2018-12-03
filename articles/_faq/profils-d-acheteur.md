@@ -1,5 +1,5 @@
 ---
-title: "Comment remplir les obligations légales des profils d’acheteur\_?"
+title: "Comment remplir les obligations légales des profils d’acheteur ?"
 subtitle: En tant que profil d’acheteur
 label: En tant que profil d’acheteur
 redirect_from:

@@ -40,7 +40,7 @@ Pour créer un nouveau moissonneur :
 
 À partir de là, la création du moissonneur se déroule en 3 étapes.
 
-### 1\. Définir qui publie les données moissonnées
+### 1. Définir qui publie les données moissonnées
 
 Une fois moissonnées, c’est-à-dire récupérées sur votre plateforme, vos données sont publiées sur data.gouv.fr. L’étape 1 vous permet de choisir le compte qui sera associé à la publication sur data.gouv.fr des données moissonnées sur votre site.
 
@@ -51,7 +51,7 @@ Il peut s’agir de :
 
 Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom. Une fois votre choix effectué, cliquez sur le bouton **Suivant** pour accéder à l’étape 2.
 
-### 2\. Configurer le moissonneur
+### 2. Configurer le moissonneur
 
 L’étape 2 vous permet de configurer votre moissonneur. Cette étape est importante pour que les données récupérées par data.gouv.fr soient aussi complètes que celles publiées sur votre plateforme à l’origine.
 
@@ -95,7 +95,7 @@ Ce champ est obligatoire.
 
 Une fois tous les champs obligatoires remplis, cliquez sur le bouton **Suivant** pour terminer la création de votre moissonneur.
 
-### 3\. Demander la validation du moissonneur
+### 3. Demander la validation du moissonneur
 
 Une fois votre moissonneur configuré, ce dernier passe en attente de validation. Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.
 

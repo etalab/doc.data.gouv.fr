@@ -14,7 +14,7 @@ Pour mettre en ligne un nouveau jeu de données :
 
 À partir de là, la publication se déroule en 4 étapes.
 
-## 1\. Définir qui publie les données
+## 1. Définir qui publie les données
 
 Sur data.gouv.fr, vous pouvez mettre en ligne des jeux de données :
 
@@ -23,7 +23,7 @@ Sur data.gouv.fr, vous pouvez mettre en ligne des jeux de données :
 
 L’étape 1 de la publication d’un jeu de données vous permet de choisir si les données doivent être publiées à votre nom ou sous la bannière de votre organisation. Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom, lorsque cela vous semble pertinent, dans le but d’éviter l’éparpillement de vos publications.
 
-## 2\. Décrire votre jeu de données
+## 2. Décrire votre jeu de données
 
 L’étape 2 de la publication d’un jeu de données vous permet de décrire les données que vous publiez. Cette étape est cruciale pour que vos données soient bien référencées et facile à réutiliser.
 
@@ -113,7 +113,7 @@ Si vous souhaitez créer un jeu de données, mais que vous ne souhaitez pas le m
 
 Une fois l’étape 2 complétée, cliquez sur le bouton **Suivant**, présent en bas à droite de la page, pour passer à la dernière étape de la publication : celle de l’importation de vos fichiers.
 
-## 3\. Importer vos fichiers
+## 3. Importer vos fichiers
 
 Une fois votre jeu de données décrit, vient le temps d’importer les fichiers ou ressources qui le composent. Pour importer votre premier fichier, cliquez sur le bouton **Choisissez un fichier de votre ordinateur**. Une fois votre fichier importé, vous pouvez le décrire en complétant le formulaire qui apparaît alors sur votre écran. Si votre jeu de données contient plusieurs fichiers, remplissez un formulaire par fichier.
 
@@ -203,7 +203,7 @@ La somme de contrôle est facultative.
 
 Une fois votre fichier décrit, cliquez sur le bouton **Suivant** qui se trouve en bas à droite de la page pour l’importer et publier votre jeu de données.
 
-## 4\. Voir et compléter un jeu de données existant
+## 4. Voir et compléter un jeu de données existant
 
 Une fois votre première ressource publiée, votre jeu de données devient accessible en ligne, vous pouvez alors :
 

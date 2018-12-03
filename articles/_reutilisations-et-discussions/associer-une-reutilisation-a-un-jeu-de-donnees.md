@@ -24,11 +24,11 @@ Pour référencer une réutilisation :
 2. Rendez-vous sur la page du jeu de données réutilisé ;
 3. Naviguez jusqu’à la section **Réutilisations** qui figure en bas de la page et cliquez sur **Ajouter une réutilisation** ;
 
-## 1\. Choisir qui publie
+## 1. Choisir qui publie
 
 Choisissez si vous souhaitez publier la réutilisation sous votre propre nom, à titre individuel, ou pour le compte d’une organisation, à titre collectif. C’est le nom qui apparaîtra à côté de la réutilisation sur la page du jeu de données.
 
-## 2\. Décrire la réutilisation
+## 2. Décrire la réutilisation
 
 Pour bien décrire la réutilisation, remplissez les champs suivants :
 
@@ -68,7 +68,7 @@ Les mots clefs sont facultatifs
 
 Une fois votre réutilisation décrite, sauvegardez-la et passez à l’étape suivante en cliquant sur le bouton **Suivant**.
 
-## 3\. Associer des jeux de données à la réutilisation
+## 3. Associer des jeux de données à la réutilisation
 
 Par défaut, votre réutilisation sera liée au jeu de données qui vous a servi de point de départ. Mais si votre réutilisation a exploité d’autres jeu de données, vous pouvez les associer à votre réutilisation à cette étape.
 
@@ -77,13 +77,13 @@ Pour lier d’autres jeux de données à votre réutilisation :
 1. Saisissez leurs titre dans le champ **Trouver votre jeu de données** ;
 2. Cliquez sur leur nom quand ils apparaissent à l’écran.
 
-## 4\. Insérer une image
+## 4. Insérer une image
 
 Si votre réutilisation prend la forme d’une représentation graphique, vous pouvez en donner un aperçu aux autres utilisateurs au moyen d’une image ou d’une capture d’écran. Cette image figurera dans la partie **Réutilisations** de la page du jeu de donnée associé.
 
 Pour ajouter une image à votre réutilisation, cliquez sur le bouton **Choisissez un fichier de votre ordinateur** puis cliquez sur **Suivant**.
 
-## 5\. Partager la réutilisation
+## 5. Partager la réutilisation
 
 Votre réutilisation est en ligne. Elle est visible sur la page du jeu de données qui lui a servi de base.
 

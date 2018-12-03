@@ -1,8 +1,8 @@
 ---
 title: Découvrir l’OpenData en tant que producteur
-subtitle: "Que faut-il savoir avant de publier des données\_?"
+subtitle: "Que faut-il savoir avant de publier des données ?"
 label: En tant que producteur
-summary: "Que faut-il savoir avant de publier des données\_?"
+summary: "Que faut-il savoir avant de publier des données ?"
 ---
 
 # Découvrir l’OpenData en tant que producteur
@@ -133,32 +133,32 @@ INSPIRE s’applique à 34 domaines thématiques, se décomposant en trois group
 
 1. Les données nécessaires au repérage sur le territoire, telles que :
 
-  - systèmes de coordonnées,
-  - unités adminsitratives,
-  - réseaux de transport,
-  - hydrographie,
-  - parcellaire cadastral,
-  - adresses et noms de lieux ainsi que des données relatives aux sites protégés.
+- systèmes de coordonnées,
+- unités adminsitratives,
+- réseaux de transport,
+- hydrographie,
+- parcellaire cadastral,
+- adresses et noms de lieux ainsi que des données relatives aux sites protégés.
 
 2. Les données générales complémentaires telles que:
 
-  - l’altimétrie,
-  - l’occupation des terres,
-  - la géologie et l’horto-imagerie
+- l’altimétrie,
+- l’occupation des terres,
+- la géologie et l’horto-imagerie
 
 3. Les données thématiques telles que:
 
-  - bâtiments,
-  - vocation des sols,
-  - santé et sécurité des personnes,
-  - service d’utilité publique et services publics,
-  - données sur l’environnement (nombreuses et variées),
-  - installations industrielles, agricoles,
-  - démographie,
-  - périmètres de réglementation,
-  - données météorologiques,
-  - données maritimes,
-  - sources d’énergie et ressources minérales.
+- bâtiments,
+- vocation des sols,
+- santé et sécurité des personnes,
+- service d’utilité publique et services publics,
+- données sur l’environnement (nombreuses et variées),
+- installations industrielles, agricoles,
+- démographie,
+- périmètres de réglementation,
+- données météorologiques,
+- données maritimes,
+- sources d’énergie et ressources minérales.
 
 Les standards de la géomatique ne sont pas ceux du Web et pourtant ils structurent l’immense capital d’informations accumulé depuis plusieurs dizaines d’années. D’un côté des normes comme Inspire, WFS, WCS, CSW, Shapefiles, GeoJSON, KML, de l’autre des outils gratuits comme OpenStreetMap ou Google Earth. La passerelle Inspire, en production depuis début 2015, permet aux producteurs et aux réutilisateurs d’exploiter au mieux ces gisements de données colossaux, en les rendant automatiquement disponibles dans les standards du Web.
 
@@ -166,9 +166,9 @@ Les standards de la géomatique ne sont pas ceux du Web et pourtant ils structur
 
 1. Adoptez le plan de nommage suivant pour les producteurs de l’administration déconcentrée :
 
-  - `DR[xxx][nom de la région accents respectés, trait-d’union partout]`` : DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne...
-  - `DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22` ...
-  - `Préfecture de [DOM/Nom Région/Nom Département]` : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire ..
+- `DR[xxx][nom de la région accents respectés, trait-d’union partout]`` : DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne...
+- `DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22` ...
+- `Préfecture de [DOM/Nom Région/Nom Département]` : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire ..
 
 2. Rendez vos jeux de données INSPIRE accessibles depuis Internet. Si vous ne disposez pas de serveurs où les déposer, vous pourrez utiliser ceux de data.gouv.fr.
 

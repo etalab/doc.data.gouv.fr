@@ -1,6 +1,6 @@
 ---
 title: Découvrir l’OpenData en tant que développeur
-subtitle: "Comment interagir avec la plateforme\_? Avec quelles API\_?"
+subtitle: "Comment interagir avec la plateforme ? Avec quelles API ?"
 label: En tant que développeur
 ---
 

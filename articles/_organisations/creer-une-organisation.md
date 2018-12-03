@@ -31,11 +31,11 @@ Pour créer une organisation :
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
 2. Rendez-vous sur [la page de création d’une organisation](https://www.data.gouv.fr/fr/admin/dataset/new/), en cliquant sur le bouton **CONTRIBUEZ !** qui se trouve au centre de votre écran et en cliquant sur **Créez ou trouvez votre organisation**.
 
-### 1\. Éviter les doublons
+### 1. Éviter les doublons
 
 Si votre organisation n’existe pas déjà, cliquez sur le bouton **Suivant** pour passer à la description.
 
-### 2\. Décrire l’organisation
+### 2. Décrire l’organisation
 
 Pour décrire votre organisation, remplissez quelques champs.
 
@@ -57,7 +57,7 @@ Le site web est facultatif.
 
 Une fois votre organisation décrite, cliquez sur **Suivant** pour passer à la dernière étape de la création de votre organisation.
 
-### 3\. Ajouter un logo
+### 3. Ajouter un logo
 
 Si votre organisation possède un logo, ou une image de profil, importez-la ici. Pour importer un logo, cliquez sur le bouton **Choisissez un fichier de votre ordinateur**.
 

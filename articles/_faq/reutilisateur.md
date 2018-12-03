@@ -1,8 +1,8 @@
 ---
 title: Découvrir l’OpenData en tant que réutilisateur
-subtitle: "Que faire avec les données\_? Avec quels outils\_?"
+subtitle: "Que faire avec les données ? Avec quels outils ?"
 label: En tant que réutilisateur
-summary: "Que faire avec les données\_? Avec quels outils\_?"
+summary: "Que faire avec les données ? Avec quels outils ?"
 ---
 
 # Découvrir l’OpenData en tant que réutilisateur
@@ -51,7 +51,7 @@ Une fois dans un format tabulaire (tableur, fichier texte, etc.) ou dans un form
 
 ### Fusionner plusieurs fichiers en une seule base de données
 
-Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par [OpenRefine]. Lancez l’outil et "créer un nouveau projet". Dans la boîte de dialogue « sélectionner les fichiers », sélectionnez tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100\. [OpenRefine] va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne "département" ou "année"). Une fois vérifié, sélectionnez "Export" et exportez votre base fusionnée au format CSV ou XLS.
+Les données se présentant souvent en séries incomplètes, par année, par département, la première opération consiste à fabriquer un fichier complet. Cette opération est facilitée par [OpenRefine]. Lancez l’outil et "créer un nouveau projet". Dans la boîte de dialogue « sélectionner les fichiers », sélectionnez tous les fichiers que vous souhaitez concaténer et que vous aurez préalablement téléchargés, qu’il y en ait 10 ou 100. [OpenRefine] va automatiquement ajouter une colonne qui permettra de distinguer les différentes sources (par exemple une colonne "département" ou "année"). Une fois vérifié, sélectionnez "Export" et exportez votre base fusionnée au format CSV ou XLS.
 
 ### Travailler à plusieurs sur une même base de données
 
