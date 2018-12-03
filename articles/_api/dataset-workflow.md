@@ -29,7 +29,7 @@ Il est recommandé d’avoir lu [l’introduction]({{ site.baseurl }}{% link _ap
 
 - TOC {:toc}
 
-Tous les examples qui suivent sont réalisés avec un compte:
+Tous les exemples qui suivent sont réalisés avec un compte :
 
 - qui est actif
 - dont la clé d’API est `my-api-key`
@@ -76,7 +76,7 @@ L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md 
 
 ## Modification d’un jeu de données
 
-La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est `5bc04b2cff66bd680e499f4a` sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617` qui soit distante soit locale suivant les examples.
+La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est `5bc04b2cff66bd680e499f4a` sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617` qui soit distante soit locale suivant les exemples.
 
 ### Mise à jour des metadonnées de la fiche
 
@@ -122,7 +122,7 @@ Le jeu de données est maintenant **marqué comme supprimé**, il reste visible 
 
 ### Restauration d’un jeu de données supprimé par erreur
 
-Tant que le jeu de donnéesn’a pas été purgé, vous avez la possibilité de le restaurer:
+Tant que le jeu de données n’a pas été purgé, vous avez la possibilité de le restaurer:
 
 <center>
   <strong>🚧 Bientôt 🚧</strong>
