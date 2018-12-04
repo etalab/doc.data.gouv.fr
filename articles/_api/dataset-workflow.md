@@ -55,10 +55,10 @@ La fiche du jeu de données est maintenant créée et il est maintenant possible
 
 Pour créer une ressource, nous allons utiliser l’API [création d’une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource).
 
-Il existe 2 cas de création de ressource
+Il existe 2 cas de création de ressource :
 
-- avec envoie d’un fichier, dit ressource locale
-- avec référencement d’un fichier distant, dit ressource distante
+- avec envoi d’un fichier, dit ressource locale ;
+- avec référencement d’un fichier distant, dit ressource distante.
 
 #### En envoyant un fichier
 
@@ -66,7 +66,7 @@ Nous allons utiliser l’API d’[envoi de ressource]({{ site.baseurl }}{% link 
 
 {% snippets api/upload-resource %}
 
-La ressource est automatiquement créée et il est possible de modifier à posteriori les metadonnées avec l’[API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource) comme décrit [plus bas](#mise-à-jour-des-métadonnées-dune-ressource)
+La ressource est automatiquement créée et il est possible de modifier *a posteriori* les metadonnées avec l’[API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource) comme décrit [plus bas](#mise-à-jour-des-métadonnées-dune-ressource)
 
 #### En référençant une URL existante
 
@@ -76,7 +76,7 @@ L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md 
 
 ## Modification d’un jeu de données
 
-La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est `5bc04b2cff66bd680e499f4a` sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617` qui soit distante soit locale suivant les exemples.
+La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est `5bc04b2cff66bd680e499f4a` sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617` qui est soit distante soit locale suivant les exemples.
 
 ### Mise à jour des metadonnées de la fiche
 
@@ -118,7 +118,7 @@ Pour supprimer un jeu de données, il suffit d’utiliser l’API de [suppressio
 
 {% snippets api/delete-dataset %}
 
-Le jeu de données est maintenant **marqué comme supprimé**, il reste visible uniquement par vous et les membres de votre organisation,ainsi que par l’équipe d’administrateur de data.gouv.fr. Il sera purgé (supprimé définitivement de la plateforme), d’ici la fin de la journée.
+Le jeu de données est maintenant **marqué comme supprimé**, il reste visible uniquement par vous et les membres de votre organisation, ainsi que par l’équipe d’administrateur de data.gouv.fr. Il sera purgé (supprimé définitivement de la plateforme), d’ici la fin de la journée.
 
 ### Restauration d’un jeu de données supprimé par erreur
 
