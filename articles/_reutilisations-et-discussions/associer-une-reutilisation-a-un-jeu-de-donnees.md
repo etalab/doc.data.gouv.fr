@@ -2,6 +2,7 @@
 title: Associer une réutilisation à un jeu de données
 slug: associer-une-reutilisation-a-un-jeu-de-donnees
 ---
+
 # Associer une réutilisation à un jeu de données
 
 Les données publiées sur data.gouv.fr peuvent être réutilisées selon les termes définis dans la licence qui leur est associée. Si vous êtes à l’origine d’une réutilisation, vous pouvez la référencer sur la page du jeu de données qui vous a servi de matière première. Pour référencer une réutilisation vous devez posséder un compte (gratuit) sur data.gouv.fr.
@@ -10,10 +11,10 @@ Les données publiées sur data.gouv.fr peuvent être réutilisées selon les te
 
 Référencer une réutilisation sur la page d’un jeu de données ne prend que quelques secondes et permet de :
 
-* donner de la visibilité à la réutilisation ;
-* montrer à quoi le jeu de données peut servir ;
-* inspirer d’autres réutilisations potentielles ;
-* remercier le producteur des données réutilisées.
+- donner de la visibilité à la réutilisation ;
+- montrer à quoi le jeu de données peut servir ;
+- inspirer d’autres réutilisations potentielles ;
+- remercier le producteur des données réutilisées.
 
 ## Comment référencer une réutilisation
 
@@ -32,30 +33,35 @@ Choisissez si vous souhaitez publier la réutilisation sous votre propre nom, à
 Pour bien décrire la réutilisation, remplissez les champs suivants :
 
 ### Nom
-C’est le titre de la réutilisation. Précisez quelle forme prend la réutilisation : carte, graphique, tableau…
+
+C’est le titre de la réutilisation. Précisez quelle forme prend la réutilisation : carte, graphique, tableau...
 
 Le nom est obligatoire.
 
 ### URL
+
 Saisissez ici le lien hypertexte de la page web sur laquelle la réutilisation est visible.
 
 L’URL est obligatoire.
 
 ### Type
+
 Indiquez le type dans lequel ranger la réutilisation.
 
 Le type est obligatoire.
 
 ### Description
+
 Saisissez ici des précisions sur :
 
-* la méthode de création de la réutilisation (les outils et traitements utilisés par exemple) ;
-* ce que la réutilisation permet de faire ou de montrer (les conclusions qu’on peut en tirer par exemple) ;
-* l’auteur de la réutilisation (ce qui vous a donné envie de réutiliser les données par exemple).
+- la méthode de création de la réutilisation (les outils et traitements utilisés par exemple) ;
+- ce que la réutilisation permet de faire ou de montrer (les conclusions qu’on peut en tirer par exemple) ;
+- l’auteur de la réutilisation (ce qui vous a donné envie de réutiliser les données par exemple).
 
 La description est obligatoire.
 
 ### Mots clés
+
 Entrez ici les mots clés associés à votre réutilisation. Ils permettront aux autres utilisateurs de consulter des réutilisations ou des jeux de données du même type que les vôtres.
 
 Les mots clefs sont facultatifs
@@ -83,5 +89,5 @@ Votre réutilisation est en ligne. Elle est visible sur la page du jeu de donné
 
 Vous pouvez :
 
-* voir la réutilisation sur le site, en cliquant sur **Voir sur le site** ;
-* modifier la réutilisation depuis votre interface administrateur, en cliquant sur **Voir dans l’administration**.
+- voir la réutilisation sur le site, en cliquant sur **Voir sur le site** ;
+- modifier la réutilisation depuis votre interface administrateur, en cliquant sur **Voir dans l’administration**.

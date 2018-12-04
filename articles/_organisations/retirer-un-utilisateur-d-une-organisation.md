@@ -2,6 +2,7 @@
 title: Retirer un utilisateur d’une organisation
 slug: retirer-un-utilisateur-d-une-organisation
 ---
+
 # Retirer un utilisateur d’une organisation
 
 Si un membre de votre organisation n’a plus besoin d’en faire partie, vous pouvez le retirer de l’organisation. Retirer un utilisateur d’une organisation ne supprime pas le compte de l’utilisateur en question.

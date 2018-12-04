@@ -10,13 +10,13 @@ Les contributions sont les bienvenues. Elles peuvent prendre la forme de _pull r
 
 ### Ruby natif
 
-Installer bundler :
+Installer bundler :
 
 ```
 gem install bundler
 ```
 
-Compiler et démarrer un serveur de documentation :
+Compiler et démarrer un serveur de documentation :
 
 ```
 git clone https://github.com/etalab/doc.data.gouv.fr
@@ -25,11 +25,11 @@ bundle install
 bundle exec jekyll serve
 ```
 
-La documentation apparaîtra alors à l’adresse suivante : <a href="http://localhost:4000">http://localhost:4000</a>.
+La documentation apparaîtra alors à l’adresse suivante : <a href="http://localhost:4000">http://localhost:4000</a>.
 
 ### Docker Compose
 
-Vous pouvez utiliser [docker-compose](https://docs.docker.com/compose/) pour tester vos modifications localement avant de les soumettre. Pour ce faire, il suffit simplement d’exécuter la commande :
+Vous pouvez utiliser [docker-compose](https://docs.docker.com/compose/) pour tester vos modifications localement avant de les soumettre. Pour ce faire, il suffit simplement d’exécuter la commande :
 
 ```
 docker-compose up
