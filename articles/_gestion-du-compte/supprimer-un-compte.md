@@ -2,6 +2,7 @@
 title: Supprimer un compte
 slug: supprimer-un-compte
 ---
+
 # Supprimer un compte
 
 Pour clôturer votre compte :
@@ -14,5 +15,5 @@ Pour clôturer votre compte :
 
 La suppression d’un compte est irréversible. La suppression d’un compte efface le compte en question, mais pas les jeux de données ou les réutilisations publiées par ce dernier. Les contenus publiés restent en ligne, mais sous une forme anonyme :
 
-* les jeux de données publiés et les réutilisations référencées ne seront plus associées au producteur ou à l’auteur ;
-* le nom de l’utilisateur dont le compte est supprimé n’apparaîtra plus dans les discussions ou les signalements.
+- les jeux de données publiés et les réutilisations référencées ne seront plus associées au producteur ou à l’auteur ;
+- le nom de l’utilisateur dont le compte est supprimé n’apparaîtra plus dans les discussions ou les signalements.

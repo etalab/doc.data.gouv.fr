@@ -2,6 +2,7 @@
 title: Transférer un jeu de données
 slug: transferer-un-jeu-de-donnees
 ---
+
 # Transférer un jeu de données
 
 Un jeu de données publié au nom d’un individu ou d’une organisation peut être transféré vers un autre individu ou une autre organisation.

@@ -2,6 +2,7 @@
 title: Supprimer un jeu de données ou une ressource
 slug: supprimer-un-jeu-de-donnees
 ---
+
 # Supprimer un jeu de données ou une ressource
 
 Vous pouvez supprimer un jeu de données, ou l’une des ressources qui le compose, si vous êtes l’auteur du jeu de données en question, ou si vous appartenez à l’organisation qui en est à l’origine. Supprimer un jeu de données ou une ressource est irréversible.

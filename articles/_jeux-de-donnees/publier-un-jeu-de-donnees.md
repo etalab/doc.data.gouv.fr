@@ -4,11 +4,13 @@ slug: publier-un-jeu-de-donnees
 redirect_from:
   - /jeux-de-donnees/publier-un-jeu-de-donnes/
 ---
+
 # Publier un jeu de données
 
 La publication d’un jeu de données sur data.gouv.fr nécessite la création d’un compte gratuit.
 
 Pour mettre en ligne un nouveau jeu de données :
+
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
 2. Rendez-vous sur [la page de création d’un jeu de données](https://www.data.gouv.fr/fr/admin/dataset/new/), en cliquant sur le bouton **CONTRIBUEZ !** qui se trouve au centre de votre écran.
 
@@ -18,8 +20,8 @@ Pour mettre en ligne un nouveau jeu de données :
 
 Sur data.gouv.fr, vous pouvez mettre en ligne des jeux de données :
 
-* sous votre propre nom, à titre individuel ;
-* pour le compte d’une organisation, à titre collectif.
+- sous votre propre nom, à titre individuel ;
+- pour le compte d’une organisation, à titre collectif.
 
 L’étape 1 de la publication d’un jeu de données vous permet de choisir si les données doivent être publiées à votre nom ou sous la bannière de votre organisation. Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom, lorsque cela vous semble pertinent, dans le but d’éviter l’éparpillement de vos publications.
 
@@ -31,8 +33,8 @@ L’étape 2 de la publication d’un jeu de données vous permet de décrire le
 
 La plupart des utilisateurs de data.gouv.fr trouvent des jeux de données grâce à un moteur de recherche. Afin que vos données soient faciles à trouver, employez le même vocabulaire que le public pour les décrire. Cela commence par un titre spécifique et précis, car le titre est l’élément qui a le plus d’importance aux yeux des moteurs de recherche.
 
-* **Mauvais titre** : Horaires des cars
-* **Bon titre** : Horaires des autobus de la ville de Brive pour la période 2018 – 2019
+- **Mauvais titre** : Horaires des cars
+- **Bon titre** : Horaires des autobus de la ville de Brive pour la période 2018 – 2019
 
 La présence d’un titre est obligatoire.
 
@@ -40,8 +42,8 @@ La présence d’un titre est obligatoire.
 
 Vous pouvez associer un sigle à votre jeu de données. Par exemple, à la [base des entreprises et de leurs établissements](https://www.data.gouv.fr/fr/datasets/5862206588ee38254d3f4e5e), produite par l’INSEE, est associé le sigle SIRENE. Les lettres qui composent votre sigle n’ont pas besoin d’être séparées par des points.
 
-* **Mauvais sigle** : I.R.V.E.
-* **Bon sigle** : IRVE
+- **Mauvais sigle** : I.R.V.E.
+- **Bon sigle** : IRVE
 
 La présence d’un sigle est facultative.
 
@@ -51,12 +53,12 @@ Chaque jeu de données publié sur data.gouv.fr doit être accompagné d’une d
 
 Les descriptions répondent généralement aux questions suivantes :
 
-* Que contient le jeu de données ? Combien y a-t-il de fichiers ?
-* Comment les données sont-elles structurées ? À quoi correspondent les colonnes des fichiers CSV ou les tables de la base ?
-* À quoi sert le jeu de données ? Quelle est sa raison d’être ?
-* Qui est à l’origine du jeu de données ? Qui le tient à jour ?
-* Comment lire le jeu de données ? Comment ouvrir les fichiers ?
-* Comment contacter le producteur des données ? À qui s’adresser en cas de problème ?
+- Que contient le jeu de données ? Combien y a-t-il de fichiers ?
+- Comment les données sont-elles structurées ? À quoi correspondent les colonnes des fichiers CSV ou les tables de la base ?
+- À quoi sert le jeu de données ? Quelle est sa raison d’être ?
+- Qui est à l’origine du jeu de données ? Qui le tient à jour ?
+- Comment lire le jeu de données ? Comment ouvrir les fichiers ?
+- Comment contacter le producteur des données ? À qui s’adresser en cas de problème ?
 
 Répondre à ces questions dans votre description permet aux utilisateurs de récupérer et manipuler vos données facilement.
 
@@ -101,8 +103,9 @@ La couverture spatiale est facultative.
 La granularité spatiale complète la couverture spatiale. Si la couverture spatiale fixe le cadre de la zone géographique couverte par les données, la granularité spatiale décrit le niveau de zoom auquel il est possible de descendre à l’intérieur des données en question. Dit autrement, il s’agit du niveau de finesse de vos données, du plus petit dénominateur qu’elles contiennent.
 
 Par exemple, si vous avez un fichier CSV qui contient les coordonnées géographiques de tous les gymnases du territoire français, alors :
-* votre couverture spatiale correspond à la France, car vos données couvrent l’ensemble du territoire ;
-* votre granularité spatiale se situe au niveau du point d’intérêt (le gymnase étant ici considéré comme un point d’intérêt).
+
+- votre couverture spatiale correspond à la France, car vos données couvrent l’ensemble du territoire ;
+- votre granularité spatiale se situe au niveau du point d’intérêt (le gymnase étant ici considéré comme un point d’intérêt).
 
 La granularité spatiale est facultative.
 
@@ -128,12 +131,12 @@ Le titre est obligatoire.
 
 Pour chaque fichier importé sur data.gouv.fr, vous devez choisir une catégorie dans laquelle le ranger, parmi :
 
-* **fichier principal** : désigne tous les fichiers qui contiennent vos données brutes ;
-* **documentation** : désigne les fichiers annexes, qui contiennent généralement des explications au sujet de vos fichiers principaux ;
-* **mise à jour** : permet d’indiquer que le fichier importé met à jour un _fichier principal_ précédement mis en ligne ;
-* **API** : désigne l’API qui permet d’accéder à vos données et vers laquelle vous ajoutez un lien dans le champ **URL** qui se trouve plus bas ;
-* **dépôt de code** : désigne le dépôt de code (_repository_ en anglais) qui contient vos données et vers lequel vous ajoutez un lien dans le champ **URL** qui se trouve plus bas ;
-* **autre** : pour tous les autres types de fichier.
+- **fichier principal** : désigne tous les fichiers qui contiennent vos données brutes ;
+- **documentation** : désigne les fichiers annexes, qui contiennent généralement des explications au sujet de vos fichiers principaux ;
+- **mise à jour** : permet d’indiquer que le fichier importé met à jour un _fichier principal_ précédement mis en ligne ;
+- **API** : désigne l’API qui permet d’accéder à vos données et vers laquelle vous ajoutez un lien dans le champ **URL** qui se trouve plus bas ;
+- **dépôt de code** : désigne le dépôt de code (_repository_ en anglais) qui contient vos données et vers lequel vous ajoutez un lien dans le champ **URL** qui se trouve plus bas ;
+- **autre** : pour tous les autres types de fichier.
 
 La désignation du type de fichier est obligatoire.
 
@@ -155,8 +158,8 @@ La date de publication est facultative.
 
 Deux cas possibles :
 
-* si vous importez un fichier, vous ne pouvez pas modifier ce champ, car il s’agit alors de l’URL assignée par data.gouv.fr à votre ressource ;
-* si vous référencez un fichier hébergé ailleurs, sur un autre site, ajoutez ici l’URL canonique (qui ne varie pas) permettant d’accéder directement au fichier en question.
+- si vous importez un fichier, vous ne pouvez pas modifier ce champ, car il s’agit alors de l’URL assignée par data.gouv.fr à votre ressource ;
+- si vous référencez un fichier hébergé ailleurs, sur un autre site, ajoutez ici l’URL canonique (qui ne varie pas) permettant d’accéder directement au fichier en question.
 
 L’URL est obligatoire.
 
@@ -164,8 +167,8 @@ L’URL est obligatoire.
 
 Là encore, deux cas à distinguer :
 
-* si vous importez votre fichier, vous n’avez rien à faire, car nous calculons la taille de votre ressource pour vous ;
-* si vous référencez un fichier hébergé ailleurs, indiquez ici sa taille (en octets).
+- si vous importez votre fichier, vous n’avez rien à faire, car nous calculons la taille de votre ressource pour vous ;
+- si vous référencez un fichier hébergé ailleurs, indiquez ici sa taille (en octets).
 
 La taille est facultative.
 
@@ -173,8 +176,8 @@ La taille est facultative.
 
 Le format du fichier que vous ajoutez. Deux possibilités :
 
-* si vous importez votre fichier, nous détectons automatiquement son format, vous n’avez donc rien à faire ;
-* si vous référencez un fichier externe, précisez ici son format.
+- si vous importez votre fichier, nous détectons automatiquement son format, vous n’avez donc rien à faire ;
+- si vous référencez un fichier externe, précisez ici son format.
 
 Le format est obligatoire.
 
@@ -184,8 +187,8 @@ Le type MIME est un [identifiant de format de données](https://fr.wikipedia.org
 
 Là encore :
 
-* si vous importez votre fichier, votre type MIME est pré-rempli, vous n’avez donc rien à faire ;
-* si vous référencez un fichier externe, sélectionnez le type MIME qui s’y rapporte parmi [la liste des types MIME](https://fr.wikipedia.org/wiki/Type_de_médias).
+- si vous importez votre fichier, votre type MIME est pré-rempli, vous n’avez donc rien à faire ;
+- si vous référencez un fichier externe, sélectionnez le type MIME qui s’y rapporte parmi [la liste des types MIME](https://fr.wikipedia.org/wiki/Type_de_médias).
 
 Le type MIME est facultatif.
 
@@ -195,8 +198,8 @@ La somme de contrôle permet de calculer l’empreinte d’un fichier, pour s’
 
 Deux cas doivent ici être distingués :
 
-* si vous importez votre fichier, vous n’avez rien à faire, car la somme de contrôle est créée par data.gouv.fr ;
-* si vous référencez un fichier externe, vous pouvez indiquer ici votre propre somme de contrôle. Le menu déroulant permet de sélectionner l’algorithme utilisé pour créer la somme de contrôle, parmi : `sha1`, `sha2`, `sha256`, `md5`, `crc` (nous vous conseillons d’utiliser `sha256`si vous en avez la possibilité).
+- si vous importez votre fichier, vous n’avez rien à faire, car la somme de contrôle est créée par data.gouv.fr ;
+- si vous référencez un fichier externe, vous pouvez indiquer ici votre propre somme de contrôle. Le menu déroulant permet de sélectionner l’algorithme utilisé pour créer la somme de contrôle, parmi : `sha1`, `sha2`, `sha256`, `md5`, `crc` (nous vous conseillons d’utiliser `sha256`si vous en avez la possibilité).
 
 La somme de contrôle est facultative.
 
@@ -206,9 +209,9 @@ Une fois votre fichier décrit, cliquez sur le bouton **Suivant** qui se trouve 
 
 Une fois votre première ressource publiée, votre jeu de données devient accessible en ligne, vous pouvez alors :
 
-* voir votre jeu de données sur data.gouv.fr en cliquant sur le bouton **Voir sur le site** ;
-* ajouter d’autres ressources à votre jeu de données en cliquant sur le bouton **Voir dans l’administration** ;
-* partager votre jeu de données sur les réseaux sociaux en cliquant sur l’icône associée au réseau social qui vous concerne.
+- voir votre jeu de données sur data.gouv.fr en cliquant sur le bouton **Voir sur le site** ;
+- ajouter d’autres ressources à votre jeu de données en cliquant sur le bouton **Voir dans l’administration** ;
+- partager votre jeu de données sur les réseaux sociaux en cliquant sur l’icône associée au réseau social qui vous concerne.
 
 ### Ajouter d’autres ressources à un jeu de données existant
 

@@ -2,6 +2,7 @@
 title: Supprimer une organisation
 slug: supprimer-une-organisation
 ---
+
 # Supprimer une organisation
 
 N’importe quel utilisateur peut créer une organisation mais seuls ceux qui en sont administrateurs peuvent ensuite la supprimer.
