@@ -1,0 +1,48 @@
+---
+layout: null
+---
+[
+  {% assign counter = 0 %}
+  {%- for post in site.posts -%}
+    {%- if post.title != nil -%}{% assign counter = counter | plus:1 %}
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}",
+      "content"  : {{ post.content | strip_html | replace: "\n", " " | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if counter > 0 -%},{% assign counter = 0 %}{%- endif -%}
+
+  {%- for page in site.pages -%}
+    {%- if page.title != nil -%}{% assign counter = counter | plus:1 %}
+    {
+      "title"    : "{{ page.title | escape }}",
+      "category" : "{{ page.category }}",
+      "tags"     : "{{ page.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "date"     : "{{ page.date }}",
+      "content"  : {{ page.content | strip_html | replace: "\n", " " | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if counter > 0 -%},{% assign counter = 0 %}{%- endif -%}
+
+  {%- for collection in site.collections -%}
+    {%- if collection.docs.size > 0 -%}
+      {%- for page in collection.docs -%}{% assign counter = counter | plus:1 %}
+      {
+        "title"    : "{{ page.title | escape }}",
+        "category" : "{{ page.category }}",
+        "tags"     : "{{ page.tags | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "{{ page.date }}",
+        "content"  : {{ page.content | strip_html | replace: "\n", " " | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    {%- endif -%}
+    {% unless forloop.last %}{%- if counter > 0 -%},{% assign counter = 0 %}{%- endif -%}{% endunless %}
+  {%- endfor -%}
+]
