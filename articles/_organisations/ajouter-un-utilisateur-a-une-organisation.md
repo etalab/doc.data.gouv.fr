@@ -2,6 +2,7 @@
 title: Ajouter un utilisateur à une organisation
 slug: ajouter-un-utilisateur-a-une-organisation
 ---
+
 # Ajouter un utilisateur à une organisation
 
 Vous pouvez ajouter n’importe quel utilisateur de data.gouv.fr à une organisation dont vous êtes administrateur en utilisant son nom et son prénom. Les éditeurs ne peuvent pas ajouter de nouveaux utilisateurs à une organisation dont ils sont membres.

@@ -43,7 +43,7 @@ Access-Control-Allow-Credentials: true
 }
 ```
 
-C'est très verbeux et nous n'avons pas besoin de toute cette information pour l'instant. C'est la raison pour laquelle nous utilisons jq.
+C’est très verbeux et nous n'avons pas besoin de toute cette information pour l'instant. C’est la raison pour laquelle nous utilisons jq.
 
 ## Vérifier que jq fonctionne
 
@@ -59,7 +59,7 @@ Cela doit retourner une réponse de ce style :
 "mairie de toulon"
 ```
 
-C'est bien mieux ! Maintenant que tout fonctionne bien, réduisons un peu la taille de notre ligne de commande :
+C’est bien mieux ! Maintenant que tout fonctionne bien, réduisons un peu la taille de notre ligne de commande :
 
 ```console
 $ export API="https://www.data.gouv.fr/api/1/"
@@ -71,7 +71,7 @@ La commande précédente est maintenant équivalente à la commande plus lisible
 $ http $API'organizations/?page_size=1' | jq '.data[].name'
 ```
 
-C'est un bon début, maintenant plongeons dans l'API en elle-même. Nous ne le savons pas encore mais nous avons déjà récupéré notre première organisation.
+C’est un bon début, maintenant plongeons dans l'API en elle-même. Nous ne le savons pas encore mais nous avons déjà récupéré notre première organisation.
 
 ## Parcourir et récupérer des données
 
@@ -80,6 +80,7 @@ Vous pouvez récupérer une liste d'organisations (filtrée ou non) ou une organ
 ```console
 $ http $API'organizations/' | jq '.data[].name'
 ```
+
 ```json
 "mairie de toulon"
 "SMIC DES VOSGES"
@@ -93,7 +94,7 @@ $ http $API'organizations/' | jq '.data[].name'
 "Et voilà !"
 ```
 
-C'est une bonne chose d'avoir cette liste mais que se passe-t-il si nous souhaitons parcourir les organisations retournées ? Récupérons les 5 premières URI d'organisations.
+C’est une bonne chose d'avoir cette liste mais que se passe-t-il si nous souhaitons parcourir les organisations retournées ? Récupérons les 5 premières URI d'organisations.
 
 ```console
 $ http $API'organizations/?page_size=5' | jq '.data[].uri'
@@ -121,16 +122,15 @@ $ http $API'organizations/5ba0b9f5634f4150f31579dd/' | jq '.metrics'
 
 ```json
 {
- "datasets": 0,
- "members": 1,
- "views": 1,
- "permitted_reuses": 0,
- "reuses": 0,
- "dataset_views": 0,
- "reuse_views": 0,
- "followers": 0,
- "resource_downloads": 0,
- 
+  "datasets": 0,
+  "members": 1,
+  "views": 1,
+  "permitted_reuses": 0,
+  "reuses": 0,
+  "dataset_views": 0,
+  "reuse_views": 0,
+  "followers": 0,
+  "resource_downloads": 0
 }
 ```
 
@@ -155,6 +155,7 @@ Si vous tentez de modifier une ressource sans le token d'authentification, une e
 ```console
 $ http PUT $API'organizations/organization-uri-x/'
 ```
+
 ```json
 HTTP/1.1 401 UNAUTHORIZED
 ... LOTS OF HEADERS ...
@@ -170,6 +171,7 @@ Vous devez spécifier votre Clé d'API (voir ci-dessus) et utiliser le header HT
 ```console
 $ http PUT $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here
 ```
+
 ```json
 HTTP/1.1 401 UNAUTHORIZED
 ... LOTS OF HEADERS ...
@@ -179,7 +181,8 @@ HTTP/1.1 401 UNAUTHORIZED
     "status": 401
 }
 ```
-C'est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d'API. C'est un autre message d'erreur potentiel que vous pouvez rencontrer.
+
+C’est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d'API. C’est un autre message d'erreur potentiel que vous pouvez rencontrer.
 
 ```json
 HTTP/1.1 403 FORBIDDEN
@@ -201,7 +204,8 @@ HTTP/1.1 200 OK
     ...
 }
 ```
-Mais ça ne change pas tout ! C'est parfaitement normal, nous avons oublié de spécifier la bonne donnée à envoyer au serveur.
+
+Mais ça ne change pas tout ! C’est parfaitement normal, nous avons oublié de spécifier la bonne donnée à envoyer au serveur.
 
 ```console
 $ http PUT $API'organizations/organization-uri-x/' \
@@ -210,6 +214,7 @@ $ http PUT $API'organizations/organization-uri-x/' \
     description="The quick brown fox jumps over the lazy dog." \
     | jq '{name: .name, description: .description}'
 ```
+
 ```json
 {
   "name": "Lorem ipsum",
@@ -222,16 +227,18 @@ La ressource a été modifiée avec vos nouvelles valeurs. Finalement, vous pouv
 ```console
 $ http DELETE $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here
 ```
-```HTTP
+
+```http
 HTTP/1.0 204 NO CONTENT
 ... LOTS OF HEADERS ...
 ```
 
-Une fois effectué, vous pouvez vérifier que c'est effectif en envoyant un GET sur l'URL précédente:
+Une fois effectué, vous pouvez vérifier que c’est effectif en envoyant un GET sur l'URL précédente:
 
 ```console
 $ http GET $API'organizations/organization-uri-x/'
 ```
+
 ```json
 HTTP/1.0 410 GONE
 ... LOTS OF HEADERS ...

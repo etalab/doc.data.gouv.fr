@@ -101,7 +101,7 @@ Etalab recommande la [Licence Ouverte](https://github.com/etalab/licence-ouverte
 
 #### Quand la publication est faite par une administration
 
-Par défaut, les données publiées sur data.gouv.fr *par des administrations* tombent sous le coup du [Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=E4583EBE2857A0DF9056D5D0082F8F2D.tplgfr31s_2?idSectionTA=LEGISCTA000032255212&cidTexte=LEGITEXT000031366350&dateTexte=20181016), qui stipule notamment que :
+Par défaut, les données publiées sur data.gouv.fr _par des administrations_ tombent sous le coup du [Code des relations entre le public et l'administration](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=E4583EBE2857A0DF9056D5D0082F8F2D.tplgfr31s_2?idSectionTA=LEGISCTA000032255212&cidTexte=LEGITEXT000031366350&dateTexte=20181016), qui stipule notamment que :
 
 > Les informations publiques figurant dans des documents communiqués ou publiés par les administrations (…) peuvent être utilisées par toute personne qui le souhaite à d'autres fins que celles de la mission de service public pour les besoins de laquelle les documents ont été produits ou reçus.
 

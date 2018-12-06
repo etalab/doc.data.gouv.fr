@@ -2,6 +2,7 @@
 title: Créer un compte
 slug: creer-un-compte
 ---
+
 # Créer un compte
 
 L’inscription sur la plateforme data.gouv.fr est gratuite.
@@ -12,10 +13,10 @@ Avant que vous ne vous lanciez dans la création d’un compte, sachez que les d
 
 La création d’un compte n’est nécessaire que si vous souhaitez :
 
-* mettre en ligne un jeu de données ;
-* associer une réutilisation à un jeu de données ;
-* ouvrir une discussion sur un jeu de données ;
-* créer ou rejoindre une organisation.
+- mettre en ligne un jeu de données ;
+- associer une réutilisation à un jeu de données ;
+- ouvrir une discussion sur un jeu de données ;
+- créer ou rejoindre une organisation.
 
 ## Comment s’inscrire
 
@@ -23,7 +24,7 @@ La création d’un compte n’est nécessaire que si vous souhaitez :
 
 Pour créer un compte sur la plateforme data.gouv.fr :
 
-1. Rendez-vous sur : [https://www.data.gouv.fr/fr/register](https://www.data.gouv.fr/fr/register) ;
+1. Rendez-vous sur : https://www.data.gouv.fr/fr/register ;
 2. Saisissez votre **Prénom**, **Nom** et **Adresse e-mail** ;
 3. Saisissez votre **Mot de passe** et confirmez-le ;
 4. Acceptez les [conditions générales d’utilisation du service](https://www.data.gouv.fr/fr/terms/) ;

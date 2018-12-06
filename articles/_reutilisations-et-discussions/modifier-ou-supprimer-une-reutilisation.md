@@ -2,6 +2,7 @@
 title: Modifier ou supprimer une réutilisation
 slug: modifier-ou-supprimer-une-reutilisation
 ---
+
 # Modifier ou supprimer une réutilisation
 
 Les réutilisations publiées sur data.gouv.fr peuvent être modifiées ou supprimées après leur publication.
