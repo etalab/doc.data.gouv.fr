@@ -289,8 +289,7 @@
 &lt;script src="https://www.data.gouv.fr/static/oembed.js" async defer&gt;&lt;/script&gt;
 </code></pre></div></div>
 
-<p>En remplaçant <code class="highlighter-rouge">l’IDENTIFIANT DU JEU DE DONNÉES</code> par l’identifiant disponible sur sa page spécifique
-vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives à ce jeux de données de la manière suivante :</p>
+<p>En remplaçant <code class="highlighter-rouge">l’IDENTIFIANT DU JEU DE DONNÉES</code> par l’identifiant disponible sur sa page spécifique vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives à ce jeux de données de la manière suivante :</p>
 
 <p><img src="/img/faq/integration/exemple-dataset.png" alt="Exemple d’intégration d’une jeu de données" /></p>
 
@@ -302,50 +301,36 @@ vous devriez voir apparaître sur votre site un cartouche contenant les informat
 
 <p><strong>Attention</strong> : <em>ce type d’intégration est actuellement en cours de développement et l’API est susceptible de changer. Veuillez nous contacter si vous souhaitez participer aux tests préliminaires.</em></p>
 
-<p>Le mécanisme pour afficher tous les jeux de données relatifs à une organisation
-est le même que celui pour l’intégration d’un seul jeu de donnée décrit précédemment.</p>
+<p>Le mécanisme pour afficher tous les jeux de données relatifs à une organisation est le même que celui pour l’intégration d’un seul jeu de donnée décrit précédemment.</p>
 
-<p>Cet usage est recommandé si vous êtes responsable de cette organisation
-et souhaitez faire la promotion des jeux de données associés.</p>
+<p>Cet usage est recommandé si vous êtes responsable de cette organisation et souhaitez faire la promotion des jeux de données associés.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html
 &lt;div data-udata-organization="IDENTIFIANT DE L’ORGANISATION"&gt;&lt;/div&gt;
 &lt;script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadOrganization()"&gt;&lt;/script&gt;
 </code></pre></div></div>
 
-<p>En remplaçant l’<code class="highlighter-rouge">IDENTIFIANT DE L’ORGANISATION</code> par l’identifiant disponible sur sa page spécifique
-vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives
-aux jeux de données de cette organisation de la manière suivante :</p>
+<p>En remplaçant l’<code class="highlighter-rouge">IDENTIFIANT DE L’ORGANISATION</code> par l’identifiant disponible sur sa page spécifique vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives aux jeux de données de cette organisation de la manière suivante :</p>
 
-<p>Optionnellement, il est possible d’afficher une barre de recherche pour laisser la possibilité
-au visiteur de filtrer la liste des jeux de données affichés. Cela est activé en passant l’option <code class="highlighter-rouge">{withSearch: true}</code> à la méthode <code class="highlighter-rouge">loadOrganization()</code> ci-dessus.</p>
+<p>Optionnellement, il est possible d’afficher une barre de recherche pour laisser la possibilité au visiteur de filtrer la liste des jeux de données affichés. Cela est activé en passant l’option <code class="highlighter-rouge">{withSearch: true}</code> à la méthode <code class="highlighter-rouge">loadOrganization()</code> ci-dessus.</p>
 
-<p><img src="/img/faq/integration/exemple-organisation.png" alt="Exemple d’intégration d’une organisation" />
-<em>Exemple d’intégration d’une organisation avec l’option barre de recherche.</em></p>
+<p><img src="/img/faq/integration/exemple-organisation.png" alt="Exemple d’intégration d’une organisation" /> <em>Exemple d’intégration d’une organisation avec l’option barre de recherche.</em></p>
 
 <h2 id="intégration-pour-une-page-personnalisée">Intégration pour une page personnalisée</h2>
 
-<p>Une [bibliothèque JavaScript][udata-js] a été développée pour faciliter la personnalisation
-de l’affichage des jeux de données sur un site tiers. Un système de gabarit permet d’intégrer les données que vous souhaitez issues de l’[API][] à vos couleurs et selon la disposition qui vous convient. Il s’agit d’un moyen de créer votre propre page open data à coûts réduits au sein de votre site.</p>
+<p>Une [bibliothèque JavaScript][udata-js] a été développée pour faciliter la personnalisation de l’affichage des jeux de données sur un site tiers. Un système de gabarit permet d’intégrer les données que vous souhaitez issues de l’[API][] à vos couleurs et selon la disposition qui vous convient. Il s’agit d’un moyen de créer votre propre page open data à coûts réduits au sein de votre site.</p>
 
 <h2 id="intégration-dun-portail-open-data-complet">Intégration d’un portail open data complet</h2>
 
 <p>Les outils que nous développons sont disponibles en open-source. Ils sont le fruit d’un effort international pour créer des synergies autour de la donnée ouverte et mutualiser nos efforts de développement. La gouvernance est inclusive et la licence est permissive. Nous participons à l’animation autour du développement de la plateforme car nous souhaitons produire un bien commun réutilisable par tous.</p>
 
-<p>L’intégration d’un portail open data complet demande des compétences en administration système,
-en développement Python et JavaScript ainsi qu’un temps non négligeable de prise en main de la plateforme. C’est un choix qui doit être mûrement réfléchi et nous vous recommandons de passer directement par « [data.gouv.fr][] » si vous avez des données issues de territoires francophones.</p>
+<p>L’intégration d’un portail open data complet demande des compétences en administration système, en développement Python et JavaScript ainsi qu’un temps non négligeable de prise en main de la plateforme. C’est un choix qui doit être mûrement réfléchi et nous vous recommandons de passer directement par « [data.gouv.fr][] » si vous avez des données issues de territoires francophones.</p>
 
-<p>Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser
-le [code source][udata-github] ainsi que la [documentation spécifique][udata-doc].</p>
+<p>Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser le [code source][udata-github] ainsi que la [documentation spécifique][udata-doc].</p>
 
 <p>Vous pouvez également venir en [discuter avec la communauté][udata-gitter] (en anglais).</p>
 
-<p>[data.gouv.fr] : https://www.data.gouv.fr
-[API] : https://www.data.gouv.fr/fr/apidoc/
-[udata-js] : https://github.com/DepthFrance/udata-js
-[udata-doc] : http://udata.readthedocs.io/en/latest/
-[udata-github] : https://github.com/opendatateam/udata
-[udata-gitter] : https://gitter.im/opendatateam/udata</p>
+<p>[data.gouv.fr] : https://www.data.gouv.fr [API] : https://www.data.gouv.fr/fr/apidoc/&gt; [udata-js] : https://github.com/DepthFrance/udata-js&gt; [udata-doc] : http://udata.readthedocs.io/en/latest/&gt; [udata-github] : https://github.com/opendatateam/udata&gt; [udata-gitter] : https://gitter.im/opendatateam/udata&gt;</p>
 
       
       <p class="edit text-center">

@@ -258,44 +258,25 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 class="no_toc" id="gestion-dun-jeu-de-données-par-lapi">Gestion d’un jeu de données par l’API</h1>
+      <h1 id="gestion-dun-jeu-de-données-par-lapi">Gestion d’un jeu de données par l’API</h1>
 
-<p>Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.</p>
+<p class="no_toc">Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.</p>
 
 <p>Il est recommandé d’avoir lu <a href="/api/intro/">l’introduction</a> avant de consulter cette page.</p>
 
-<ul id="markdown-toc">
-  <li><a href="#création-dun-jeu-de-données" id="markdown-toc-création-dun-jeu-de-données">Création d’un jeu de données</a>    <ul>
-      <li><a href="#ajout-dune-ressource" id="markdown-toc-ajout-dune-ressource">Ajout d’une ressource</a>        <ul>
-          <li><a href="#en-envoyant-un-fichier" id="markdown-toc-en-envoyant-un-fichier">En envoyant un fichier</a></li>
-          <li><a href="#en-référençant-une-url-existante" id="markdown-toc-en-référençant-une-url-existante">En référençant une URL existante</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#modification-dun-jeu-de-données" id="markdown-toc-modification-dun-jeu-de-données">Modification d’un jeu de données</a>    <ul>
-      <li><a href="#mise-à-jour-des-metadonnées-de-la-fiche" id="markdown-toc-mise-à-jour-des-metadonnées-de-la-fiche">Mise à jour des metadonnées de la fiche</a></li>
-      <li><a href="#mise-à-jour-des-métadonnées-dune-ressource" id="markdown-toc-mise-à-jour-des-métadonnées-dune-ressource">Mise à jour des métadonnées d’une ressource</a></li>
-      <li><a href="#remplacer-un-fichier-de-ressource" id="markdown-toc-remplacer-un-fichier-de-ressource">Remplacer un fichier de ressource</a></li>
-      <li><a href="#signaler-une-mise-à-jour-de-fichier-distant" id="markdown-toc-signaler-une-mise-à-jour-de-fichier-distant">Signaler une mise à jour de fichier distant</a></li>
-      <li><a href="#suppression-dun-ressource" id="markdown-toc-suppression-dun-ressource">Suppression d’un ressource</a></li>
-    </ul>
-  </li>
-  <li><a href="#suppression-dun-jeu-de-données" id="markdown-toc-suppression-dun-jeu-de-données">Suppression d’un jeu de données</a>    <ul>
-      <li><a href="#restauration-dun-jeu-de-données-supprimé-par-erreur" id="markdown-toc-restauration-dun-jeu-de-données-supprimé-par-erreur">Restauration d’un jeu de données supprimé par erreur</a></li>
-    </ul>
-  </li>
+<ul>
+  <li>TOC {:toc}</li>
 </ul>
 
-<p>Tous les examples qui suivent sont réalisés avec un compte:</p>
+<p>Tous les exemples qui suivent sont réalisés avec un compte :</p>
+
 <ul>
   <li>qui est actif</li>
   <li>dont la clé d’API est <code class="highlighter-rouge">my-api-key</code></li>
   <li>qui est membre d’une organization dont l’identifiant est <code class="highlighter-rouge">5bbb6d6cff66bd4dc17bfd5a</code>.</li>
 </ul>
 
-<p>Les exemples portants sur un jeu de données existant utilisent l’identifiant <code class="highlighter-rouge">5bc04b2cff66bd680e499f4a</code>.
-Ceux portants sur une ressource existante de ce jeu de données utilisent l’identifiant <code class="highlighter-rouge">54d47250-1daf-483b-965a-3013f8c76617</code>.</p>
+<p>Les exemples portants sur un jeu de données existant utilisent l’identifiant <code class="highlighter-rouge">5bc04b2cff66bd680e499f4a</code>. Ceux portants sur une ressource existante de ce jeu de données utilisent l’identifiant <code class="highlighter-rouge">54d47250-1daf-483b-965a-3013f8c76617</code>.</p>
 
 <p>Pour simplifier la lecture de ces exemples, il y sera fait référence par les variables suivantes pour chaque language:</p>
 
@@ -401,12 +382,13 @@ Ceux portants sur une ressource existante de ce jeu de données utilisent l’id
 
 <h3 id="ajout-dune-ressource">Ajout d’une ressource</h3>
 
-<p>Pour créer une ressource, nous allons utiliser l’API  <a href="/api/reference/#/datasets/create_resource">création d’une ressource</a>.</p>
+<p>Pour créer une ressource, nous allons utiliser l’API <a href="/api/reference/#/datasets/create_resource">création d’une ressource</a>.</p>
 
-<p>Il existe 2 cas de création de ressource</p>
+<p>Il existe 2 cas de création de ressource :</p>
+
 <ul>
-  <li>avec envoie d’un fichier, dit ressource locale</li>
-  <li>avec référencement d’un fichier distant, dit ressource distante</li>
+  <li>avec envoi d’un fichier, dit ressource locale ;</li>
+  <li>avec référencement d’un fichier distant, dit ressource distante.</li>
 </ul>
 
 <h4 id="en-envoyant-un-fichier">En envoyant un fichier</h4>
@@ -447,12 +429,11 @@ Ceux portants sur une ressource existante de ce jeu de données utilisent l’id
       </div>
 </div>
 
-<p>La ressource est automatiquement créée et il est possible de modifier à posteriori les metadonnées avec l’<a href="/api/reference/#/datasets/update_resource">API de mise à jour de ressource</a> comme décrit <a href="#mise-à-jour-des-métadonnées-dune-ressource">plus bas</a></p>
+<p>La ressource est automatiquement créée et il est possible de modifier <em>a posteriori</em> les metadonnées avec l’<a href="/api/reference/#/datasets/update_resource">API de mise à jour de ressource</a> comme décrit <a href="#mise-à-jour-des-métadonnées-dune-ressource">plus bas</a></p>
 
 <h4 id="en-référençant-une-url-existante">En référençant une URL existante</h4>
 
-<p>L’API de <a href="/api/reference/#/datasets/create_resource">création de ressource</a>  permet de créer une ressource distante.
-Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.csv.</p>
+<p>L’API de <a href="/api/reference/#/datasets/create_resource">création de ressource</a> permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.csv.</p>
 
 <div class="tabs">      <input name="snippet-api/remote-resource" type="radio" id="snippet-api/remote-resource-curl" checked="checked" />
 	    <label for="snippet-api/remote-resource-curl">CURL</label>
@@ -499,8 +480,7 @@ Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.cs
 
 <h2 id="modification-dun-jeu-de-données">Modification d’un jeu de données</h2>
 
-<p>La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est <code class="highlighter-rouge">5bc04b2cff66bd680e499f4a</code> sur lequel vous avez les permissions nécéssaires à la modification.
-Ce jeu de données possède une ressource <code class="highlighter-rouge">54d47250-1daf-483b-965a-3013f8c76617</code> qui soit distante soit locale suivant les examples.</p>
+<p>La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est <code class="highlighter-rouge">5bc04b2cff66bd680e499f4a</code> sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une ressource <code class="highlighter-rouge">54d47250-1daf-483b-965a-3013f8c76617</code> qui est soit distante soit locale suivant les exemples.</p>
 
 <h3 id="mise-à-jour-des-metadonnées-de-la-fiche">Mise à jour des metadonnées de la fiche</h3>
 
@@ -626,7 +606,10 @@ Ce jeu de données possède une ressource <code class="highlighter-rouge">54d472
 
 <p>Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que la fiche soit mise à jour et que les usagers le sache.</p>
 
-<center><strong>🚧 Bientôt 🚧</strong></center>
+<center>
+  <strong>🚧 Bientôt 🚧</strong>
+</center>
+
 <div class="tabs"></div>
 
 <h3 id="suppression-dun-ressource">Suppression d’un ressource</h3>
@@ -695,14 +678,16 @@ Ce jeu de données possède une ressource <code class="highlighter-rouge">54d472
       </div>
 </div>
 
-<p>Le jeu de données est maintenant <strong>marqué comme supprimé</strong>, il reste visible uniquement par vous et les membres de votre organisation,ainsi que par l’équipe d’administrateur de data.gouv.fr.
-Il sera purgé (supprimé définitivement de la plateforme), d’ici la fin de la journée.</p>
+<p>Le jeu de données est maintenant <strong>marqué comme supprimé</strong>, il reste visible uniquement par vous et les membres de votre organisation, ainsi que par l’équipe d’administrateur de data.gouv.fr. Il sera purgé (supprimé définitivement de la plateforme), d’ici la fin de la journée.</p>
 
 <h3 id="restauration-dun-jeu-de-données-supprimé-par-erreur">Restauration d’un jeu de données supprimé par erreur</h3>
 
-<p>Tant que le jeu de donnéesn’a pas été purgé, vous avez la possibilité de le restaurer:</p>
+<p>Tant que le jeu de données n’a pas été purgé, vous avez la possibilité de le restaurer:</p>
 
-<center><strong>🚧 Bientôt 🚧</strong></center>
+<center>
+  <strong>🚧 Bientôt 🚧</strong>
+</center>
+
 <div class="tabs"></div>
 
       

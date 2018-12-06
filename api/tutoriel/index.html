@@ -328,6 +328,7 @@
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> http <span class="nv">$API</span><span class="s1">'organizations/'</span> | jq <span class="s1">'.data[].name'</span>
 </code></pre></div></div>
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s2">"mairie de toulon"</span><span class="w">
 </span><span class="s2">"SMIC DES VOSGES"</span><span class="w">
 </span><span class="s2">"Mairie de Vif"</span><span class="w">
@@ -363,16 +364,15 @@
 </code></pre></div></div>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
- </span><span class="s2">"datasets"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- </span><span class="s2">"members"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
- </span><span class="s2">"views"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
- </span><span class="s2">"permitted_reuses"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- </span><span class="s2">"reuses"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- </span><span class="s2">"dataset_views"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- </span><span class="s2">"reuse_views"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- </span><span class="s2">"followers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- </span><span class="s2">"resource_downloads"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
- 
+  </span><span class="s2">"datasets"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"members"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"views"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"permitted_reuses"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"reuses"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"dataset_views"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"reuse_views"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"followers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"resource_downloads"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
@@ -394,6 +394,7 @@
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> http PUT <span class="nv">$API</span><span class="s1">'organizations/organization-uri-x/'</span>
 </code></pre></div></div>
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">401</span><span class="w"> </span><span class="err">UNAUTHORIZED</span><span class="w">
 </span><span class="err">...</span><span class="w"> </span><span class="err">LOTS</span><span class="w"> </span><span class="err">OF</span><span class="w"> </span><span class="err">HEADERS</span><span class="w"> </span><span class="err">...</span><span class="w">
 
@@ -407,6 +408,7 @@
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> http PUT <span class="nv">$API</span><span class="s1">'organizations/organization-uri-x/'</span> X-API-KEY:your.api.key.here
 </code></pre></div></div>
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">401</span><span class="w"> </span><span class="err">UNAUTHORIZED</span><span class="w">
 </span><span class="err">...</span><span class="w"> </span><span class="err">LOTS</span><span class="w"> </span><span class="err">OF</span><span class="w"> </span><span class="err">HEADERS</span><span class="w"> </span><span class="err">...</span><span class="w">
 
@@ -415,6 +417,7 @@
     </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+
 <p>C’est le message que vous obtiendrez si vous avez spécifié une mauvaise clé d’API. C’est un autre message d’erreur potentiel que vous pouvez rencontrer.</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">HTTP/</span><span class="mf">1.1</span><span class="w"> </span><span class="mi">403</span><span class="w"> </span><span class="err">FORBIDDEN</span><span class="w">
@@ -435,6 +438,7 @@
     </span><span class="err">...</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+
 <p>Mais ça ne change pas tout ! C’est parfaitement normal, nous avons oublié de spécifier la bonne donnée à envoyer au serveur.</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> http PUT <span class="nv">$API</span><span class="s1">'organizations/organization-uri-x/'</span> <span class="se">\</span>
@@ -443,6 +447,7 @@
     <span class="nv">description</span><span class="o">=</span><span class="s2">"The quick brown fox jumps over the lazy dog."</span> <span class="se">\</span>
     | jq <span class="s1">'{name: .name, description: .description}'</span>
 </code></pre></div></div>
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Lorem ipsum"</span><span class="p">,</span><span class="w">
   </span><span class="s2">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The quick brown fox jumps over the lazy dog."</span><span class="w">
@@ -453,14 +458,16 @@
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> http DELETE <span class="nv">$API</span><span class="s1">'organizations/organization-uri-x/'</span> X-API-KEY:your.api.key.here
 </code></pre></div></div>
-<pre><code class="language-HTTP">HTTP/1.0 204 NO CONTENT
-... LOTS OF HEADERS ...
-</code></pre>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.0</span> <span class="m">204</span> <span class="ne">NO CONTENT</span>
+<span class="s">... LOTS OF HEADERS ...</span>
+</code></pre></div></div>
 
 <p>Une fois effectué, vous pouvez vérifier que c’est effectif en envoyant un GET sur l’URL précédente:</p>
 
 <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">$</span> http GET <span class="nv">$API</span><span class="s1">'organizations/organization-uri-x/'</span>
 </code></pre></div></div>
+
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">HTTP/</span><span class="mf">1.0</span><span class="w"> </span><span class="mi">410</span><span class="w"> </span><span class="err">GONE</span><span class="w">
 </span><span class="err">...</span><span class="w"> </span><span class="err">LOTS</span><span class="w"> </span><span class="err">OF</span><span class="w"> </span><span class="err">HEADERS</span><span class="w"> </span><span class="err">...</span><span class="w">
 

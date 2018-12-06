@@ -268,7 +268,8 @@
   <li><a href="#section-code">le code source de la plateforme</a>.</li>
 </ul>
 
-<p><span id="section-api"></span></p>
+<p><span id="section-api">
+</span></p>
 
 <h2 id="informations-relatives-à-lapi">Informations relatives à l’API</h2>
 
@@ -276,23 +277,27 @@
 
 <ul>
   <li>une <a href="https://www.data.gouv.fr/api/">API complète</a>, documentée avec <a href="http://swagger.io/">Swagger</a></li>
-  <li>des dumps au format CSV, mis à jour en temps réel
+  <li>
+    <p>des dumps au format CSV, mis à jour en temps réel</p>
+
     <ul>
-      <li>catalogue des jeux de données: <a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></li>
-      <li>catalogue des ressources: <a href="https://www.data.gouv.fr/resources.csv">https://www.data.gouv.fr/resources.csv</a></li>
-      <li>catalogue des organisations: <a href="https://www.data.gouv.fr/organizations.csv">https://www.data.gouv.fr/organizations.csv</a></li>
-      <li>catalogue des réutilisations: <a href="https://www.data.gouv.fr/reuses.csv">https://www.data.gouv.fr/reuses.csv</a></li>
-      <li>une liste des tags avec leur nombre d’occurences: <a href="https://www.data.gouv.fr/tags.csv">https://www.data.gouv.fr/tags.csv</a></li>
+      <li>catalogue des jeux de données: https://www.data.gouv.fr/datasets.csv</li>
+      <li>catalogue des ressources: https://www.data.gouv.fr/resources.csv</li>
+      <li>catalogue des organisations: https://www.data.gouv.fr/organizations.csv</li>
+      <li>catalogue des réutilisations: https://www.data.gouv.fr/reuses.csv</li>
+      <li>une liste des tags avec leur nombre d’occurrences: https://www.data.gouv.fr/tags.csv</li>
     </ul>
   </li>
-  <li>un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :
+  <li>
+    <p>un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :</p>
+
     <ul>
-      <li>JSON-LD: <a href="https://www.data.gouv.fr/catalog.jsonld">https://www.data.gouv.fr/catalog.jsonld</a></li>
-      <li>Turtle: <a href="https://www.data.gouv.fr/catalog.ttl">https://www.data.gouv.fr/catalog.ttl</a></li>
-      <li>N-Triples: <a href="https://www.data.gouv.fr/catalog.nt">https://www.data.gouv.fr/catalog.nt</a></li>
-      <li>XML-RDF: <a href="https://www.data.gouv.fr/catalog.xml">https://www.data.gouv.fr/catalog.xml</a></li>
-      <li>N3: <a href="https://www.data.gouv.fr/catalog.n3">https://www.data.gouv.fr/catalog.n3</a></li>
-      <li>Trig: <a href="https://www.data.gouv.fr/catalog.trig">https://www.data.gouv.fr/catalog.trig</a></li>
+      <li>JSON-LD: https://www.data.gouv.fr/catalog.jsonld</li>
+      <li>Turtle: https://www.data.gouv.fr/catalog.ttl</li>
+      <li>N-Triples: https://www.data.gouv.fr/catalog.nt</li>
+      <li>XML-RDF: https://www.data.gouv.fr/catalog.xml</li>
+      <li>N3: https://www.data.gouv.fr/catalog.n3</li>
+      <li>Trig: https://www.data.gouv.fr/catalog.trig</li>
     </ul>
   </li>
   <li>des <a href="https://stats.data.gouv.fr/">statistiques de fréquentation anonymisées</a>, mises à jour toutes les heures</li>
@@ -300,14 +305,14 @@
 
 <p>L’intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées (publication d’un jeu de données, création d’organisations, etc). Veuillez consulter la documentation spécifique pour y accéder.</p>
 
-<p><span id="section-moissonage"></span></p>
+<p><span id="section-moissonage">
+</span></p>
 
 <h2 id="moissonnage-des-dépôts-de-données-ouvertes">Moissonnage des dépôts de données ouvertes</h2>
 
-<p>« <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » met à disposition une infrastructure de moissonnage,
-permettant d’être automatiquement intégré sur la plateforme.</p>
+<p>« <a href="https://www.data.gouv.fr/">data.gouv.fr</a> » met à disposition une infrastructure de moissonnage, permettant d’être automatiquement intégré sur la plateforme.</p>
 
-<p>Aujourd’hui, les moissoneurs suivants sont disponibles :</p>
+<p>Aujourd’hui, les moissonneurs suivants sont disponibles :</p>
 
 <ul>
   <li>CKAN (générique) ;</li>
@@ -320,13 +325,14 @@ permettant d’être automatiquement intégré sur la plateforme.</p>
 
 <p>Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr », il est possible (voire recommandé) d’utiliser l’<a href="https://www.data.gouv.fr/api/">API</a> pour pousser ses données.</p>
 
-<p><span id="section-code"></span></p>
+<p><span id="section-code">
+</span></p>
 
 <h2 id="le-code-source-de-la-plateforme">Le code source de la plateforme</h2>
 
 <p>L’intégralité du code de la plateforme est <a href="https://github.com/opendatateam/udata">gratuitement disponible en Open-Source</a> sous <a href="https://www.gnu.org/licenses/agpl-3.0.html">licence AGPL3</a>. Cet outil a été développé de façon modulaire pour permettre à tout un chacun de l’installer et de le personnaliser pour son usage propre en marque blanche. Nous avons par exemple développé les modules <a href="https://github.com/etalab/udata-gouvfr">udata-gouvfr</a> pour le rendu et <a href="https://github.com/opendatateam/udata-piwik">udata-piwik</a> pour les statistiques.</p>
 
-<p>Vous pouvez contribuer en suivant la documentation spécifique et en proposant des pull-requests.</p>
+<p>Vous pouvez contribuer en suivant la documentation spécifique et en proposant des <em>pull-requests</em>.</p>
 
       
       <p class="edit text-center">
