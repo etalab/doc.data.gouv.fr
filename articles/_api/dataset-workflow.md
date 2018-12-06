@@ -21,13 +21,13 @@ snippets_types:
 
 # Gestion d’un jeu de données par l’API
 
-{:.no_toc}
-
 Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.
 
 Il est recommandé d’avoir lu [l’introduction]({{ site.baseurl }}{% link _api/intro.md %}) avant de consulter cette page.
 
-- TOC {:toc}
+{:.no_toc}
+- TOC
+{:toc}
 
 Tous les exemples qui suivent sont réalisés avec un compte :
 

@@ -9,8 +9,8 @@ redirect_from:
 # Comment remplir les obligations légales des profils d’acheteur ?
 
 {:.no_toc}
-
-- TOC {:toc}
+- TOC
+{:toc}
 
 ## Un peu de contexte
 

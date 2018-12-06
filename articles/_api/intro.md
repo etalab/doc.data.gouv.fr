@@ -6,8 +6,8 @@ order: 1
 # Introduction
 
 {:.no_toc}
-
-- TOC {:toc}
+- TOC
+{:toc}
 
 ## Racine
 
