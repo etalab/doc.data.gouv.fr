@@ -2,7 +2,7 @@
 title: Référence
 order: 4
 layout: swagger
-specs: 'https://www.data.gouv.fr/api/1/swagger.json'
+specs: "https://www.data.gouv.fr/api/1/swagger.json"
 options:
   displayOperationId: true
   docExpansion: none

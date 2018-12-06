@@ -55,14 +55,14 @@ Par exemple, [la liste des types de réutilisations]({{ site.baseurl }}{% link _
 
 ```json
 [
-  {"id": "paper", "label": "Papier"},
-  {"id": "application", "label": "Application"},
-  {"id": "hardware", "label": "Objet connecté"},
-  {"id": "api", "label": "API"},
-  {"id": "visualization", "label": "Visualisation"},
-  {"id": "post", "label": "Article de blog"},
-  {"id": "news_article", "label": "Article de presse"},
-  {"id": "idea", "label": "Idée"}
+  { "id": "paper", "label": "Papier" },
+  { "id": "application", "label": "Application" },
+  { "id": "hardware", "label": "Objet connecté" },
+  { "id": "api", "label": "API" },
+  { "id": "visualization", "label": "Visualisation" },
+  { "id": "post", "label": "Article de blog" },
+  { "id": "news_article", "label": "Article de presse" },
+  { "id": "idea", "label": "Idée" }
 ]
 ```
 
@@ -99,7 +99,7 @@ Lorsque c’est possible, l’API répondra en JSON avec le format suivant :
 
 ```json
 {
-    "message": "un message d’erreur"
+  "message": "un message d’erreur"
 }
 ```
 
