@@ -21,13 +21,13 @@ snippets_types:
 
 # Gestion d’un jeu de données par l’API
 
-{:.no_toc}
-
 Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.
 
 Il est recommandé d’avoir lu [l’introduction]({{ site.baseurl }}{% link _api/intro.md %}) avant de consulter cette page.
 
-- TOC {:toc}
+{:.no_toc}
+- TOC
+{:toc}
 
 Tous les exemples qui suivent sont réalisés avec un compte :
 
@@ -70,7 +70,7 @@ La ressource est automatiquement créée et il est possible de modifier _a poste
 
 #### En référençant une URL existante
 
-L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource) permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.csv.
+L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource) permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL <https://url.to/ressource.csv>.
 
 {% snippets api/remote-resource %}
 

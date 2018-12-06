@@ -109,9 +109,9 @@ Si tout est déjà écrit dans le Code des relations entre le public et l’admi
 
 #### Quand la publication est faite par un particulier
 
-Quand un particulier publie des données sur https://www.data.gouv.fr, les données mises en lignes sont soumises au droit commun, c’est-à-dire au code de la propriété intellectuelle. Le particulier a l’origine de la publication détient alors la propriété intellectuelle des données. Mais comment donner à d’autres le droit d’utiliser les données en question ? C‘est là qu’interviennent les licences.
+Quand un particulier publie des données sur <https://www.data.gouv.fr>, les données mises en lignes sont soumises au droit commun, c’est-à-dire au code de la propriété intellectuelle. Le particulier a l’origine de la publication détient alors la propriété intellectuelle des données. Mais comment donner à d’autres le droit d’utiliser les données en question ? C‘est là qu’interviennent les licences.
 
-Choisir une licence, c’est permettre à d’autres personnes d’utiliser et de modifier des données, sans pour autant en perdre la propriété intellectuelle. Dit autrement, sans licence, les données publiées sur https://www.data.gouv.fr par un particulier ne peuvent pas être réutilisées par d’autres personnes, car elles ne tombent pas par défaut sous le coup de la loi CADA.
+Choisir une licence, c’est permettre à d’autres personnes d’utiliser et de modifier des données, sans pour autant en perdre la propriété intellectuelle. Dit autrement, sans licence, les données publiées sur <https://www.data.gouv.fr> par un particulier ne peuvent pas être réutilisées par d’autres personnes, car elles ne tombent pas par défaut sous le coup de la loi CADA.
 
 ### Retirer les informations personnelles et les secrets
 
