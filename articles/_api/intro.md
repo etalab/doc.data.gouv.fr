@@ -11,7 +11,7 @@ order: 1
 
 ## Racine
 
-Le point d’entrée racine de l’API est <https://www.data.gouv.fr/api/1/>.
+Le point d’entrée racine de l’API est https://www.data.gouv.fr/api/1/.
 
 Dans la suite de cette documentation, il y sera fait référence par `$API`.
 

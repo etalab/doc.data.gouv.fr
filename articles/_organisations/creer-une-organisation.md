@@ -51,7 +51,7 @@ Le sigle est facultatif.
 
 La description est obligatoire.
 
-**Site web** Si votre organisation possède un site web, renseignez ici son URL. Par exemple : <https://www.economie.gouv.fr/dgfip> pour la _Direction générale des Finances publiques_.
+**Site web** Si votre organisation possède un site web, renseignez ici son URL. Par exemple : https://www.economie.gouv.fr/dgfip pour la _Direction générale des Finances publiques_.
 
 Le site web est facultatif.
 

@@ -75,4 +75,4 @@ Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commen
 
 Vous pouvez également venir en [discuter avec la communauté][udata-gitter] (en anglais).
 
-[data.gouv.fr] : <https://www.data.gouv.fr> [API] : <https://www.data.gouv.fr/fr/apidoc/> [udata-js] : <https://github.com/DepthFrance/udata-js> [udata-doc] : <http://udata.readthedocs.io/en/latest/> [udata-github] : <https://github.com/opendatateam/udata> [udata-gitter] : <https://gitter.im/opendatateam/udata>
+[data.gouv.fr] : https://www.data.gouv.fr [API] : https://www.data.gouv.fr/fr/apidoc/> [udata-js] : https://github.com/DepthFrance/udata-js> [udata-doc] : http://udata.readthedocs.io/en/latest/> [udata-github] : https://github.com/opendatateam/udata> [udata-gitter] : https://gitter.im/opendatateam/udata>
