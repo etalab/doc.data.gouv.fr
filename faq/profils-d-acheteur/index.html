@@ -93,6 +93,9 @@
 
 <section class="documentation">
   <nav class="side-pane">
+  <div class="search-input-wrapper">
+    <input type="text" id="search-input" placeholder="Recherche">
+  </div>
   <ul class="side-pane__menu">
     
     
@@ -249,6 +252,10 @@
   </ul>
 </nav>
 
+  <div class="search-results">
+    <h2>Resultats de recherche pour "<span id="search-query"></span>"</h2>
+    <div id="search-results-container"></div>
+  </div>
   <div class="main-pane">
     <div class="markdown">
       <h1 class="no_toc" id="comment-remplir-les-obligations-légales-des-profils-dacheteur-">Comment remplir les obligations légales des profils d’acheteur ?</h1>
@@ -586,8 +593,9 @@ Pour plus d’informations, vous pouvez consulter [la page thématique](https://
   </div>
 </footer>
 
-      
+
     <!-- Scripts -->
+<script src="/assets/simple-jekyll-search.min.js"></script>
 <script async defer src="/assets/main.js"></script>
 
 
