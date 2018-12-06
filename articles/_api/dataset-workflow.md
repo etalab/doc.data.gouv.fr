@@ -66,11 +66,11 @@ Nous allons utiliser l’API d’[envoi de ressource]({{ site.baseurl }}{% link 
 
 {% snippets api/upload-resource %}
 
-La ressource est automatiquement créée et il est possible de modifier *a posteriori* les metadonnées avec l’[API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource) comme décrit [plus bas](#mise-à-jour-des-métadonnées-dune-ressource)
+La ressource est automatiquement créée et il est possible de modifier _a posteriori_ les metadonnées avec l’[API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource) comme décrit [plus bas](#mise-à-jour-des-métadonnées-dune-ressource)
 
 #### En référençant une URL existante
 
-L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource) permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL <https://url.to/ressource.csv>.
+L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource) permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.csv.
 
 {% snippets api/remote-resource %}
 

@@ -11,7 +11,7 @@ order: 1
 
 ## Racine
 
-Le point d’entrée racine de l’API est <https://www.data.gouv.fr/api/1/>.
+Le point d’entrée racine de l’API est https://www.data.gouv.fr/api/1/.
 
 Dans la suite de cette documentation, il y sera fait référence par `$API`.
 
@@ -35,7 +35,7 @@ Les différents points d’entrée de l’API attendent du JSON (`application/js
 
 ### Identifiants d’URL
 
-À chaque fois que vous pouvez utiliser identifiant d’objet dans une URL de l’API, vous avez les choix suivants :
+À chaque fois que vous pouvez utiliser un identifiant d’objet dans une URL de l’API, vous avez les choix suivants :
 
 - l’identifiant technique permanent (**ex:** `5bbb6d6cff66bd4dc17bfd5a`)
 - le slug (**ex:** `mon-dataset`)
@@ -55,14 +55,14 @@ Par exemple, [la liste des types de réutilisations]({{ site.baseurl }}{% link _
 
 ```json
 [
-  {"id": "paper", "label": "Papier"},
-  {"id": "application", "label": "Application"},
-  {"id": "hardware", "label": "Objet connecté"},
-  {"id": "api", "label": "API"},
-  {"id": "visualization", "label": "Visualisation"},
-  {"id": "post", "label": "Article de blog"},
-  {"id": "news_article", "label": "Article de presse"},
-  {"id": "idea", "label": "Idée"}
+  { "id": "paper", "label": "Papier" },
+  { "id": "application", "label": "Application" },
+  { "id": "hardware", "label": "Objet connecté" },
+  { "id": "api", "label": "API" },
+  { "id": "visualization", "label": "Visualisation" },
+  { "id": "post", "label": "Article de blog" },
+  { "id": "news_article", "label": "Article de presse" },
+  { "id": "idea", "label": "Idée" }
 ]
 ```
 
@@ -70,7 +70,7 @@ Par exemple, [la liste des types de réutilisations]({{ site.baseurl }}{% link _
 
 Certaines méthodes sont paginées et suivent le même modèle de pagination. La liste d’objets est encapsulée dans un objet `Page`.
 
-Vous n’avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponible dans la réponse dans les attributs `previous_page` et `next_page`. Ils seront définis à `null` si il n’y a pas de page précédente et/ou suivante.
+Vous n’avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponibles dans la réponse dans les attributs `previous_page` et `next_page`. Ils seront définis à `null` si il n’y a pas de page précédente et/ou suivante.
 
 **Exemple:**
 
@@ -99,7 +99,7 @@ Lorsque c’est possible, l’API répondra en JSON avec le format suivant :
 
 ```json
 {
-    "message": "un message d’erreur"
+  "message": "un message d’erreur"
 }
 ```
 

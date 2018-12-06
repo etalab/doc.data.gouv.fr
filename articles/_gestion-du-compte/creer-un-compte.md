@@ -24,7 +24,7 @@ La création d’un compte n’est nécessaire que si vous souhaitez :
 
 Pour créer un compte sur la plateforme data.gouv.fr :
 
-1. Rendez-vous sur : <https://www.data.gouv.fr/fr/register> ;
+1. Rendez-vous sur : https://www.data.gouv.fr/fr/register ;
 2. Saisissez votre **Prénom**, **Nom** et **Adresse e-mail** ;
 3. Saisissez votre **Mot de passe** et confirmez-le ;
 4. Acceptez les [conditions générales d’utilisation du service](https://www.data.gouv.fr/fr/terms/) ;

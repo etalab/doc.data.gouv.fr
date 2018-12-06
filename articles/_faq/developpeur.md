@@ -22,20 +22,20 @@ Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moye
 - une [API complète](https://www.data.gouv.fr/api/), documentée avec [Swagger](http://swagger.io/)
 - des dumps au format CSV, mis à jour en temps réel
 
-  - catalogue des jeux de données: <https://www.data.gouv.fr/datasets.csv>
-  - catalogue des ressources: <https://www.data.gouv.fr/resources.csv>
-  - catalogue des organisations: <https://www.data.gouv.fr/organizations.csv>
-  - catalogue des réutilisations: <https://www.data.gouv.fr/reuses.csv>
-  - une liste des tags avec leur nombre d’occurrences: <https://www.data.gouv.fr/tags.csv>
+  - catalogue des jeux de données: https://www.data.gouv.fr/datasets.csv
+  - catalogue des ressources: https://www.data.gouv.fr/resources.csv
+  - catalogue des organisations: https://www.data.gouv.fr/organizations.csv
+  - catalogue des réutilisations: https://www.data.gouv.fr/reuses.csv
+  - une liste des tags avec leur nombre d’occurrences: https://www.data.gouv.fr/tags.csv
 
 - un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :
 
-  - JSON-LD: <https://www.data.gouv.fr/catalog.jsonld>
-  - Turtle: <https://www.data.gouv.fr/catalog.ttl>
-  - N-Triples: <https://www.data.gouv.fr/catalog.nt>
-  - XML-RDF: <https://www.data.gouv.fr/catalog.xml>
-  - N3: <https://www.data.gouv.fr/catalog.n3>
-  - Trig: <https://www.data.gouv.fr/catalog.trig>
+  - JSON-LD: https://www.data.gouv.fr/catalog.jsonld
+  - Turtle: https://www.data.gouv.fr/catalog.ttl
+  - N-Triples: https://www.data.gouv.fr/catalog.nt
+  - XML-RDF: https://www.data.gouv.fr/catalog.xml
+  - N3: https://www.data.gouv.fr/catalog.n3
+  - Trig: https://www.data.gouv.fr/catalog.trig
 
 - des [statistiques de fréquentation anonymisées](https://stats.data.gouv.fr/), mises à jour toutes les heures
 

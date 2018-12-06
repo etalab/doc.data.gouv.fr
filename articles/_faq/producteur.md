@@ -111,7 +111,7 @@ Une description de la ressource peut être ajoutée de manière optionnelle pour
 
 ### Télécharger un fichier ou saisir son URL ?
 
-Si vous ne possédez pas de site Web et que la fréquence de mise à jour de vos données est faible, « [data.gouv.fr] » permet de télécharger des fichiers depuis votre ordinateur. Néanmoins, si vous possédez un site Web, il est préférable de référencer vos données, évitant ainsi de devoir les mettre à jour régulièrement sur data.gouv. Par exemple, référencer la ressource <http://monsite.fr/jeu_de_donnees_derniere_version.csv> vous permet de déclarer une fois pour toutes une donnée avec une fréquence de mise à jour temps réel.
+Si vous ne possédez pas de site Web et que la fréquence de mise à jour de vos données est faible, « [data.gouv.fr] » permet de télécharger des fichiers depuis votre ordinateur. Néanmoins, si vous possédez un site Web, il est préférable de référencer vos données, évitant ainsi de devoir les mettre à jour régulièrement sur data.gouv. Par exemple, référencer la ressource http://monsite.fr/jeu_de_donnees_derniere_version.csv vous permet de déclarer une fois pour toutes une donnée avec une fréquence de mise à jour temps réel.
 
 ### Bureau, département ou service
 

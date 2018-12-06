@@ -122,16 +122,15 @@ $ http $API'organizations/5ba0b9f5634f4150f31579dd/' | jq '.metrics'
 
 ```json
 {
- "datasets": 0,
- "members": 1,
- "views": 1,
- "permitted_reuses": 0,
- "reuses": 0,
- "dataset_views": 0,
- "reuse_views": 0,
- "followers": 0,
- "resource_downloads": 0,
-
+  "datasets": 0,
+  "members": 1,
+  "views": 1,
+  "permitted_reuses": 0,
+  "reuses": 0,
+  "dataset_views": 0,
+  "reuse_views": 0,
+  "followers": 0,
+  "resource_downloads": 0
 }
 ```
 

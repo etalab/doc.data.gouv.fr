@@ -152,7 +152,7 @@ Les données essentielles transmises par la DGFiP peuvent être téléchargées 
 
 Le format des URL est le suivant :
 
-<http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/DECP-{siret}-{année}-{mois}-{jour}-{seq}.xml>
+> http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/DECP-{siret}-{année}-{mois}-{jour}-{seq}.xml
 
 - `siret` : SIRET de l’acheteur
 - `année` : année de la récéption par Etalab
@@ -162,7 +162,7 @@ Le format des URL est le suivant :
 
 Exemple :
 
-> <http://files.data.gouv.fr/decp/89764547841001/2018/11/28/DECP-89764547841001-2018-11-28-01.xml>
+> http://files.data.gouv.fr/decp/89764547841001/2018/11/28/DECP-89764547841001-2018-11-28-01.xml
 
 ### Via l’API
 
@@ -183,9 +183,9 @@ curl https://data.gouv.fr/api/1/datasets/<dataset id ou slug>
 
 Exemples d’URL :
 
-> <https://data.gouv.fr/api/1/datasets/56cc6d6988ee385864fa79d0>
+> https://data.gouv.fr/api/1/datasets/56cc6d6988ee385864fa79d0
 
-> <https://data.gouv.fr/api/1/datasets/referentiel-de-donnees-marches-publics>
+> https://data.gouv.fr/api/1/datasets/referentiel-de-donnees-marches-publics
 
 ## Déclaration d’un profil d’acheteur
 
@@ -214,8 +214,8 @@ Vous trouverez un exemple de structure de fichier [sur data.gouv.fr](https://www
 
 La procédure complète pour déposer un ficher de déclaration de profil d’acheteur sur data.gouv.fr est la suivante :
 
-1. Créer un compte individuel via <https://www.data.gouv.fr/fr/register>;
-2. Une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur via <https://www.data.gouv.fr/fr/admin/organization/new/> ;
-3. Créer un jeu de données via <https://www.data.gouv.fr/fr/admin/dataset/new/> en choisissant lors de l’étape « Choisissez qui publie » l’organisation créée au point précédent ;
+1. Créer un compte individuel via https://www.data.gouv.fr/fr/register ;
+2. Une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur via https://www.data.gouv.fr/fr/admin/organization/new/ ;
+3. Créer un jeu de données via https://www.data.gouv.fr/fr/admin/dataset/new/ en choisissant lors de l’étape « Choisissez qui publie » l’organisation créée au point précédent ;
 4. À l’étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d’autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
 5. À l’étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.

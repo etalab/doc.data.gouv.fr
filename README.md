@@ -35,4 +35,4 @@ Vous pouvez utiliser [docker-compose](https://docs.docker.com/compose/) pour tes
 docker-compose up
 ```
 
-Ceci va télécharger l'image docker de [Jekyll](https://www.jekyll.io/) et installer les dépendances nécessaires avant d'effectuer le rendu du site. Le résultat sera disponible sur <http://localhost:4000>. Les modifications sont automatiquement prises en compte et provoquent un nouveau rendu du site.
+Ceci va télécharger l'image docker de [Jekyll](https://www.jekyll.io/) et installer les dépendances nécessaires avant d'effectuer le rendu du site. Le résultat sera disponible sur http://localhost:4000. Les modifications sont automatiquement prises en compte et provoquent un nouveau rendu du site.
