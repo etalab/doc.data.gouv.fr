@@ -166,14 +166,14 @@ Les standards de la géomatique ne sont pas ceux du Web et pourtant ils structur
 
 1. Adoptez le plan de nommage suivant pour les producteurs de l’administration déconcentrée :
 
-- `DR[xxx][nom de la région accents respectés, trait-d’union partout]`` : DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne...
-- `DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22` ...
-- `Préfecture de [DOM/Nom Région/Nom Département]` : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire ..
+- `DR[xxx][nom de la région accents respectés, trait-d’union partout]` : DRAC Bourgogne, DREAL Nord-Pas-de-Calais, DIRECCTE Bretagne…
+- `DD[xxx] [Numéro département] : DDT 77, DDPP 34, DDTM 22`…
+- `Préfecture de [DOM/Nom Région/Nom Département]` : Préfecture de Mayotte, Préfecture de Poitou-Charentes, Préfecture de Saône et Loire…
 
 2. Rendez vos jeux de données INSPIRE accessibles depuis Internet. Si vous ne disposez pas de serveurs où les déposer, vous pourrez utiliser ceux de data.gouv.fr.
 
-[certification@data.gouv.fr]: mailto:certification@data.gouv.fr
-[data.gouv.fr]: https://www.data.gouv.fr
-[la réserve parlementaire]: https://www.data.gouv.fr/fr/datasets/reserve-parlementaire/
-[legifrance-producer]: http://www.legifrance.gouv.fr/affichCode.do?idArticle=LEGIARTI000006279245&idSectionTA=LEGISCTA000006161660&cidTexte=LEGITEXT000006069414&dateTexte=20090613
-[lo]: https://www.etalab.gouv.fr/licence-ouverte-open-licence
+- [certification@data.gouv.fr](mailto:certification@data.gouv.fr)
+- [data.gouv.fr](https://www.data.gouv.fr)
+- [la réserve parlementaire](https://www.data.gouv.fr/fr/datasets/reserve-parlementaire/)
+- [legifrance-producer](http://www.legifrance.gouv.fr/affichCode.do?idArticle=LEGIARTI000006279245&idSectionTA=LEGISCTA000006161660&cidTexte=LEGITEXT000006069414&dateTexte=20090613)
+- [licence ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence)

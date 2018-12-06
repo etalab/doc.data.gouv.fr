@@ -214,8 +214,8 @@ Vous trouverez un exemple de structure de fichier [sur data.gouv.fr](https://www
 
 La procédure complète pour déposer un ficher de déclaration de profil d’acheteur sur data.gouv.fr est la suivante :
 
-1. Créer un compte individuel via https://www.data.gouv.fr/fr/register ;
-2. Une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur via https://www.data.gouv.fr/fr/admin/organization/new/ ;
-3. Créer un jeu de données via https://www.data.gouv.fr/fr/admin/dataset/new/ en choisissant lors de l’étape « Choisissez qui publie » l’organisation créée au point précédent ;
+1. Créer un compte individuel en allant sur : <https://www.data.gouv.fr/fr/register> ;
+2. Une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur depuis : <https://www.data.gouv.fr/fr/admin/organization/new/> ;
+3. Créer un jeu de données depuis <https://www.data.gouv.fr/fr/admin/dataset/new/> en choisissant lors de l’étape « Choisissez qui publie » l’organisation créée au point précédent ;
 4. À l’étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d’autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
 5. À l’étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.
