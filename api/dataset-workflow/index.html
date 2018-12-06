@@ -260,12 +260,34 @@
     <div class="markdown">
       <h1 id="gestion-dun-jeu-de-données-par-lapi">Gestion d’un jeu de données par l’API</h1>
 
-<p class="no_toc">Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.</p>
+<p>Cette page documente les principales interactions que vous pouvez avoir avec un jeu de données par l’API.</p>
 
 <p>Il est recommandé d’avoir lu <a href="/api/intro/">l’introduction</a> avant de consulter cette page.</p>
 
-<ul>
-  <li>TOC {:toc}</li>
+<ul class="no_toc" id="markdown-toc">
+  <li><a href="#gestion-dun-jeu-de-données-par-lapi" id="markdown-toc-gestion-dun-jeu-de-données-par-lapi">Gestion d’un jeu de données par l’API</a>    <ul>
+      <li><a href="#création-dun-jeu-de-données" id="markdown-toc-création-dun-jeu-de-données">Création d’un jeu de données</a>        <ul>
+          <li><a href="#ajout-dune-ressource" id="markdown-toc-ajout-dune-ressource">Ajout d’une ressource</a>            <ul>
+              <li><a href="#en-envoyant-un-fichier" id="markdown-toc-en-envoyant-un-fichier">En envoyant un fichier</a></li>
+              <li><a href="#en-référençant-une-url-existante" id="markdown-toc-en-référençant-une-url-existante">En référençant une URL existante</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#modification-dun-jeu-de-données" id="markdown-toc-modification-dun-jeu-de-données">Modification d’un jeu de données</a>        <ul>
+          <li><a href="#mise-à-jour-des-metadonnées-de-la-fiche" id="markdown-toc-mise-à-jour-des-metadonnées-de-la-fiche">Mise à jour des metadonnées de la fiche</a></li>
+          <li><a href="#mise-à-jour-des-métadonnées-dune-ressource" id="markdown-toc-mise-à-jour-des-métadonnées-dune-ressource">Mise à jour des métadonnées d’une ressource</a></li>
+          <li><a href="#remplacer-un-fichier-de-ressource" id="markdown-toc-remplacer-un-fichier-de-ressource">Remplacer un fichier de ressource</a></li>
+          <li><a href="#signaler-une-mise-à-jour-de-fichier-distant" id="markdown-toc-signaler-une-mise-à-jour-de-fichier-distant">Signaler une mise à jour de fichier distant</a></li>
+          <li><a href="#suppression-dun-ressource" id="markdown-toc-suppression-dun-ressource">Suppression d’un ressource</a></li>
+        </ul>
+      </li>
+      <li><a href="#suppression-dun-jeu-de-données" id="markdown-toc-suppression-dun-jeu-de-données">Suppression d’un jeu de données</a>        <ul>
+          <li><a href="#restauration-dun-jeu-de-données-supprimé-par-erreur" id="markdown-toc-restauration-dun-jeu-de-données-supprimé-par-erreur">Restauration d’un jeu de données supprimé par erreur</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
 <p>Tous les exemples qui suivent sont réalisés avec un compte :</p>
@@ -433,7 +455,7 @@
 
 <h4 id="en-référençant-une-url-existante">En référençant une URL existante</h4>
 
-<p>L’API de <a href="/api/reference/#/datasets/create_resource">création de ressource</a> permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL https://url.to/ressource.csv.</p>
+<p>L’API de <a href="/api/reference/#/datasets/create_resource">création de ressource</a> permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL <a href="https://url.to/ressource.csv">https://url.to/ressource.csv</a>.</p>
 
 <div class="tabs">      <input name="snippet-api/remote-resource" type="radio" id="snippet-api/remote-resource-curl" checked="checked" />
 	    <label for="snippet-api/remote-resource-curl">CURL</label>
