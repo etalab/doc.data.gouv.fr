@@ -8,7 +8,7 @@ layout: null
       "title"    : "{{ post.title | escape }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "url"      : "{{ post.url | absolute_url }}",
       "date"     : "{{ post.date }}",
       "excerpt"  : {{ post.excerpt | strip_html | replace: "\n", " " | jsonify }},
       "content"  : {{ post.content | strip_html | replace: "\n", " " | jsonify }}
@@ -23,7 +23,7 @@ layout: null
       "title"    : "{{ page.title | escape }}",
       "category" : "{{ page.category }}",
       "tags"     : "{{ page.tags | join: ', ' }}",
-      "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "url"      : "{{ page.url | absolute_url }}",
       "date"     : "{{ page.date }}",
       "excerpt"  : {{ page.excerpt | strip_html | replace: "\n", " " | jsonify }},
       "content"  : {{ page.content | strip_html | replace: "\n", " " | jsonify }}
@@ -39,7 +39,7 @@ layout: null
         "title"    : "{{ page.title | escape }}",
         "category" : "{{ collection.title }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
-        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "url"      : "{{ page.url | absolute_url }}",
         "date"     : "{{ page.date }}",
         "excerpt"  : {{ page.excerpt | strip_html | replace: "\n", " " | jsonify }},
         "content"  : {{ page.content | strip_html | replace: "\n", " " | jsonify }}
