@@ -7,7 +7,7 @@ summary: "Quelles sont les intégrations tierces rendues possibles ?"
 
 # Découvrir l’OpenData en tant qu’intégrateur
 
-La plateforme « [data.gouv.fr][https://www.data.gouv.fr] » vous offre plusieurs moyens plus ou moins avancés d’intégrer les données disponibles en open data sur vos propres sites :
+La plateforme « [data.gouv.fr](https://www.data.gouv.fr) » vous offre plusieurs moyens plus ou moins avancés d’intégrer les données disponibles en open data sur vos propres sites :
 
 - de manière unitaire si vous souhaitez n’afficher qu’un ou quelques jeu(x) de données particulier(s) ;
 - de manière plus générale si vous souhaitez afficher tous les jeux de données relatifs à un territoire ou à une organisation ;
@@ -63,19 +63,19 @@ Optionnellement, il est possible d’afficher une barre de recherche pour laisse
 
 ## Intégration pour une page personnalisée
 
-Une [bibliothèque JavaScript][udata-js] a été développée pour faciliter la personnalisation de l’affichage des jeux de données sur un site tiers. Un système de gabarit permet d’intégrer les données que vous souhaitez issues de l’API à vos couleurs et selon la disposition qui vous convient. Il s’agit d’un moyen de créer votre propre page open data à coûts réduits au sein de votre site.
+Une [bibliothèque JavaScript](https://github.com/datakode/metaclic) a été développée pour faciliter la personnalisation de l’affichage des jeux de données sur un site tiers. Un système de gabarit permet d’intégrer les données que vous souhaitez issues de l’API à vos couleurs et selon la disposition qui vous convient. Il s’agit d’un moyen de créer votre propre page open data à coûts réduits au sein de votre site.
 
 ## Intégration d’un portail open data complet
 
 Les outils que nous développons sont disponibles en open-source. Ils sont le fruit d’un effort international pour créer des synergies autour de la donnée ouverte et mutualiser nos efforts de développement. La gouvernance est inclusive et la licence est permissive. Nous participons à l’animation autour du développement de la plateforme car nous souhaitons produire un bien commun réutilisable par tous.
 
-L’intégration d’un portail open data complet demande des compétences en administration système, en développement Python et JavaScript ainsi qu’un temps non négligeable de prise en main de la plateforme. C’est un choix qui doit être mûrement réfléchi et nous vous recommandons de passer directement par « [data.gouv.fr][ttps://www.data.gouv.fr] » si vous avez des données issues de territoires francophones.
+L’intégration d’un portail open data complet demande des compétences en administration système, en développement Python et JavaScript ainsi qu’un temps non négligeable de prise en main de la plateforme. C’est un choix qui doit être mûrement réfléchi et nous vous recommandons de passer directement par [data.gouv.fr](ttps://www.data.gouv.fr) si vous avez des données issues de territoires francophones.
 
-Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser le [code source][udata-github] ainsi que la [documentation spécifique][udata-doc].
+Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser le [code source](https://github.com/opendatateam/udata) ainsi que la [documentation spécifique](https://udata.readthedocs.io/en/stable/).
 
-Vous pouvez également venir en [discuter avec la communauté][udata-gitter] (en anglais).
+Vous pouvez également venir en [discuter avec la communauté](udata-gitter) (en anglais).
 
-- [data.gouv.fr](https://www.data.gouv.fr
+- [data.gouv.fr](https://www.data.gouv.fr)
 - [API](https://www.data.gouv.fr/fr/apidoc/)
 - [udata-js](https://github.com/DepthFrance/udata-js)
 - [udata-doc](http://udata.readthedocs.io/en/latest)
