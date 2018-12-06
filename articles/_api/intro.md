@@ -70,7 +70,7 @@ Par exemple, [la liste des types de réutilisations]({{ site.baseurl }}{% link _
 
 Certaines méthodes sont paginées et suivent le même modèle de pagination. La liste d’objets est encapsulée dans un objet `Page`.
 
-Vous n’avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponible dans la réponse dans les attributs `previous_page` et `next_page`. Ils seront définis à `null` si il n’y a pas de page précédente et/ou suivante.
+Vous n’avez pas à calculer vous-même les pages précédentes et suivantes puisque les URL sont disponibles dans la réponse dans les attributs `previous_page` et `next_page`. Ils seront définis à `null` si il n’y a pas de page précédente et/ou suivante.
 
 **Exemple:**
 
