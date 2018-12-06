@@ -17,7 +17,7 @@ Cette page contient :
 
 ## Informations relatives à l’API
 
-Le site « [data.gouv.fr](https://www.data.gouv.fr/) » propose différents moyens d’accéder au catalogue des données :
+Le site [data.gouv.fr](https://www.data.gouv.fr) propose différents moyens d’accéder au catalogue des données :
 
 - une [API complète](https://www.data.gouv.fr/api/), documentée avec [Swagger](http://swagger.io/)
 - des dumps au format CSV, mis à jour en temps réel
@@ -46,7 +46,7 @@ L’intégralité des opérations réalisables depuis le site via votre navigate
 
 ## Moissonnage des dépôts de données ouvertes
 
-« [data.gouv.fr](https://www.data.gouv.fr/) » met à disposition une infrastructure de moissonnage, permettant d’être automatiquement intégré sur la plateforme.
+[data.gouv.fr](https://www.data.gouv.fr) met à disposition une infrastructure de moissonnage, permettant d’être automatiquement intégré sur la plateforme.
 
 Aujourd’hui, les moissonneurs suivants sont disponibles :
 
