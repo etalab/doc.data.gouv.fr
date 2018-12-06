@@ -35,7 +35,7 @@ Les différents points d’entrée de l’API attendent du JSON (`application/js
 
 ### Identifiants d’URL
 
-À chaque fois que vous pouvez utiliser identifiant d’objet dans une URL de l’API, vous avez les choix suivants :
+À chaque fois que vous pouvez utiliser un identifiant d’objet dans une URL de l’API, vous avez les choix suivants :
 
 - l’identifiant technique permanent (**ex:** `5bbb6d6cff66bd4dc17bfd5a`)
 - le slug (**ex:** `mon-dataset`)
