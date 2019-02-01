@@ -160,11 +160,11 @@ Le format des URL est le suivant :
 
 Exemple :
 
-> http://files.data.gouv.fr/decp/89764547841001/2018/11/28/DECP-89764547841001-2018-11-28-01.xml
+> http://files.data.gouv.fr/decp/21440036800012/2019/01/18/DECP-21440036800012-2019-01-18-01.xml
 
 ### Via l’API
 
-Cette méthode est particulièrement adaptée pour récupérer les données essentielles d’un acheteur qui ne passe pas beaucoup de marchés.
+Aujourd'hui, les données essentielles transmises par la DGFiP ne sont pas référencées sur data.gouv.fr sous forme de ressources. Elles sont hébergées sur un serveur de fichier annexe, [https://files.data.gouv.fr](https://files.data.gouv.fr/decp). L'utilisation de l'API n'est donc pas pertinente, et nous vous conseillons par conséquent de consulter la section [Via un système de fichiers](#via-un-syst%C3%A8me-de-fichier).
 
 Pour récupérer les données via l’API, il vous faut :
 
