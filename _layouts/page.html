@@ -6,6 +6,10 @@ layout: default
 {% assign lang = page.lang | default: site.lang | default: "en" %}
 <section class="documentation">
   {% include sidebar.html %}
+  <div class="search-results">
+    <h2>Resultats de recherche pour "<span id="search-query"></span>"</h2>
+    <div id="search-results-container"></div>
+  </div>
   <div class="main-pane">
     <div class="markdown">
       {{ content }}

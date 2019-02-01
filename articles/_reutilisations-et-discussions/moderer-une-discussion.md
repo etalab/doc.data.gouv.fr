@@ -2,6 +2,7 @@
 title: Modérer une discussion
 slug: moderer-une-discussion
 ---
+
 # Modérer une discussion
 
 Quand vous publiez un jeu de données ou une réutilisation sur data.gouv.fr, les utilisateurs de la plateforme peuvent créer des discussions sur la page associée à vos données ou votre réutilisation.

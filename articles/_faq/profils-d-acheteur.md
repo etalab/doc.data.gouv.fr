@@ -1,14 +1,15 @@
 ---
-title: Comment remplir les obligations légales des profils d’acheteur ?
+title: "Comment remplir les obligations légales des profils d’acheteur ?"
 subtitle: En tant que profil d’acheteur
 label: En tant que profil d’acheteur
 redirect_from:
   - /faq/profils-d-acheteur.html
 ---
-# Comment remplir les obligations légales des profils d’acheteur ?
-{:.no_toc}
 
-* TOC
+# Comment remplir les obligations légales des profils d’acheteur ?
+
+{:.no_toc}
+- TOC
 {:toc}
 
 ## Un peu de contexte
@@ -17,13 +18,13 @@ redirect_from:
 
 La structure des données est définie par [des schémas XML et JSON](https://github.com/etalab/format-commande-publique) qui implémentent les arrêtés.
 
-Pour plus d’information, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques, ainsi que [l'article de blog consacré à ce sujet](https://www.data.gouv.fr/fr/posts/le-point-sur-les-donnees-essentielles-de-la-commande-publique/).
+Pour plus d’information, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques, ainsi que [l’article de blog consacré à ce sujet](https://www.data.gouv.fr/fr/posts/le-point-sur-les-donnees-essentielles-de-la-commande-publique/).
 
 Les données essentielles publiées sur data.gouv.fr proviennent de trois sources :
 
-* La **DGFiP (Direction générale des finances publiques)** propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données via Hélios ([PES Marché](https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0)), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous).
-* L’**AIFE (Agence Informatique des Finances de l’État)** publie sur [data.gouv.fr](https://data.gouv.fr) les données essentielles provenant des places de marchés qui utilisent son service, et notamment de la plateforme de marchés de l’État, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
-* Les données essentielles publiées sur les profils d’acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l’API data.gouv.fr ou via un fichier DCAT moissonnable.
+- La **DGFiP (Direction générale des finances publiques)** propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données via Hélios ([PES Marché](https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0)), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous).
+- L’**AIFE (Agence Informatique des Finances de l’État)** publie sur [data.gouv.fr](https://data.gouv.fr) les données essentielles provenant des places de marchés qui utilisent son service, et notamment de la plateforme de marchés de l’État, [PLACE](https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise).
+- Les données essentielles publiées sur les profils d’acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l’API data.gouv.fr ou via un fichier DCAT moissonnable.
 
 ## Publication des données essentielles via l’API data.gouv.fr
 
@@ -31,8 +32,8 @@ La documentation de l’API est disponible [ici](https://www.data.gouv.fr/fr/api
 
 Afin de faciliter la localisation et donc l’utilisation des données essentielles, la publication de ces données doit respecter une certaine structure. Les deux structures proposées sont les suivantes :
 
-* structure **plateforme** : un jeu de données (`dataset` dans l’API) par plateforme de marchés (identifiée par son SIRET)
-* structure **acheteur** : un jeu de données par acheteur public (SIRET)
+- structure **plateforme** : un jeu de données (`dataset` dans l’API) par plateforme de marchés (identifiée par son SIRET)
+- structure **acheteur** : un jeu de données par acheteur public (SIRET)
 
 ### Jeu de données
 
@@ -43,15 +44,15 @@ Une fois que le `Dataset` a été créé, vous pouvez y ajouter des `Ressource` 
 Exemple de commande :
 
 ```bash
-curl --request POST --url https://data.gouv.fr/api/1/datasets/<dataset-id>/upload/ --header 'content-type: multipart/form-data' --header 'x-api-key: <api-key>' --form "file=<chemin du fichier à téléverser>"
+curl --request POST --url https://data.gouv.fr/api/1/datasets/<dataset-id>/upload/ --header ’content-type: multipart/form-data’ --header ’x-api-key: <api-key>’ --form "file=<chemin du fichier à téléverser>"
 ```
 
 #### Nom (`title` dans l’API)
 
 Le nommage du jeu de données dépend de la structure choisie pour la publication :
 
-* jeu de données pour une **plateforme** : Données essentielles des marchés publics - `{nom de la plateforme}`
-* jeu de données pour un **acheteur** : Données essentielles des marchés publics - `{nom de l’acheteur}`
+- jeu de données pour une **plateforme** : Données essentielles des marchés publics - `{nom de la plateforme}`
+- jeu de données pour un **acheteur** : Données essentielles des marchés publics - `{nom de l’acheteur}`
 
 Exemple :
 
@@ -61,13 +62,11 @@ Exemple :
 
 La description attendue est un texte générique décrivant le contexte de publication des données essentielles ainsi que quelques liens utiles. Le texte suivant remplit ces conditions et peut être étendu par le producteur, notamment avec un lien vers l’interface de visualisaton de données du profil d’acheteur concerné.
 
-```
 [L’arrêté du 14 avril 2017](https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo/texte), modifié par [l’arrêté du 27 juillet 2018](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037282994&dateTexte=&categorieLien=id), impose à tous les acheteurs publics la publication des données essentielles de la commande publique. Ainsi, à partir du 1er octobre 2018, les acheteurs publics doivent publier les données d’attribution au plus tard deux mois après la notification du marché.
 
 La structure des données est définie par [des schémas XML et JSON](https://github.com/etalab/format-commande-publique) qui appliquent les exigences des arrêtés.
 
 Pour plus d’informations, vous pouvez consulter [la page thématique](https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique) sur le site de la Direction des Affaires Juridiques.
-```
 
 #### Mot-clés (`tags`)
 
@@ -109,13 +108,13 @@ Renseignez la fréquence de la publication des mises à jour.
 
 Format : DECP-`{SIRET}`-`{année}`-`{mois}`-`{jour}`-`{numéro de séquence}`.`{extension}`
 
-* `DECP` pour "données essentielles de la commande publique"
-* `siret` : SIRET de la plateforme si structure plateforme, sinon SIRET de l’acheteur
-* `année` : année de la publication sur data.gouv.fr
-* `mois` : mois de la publication sur data.gouv.fr
-* `jour` : jour de la publication sur data.gouv.fr
-* `numéro de séquence` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont publiées dans la même journée. Le premier numéro est `01`
-* `extension` : `xml` ou `json` en fonction du format de publication. Il n’est pas obligatoire de publier les données à la fois en XML et en JSON, un seul des deux formats suffit.
+- `DECP` pour "données essentielles de la commande publique"
+- `siret` : SIRET de la plateforme si structure plateforme, sinon SIRET de l’acheteur
+- `année` : année de la publication sur data.gouv.fr
+- `mois` : mois de la publication sur data.gouv.fr
+- `jour` : jour de la publication sur data.gouv.fr
+- `numéro de séquence` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont publiées dans la même journée. Le premier numéro est `01`
+- `extension` : `xml` ou `json` en fonction du format de publication. Il n’est pas obligatoire de publier les données à la fois en XML et en JSON, un seul des deux formats suffit.
 
 Exemple :
 
@@ -131,13 +130,13 @@ Identique au nom de fichier.
 
 #### Type de fichier (`filetype`)
 
-* `xml` pour du XML
-* `json` pour du JSON
+- `xml` pour du XML
+- `json` pour du JSON
 
 #### Type MIME (`mime`)
 
-* `application/xml` pour du XML
-* `application/json` pour du JSON
+- `application/xml` pour du XML
+- `application/json` pour du JSON
 
 #### Type de ressource (`type`)
 
@@ -151,13 +150,13 @@ Les données essentielles transmises par la DGFiP peuvent être téléchargées 
 
 Le format des URL est le suivant :
 
-http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/DECP-{siret}-{année}-{mois}-{jour}-{seq}.xml
+> http://files.data.gouv.fr/decp/{siret}/{année}/{mois}/{jour}/DECP-{siret}-{année}-{mois}-{jour}-{seq}.xml
 
-* `siret` : SIRET de l’acheteur
-* `année` : année de la récéption par Etalab
-* `mois` : mois de la récéption par Etalab
-* `jour` : jour de la récéption par Etalab
-* `seq` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est `01`
+- `siret` : SIRET de l’acheteur
+- `année` : année de la récéption par Etalab
+- `mois` : mois de la récéption par Etalab
+- `jour` : jour de la récéption par Etalab
+- `seq` : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est `01`
 
 Exemple :
 
@@ -167,7 +166,24 @@ Exemple :
 
 Aujourd'hui, les données essentielles transmises par la DGFiP ne sont pas référencées sur data.gouv.fr sous forme de ressources. Elles sont hébergées sur un serveur de fichier annexe, [https://files.data.gouv.fr](https://files.data.gouv.fr/decp). L'utilisation de l'API n'est donc pas pertinente, et nous vous conseillons par conséquent de consulter la section [Via un système de fichiers](#via-un-syst%C3%A8me-de-fichier).
 
-Cependant, nous avons créé [un jeu de données](https://www.data.gouv.fr/fr/datasets/5bd0b6fd8b4c413d0801dc57/) pour récapituler le contexte et fournir un lien vers les fichiers. Ce jeu de données a vocation à être pérenne.
+Pour récupérer les données via l’API, il vous faut :
+
+1. Récupérer la liste des ressources du jeu de données ;
+2. Télécharger les ressources dont vous avez besoin.
+
+#### Récupérer la liste des ressources du jeu de données
+
+Pour récupérer la liste des ressources d’un jeu de données, effectuez la requête suivante :
+
+```
+curl https://data.gouv.fr/api/1/datasets/<dataset id ou slug>
+```
+
+Exemples d’URL :
+
+> https://data.gouv.fr/api/1/datasets/56cc6d6988ee385864fa79d0
+
+> https://data.gouv.fr/api/1/datasets/referentiel-de-donnees-marches-publics
 
 ## Déclaration d’un profil d’acheteur
 
@@ -175,7 +191,7 @@ Cependant, nous avons créé [un jeu de données](https://www.data.gouv.fr/fr/da
 
 La déclaration du profil d’acheteur est effectuée par l’acheteur ou toute personne habilitée par celui-ci sur le portail unique interministériel ([data.gouv.fr](https://data.gouv.fr)) destiné à rassembler et à mettre à disposition librement l’ensemble des informations publiques.
 
-L’objectif est d’impliquer les **éditeurs** de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n'est pas en mesure d'assurer la déclaration, l’administrateur du profil d'acheteur ou l’acheteur peut le faire directement.
+L’objectif est d’impliquer les **éditeurs** de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n’est pas en mesure d’assurer la déclaration, l’administrateur du profil d’acheteur ou l’acheteur peut le faire directement.
 
 ### Comment déclarer ?
 
@@ -183,21 +199,21 @@ L’objectif est d’impliquer les **éditeurs** de profils d’acheteurs afin d
 
 Les éditeurs de profil d’acheteur sont invités à créer un fichier au format .CSV contenant les informations suivantes :
 
-  * le SIRET des acheteurs (colonne `siretAcheteur`)
-  * l'adresse URL des profils d'acheteurs (colonne `urlProfilAcheteur`)
-  * l'adresse URL du catalogue DCAT qui répértorie les données (colonne `urlDCAT`)
-  * les coordonnées du ou des acheteurs concernés (colonne `coordonnnees`)
+- le SIRET des acheteurs (colonne `siretAcheteur`)
+- l’adresse URL des profils d’acheteurs (colonne `urlProfilAcheteur`)
+- l’adresse URL du catalogue DCAT qui répértorie les données (colonne `urlDCAT`)
+- les coordonnées du ou des acheteurs concernés (colonne `coordonnnees`)
 
 Vous trouverez un exemple de structure de fichier [sur data.gouv.fr](https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#).
 
 #### Dépôt sur data.gouv.fr
 
-<strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot-clé (« tag ») suivant :
-« decp » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong>
+**Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot-clé (« tag ») suivant : « decp » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.**
 
-La procédure complète pour déposer un ficher de déclaration de profil d‘acheteur sur data.gouv.fr est la suivante :
-1. Créer un compte individuel via <https://www.data.gouv.fr/fr/register>;
-2. Une fois celui-ci validé via l‘email de confirmation, créer une organisation correspondant à votre profil d’acheteur via <https://www.data.gouv.fr/fr/admin/organization/new/> ;
-3. Créer un jeu de données via <https://www.data.gouv.fr/fr/admin/dataset/new/> en choisissant lors de l‘étape « Choisissez qui publie » l‘organisation créée au point précédent ;
-4. À l‘étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d'autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
-5. À l‘étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.
+La procédure complète pour déposer un ficher de déclaration de profil d’acheteur sur data.gouv.fr est la suivante :
+
+1. Créer un compte individuel en allant sur : <https://www.data.gouv.fr/fr/register> ;
+2. Une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur depuis : <https://www.data.gouv.fr/fr/admin/organization/new/> ;
+3. Créer un jeu de données depuis <https://www.data.gouv.fr/fr/admin/dataset/new/> en choisissant lors de l’étape « Choisissez qui publie » l’organisation créée au point précédent ;
+4. À l’étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d’autres métadonnées (couverture spatiale, fréquence de mise à jour...) et **renseigner le tag (mot clé) « decp »** ;
+5. À l’étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.

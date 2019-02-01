@@ -2,6 +2,7 @@
 title: Mettre à jour un jeu de données ou une ressource
 slug: mettre-a-jour-un-jeu-de-donnees-ou-une-ressource
 ---
+
 # Mettre à jour un jeu de données ou une ressource
 
 Les données publiées sur data.gouv.fr peuvent être mises à jour après leur publication, que la modification porte sur un jeu données dans son ensemble, ou sur l’une des ressources qu’il contient.

@@ -2,6 +2,7 @@
 title: Demander à rejoindre une organisation
 slug: demander-a-rejoindre-une-organisation
 ---
+
 # Demander à rejoindre une organisation
 
 N’importe quel utilisateur peut demander à rejoindre n’importe quelle organisation. Si vous pensez que vous devriez figurer dans la liste des membres d’une organisation, faites une demande pour la rejoindre. Libre ensuite à l’administrateur de l’organisation en question d’accepter votre demande.
