@@ -34,7 +34,7 @@ Si vous ne savez pas par où commencer, voici quelques idées de jeux de donnée
 
 ### Choisir un format de publication standardisé
 
-Les données publiées sur data.gouv.fr ont vocation à être consultées et utilisées par d’autres personnes. Pour que tout le monde puisse lire vos données, nous vous encourageons de les publier dans un format ouvert, standard, et non-propriétaire.
+Les données publiées sur data.gouv.fr ont vocation à être consultées et utilisées par d’autres personnes. Pour que tout le monde puisse lire vos données, nous vous encourageons à les publier dans un format ouvert, standard, et non-propriétaire.
 
 Les formats ouverts (CSV par exemple) sont pareils aux moteurs des vieilles voitures, dans le sens où un bon mécanicien peut y mettre les mains et facilement accéder à toutes les pièces qui composent le moteur : rien n’est verrouillé, tout est démontable. Par opposition, les formats propriétaires (XLS par exemple) ressemblent aux moteurs des voitures modernes, dans lesquels toutes les pièces sont cachées dans une boîte, elle même scellée, de sorte que seul un réparateur agréé peut intervenir sur le moteur.
 
@@ -118,7 +118,7 @@ Choisir une licence, c’est permettre à d’autres personnes d’utiliser et d
 Avant de publier vos données sur data.gouv.fr, vérifiez bien que :
 
 - elles ne contiennent pas d’informations qui permettraient d’identifier des individus ;
-- elles ne révèlent pas de secret médical, défense, statistique, ou autre secret couvert par la loi.
+- elles ne révèlent pas de secret médical, défense, statistique, ou [autre secret couvert par la loi](https://www.cada.fr/particulier/les-secrets-proteges-par-la-loi).
 
 ### Soigner les métadonnées
 
