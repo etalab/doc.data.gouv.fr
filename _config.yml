@@ -33,34 +33,30 @@ collections_dir: articles
 
 # Metadata for our collections
 collections:
-  faq:
-    title: Découvrir l’OpenData
-    output: true
-    order: 1
   a-propos:
     title: À propos
     output: true
-    order: 2
+    order: 1
   gestion-du-compte:
     title: Gestion du compte
     output: true
-    order: 3
+    order: 2
   jeux-de-donnees:
     title: Jeux de données
     output: true
-    order: 4
+    order: 3
   organisations:
     title: Organisation
     output: true
-    order: 5
+    order: 4
   reutilisations-et-discussions:
     title: Réutilisations et discussions
     output: true
-    order: 6
+    order: 5
   api:
     title: API
     output: true
-    order: 7
+    order: 6
 
 defaults:
   - scope:
