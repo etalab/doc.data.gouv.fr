@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Découvrir l’OpenData en tant que développeur</title>
-    <meta name="description" content="Découvrir l’OpenData en tant que développeur" />
+    <title>Intégrer un jeu de données sur des sites web</title>
+    <meta name="description" content="Intégrer un jeu de données sur un site web" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/faq/developpeur/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/jeux-de-donnees/integrer-des-donnees/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -106,35 +106,14 @@
         
     
         
-        <li class="side-pane__title"><h3>Découvrir l’OpenData</h3></li>
-        
-        
-        <li >
-            <a class="side-pane__link" href="/faq/citoyen/">En tant que citoyen</a>
-        
-        <li class="active">
-            <a class="side-pane__link" href="/faq/developpeur/">En tant que développeur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/integrateur/">En tant qu’intégrateur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/producteur/">En tant que producteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/profils-d-acheteur/">En tant que profil d’acheteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/reutilisateur/">En tant que réutilisateur</a>
-        
-        
-    
-        
         <li class="side-pane__title"><h3>À propos</h3></li>
         
         
         <li >
             <a class="side-pane__link" href="/a-propos/differences-utilisateur-organisatoion/">Différences entre un utilisateur et une organisation</a>
+        
+        <li >
+            <a class="side-pane__link" href="/a-propos/publier-profil-acheteur-public/">Publier un profil d’acheteur public</a>
         
         <li >
             <a class="side-pane__link" href="/a-propos/que-publier-et-comment-le-publier/">Que publier et comment le publier</a>
@@ -171,6 +150,9 @@
         
         <li >
             <a class="side-pane__link" href="/jeux-de-donnees/faire-une-recherche/">Faire une recherche</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/jeux-de-donnees/integrer-des-donnees/">Intégrer un jeu de données sur des sites web</a>
         
         <li >
             <a class="side-pane__link" href="/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/">Mettre à jour un jeu de données ou une ressource</a>
@@ -247,6 +229,9 @@
         <li >
             <a class="side-pane__link" href="/api/reference/">Référence</a>
         
+        <li >
+            <a class="side-pane__link" href="/api/telecharger-un-catalogue-de-donnees/">Télécharger un catalogue de données</a>
+        
         
     
   </ul>
@@ -258,85 +243,27 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="découvrir-lopendata-en-tant-que-développeur">Découvrir l’OpenData en tant que développeur</h1>
+      <h1 id="intégrer-un-jeu-de-données-sur-un-site-web">Intégrer un jeu de données sur un site web</h1>
 
-<p>Cette page contient :</p>
+<p>Les jeux de données publiés sur data.gouv.fr sont publics, ils peuvent donc être intégrés sur d’autres sites web ou sur des blogs.</p>
 
-<ul>
-  <li><a href="#section-api">les informations relatives à l’API</a> ;</li>
-  <li><a href="#section-moissonage">le moissonnage des dépôts de données ouvertes</a> ;</li>
-  <li><a href="#section-code">le code source de la plateforme</a>.</li>
-</ul>
+<p>Pour intégrer un jeu de données sur une autre page web ou sur un blog :</p>
 
-<p><span id="section-api">
-</span></p>
+<ol>
+  <li>Sur la page du jeu de données à intégrer, cliquez sur l’icône <code class="highlighter-rouge">&lt;/&gt;</code> ;</li>
+  <li>Du code (HTML) s’affiche alors dans une petite fenêtre, copiez-le ;</li>
+  <li>Collez le code dans votre propre fichier, là où vous souhaitez afficher les données.</li>
+</ol>
 
-<h2 id="informations-relatives-à-lapi">Informations relatives à l’API</h2>
+<p>Plusieurs jeux de données peuvent être intégrés sur une même page web. Vous pouvez aussi contrôler l’apparence du jeu de données intégré en modifiant la classe CSS <code class="highlighter-rouge">dataset-card</code>.</p>
 
-<p>Le site <a href="https://www.data.gouv.fr">data.gouv.fr</a> propose différents moyens d’accéder au catalogue des données :</p>
+<h2 id="intégrer-un-catalogue-de-données-sur-un-site-web">Intégrer un catalogue de données sur un site web</h2>
 
-<ul>
-  <li>une <a href="https://www.data.gouv.fr/api/">API complète</a>, documentée avec <a href="http://swagger.io/">Swagger</a></li>
-  <li>
-    <p>des dumps au format CSV, mis à jour en temps réel</p>
-
-    <ul>
-      <li>catalogue des jeux de données: <a href="https://www.data.gouv.fr/datasets.csv">https://www.data.gouv.fr/datasets.csv</a></li>
-      <li>catalogue des ressources: <a href="https://www.data.gouv.fr/resources.csv">https://www.data.gouv.fr/resources.csv</a></li>
-      <li>catalogue des organisations: <a href="https://www.data.gouv.fr/organizations.csv">https://www.data.gouv.fr/organizations.csv</a></li>
-      <li>catalogue des réutilisations: <a href="https://www.data.gouv.fr/reuses.csv">https://www.data.gouv.fr/reuses.csv</a></li>
-      <li>une liste des tags avec leur nombre d’occurrences: <a href="https://www.data.gouv.fr/tags.csv">https://www.data.gouv.fr/tags.csv</a></li>
-    </ul>
-  </li>
-  <li>
-    <p>un catalogue en rdf/DCAT-AP exposé dans plusieurs formats :</p>
-
-    <ul>
-      <li>JSON-LD: <a href="https://www.data.gouv.fr/catalog.jsonld">https://www.data.gouv.fr/catalog.jsonld</a></li>
-      <li>Turtle: <a href="https://www.data.gouv.fr/catalog.ttl">https://www.data.gouv.fr/catalog.ttl</a></li>
-      <li>N-Triples: <a href="https://www.data.gouv.fr/catalog.nt">https://www.data.gouv.fr/catalog.nt</a></li>
-      <li>XML-RDF: <a href="https://www.data.gouv.fr/catalog.xml">https://www.data.gouv.fr/catalog.xml</a></li>
-      <li>N3: <a href="https://www.data.gouv.fr/catalog.n3">https://www.data.gouv.fr/catalog.n3</a></li>
-      <li>Trig: <a href="https://www.data.gouv.fr/catalog.trig">https://www.data.gouv.fr/catalog.trig</a></li>
-    </ul>
-  </li>
-  <li>des <a href="https://stats.data.gouv.fr/">statistiques de fréquentation anonymisées</a>, mises à jour toutes les heures</li>
-</ul>
-
-<p>L’intégralité des opérations réalisables depuis le site via votre navigateur peuvent être automatisées (publication d’un jeu de données, création d’organisations, etc). Veuillez consulter la documentation spécifique pour y accéder.</p>
-
-<p><span id="section-moissonage">
-</span></p>
-
-<h2 id="moissonnage-des-dépôts-de-données-ouvertes">Moissonnage des dépôts de données ouvertes</h2>
-
-<p><a href="https://www.data.gouv.fr">data.gouv.fr</a> met à disposition une infrastructure de moissonnage, permettant d’être automatiquement intégré sur la plateforme.</p>
-
-<p>Aujourd’hui, les moissonneurs suivants sont disponibles :</p>
-
-<ul>
-  <li>CKAN (générique) ;</li>
-  <li>OpenDataSoft (générique) ;</li>
-  <li>DCAT-AP (générique) ;</li>
-  <li>maaf (spécifique Ministère de l’Agriculture, de l’Agroalimentaire et de la Forêt).</li>
-</ul>
-
-<p>Il est aussi possible d’écrire ses propres moissonneurs en suivant <a href="http://udata.readthedocs.io/en/stable/harvesting/#custom">la documentation spécifique</a>.</p>
-
-<p>Le moissonnage n’est pas le seul moyen de synchroniser des données avec « data.gouv.fr », il est possible (voire recommandé) d’utiliser l’<a href="https://www.data.gouv.fr/api/">API</a> pour pousser ses données.</p>
-
-<p><span id="section-code">
-</span></p>
-
-<h2 id="le-code-source-de-la-plateforme">Le code source de la plateforme</h2>
-
-<p>L’intégralité du code de la plateforme est <a href="https://github.com/opendatateam/udata">gratuitement disponible en Open-Source</a> sous <a href="https://www.gnu.org/licenses/agpl-3.0.html">licence AGPL3</a>. Cet outil a été développé de façon modulaire pour permettre à tout un chacun de l’installer et de le personnaliser pour son usage propre en marque blanche. Nous avons par exemple développé les modules <a href="https://github.com/etalab/udata-gouvfr">udata-gouvfr</a> pour le rendu et <a href="https://github.com/opendatateam/udata-piwik">udata-piwik</a> pour les statistiques.</p>
-
-<p>Vous pouvez contribuer en suivant la documentation spécifique et en proposant des <em>pull-requests</em>.</p>
+<p>Pour aller plus loin qu’une simple intégration de jeux de données, une <a href="https://github.com/datakode/metaclic">bibliothèque Javascript</a> (Metaclic) est disponible, qui permet de créer et personnaliser un véritable catalogue de données. <a href="https://datakode.github.io/metaclic/exemples/exemple_simple.html">Voir un exemple de catalogue</a> ou <a href="https://github.com/datakode/metaclic/wiki">lire la documentation de Metaclic</a>.</p>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_faq/developpeur.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_jeux-de-donnees/integrer-des-donnees.md">
               ✎ Editer cette page
           </a>
       </p>

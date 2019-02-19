@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Comment remplir les obligations légales des profils d’acheteur ?</title>
-    <meta name="description" content="Comment remplir les obligations légales des profils d’acheteur ?" />
+    <title>Publier un profil d’acheteur public</title>
+    <meta name="description" content="Publier un profil d’acheteur public" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/faq/profils-d-acheteur/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/a-propos/publier-profil-acheteur-public/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -106,35 +106,14 @@
         
     
         
-        <li class="side-pane__title"><h3>Découvrir l’OpenData</h3></li>
-        
-        
-        <li >
-            <a class="side-pane__link" href="/faq/citoyen/">En tant que citoyen</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/developpeur/">En tant que développeur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/integrateur/">En tant qu’intégrateur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/producteur/">En tant que producteur</a>
-        
-        <li class="active">
-            <a class="side-pane__link" href="/faq/profils-d-acheteur/">En tant que profil d’acheteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/reutilisateur/">En tant que réutilisateur</a>
-        
-        
-    
-        
         <li class="side-pane__title"><h3>À propos</h3></li>
         
         
         <li >
             <a class="side-pane__link" href="/a-propos/differences-utilisateur-organisatoion/">Différences entre un utilisateur et une organisation</a>
+        
+        <li class="active">
+            <a class="side-pane__link" href="/a-propos/publier-profil-acheteur-public/">Publier un profil d’acheteur public</a>
         
         <li >
             <a class="side-pane__link" href="/a-propos/que-publier-et-comment-le-publier/">Que publier et comment le publier</a>
@@ -171,6 +150,9 @@
         
         <li >
             <a class="side-pane__link" href="/jeux-de-donnees/faire-une-recherche/">Faire une recherche</a>
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/integrer-des-donnees/">Intégrer un jeu de données sur des sites web</a>
         
         <li >
             <a class="side-pane__link" href="/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/">Mettre à jour un jeu de données ou une ressource</a>
@@ -247,6 +229,9 @@
         <li >
             <a class="side-pane__link" href="/api/reference/">Référence</a>
         
+        <li >
+            <a class="side-pane__link" href="/api/telecharger-un-catalogue-de-donnees/">Télécharger un catalogue de données</a>
+        
         
     
   </ul>
@@ -258,12 +243,14 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="comment-remplir-les-obligations-légales-des-profils-dacheteur-">Comment remplir les obligations légales des profils d’acheteur ?</h1>
+      <h1 id="publier-un-profil-dacheteur-public">Publier un profil d’acheteur public</h1>
 
 <ul class="no_toc" id="markdown-toc">
-  <li><a href="#comment-remplir-les-obligations-légales-des-profils-dacheteur-" id="markdown-toc-comment-remplir-les-obligations-légales-des-profils-dacheteur-">Comment remplir les obligations légales des profils d’acheteur ?</a>    <ul>
-      <li><a href="#un-peu-de-contexte" id="markdown-toc-un-peu-de-contexte">Un peu de contexte</a></li>
-      <li><a href="#publication-des-données-essentielles-via-lapi-datagouvfr" id="markdown-toc-publication-des-données-essentielles-via-lapi-datagouvfr">Publication des données essentielles via l’API data.gouv.fr</a>        <ul>
+  <li><a href="#publier-un-profil-dacheteur-public" id="markdown-toc-publier-un-profil-dacheteur-public">Publier un profil d’acheteur public</a>    <ul>
+      <li><a href="#obligation-légale" id="markdown-toc-obligation-légale">Obligation légale</a></li>
+      <li><a href="#structure-des-données-à-publier" id="markdown-toc-structure-des-données-à-publier">Structure des données à publier</a></li>
+      <li><a href="#sources-des-données" id="markdown-toc-sources-des-données">Sources des données</a></li>
+      <li><a href="#publier-des-données-par-lintermédiaire-de-lapi-de-datagouvfr" id="markdown-toc-publier-des-données-par-lintermédiaire-de-lapi-de-datagouvfr">Publier des données par l’intermédiaire de l’API de data.gouv.fr</a>        <ul>
           <li><a href="#jeu-de-données" id="markdown-toc-jeu-de-données">Jeu de données</a>            <ul>
               <li><a href="#nom-title-dans-lapi" id="markdown-toc-nom-title-dans-lapi">Nom (<code class="highlighter-rouge">title</code> dans l’API)</a></li>
               <li><a href="#description-description" id="markdown-toc-description-description">Description (<code class="highlighter-rouge">description</code>)</a></li>
@@ -294,8 +281,8 @@
         </ul>
       </li>
       <li><a href="#déclaration-dun-profil-dacheteur" id="markdown-toc-déclaration-dun-profil-dacheteur">Déclaration d’un profil d’acheteur</a>        <ul>
-          <li><a href="#qui-doit-déclarer-" id="markdown-toc-qui-doit-déclarer-">Qui doit déclarer ?</a></li>
-          <li><a href="#comment-déclarer-" id="markdown-toc-comment-déclarer-">Comment déclarer ?</a>            <ul>
+          <li><a href="#qui-doit-déclarer" id="markdown-toc-qui-doit-déclarer">Qui doit déclarer</a></li>
+          <li><a href="#comment-déclarer" id="markdown-toc-comment-déclarer">Comment déclarer</a>            <ul>
               <li><a href="#format-de-fichier" id="markdown-toc-format-de-fichier">Format de fichier</a></li>
               <li><a href="#dépôt-sur-datagouvfr" id="markdown-toc-dépôt-sur-datagouvfr">Dépôt sur data.gouv.fr</a></li>
             </ul>
@@ -306,38 +293,42 @@
   </li>
 </ul>
 
-<h2 id="un-peu-de-contexte">Un peu de contexte</h2>
+<h2 id="obligation-légale">Obligation légale</h2>
 
-<p><a href="https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo/texte">L’arrêté du 14 avril 2017</a>, modifié par <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037282994&amp;dateTexte=&amp;categorieLien=id">l’arrêté du 27 juillet 2018</a>, impose à tous les acheteurs publics la publication des données essentielles de la commande publique. Ainsi, à partir du 1er octobre 2018, les acheteurs publics doivent publier les données d’attribution au plus tard deux mois après la notification du marché.</p>
+<p>Depuis le 1<sup>er</sup> octobre 2018, les acheteurs publics doivent publier les données d’attribution de leur marché, et ce, au plus tard deux mois après la notification du marché.</p>
 
-<p>La structure des données est définie par <a href="https://github.com/etalab/format-commande-publique">des schémas XML et JSON</a> qui implémentent les arrêtés.</p>
+<h2 id="structure-des-données-à-publier">Structure des données à publier</h2>
 
-<p>Pour plus d’information, vous pouvez consulter <a href="https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique">la page thématique</a> sur le site de la Direction des Affaires Juridiques, ainsi que <a href="https://www.data.gouv.fr/fr/posts/le-point-sur-les-donnees-essentielles-de-la-commande-publique/">l’article de blog consacré à ce sujet</a>.</p>
+<p>La structure des données à publier est définie par <a href="https://github.com/etalab/format-commande-publique">des schémas de données aux formats XML et JSON</a>.</p>
+
+<p>Pour en savoir plus sur la publication des données, consultez <a href="https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique">le site de la direction des affaires juridiques</a>, ainsi que <a href="https://www.data.gouv.fr/fr/posts/le-point-sur-les-donnees-essentielles-de-la-commande-publique/">l’article de blog</a> consacré par data.gouv.fr à ce sujet.</p>
+
+<h2 id="sources-des-données">Sources des données</h2>
 
 <p>Les données essentielles publiées sur data.gouv.fr proviennent de trois sources :</p>
 
-<ul>
-  <li>La <strong>DGFiP (Direction générale des finances publiques)</strong> propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données via Hélios (<a href="https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0">PES Marché</a>), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous).</li>
-  <li>L’<strong>AIFE (Agence Informatique des Finances de l’État)</strong> publie sur <a href="https://data.gouv.fr">data.gouv.fr</a> les données essentielles provenant des places de marchés qui utilisent son service, et notamment de la plateforme de marchés de l’État, <a href="https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise">PLACE</a>.</li>
-  <li>Les données essentielles publiées sur les profils d’acheteurs (places de marché) peuvent être publiées sur data.gouv.fr via l’API data.gouv.fr ou via un fichier DCAT moissonnable.</li>
-</ul>
+<ol>
+  <li>La <strong>DGFiP (Direction générale des finances publiques)</strong> propose aux acheteurs publics soumis à la comptabilité publics (par exemple les collectivités) de faire remonter ces données par l’intermédiaire d’Hélios (<a href="https://www.collectivites-locales.gouv.fr/protocole-dechange-standard-pes-0">PES Marché</a>), pour ensuite les transmettre à la mission Etalab qui les met à disposition du public (voir ci-dessous) ;</li>
+  <li>L’<strong>AIFE (Agence Informatique des Finances de l’État)</strong> publie sur <a href="https://data.gouv.fr">data.gouv.fr</a> les données essentielles provenant des places de marchés qui utilisent son service, et notamment de la plateforme de marchés de l’État, <a href="https://www.marches-publics.gouv.fr/?page=entreprise.AccueilEntreprise">PLACE</a> ;</li>
+  <li>Les données essentielles publiées sur les profils d’acheteurs (places de marché) peuvent être publiées sur data.gouv.fr par l’intermédiaire de l’API data.gouv.fr ou d’un fichier DCAT moissonnable.</li>
+</ol>
 
-<h2 id="publication-des-données-essentielles-via-lapi-datagouvfr">Publication des données essentielles via l’API data.gouv.fr</h2>
+<h2 id="publier-des-données-par-lintermédiaire-de-lapi-de-datagouvfr">Publier des données par l’intermédiaire de l’API de data.gouv.fr</h2>
 
-<p>La documentation de l’API est disponible <a href="https://www.data.gouv.fr/fr/apidoc">ici</a>, le détails des propriétés des jeux de données est <a href="https://www.data.gouv.fr/fr/apidoc/#!/datasets/create_dataset">en bas de la même page</a>.</p>
+<p>La documentation de l’API est <a href="https://www.data.gouv.fr/fr/apidoc">consultable en ligne</a>, le détails des propriétés des jeux de données est <a href="https://www.data.gouv.fr/fr/apidoc/#!/datasets/create_dataset">visible sur cette page</a>.</p>
 
 <p>Afin de faciliter la localisation et donc l’utilisation des données essentielles, la publication de ces données doit respecter une certaine structure. Les deux structures proposées sont les suivantes :</p>
 
-<ul>
-  <li>structure <strong>plateforme</strong> : un jeu de données (<code class="highlighter-rouge">dataset</code> dans l’API) par plateforme de marchés (identifiée par son SIRET)</li>
-  <li>structure <strong>acheteur</strong> : un jeu de données par acheteur public (SIRET)</li>
-</ul>
+<ol>
+  <li>Structure <strong>plateforme</strong> : un jeu de données (<code class="highlighter-rouge">dataset</code> dans l’API) par plateforme de marchés (identifiée par son SIRET) ;</li>
+  <li>Structure <strong>acheteur</strong> : un jeu de données par acheteur public (SIRET).</li>
+</ol>
 
 <h3 id="jeu-de-données">Jeu de données</h3>
 
 <p>Pour des raisons d’archivage, le téléversement des fichiers de données sur data.gouv.fr est fortement préféré par rapport à un lien vers des serveurs externes.</p>
 
-<p>Une fois que le <code class="highlighter-rouge">Dataset</code> a été créé, vous pouvez y ajouter des <code class="highlighter-rouge">Ressource</code> (<a href="https://www.data.gouv.fr/fr/apidoc/#!/datasets/upload_new_dataset_resource">API ressource</a>).</p>
+<p>Une fois que le jeu de données a été créé, vous pouvez y ajouter des <code class="highlighter-rouge">ressources</code> (<a href="https://www.data.gouv.fr/fr/apidoc/#!/datasets/upload_new_dataset_resource">API ressource</a>).</p>
 
 <p>Exemple de commande :</p>
 
@@ -346,11 +337,11 @@
 
 <h4 id="nom-title-dans-lapi">Nom (<code class="highlighter-rouge">title</code> dans l’API)</h4>
 
-<p>Le nommage du jeu de données dépend de la structure choisie pour la publication :</p>
+<p>Le nom du jeu de données dépend de la structure choisie pour la publication :</p>
 
 <ul>
-  <li>jeu de données pour une <strong>plateforme</strong> : Données essentielles des marchés publics - <code class="highlighter-rouge">{nom de la plateforme}</code></li>
-  <li>jeu de données pour un <strong>acheteur</strong> : Données essentielles des marchés publics - <code class="highlighter-rouge">{nom de l’acheteur}</code></li>
+  <li>jeu de données pour une <strong>plateforme</strong> : Données essentielles des marchés publics - <code class="highlighter-rouge">{nom de la plateforme}</code>;</li>
+  <li>jeu de données pour un <strong>acheteur</strong> : Données essentielles des marchés publics - <code class="highlighter-rouge">{nom de l’acheteur}</code>.</li>
 </ul>
 
 <p>Exemple :</p>
@@ -361,21 +352,21 @@
 
 <h4 id="description-description">Description (<code class="highlighter-rouge">description</code>)</h4>
 
-<p>La description attendue est un texte générique décrivant le contexte de publication des données essentielles ainsi que quelques liens utiles. Le texte suivant remplit ces conditions et peut être étendu par le producteur, notamment avec un lien vers l’interface de visualisaton de données du profil d’acheteur concerné.</p>
+<p>La description attendue est un texte générique décrivant le contexte de publication des données essentielles, ainsi que quelques liens utiles. Le texte suivant remplit ces conditions et peut être étendu par le producteur, notamment avec un lien vers l’interface de visualisaton de données du profil d’acheteur concerné.</p>
 
 <p><a href="https://www.legifrance.gouv.fr/eli/arrete/2017/4/14/ECFM1637256A/jo/texte">L’arrêté du 14 avril 2017</a>, modifié par <a href="https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000037282994&amp;dateTexte=&amp;categorieLien=id">l’arrêté du 27 juillet 2018</a>, impose à tous les acheteurs publics la publication des données essentielles de la commande publique. Ainsi, à partir du 1er octobre 2018, les acheteurs publics doivent publier les données d’attribution au plus tard deux mois après la notification du marché.</p>
 
 <p>La structure des données est définie par <a href="https://github.com/etalab/format-commande-publique">des schémas XML et JSON</a> qui appliquent les exigences des arrêtés.</p>
 
-<p>Pour plus d’informations, vous pouvez consulter <a href="https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique">la page thématique</a> sur le site de la Direction des Affaires Juridiques.</p>
+<p>Pour plus d’informations, vous pouvez consulter <a href="https://www.economie.gouv.fr/daj/ouverture-des-donnees-commande-publique">la page thématique</a> sur le site de la direction des affaires juridiques.</p>
 
 <h4 id="mot-clés-tags">Mot-clés (<code class="highlighter-rouge">tags</code>)</h4>
 
 <p>Renseignez les mot-clés suivants :</p>
 
 <ul>
-  <li><code class="highlighter-rouge">données-essentielles</code></li>
-  <li><code class="highlighter-rouge">commande-publique</code></li>
+  <li><code class="highlighter-rouge">données-essentielles</code> ;</li>
+  <li><code class="highlighter-rouge">commande-publique</code>.</li>
 </ul>
 
 <h4 id="extras-extras">Extras (<code class="highlighter-rouge">extras</code>)</h4>
@@ -394,7 +385,7 @@
 
 <h4 id="licence-license">Licence (<code class="highlighter-rouge">license</code>)</h4>
 
-<p>La licence à renseigner est la <a href="https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf">licence ouverte</a> : <code class="highlighter-rouge">fr-lo</code></p>
+<p>La licence à renseigner est la <a href="https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf">licence ouverte</a> : <code class="highlighter-rouge">fr-lo</code>.</p>
 
 <h4 id="organisation-organization">Organisation (<code class="highlighter-rouge">organization</code>)</h4>
 
@@ -411,12 +402,12 @@
 <p>Format : DECP-<code class="highlighter-rouge">{SIRET}</code>-<code class="highlighter-rouge">{année}</code>-<code class="highlighter-rouge">{mois}</code>-<code class="highlighter-rouge">{jour}</code>-<code class="highlighter-rouge">{numéro de séquence}</code>.<code class="highlighter-rouge">{extension}</code></p>
 
 <ul>
-  <li><code class="highlighter-rouge">DECP</code> pour “données essentielles de la commande publique”</li>
-  <li><code class="highlighter-rouge">siret</code> : SIRET de la plateforme si structure plateforme, sinon SIRET de l’acheteur</li>
-  <li><code class="highlighter-rouge">année</code> : année de la publication sur data.gouv.fr</li>
-  <li><code class="highlighter-rouge">mois</code> : mois de la publication sur data.gouv.fr</li>
-  <li><code class="highlighter-rouge">jour</code> : jour de la publication sur data.gouv.fr</li>
-  <li><code class="highlighter-rouge">numéro de séquence</code> : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont publiées dans la même journée. Le premier numéro est <code class="highlighter-rouge">01</code></li>
+  <li><code class="highlighter-rouge">DECP</code> pour « données essentielles de la commande publique » ;</li>
+  <li><code class="highlighter-rouge">siret</code> : SIRET de la plateforme si structure plateforme, sinon SIRET de l’acheteur ;</li>
+  <li><code class="highlighter-rouge">année</code> : année de la publication sur data.gouv.fr ;</li>
+  <li><code class="highlighter-rouge">mois</code> : mois de la publication sur data.gouv.fr ;</li>
+  <li><code class="highlighter-rouge">jour</code> : jour de la publication sur data.gouv.fr ;</li>
+  <li><code class="highlighter-rouge">numéro de séquence</code> : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont publiées dans la même journée. Le premier numéro est <code class="highlighter-rouge">01</code> ;</li>
   <li><code class="highlighter-rouge">extension</code> : <code class="highlighter-rouge">xml</code> ou <code class="highlighter-rouge">json</code> en fonction du format de publication. Il n’est pas obligatoire de publier les données à la fois en XML et en JSON, un seul des deux formats suffit.</li>
 </ul>
 
@@ -437,15 +428,15 @@
 <h4 id="type-de-fichier-filetype">Type de fichier (<code class="highlighter-rouge">filetype</code>)</h4>
 
 <ul>
-  <li><code class="highlighter-rouge">xml</code> pour du XML</li>
-  <li><code class="highlighter-rouge">json</code> pour du JSON</li>
+  <li><code class="highlighter-rouge">xml</code> pour du XML ;</li>
+  <li><code class="highlighter-rouge">json</code> pour du JSON.</li>
 </ul>
 
 <h4 id="type-mime-mime">Type MIME (<code class="highlighter-rouge">mime</code>)</h4>
 
 <ul>
-  <li><code class="highlighter-rouge">application/xml</code> pour du XML</li>
-  <li><code class="highlighter-rouge">application/json</code> pour du JSON</li>
+  <li><code class="highlighter-rouge">application/xml</code> pour du XML ;</li>
+  <li><code class="highlighter-rouge">application/json</code> pour du JSON.</li>
 </ul>
 
 <h4 id="type-de-ressource-type">Type de ressource (<code class="highlighter-rouge">type</code>)</h4>
@@ -465,11 +456,11 @@
 </blockquote>
 
 <ul>
-  <li><code class="highlighter-rouge">siret</code> : SIRET de l’acheteur</li>
-  <li><code class="highlighter-rouge">année</code> : année de la récéption par Etalab</li>
-  <li><code class="highlighter-rouge">mois</code> : mois de la récéption par Etalab</li>
-  <li><code class="highlighter-rouge">jour</code> : jour de la récéption par Etalab</li>
-  <li><code class="highlighter-rouge">seq</code> : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est <code class="highlighter-rouge">01</code></li>
+  <li><code class="highlighter-rouge">siret</code> : SIRET de l’acheteur ;</li>
+  <li><code class="highlighter-rouge">année</code> : année de la récéption par Etalab ;</li>
+  <li><code class="highlighter-rouge">mois</code> : mois de la récéption par Etalab ;</li>
+  <li><code class="highlighter-rouge">jour</code> : jour de la récéption par Etalab ;</li>
+  <li><code class="highlighter-rouge">seq</code> : numéro de séquence du fichier à incrémenter si plusieurs fichiers sont réceptionnés dans la même journée. Le premier numéro est <code class="highlighter-rouge">01</code>.</li>
 </ul>
 
 <p>Exemple :</p>
@@ -480,7 +471,7 @@
 
 <h3 id="via-lapi">Via l’API</h3>
 
-<p>Aujourd’hui, les données essentielles transmises par la DGFiP ne sont pas référencées sur data.gouv.fr sous forme de ressources. Elles sont hébergées sur un serveur de fichier annexe, <a href="https://files.data.gouv.fr/decp">https://files.data.gouv.fr</a>. L’utilisation de l’API n’est donc pas pertinente, et nous vous conseillons par conséquent de consulter la section <a href="#via-un-syst%C3%A8me-de-fichier">Via un système de fichiers</a>.</p>
+<p>Aujourd’hui, les données essentielles transmises par la DGFiP ne sont pas référencées sur data.gouv.fr sous forme de ressources. Elles sont hébergées sur un serveur de fichier annexe, <a href="https://files.data.gouv.fr/decp">https://files.data.gouv.fr</a>. L’utilisation de l’API n’est donc pas pertinente, et nous vous conseillons par conséquent de consulter la section <a href="#via-un-syst%C3%A8me-de-fichier">via un système de fichiers</a>.</p>
 
 <p>Pour récupérer les données via l’API, il vous faut :</p>
 
@@ -508,30 +499,28 @@
 
 <h2 id="déclaration-dun-profil-dacheteur">Déclaration d’un profil d’acheteur</h2>
 
-<h3 id="qui-doit-déclarer-">Qui doit déclarer ?</h3>
+<h3 id="qui-doit-déclarer">Qui doit déclarer</h3>
 
-<p>La déclaration du profil d’acheteur est effectuée par l’acheteur ou toute personne habilitée par celui-ci sur le portail unique interministériel (<a href="https://data.gouv.fr">data.gouv.fr</a>) destiné à rassembler et à mettre à disposition librement l’ensemble des informations publiques.</p>
+<p>La déclaration du profil d’acheteur est effectuée par l’acheteur, ou toute personne habilitée par celui-ci, sur <a href="https://data.gouv.fr">data.gouv.fr</a>). L’objectif est d’impliquer les <strong>éditeurs</strong> de profils d’acheteurs afin de simplifier la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n’est pas en mesure d’assurer la déclaration, l’administrateur du profil d’acheteur ou l’acheteur peut le faire directement.</p>
 
-<p>L’objectif est d’impliquer les <strong>éditeurs</strong> de profils d’acheteurs afin de simplifier et rationnaliser la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n’est pas en mesure d’assurer la déclaration, l’administrateur du profil d’acheteur ou l’acheteur peut le faire directement.</p>
-
-<h3 id="comment-déclarer-">Comment déclarer ?</h3>
+<h3 id="comment-déclarer">Comment déclarer</h3>
 
 <h4 id="format-de-fichier">Format de fichier</h4>
 
-<p>Les éditeurs de profil d’acheteur sont invités à créer un fichier au format .CSV contenant les informations suivantes :</p>
+<p>Les éditeurs de profil d’acheteur sont invités à créer un fichier au format CSV contenant les informations suivantes :</p>
 
 <ul>
-  <li>le SIRET des acheteurs (colonne <code class="highlighter-rouge">siretAcheteur</code>)</li>
-  <li>l’adresse URL des profils d’acheteurs (colonne <code class="highlighter-rouge">urlProfilAcheteur</code>)</li>
-  <li>l’adresse URL du catalogue DCAT qui répértorie les données (colonne <code class="highlighter-rouge">urlDCAT</code>)</li>
-  <li>les coordonnées du ou des acheteurs concernés (colonne <code class="highlighter-rouge">coordonnnees</code>)</li>
+  <li>le SIRET des acheteurs (colonne <code class="highlighter-rouge">siretAcheteur</code>) ;</li>
+  <li>l’adresse URL des profils d’acheteurs (colonne <code class="highlighter-rouge">urlProfilAcheteur</code>) ;</li>
+  <li>l’adresse URL du catalogue DCAT qui répértorie les données (colonne <code class="highlighter-rouge">urlDCAT</code>) ;</li>
+  <li>les coordonnées du ou des acheteurs concernés (colonne <code class="highlighter-rouge">coordonnnees</code>).</li>
 </ul>
 
-<p>Vous trouverez un exemple de structure de fichier <a href="https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#">sur data.gouv.fr</a>.</p>
+<p>Un modèle de fichier CSV est disponible <a href="https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#">sur data.gouv.fr</a>.</p>
 
 <h4 id="dépôt-sur-datagouvfr">Dépôt sur data.gouv.fr</h4>
 
-<p><strong>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot-clé (« tag ») suivant : « decp » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</strong></p>
+<p>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot-clé (« tag ») suivant : « decp » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</p>
 
 <p>La procédure complète pour déposer un ficher de déclaration de profil d’acheteur sur data.gouv.fr est la suivante :</p>
 
@@ -545,7 +534,7 @@
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_faq/profils-d-acheteur.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_a-propos/publier-profil-acheteur-public.md">
               ✎ Editer cette page
           </a>
       </p>

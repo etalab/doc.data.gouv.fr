@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Découvrir l’OpenData en tant qu’intégrateur</title>
-    <meta name="description" content="Découvrir l’OpenData en tant qu’intégrateur" />
+    <title>Télécharger un catalogue de données</title>
+    <meta name="description" content="Télécharger un catalogue de données" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/faq/integrateur/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/api/telecharger-un-catalogue-de-donnees/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -106,35 +106,14 @@
         
     
         
-        <li class="side-pane__title"><h3>Découvrir l’OpenData</h3></li>
-        
-        
-        <li >
-            <a class="side-pane__link" href="/faq/citoyen/">En tant que citoyen</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/developpeur/">En tant que développeur</a>
-        
-        <li class="active">
-            <a class="side-pane__link" href="/faq/integrateur/">En tant qu’intégrateur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/producteur/">En tant que producteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/profils-d-acheteur/">En tant que profil d’acheteur</a>
-        
-        <li >
-            <a class="side-pane__link" href="/faq/reutilisateur/">En tant que réutilisateur</a>
-        
-        
-    
-        
         <li class="side-pane__title"><h3>À propos</h3></li>
         
         
         <li >
             <a class="side-pane__link" href="/a-propos/differences-utilisateur-organisatoion/">Différences entre un utilisateur et une organisation</a>
+        
+        <li >
+            <a class="side-pane__link" href="/a-propos/publier-profil-acheteur-public/">Publier un profil d’acheteur public</a>
         
         <li >
             <a class="side-pane__link" href="/a-propos/que-publier-et-comment-le-publier/">Que publier et comment le publier</a>
@@ -171,6 +150,9 @@
         
         <li >
             <a class="side-pane__link" href="/jeux-de-donnees/faire-une-recherche/">Faire une recherche</a>
+        
+        <li >
+            <a class="side-pane__link" href="/jeux-de-donnees/integrer-des-donnees/">Intégrer un jeu de données sur des sites web</a>
         
         <li >
             <a class="side-pane__link" href="/jeux-de-donnees/mettre-a-jour-un-jeu-de-donnees-ou-une-ressource/">Mettre à jour un jeu de données ou une ressource</a>
@@ -247,6 +229,9 @@
         <li >
             <a class="side-pane__link" href="/api/reference/">Référence</a>
         
+        <li class="active">
+            <a class="side-pane__link" href="/api/telecharger-un-catalogue-de-donnees/">Télécharger un catalogue de données</a>
+        
         
     
   </ul>
@@ -258,90 +243,42 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="découvrir-lopendata-en-tant-quintégrateur">Découvrir l’OpenData en tant qu’intégrateur</h1>
+      <h1 id="télécharger-un-catalogue-de-données">Télécharger un catalogue de données</h1>
 
-<p>La plateforme « <a href="https://www.data.gouv.fr">data.gouv.fr</a> » vous offre plusieurs moyens plus ou moins avancés d’intégrer les données disponibles en open data sur vos propres sites :</p>
+<p>L’ensemble des jeux de données publiés sur data.gouv.fr constitue un jeu de données à part entière qui peut être téléchargé lui aussi, sous la forme d’un catalogue. Il en va de même pour l’ensemble des ressources, des organisations, des réutilisations, et des étiquettes associées aux jeux de données.</p>
 
-<ul>
-  <li>de manière unitaire si vous souhaitez n’afficher qu’un ou quelques jeu(x) de données particulier(s) ;</li>
-  <li>de manière plus générale si vous souhaitez afficher tous les jeux de données relatifs à un territoire ou à une organisation ;</li>
-  <li>pour une gestion fine de l’habillage et des données affichées, nous vous recommandons l’API ;</li>
-  <li>pour avoir votre propre portail fondé sur le moteur de la plateforme.</li>
-</ul>
-
-<p>Ces différents cas d’intégration correspondent généralement à différents profils :</p>
+<p>Pour télécharger un catalogue, cliquez sur l’URL associée aux données qui vous intéressent :</p>
 
 <ul>
-  <li>un journaliste traitant d’une problématique donnée va être intéressé par l’inclusion de jeux de données directement au sein de sa page ;</li>
-  <li>une mairie va être intéressée par l’intégration des jeux de données relatifs à son territoire sur son site internet ;</li>
-  <li>une association pourrait être intéressée par la création d’une page personnalisée compilée à partir de données issues de sources multiples ;</li>
-  <li>un pays se lançant dans l’open data va chercher à créer son propre portail.</li>
+  <li><a href="https://www.data.gouv.fr/datasets.csv">télécharger le catalogue des jeux de données</a> ;</li>
+  <li><a href="https://www.data.gouv.fr/resources.csv">télécharger le catalogue des ressources</a> ;</li>
+  <li><a href="https://www.data.gouv.fr/organizations.csv">télécharger le catalogue des organisations</a> ;</li>
+  <li><a href="https://www.data.gouv.fr/reuses.csv">télécharger le catalogue des réutilisations</a> ;</li>
+  <li><a href="https://www.data.gouv.fr/tags.csv">télécharger le catalogue des étiquettes associées aux jeux de données</a>.</li>
 </ul>
 
-<p>Quel que soit votre besoin ou votre profil, nous sommes là pour vous accompagner dans votre démarche de diffusion de données ouvertes. Ci-dessous, la documentation technique correspondant à chacun des cas évoqués :</p>
+<h2 id="consulter-le-catalogue-des-jeux-de-données">Consulter le catalogue des jeux de données</h2>
 
-<h2 id="intégration-ponctuelle-de-jeux-de-données">Intégration ponctuelle de jeux de données</h2>
+<p>Le catalogue des jeux de données est aussi publié dans plusieurs formats, pour en faciliter la consultation.</p>
 
-<p>Chaque jeu de données est intégrable sur n’importe quelle page en ajoutant deux lignes de HTML :</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html
-&lt;div data-udata-dataset="IDENTIFIANT DU JEU DE DONNÉES"&gt;&lt;/div&gt;
-&lt;script src="https://www.data.gouv.fr/static/oembed.js" async defer&gt;&lt;/script&gt;
-</code></pre></div></div>
-
-<p>En remplaçant <code class="highlighter-rouge">l’IDENTIFIANT DU JEU DE DONNÉES</code> par l’identifiant disponible sur sa page spécifique vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives à ce jeux de données de la manière suivante :</p>
-
-<p><img src="/img/faq/integration/exemple-dataset.png" alt="Exemple d’intégration d’une jeu de données" /></p>
-
-<p><em>Exemple d’intégration du jeu de données “Population” de l’INSEE.</em></p>
-
-<p>Il est possible d’intégrer plusieurs jeux de données à la fois en dupliquant la ligne correspondant à l’élément <code class="highlighter-rouge">&lt;div&gt;</code> avec un nouvel identifiant. Vous pouvez personnaliser l’apparence du rendu du cartouche grâce à la classe CSS <code class="highlighter-rouge">dataset-card</code>.</p>
-
-<h2 id="intégration-dune-organisation">Intégration d’une organisation</h2>
-
-<p><strong>Attention</strong> : <em>ce type d’intégration est actuellement en cours de développement et l’API est susceptible de changer. Veuillez nous contacter si vous souhaitez participer aux tests préliminaires.</em></p>
-
-<p>Le mécanisme pour afficher tous les jeux de données relatifs à une organisation est le même que celui pour l’intégration d’un seul jeu de donnée décrit précédemment.</p>
-
-<p>Cet usage est recommandé si vous êtes responsable de cette organisation et souhaitez faire la promotion des jeux de données associés.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>html
-&lt;div data-udata-organization="IDENTIFIANT DE L’ORGANISATION"&gt;&lt;/div&gt;
-&lt;script src="https://www.data.gouv.fr/static/widgets.js" id="udata" async defer onload="udataScript.loadOrganization()"&gt;&lt;/script&gt;
-</code></pre></div></div>
-
-<p>En remplaçant l’<code class="highlighter-rouge">IDENTIFIANT DE L’ORGANISATION</code> par l’identifiant disponible sur sa page spécifique vous devriez voir apparaître sur votre site un cartouche contenant les informations relatives aux jeux de données de cette organisation de la manière suivante :</p>
-
-<p>Optionnellement, il est possible d’afficher une barre de recherche pour laisser la possibilité au visiteur de filtrer la liste des jeux de données affichés. Cela est activé en passant l’option <code class="highlighter-rouge">{withSearch: true}</code> à la méthode <code class="highlighter-rouge">loadOrganization()</code> ci-dessus.</p>
-
-<p><img src="/img/faq/integration/exemple-organisation.png" alt="Exemple d’intégration d’une organisation" /> <em>Exemple d’intégration d’une organisation avec l’option barre de recherche.</em></p>
-
-<h2 id="intégration-pour-une-page-personnalisée">Intégration pour une page personnalisée</h2>
-
-<p>Une <a href="https://github.com/datakode/metaclic">bibliothèque JavaScript</a> a été développée pour faciliter la personnalisation de l’affichage des jeux de données sur un site tiers. Un système de gabarit permet d’intégrer les données que vous souhaitez issues de l’API à vos couleurs et selon la disposition qui vous convient. Il s’agit d’un moyen de créer votre propre page open data à coûts réduits au sein de votre site.</p>
-
-<h2 id="intégration-dun-portail-open-data-complet">Intégration d’un portail open data complet</h2>
-
-<p>Les outils que nous développons sont disponibles en open-source. Ils sont le fruit d’un effort international pour créer des synergies autour de la donnée ouverte et mutualiser nos efforts de développement. La gouvernance est inclusive et la licence est permissive. Nous participons à l’animation autour du développement de la plateforme car nous souhaitons produire un bien commun réutilisable par tous.</p>
-
-<p>L’intégration d’un portail open data complet demande des compétences en administration système, en développement Python et JavaScript ainsi qu’un temps non négligeable de prise en main de la plateforme. C’est un choix qui doit être mûrement réfléchi et nous vous recommandons de passer directement par <a href="ttps://www.data.gouv.fr">data.gouv.fr</a> si vous avez des données issues de territoires francophones.</p>
-
-<p>Si vous souhaitez néanmoins vous lancer dans cette aventure, vous pouvez commencer par analyser le <a href="https://github.com/opendatateam/udata">code source</a> ainsi que la <a href="https://udata.readthedocs.io/en/stable/">documentation spécifique</a>.</p>
-
-<p>Vous pouvez également venir en <a href="udata-gitter">discuter avec la communauté</a> (en anglais).</p>
+<p>Voici la liste des formats proposés et les URL (liens) correspondantes :</p>
 
 <ul>
-  <li><a href="https://www.data.gouv.fr">data.gouv.fr</a></li>
-  <li><a href="https://www.data.gouv.fr/fr/apidoc/">API</a></li>
-  <li><a href="https://github.com/DepthFrance/udata-js">udata-js</a></li>
-  <li><a href="http://udata.readthedocs.io/en/latest">udata-doc</a></li>
-  <li><a href="https://github.com/opendatateam/udata">udata-github</a></li>
-  <li><a href="https://gitter.im/opendatateam/udata">udata-gitter</a></li>
+  <li>JSON-LD : <a href="https://www.data.gouv.fr/catalog.jsonld">https://www.data.gouv.fr/catalog.jsonld</a> ;</li>
+  <li>Turtle : <a href="https://www.data.gouv.fr/catalog.ttl">https://www.data.gouv.fr/catalog.ttl</a> ;</li>
+  <li>N-Triples : <a href="https://www.data.gouv.fr/catalog.nt">https://www.data.gouv.fr/catalog.nt</a> ;</li>
+  <li>XML-RDF : <a href="https://www.data.gouv.fr/catalog.xml">https://www.data.gouv.fr/catalog.xml</a> ;</li>
+  <li>N3 : <a href="https://www.data.gouv.fr/catalog.n3">https://www.data.gouv.fr/catalog.n3</a> ;</li>
+  <li>Trig : <a href="https://www.data.gouv.fr/catalog.trig">https://www.data.gouv.fr/catalog.trig</a>.</li>
 </ul>
+
+<h2 id="statistiques-de-fréquentation-de-datagouvfr">Statistiques de fréquentation de data.gouv.fr</h2>
+
+<p>Des statistiques sur la fréquentation de data.gouv.fr sont consultables en ligne sur le site <a href="https://stats.data.gouv.fr/index.php?module=CoreHome&amp;action=index&amp;idSite=1&amp;period=range&amp;date=previous30#?idSite=1&amp;period=range&amp;date=previous30&amp;category=Dashboard_Dashboard&amp;subcategory=1">stats.data.gouv.fr</a>.</p>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_faq/integrateur.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/_api/telecharger-un-catalogue-de-donnees.md">
               ✎ Editer cette page
           </a>
       </p>
