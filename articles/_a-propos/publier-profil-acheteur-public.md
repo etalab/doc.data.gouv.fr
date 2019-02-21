@@ -203,7 +203,7 @@ Les éditeurs de profil d’acheteur sont invités à créer un fichier au forma
 - le SIRET des acheteurs (colonne `siretAcheteur`) ;
 - l’adresse URL des profils d’acheteurs (colonne `urlProfilAcheteur`) ;
 - l’adresse URL du catalogue DCAT qui répértorie les données (colonne `urlDCAT`) ;
-- les coordonnées du ou des acheteurs concernés (colonne `coordonnnees`).
+- les coordonnées du ou des acheteurs concernés (colonne `coordonnees`).
 
 Un modèle de fichier CSV est disponible [sur data.gouv.fr](https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#).
 
