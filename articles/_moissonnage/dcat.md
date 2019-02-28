@@ -7,15 +7,15 @@ order: 2
 
 ## DCAT
 
-[DCAT](https://www.w3.org/TR/vocab-dcat/) est une ontologie RDF pour décrire de jeux de données
+[DCAT](https://www.w3.org/TR/vocab-dcat/) est une ontologie RDF pour décrire de jeux de données.
 
-L'Europe a publié sont extension de DCAT, appelée [DCAT-AP](https://joinup.ec.europa.eu/release/dcat-ap/11)
+L'Europe a publié sont extension de DCAT, appelée [DCAT-AP](https://joinup.ec.europa.eu/release/dcat-ap/11).
 
 ## Spécificités techniques
 
-Ce moissonneur attend l'URL d'un **catalogue** DCAT.
+Ce moissonneur attend l'URL d'un **catalogue** DCAT (`dcat:Catalog`).
 
-Plusieurs format sont supportés:
+Plusieurs format sont supportés et découvrable à travers la négociation de conteu:
   - `RDF XML`
   - `JSON-LD`
   - `Turtle`
@@ -27,12 +27,69 @@ La pagination est supporté via l'ontologie [Hydra](https://www.w3.org/community
 
 ## Correspondance des champs du modèle
 
-| | Data.gouv.fr | DCAT |
-|-|--------------|------|
-| Licence | `license` | `dc:license` et `dc:right` depuis `dcat:distributions` |
-| Couverture spatiale | `spatial` | ❌ |
-| Couverture temporelle | `temporal_coverage` | `dct:temporal` |
-| Fréquence de mise à jour | `frequency` | `dct:accrualPeriodicity` |
+Par soucis de lisibilité, les namespaces suivants sont déclarés:
+ - `dcat` ⇨ `http://www.w3.org/ns/dcat#`
+ - `dct` ⇨ `http://purl.org/dc/terms/`
+ - `foaf` ⇨ `http://xmlns.com/foaf/0.1/`
+ - `hydra` ⇨ `http://www.w3.org/ns/hydra/core#`
+ - `rdfs` ⇨ `http://www.w3.org/2000/01/rdf-schema#`
+ - `scv` ⇨ `http://purl.org/NET/scovo#`
+ - `skos` ⇨ `http://www.w3.org/2004/02/skos/core#`
+ - `vcard` ⇨ `http://www.w3.org/2006/vcard/ns#`
+ - `xsd` ⇨ `http://www.w3.org/2001/XMLSchema#`
+ - `freq` ⇨ `http://purl.org/cld/freq/`
+
+### Jeu de données
+
+La notion équivalente au jeu de données sur Data.gouv.fr (`Dataset`) est un noeud de type `dcat:Dataset` en RDF.
+
+| | Data.gouv.fr | RDF | Notes |
+|-|--------------|-----|-------|
+| Titre | `title` | `dct:title` | |
+| Acronyme | `acronym` | `skos:altLabel` | |
+| Description | `description` | `dct:description` | Éventuellement HTML transformé en Markdown |
+| Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | |
+| Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | |
+| Couverture spatiale | `spatial` | ❌ | |
+| Couverture temporelle | `temporal_coverage` | `dct:temporal` | |
+| Fréquence de mise à jour | `frequency` | `dct:accrualPeriodicity` | |
+{: .table }
+
+#### Extras
+
+Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par soucis de traçabilité:
+
+| | Data.gouv.fr `extras` | RDF | Notes |
+|-|--------------|-----|-------|
+| Identifiant distant | `harvest:remote_id` | `dct:identifier` | Conservé aussi sous `dct:identifier` |
+| URI | `uri` | ID du noeud | `URIRef` |
+{: .table }
+
+### Resssource
+
+La notion équivaliente à la ressource sur Data.gouv.fr (`Resource`) est un noeud de type `dcat:Distribution` en RDF.
+
+| | Data.gouv.fr | RDF | Notes |
+|-|--------------|-----|-------|
+| Titre | `title` | `dct:title` | Propriété facultative, un nom est généré sinon |
+| Description | `description` | `dct:description` | Éventuellement HTML transformé en Markdown |
+| URL | `url` | `dcat:downloadURL` et `dcat:accessURL`| Priorité à `dcat:downloadURL` |
+| Taille | `filesize` | `dcat:bytesSize` ||
+| Type MIME | `mime` | `dcat:mediaType` ||
+| Format | `format` | `dct:format` ||
+| Somme de contrôle | `checksum` | `spdx:checksum` (`spdx:algorithm` + `spdx:checksumValue`) ||
+| Date de mise à jour | `modified` | `dct:modified` | |
+| Date de publication | `published` | `dct:issued` | |
+{: .table }
+
+#### Extras
+
+Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par soucis de traçabilité:
+
+| | Data.gouv.fr `Resource.extras` | RDF | Notes |
+|-|--------------------------------|-----|-------|
+| Identifiant distant | `dct:identifier` | `dct:identifier` | |
+| URI | `uri` | `dct:identifier` | Si `dct:identifier` est un `URIRef` |
 {: .table }
 
 ## Contribuer
