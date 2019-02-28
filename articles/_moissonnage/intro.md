@@ -42,6 +42,19 @@ Aujourd'hui, Data.gouv.fr peut moissonner les plateformes ou formats suivants:
 - [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %})
 - [OpenDataSoft]({{ site.baseurl }}{% link _moissonnage/ods.md %})
 
+### Métadonnées communes
+
+Les jeux de données moissonnés possèdent les attibuts suivants dans leur champ `extras` pour la traçabilité:
+
+| Attribut | Contenu |
+|----------|---------|
+| `harvest:domain` |	Nom de domaine moissoné |
+| `harvest:source_id` | Identifiant technique du moissonneur |
+| `harvest:remote_id` | Identifiant distant du jeu de données |
+| `harvest:last_update` | Date du dernier moissonnage |
+{: .table }
+
+
 ## Options
 
 Chaque type de moissonneur possède des options spécifiques, ainsi que des options communes.
