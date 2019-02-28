@@ -28,6 +28,14 @@ collections:
       - {label: "Titre", name: "title", widget: "string"}
       - {label: "Contenu", name: "body", widget: "markdown"}
 
+  - name: moissonnage
+    label: Moissonnage
+    folder: _moissonnage
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
+
   - name: a-propos
     label: À propos
     folder: _a-propos

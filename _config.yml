@@ -53,10 +53,14 @@ collections:
     title: Réutilisations et discussions
     output: true
     order: 5
+  moissonnage:
+    title: Moissonnage
+    output: true
+    order: 6
   api:
     title: API
     output: true
-    order: 6
+    order: 7
 
 defaults:
   - scope:
