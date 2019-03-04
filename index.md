@@ -36,7 +36,7 @@ L’ouverture des données d’intérêt public vise à encourager la réutilisa
 
 ## La communauté data.gouv.fr
 
-En consultant [le blog d’Etalab](https://www.etalab.gouv.fr) vous pourrez vous inscrire aux différents évènements (Hackathons, OpenData Camps, Conférences) organisés par Etalab.
+En consultant [le blog d’Etalab](https://www.etalab.gouv.fr) vous pourrez vous inscrire aux différents évènements (_hackathons_, _Open data camps_, conférences) organisés par Etalab.
 
 Nous vous invitons par ailleurs à suivre les comptes Twitter [@datagouvfr](https://twitter.com/datagouvfr) (actualité de la plateforme, annonce des nouveaux jeux de données) et [@etalab](https://twitter.com/etalab) (actualité de la mission Etalab et de l’ouverture des données publiques).
 

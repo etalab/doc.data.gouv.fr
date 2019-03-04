@@ -9,11 +9,11 @@ Les données publiées sur data.gouv.fr peuvent être réutilisées selon les te
 
 ## Pourquoi référencer une réutilisation
 
-Référencer une réutilisation sur la page d’un jeu de données permet de :
+Référencer une réutilisation sur la page d’un jeu de données permet de :
 
 - donner de la visibilité à la réutilisation et au projet dans lequel elle s’inscrit ;
 - montrer à d’autres personnes comment le jeu de données peut être réutilisé ;
-- donner des idées et inspirer d'autres réutilisations potentielles ;
+- donner des idées et inspirer d’autres réutilisations potentielles ;
 - engager un dialogue avec le producteur du jeu de données.
 
 ## Comment référencer une réutilisation
