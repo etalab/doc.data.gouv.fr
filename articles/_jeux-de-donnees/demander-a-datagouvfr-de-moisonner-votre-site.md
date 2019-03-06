@@ -5,7 +5,7 @@ slug: demander-a-datagouvfr-de-moissonner-votre-site
 
 # Demander à data.gouv.fr de moissonner votre site
 
-Si vous mettez en ligne des données publiques sur une plateforme ouverte, dans un format dont les métadonnées correspondent à la syntaxe [ODS](https://www.opendatasoft.com), [CKAN](https://ckan.org), [DCAT](https://www.w3.org/TR/vocab-dcat/), ou MAAF (spécifique au ministère de l’agriculture), vous pouvez les référencer _automatiquement_ sur data.gouv.fr en utilisant notre service de moissonnage.
+Si vous mettez en ligne des données publiques sur une plateforme ouverte et exposez les métadonnées dans l'un des [formats compatibles](#formats-de-métadonnées-compatibles), vous pouvez les référencer _automatiquement_ sur data.gouv.fr en utilisant notre service de moissonnage.
 
 Le service de moissonnage permet de référencer sur data.gouv.fr des jeux de données publiés ailleurs sur le web. De cette manière, vous n’avez pas besoin d’importer à la main sur data.gouv.fr les jeux de données que vous avez déjà importés sur votre propre plateforme.
 
@@ -18,14 +18,15 @@ Un moissonneur permet d’importer toutes les données d’un portail d’open d
 3. Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;
 4. Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.
 
+Vous pouvez consulter [la documentation technique concernée]({{ site.baseurl }}{% link _moissonnage/intro.md %}) pour plus de détails
+
 ## Formats de métadonnées compatibles
 
 Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de métadonnées :
 
-- Open Data Soft (ODS) ;
-- Comprehensive Knowledge Archive Network (CKAN) ;
-- Data Catalog Vocabulary (DCAT) ;
-- Ministère de l’agriculture, de l’alimentation, et des forets (MAAF).
+- [OpenDataSoft]({{ site.baseurl }}{% link _moissonnage/ods.md %}) ;
+- [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %}) ;
+- [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %}).
 
 ## Créer un moissonneur
 
@@ -83,7 +84,7 @@ L’URL est obligatoire.
 
 Choisissez ici le format des métadonnées associées aux jeux de données publiés sur votre plateforme. Ce format permet au moissonneur de savoir comment lire et interpréter vos métadonnées, pour bien les retranscrire sur data.gouv.fr.
 
-Pour les données de type ODS et CKAN, vous pouvez aussi ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage automatique. Peuvent faire l’objet de filtres : les éditeurs et les mots-clefs dans le cas d’ODS ; les organisations et les mots-clefs dans le cas de CKAN.
+Certaines implémentations permettent d'ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage. (Consultez [la section dédié de la documentation de moissonnage]({{ site.baseurl }}{% link _moissonnage/intro.md %}#filtrage) ainsi que les filtres [spécifiques de votre implémentations](({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonneurs-disponibles)))
 
 Le type d’implémentation est obligatoire.
 
