@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Demander à data.gouv.fr de moissonner votre site</title>
-    <meta name="description" content="Demander à data.gouv.fr de moissonner votre site" />
+    <title>DCAT</title>
+    <meta name="description" content="Moissonnage DCAT" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/moissonnage/dcat/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -142,7 +142,7 @@
         <li class="side-pane__title"><h3>Jeux de données</h3></li>
         
         
-        <li class="active">
+        <li >
             <a class="side-pane__link" href="/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/">Demander à data.gouv.fr de moissonner votre site</a>
         
         <li >
@@ -220,7 +220,7 @@
         <li >
             <a class="side-pane__link" href="/moissonnage/intro/">Introduction</a>
         
-        <li >
+        <li class="active">
             <a class="side-pane__link" href="/moissonnage/dcat/">DCAT</a>
         
         <li >
@@ -261,128 +261,247 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="demander-à-datagouvfr-de-moissonner-votre-site">Demander à data.gouv.fr de moissonner votre site</h1>
+      <h1 id="moissonnage-dcat">Moissonnage DCAT</h1>
 
-<p>Si vous mettez en ligne des données publiques sur une plateforme ouverte et exposez les métadonnées dans l’un des <a href="#formats-de-métadonnées-compatibles">formats compatibles</a>, vous pouvez les référencer <em>automatiquement</em> sur data.gouv.fr en utilisant notre service de moissonnage.</p>
+<h2 id="dcat">DCAT</h2>
 
-<p>Le service de moissonnage permet de référencer sur data.gouv.fr des jeux de données publiés ailleurs sur le web. De cette manière, vous n’avez pas besoin d’importer à la main sur data.gouv.fr les jeux de données que vous avez déjà importés sur votre propre plateforme.</p>
+<p><a href="https://www.w3.org/TR/vocab-dcat/">DCAT</a> est une ontologie RDF pour décrire des jeux de données.</p>
 
-<p>Un moissonneur permet d’importer toutes les données d’un portail d’open data. Vous pouvez aussi demander au moissonneur de n’importer que certains jeux de données, au moyen de filtres. Dit autrement, il n’est pas nécessaire de créer un moissonneur par jeu de données à importer sur data.gouv.fr, un seul moissonneur par portail suffit.</p>
+<p>L’Europe a publié son extension de DCAT, appelée <a href="https://joinup.ec.europa.eu/release/dcat-ap/11">DCAT-AP</a>.</p>
 
-<h2 id="comment-se-déroule-le-moissonnage">Comment se déroule le moissonnage</h2>
+<h2 id="spécificités-techniques">Spécificités techniques</h2>
 
-<ol>
-  <li>Vous créez un moissonneur sur data.gouv.fr pour nous demander de surveiller votre plateforme ;</li>
-  <li>Vous publiez des données sur votre plateforme d’open-data sans vous préoccuper de data.gouv.fr ;</li>
-  <li>Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;</li>
-  <li>Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.</li>
-</ol>
+<p>Ce moissonneur attend l’URL d’un <strong>catalogue</strong> DCAT (<code class="highlighter-rouge">dcat:Catalog</code>).</p>
 
-<p>Vous pouvez consulter <a href="/moissonnage/intro/">la documentation technique concernée</a> pour plus de détails</p>
-
-<h2 id="formats-de-métadonnées-compatibles">Formats de métadonnées compatibles</h2>
-
-<p>Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de métadonnées :</p>
-
+<p>Plusieurs formats sont supportés et découvrables à travers la négociation de contenu :</p>
 <ul>
-  <li><a href="/moissonnage/ods/">OpenDataSoft</a> ;</li>
-  <li><a href="/moissonnage/ckan/">CKAN</a> ;</li>
-  <li><a href="/moissonnage/dcat/">DCAT</a>.</li>
+  <li><code class="highlighter-rouge">RDF XML</code></li>
+  <li><code class="highlighter-rouge">JSON-LD</code></li>
+  <li><code class="highlighter-rouge">Turtle</code></li>
+  <li><code class="highlighter-rouge">N3</code></li>
+  <li><code class="highlighter-rouge">NT</code></li>
+  <li><code class="highlighter-rouge">Trig</code></li>
 </ul>
 
-<h2 id="créer-un-moissonneur">Créer un moissonneur</h2>
+<p>La pagination est supportée via l’ontologie <a href="https://www.w3.org/community/hydra/wiki/Pagination">Hydra</a> (ainsi que l’ancienne version)</p>
 
-<p>La création d’un moissonneur sur data.gouv.fr nécessite la création d’un compte gratuit.</p>
+<h2 id="correspondance-des-champs-du-modèle">Correspondance des champs du modèle</h2>
 
-<p>Pour créer un nouveau moissonneur :</p>
-
-<ol>
-  <li><a href="https://www.data.gouv.fr/fr/login">Connectez-vous à votre compte</a> ;</li>
-  <li>Rendez-vous sur <a href="https://www.data.gouv.fr/fr/admin/">votre tableau de bord</a>, en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur <strong>Administration</strong> ;</li>
-  <li>Cliquez sur l’icône en forme de plus (<code class="highlighter-rouge">+</code>) qui se trouve à gauche de votre avatar ;</li>
-  <li>Cliquez sur <strong>Un moissonneur</strong>.</li>
-</ol>
-
-<p>À partir de là, la création du moissonneur se déroule en 3 étapes.</p>
-
-<h3 id="1-définir-qui-publie-les-données-moissonnées">1. Définir qui publie les données moissonnées</h3>
-
-<p>Une fois moissonnées, c’est-à-dire récupérées sur votre plateforme, vos données sont publiées sur data.gouv.fr. L’étape 1 vous permet de choisir le compte qui sera associé à la publication sur data.gouv.fr des données moissonnées sur votre site.</p>
-
-<p>Il peut s’agir de :</p>
-
+<p>Par souci de lisibilité, les namespaces suivants sont déclarés :</p>
 <ul>
-  <li>votre propre compte, pour une publication à titre individuel, sous votre propre nom ;</li>
-  <li>le compte d’une organisation dont vous êtes membre, pour une publication à titre collectif.</li>
+  <li><code class="highlighter-rouge">dcat</code> ⇨ <code class="highlighter-rouge">http://www.w3.org/ns/dcat#</code></li>
+  <li><code class="highlighter-rouge">dct</code> ⇨ <code class="highlighter-rouge">http://purl.org/dc/terms/</code></li>
+  <li><code class="highlighter-rouge">foaf</code> ⇨ <code class="highlighter-rouge">http://xmlns.com/foaf/0.1/</code></li>
+  <li><code class="highlighter-rouge">hydra</code> ⇨ <code class="highlighter-rouge">http://www.w3.org/ns/hydra/core#</code></li>
+  <li><code class="highlighter-rouge">rdfs</code> ⇨ <code class="highlighter-rouge">http://www.w3.org/2000/01/rdf-schema#</code></li>
+  <li><code class="highlighter-rouge">scv</code> ⇨ <code class="highlighter-rouge">http://purl.org/NET/scovo#</code></li>
+  <li><code class="highlighter-rouge">skos</code> ⇨ <code class="highlighter-rouge">http://www.w3.org/2004/02/skos/core#</code></li>
+  <li><code class="highlighter-rouge">vcard</code> ⇨ <code class="highlighter-rouge">http://www.w3.org/2006/vcard/ns#</code></li>
+  <li><code class="highlighter-rouge">xsd</code> ⇨ <code class="highlighter-rouge">http://www.w3.org/2001/XMLSchema#</code></li>
+  <li><code class="highlighter-rouge">freq</code> ⇨ <code class="highlighter-rouge">http://purl.org/cld/freq/</code></li>
 </ul>
 
-<p>Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom. Une fois votre choix effectué, cliquez sur le bouton <strong>Suivant</strong> pour accéder à l’étape 2.</p>
+<h3 id="jeu-de-données">Jeu de données</h3>
 
-<h3 id="2-configurer-le-moissonneur">2. Configurer le moissonneur</h3>
+<p>La notion équivalente au jeu de données sur data.gouv.fr (<code class="highlighter-rouge">Dataset</code>) est un noeud de type <code class="highlighter-rouge">dcat:Dataset</code> en RDF.</p>
 
-<p>L’étape 2 vous permet de configurer votre moissonneur. Cette étape est importante pour que les données récupérées par data.gouv.fr soient aussi complètes que celles publiées sur votre plateforme à l’origine.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>data.gouv.fr</th>
+      <th>RDF</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titre</td>
+      <td><code class="highlighter-rouge">title</code></td>
+      <td><code class="highlighter-rouge">dct:title</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Acronyme</td>
+      <td><code class="highlighter-rouge">acronym</code></td>
+      <td><code class="highlighter-rouge">skos:altLabel</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><code class="highlighter-rouge">description</code></td>
+      <td><code class="highlighter-rouge">dct:description</code></td>
+      <td>Éventuellement HTML transformé en Markdown</td>
+    </tr>
+    <tr>
+      <td>Mots-clés</td>
+      <td><code class="highlighter-rouge">tags</code></td>
+      <td><code class="highlighter-rouge">dcat:keyword</code> + <code class="highlighter-rouge">dcat:theme</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Licence</td>
+      <td><code class="highlighter-rouge">license</code></td>
+      <td><code class="highlighter-rouge">dct:license</code> et <code class="highlighter-rouge">dct:right</code> depuis <code class="highlighter-rouge">dcat:distributions</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Couverture spatiale</td>
+      <td><code class="highlighter-rouge">spatial</code></td>
+      <td>❌</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Couverture temporelle</td>
+      <td><code class="highlighter-rouge">temporal_coverage</code></td>
+      <td><code class="highlighter-rouge">dct:temporal</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fréquence de mise à jour</td>
+      <td><code class="highlighter-rouge">frequency</code></td>
+      <td><code class="highlighter-rouge">dct:accrualPeriodicity</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
-<h4 id="nom">Nom</h4>
+<h4 id="extras">Extras</h4>
 
-<p>Donnez un nom à votre moissonneur. Il s’agit d’une référence interne, qui vous permet de vous y retrouver si vous créez plusieurs moissonneurs. Le nom de votre moissonneur ne sera pas public.</p>
+<p>Certaines propriétés sont conservées dans les attributs clés-valeurs <code class="highlighter-rouge">extras</code> par soucis de traçabilité :</p>
 
-<ul>
-  <li><strong>Mauvais nom</strong> : Moissonneur de mon portail</li>
-  <li><strong>Bon nom</strong> : Plateforme open data Grand Lyon</li>
-</ul>
+<table class="table">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>data.gouv.fr <code class="highlighter-rouge">extras</code></th>
+      <th>RDF</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identifiant distant</td>
+      <td><code class="highlighter-rouge">harvest:remote_id</code></td>
+      <td><code class="highlighter-rouge">dct:identifier</code></td>
+      <td>Conservé aussi sous <code class="highlighter-rouge">dct:identifier</code></td>
+    </tr>
+    <tr>
+      <td>URI</td>
+      <td><code class="highlighter-rouge">uri</code></td>
+      <td>ID du noeud</td>
+      <td><code class="highlighter-rouge">URIRef</code></td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Le nom du moissonneur est obligatoire.</p>
+<h3 id="resssource">Resssource</h3>
 
-<h3 id="description">Description</h3>
+<p>La notion équivalente à la ressource sur data.gouv.fr (<code class="highlighter-rouge">Resource</code>) est un noeud de type <code class="highlighter-rouge">dcat:Distribution</code> en RDF.</p>
 
-<p>Vous pouvez ajouter des précisions sur votre moissonneur dans le champ description. Là encore, il s’agit d’une référence interne qui n’a de valeur que pour vous.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>data.gouv.fr</th>
+      <th>RDF</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Titre</td>
+      <td><code class="highlighter-rouge">title</code></td>
+      <td><code class="highlighter-rouge">dct:title</code></td>
+      <td>Propriété facultative, un nom est généré sinon</td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><code class="highlighter-rouge">description</code></td>
+      <td><code class="highlighter-rouge">dct:description</code></td>
+      <td>Éventuellement HTML transformé en Markdown</td>
+    </tr>
+    <tr>
+      <td>URL</td>
+      <td><code class="highlighter-rouge">url</code></td>
+      <td><code class="highlighter-rouge">dcat:downloadURL</code> et <code class="highlighter-rouge">dcat:accessURL</code></td>
+      <td>Priorité à <code class="highlighter-rouge">dcat:downloadURL</code></td>
+    </tr>
+    <tr>
+      <td>Taille</td>
+      <td><code class="highlighter-rouge">filesize</code></td>
+      <td><code class="highlighter-rouge">dcat:bytesSize</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Type MIME</td>
+      <td><code class="highlighter-rouge">mime</code></td>
+      <td><code class="highlighter-rouge">dcat:mediaType</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Format</td>
+      <td><code class="highlighter-rouge">format</code></td>
+      <td><code class="highlighter-rouge">dct:format</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Somme de contrôle</td>
+      <td><code class="highlighter-rouge">checksum</code></td>
+      <td><code class="highlighter-rouge">spdx:checksum</code> (<code class="highlighter-rouge">spdx:algorithm</code> + <code class="highlighter-rouge">spdx:checksumValue</code>)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de mise à jour</td>
+      <td><code class="highlighter-rouge">modified</code></td>
+      <td><code class="highlighter-rouge">dct:modified</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de publication</td>
+      <td><code class="highlighter-rouge">published</code></td>
+      <td><code class="highlighter-rouge">dct:issued</code></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
-<p>La description est facultative.</p>
+<h4 id="extras-1">Extras</h4>
 
-<h3 id="url">URL</h3>
+<p>Certaines propriétés sont conservées dans les attributs clés-valeurs <code class="highlighter-rouge">extras</code> par souci de traçabilité :</p>
 
-<p>Saisissez ici l’URL du portail à moissonner. Il s’agit généralement de l’URL de la page d’accueil de votre portail d’open data. L’URL permet au moissonneur de parcourir et récupérer tous vos jeux de données.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>data.gouv.fr <code class="highlighter-rouge">Resource.extras</code></th>
+      <th>RDF</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Identifiant distant</td>
+      <td><code class="highlighter-rouge">dct:identifier</code></td>
+      <td><code class="highlighter-rouge">dct:identifier</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>URI</td>
+      <td><code class="highlighter-rouge">uri</code></td>
+      <td><code class="highlighter-rouge">dct:identifier</code></td>
+      <td>Si <code class="highlighter-rouge">dct:identifier</code> est un <code class="highlighter-rouge">URIRef</code></td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li><strong>Mauvaise source</strong> : <code class="highlighter-rouge">data.angers.fr</code></li>
-  <li><strong>Bonne source</strong> : <code class="highlighter-rouge">https://data.angers.fr</code></li>
-</ul>
+<h2 id="contribuer">Contribuer</h2>
 
-<p>L’URL est obligatoire.</p>
-
-<h3 id="implémentation">Implémentation</h3>
-
-<p>Choisissez ici le format des métadonnées associées aux jeux de données publiés sur votre plateforme. Ce format permet au moissonneur de savoir comment lire et interpréter vos métadonnées, pour bien les retranscrire sur data.gouv.fr.</p>
-
-<p>Certaines implémentations permettent d’ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage. (Consultez <a href="/moissonnage/intro/#filtrage">la section dédié de la documentation de moissonnage</a> ainsi que les filtres <a href="(/moissonnage/intro/#moissonneurs-disponibles)">spécifiques de votre implémentations</a>)</p>
-
-<p>Le type d’implémentation est obligatoire.</p>
-
-<h3 id="actif">Actif</h3>
-
-<p>Cochez la case pour que votre moissonneur se mette au travail dès qu’il aura été validé par l’équipe en charge de data.gouv.fr. Laissez-la décochée pour activer votre moissonneur à la main.</p>
-
-<p>Ce champ est obligatoire.</p>
-
-<p>Une fois tous les champs obligatoires remplis, cliquez sur le bouton <strong>Suivant</strong> pour terminer la création de votre moissonneur.</p>
-
-<h3 id="3-demander-la-validation-du-moissonneur">3. Demander la validation du moissonneur</h3>
-
-<p>Une fois votre moissonneur configuré, ce dernier passe en attente de validation. Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.</p>
-
-<p>De votre côté, vous pouvez vérifier que votre moissonneur moissonne correctement votre site. Pour ce faire :</p>
-
-<ol>
-  <li>Cliquez sur le bouton <strong>Voir dans l’administration</strong> une fois votre moissonneur créé ;</li>
-  <li>Cliquez sur le bouton <strong>Prévisualiser</strong> ;</li>
-  <li>Vérifiez que le moissonneur récupère bien des jeux de données.</li>
-</ol>
-
-<p>Tant que votre moissonneur n’est pas validé, il ne référence aucun jeu de données sur data.gouv.fr.</p>
+<p>Ce moissonneur fait partie du coeur de <code class="highlighter-rouge">udata</code>, <a href="https://github.com/opendatateam/udata/blob/master/udata/harvest/backends/dcat.py">son code est disponible sur github</a>. Vous pouvez donc soumettre des améliorations ou signaler des anomalies.</p>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_moissonnage/dcat.md">
               ✎ Editer cette page
           </a>
       </p>

@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Demander à data.gouv.fr de moissonner votre site</title>
-    <meta name="description" content="Demander à data.gouv.fr de moissonner votre site" />
+    <title>Introduction</title>
+    <meta name="description" content="Introduction" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/style/main.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/moissonnage/intro/" />
     <link rel="alternate" type="application/rss+xml" title="Data.gouv.fr Docs" href="/feed.xml" />
 </head>
 
@@ -142,7 +142,7 @@
         <li class="side-pane__title"><h3>Jeux de données</h3></li>
         
         
-        <li class="active">
+        <li >
             <a class="side-pane__link" href="/jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site/">Demander à data.gouv.fr de moissonner votre site</a>
         
         <li >
@@ -217,7 +217,7 @@
         <li class="side-pane__title"><h3>Moissonnage</h3></li>
         
         
-        <li >
+        <li class="active">
             <a class="side-pane__link" href="/moissonnage/intro/">Introduction</a>
         
         <li >
@@ -261,128 +261,203 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="demander-à-datagouvfr-de-moissonner-votre-site">Demander à data.gouv.fr de moissonner votre site</h1>
+      <h1 id="introduction">Introduction</h1>
 
-<p>Si vous mettez en ligne des données publiques sur une plateforme ouverte et exposez les métadonnées dans l’un des <a href="#formats-de-métadonnées-compatibles">formats compatibles</a>, vous pouvez les référencer <em>automatiquement</em> sur data.gouv.fr en utilisant notre service de moissonnage.</p>
-
-<p>Le service de moissonnage permet de référencer sur data.gouv.fr des jeux de données publiés ailleurs sur le web. De cette manière, vous n’avez pas besoin d’importer à la main sur data.gouv.fr les jeux de données que vous avez déjà importés sur votre propre plateforme.</p>
-
-<p>Un moissonneur permet d’importer toutes les données d’un portail d’open data. Vous pouvez aussi demander au moissonneur de n’importer que certains jeux de données, au moyen de filtres. Dit autrement, il n’est pas nécessaire de créer un moissonneur par jeu de données à importer sur data.gouv.fr, un seul moissonneur par portail suffit.</p>
-
-<h2 id="comment-se-déroule-le-moissonnage">Comment se déroule le moissonnage</h2>
-
-<ol>
-  <li>Vous créez un moissonneur sur data.gouv.fr pour nous demander de surveiller votre plateforme ;</li>
-  <li>Vous publiez des données sur votre plateforme d’open-data sans vous préoccuper de data.gouv.fr ;</li>
-  <li>Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;</li>
-  <li>Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.</li>
-</ol>
-
-<p>Vous pouvez consulter <a href="/moissonnage/intro/">la documentation technique concernée</a> pour plus de détails</p>
-
-<h2 id="formats-de-métadonnées-compatibles">Formats de métadonnées compatibles</h2>
-
-<p>Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de métadonnées :</p>
-
-<ul>
-  <li><a href="/moissonnage/ods/">OpenDataSoft</a> ;</li>
-  <li><a href="/moissonnage/ckan/">CKAN</a> ;</li>
-  <li><a href="/moissonnage/dcat/">DCAT</a>.</li>
+<ul class="no_toc" id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
+      <li><a href="#principe" id="markdown-toc-principe">Principe</a>        <ul>
+          <li><a href="#moissonnage-vs-api" id="markdown-toc-moissonnage-vs-api">Moissonnage vs. API</a></li>
+          <li><a href="#moissonnage-vs-geodatagouvfr" id="markdown-toc-moissonnage-vs-geodatagouvfr">Moissonnage vs. geo.data.gouv.fr</a></li>
+          <li><a href="#moissonneurs-disponibles" id="markdown-toc-moissonneurs-disponibles">Moissonneurs disponibles</a></li>
+          <li><a href="#métadonnées-communes" id="markdown-toc-métadonnées-communes">Métadonnées communes</a></li>
+        </ul>
+      </li>
+      <li><a href="#options" id="markdown-toc-options">Options</a>        <ul>
+          <li><a href="#filtrage" id="markdown-toc-filtrage">Filtrage</a>            <ul>
+              <li><a href="#portail-multiproducteur--restriction-à-une-organisation" id="markdown-toc-portail-multiproducteur--restriction-à-une-organisation">Portail multiproducteur : restriction à une organisation</a></li>
+              <li><a href="#exclusion-de-mots-clés" id="markdown-toc-exclusion-de-mots-clés">Exclusion de mots-clés</a></li>
+              <li><a href="#combinaisons-multiples" id="markdown-toc-combinaisons-multiples">Combinaisons multiples</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#rapport-de-moissonnage" id="markdown-toc-rapport-de-moissonnage">Rapport de moissonnage</a>        <ul>
+          <li><a href="#vue-synthétique" id="markdown-toc-vue-synthétique">Vue synthétique</a></li>
+          <li><a href="#détails-dun-jeu-de-données" id="markdown-toc-détails-dun-jeu-de-données">Détails d’un jeu de données</a></li>
+          <li><a href="#en-cas-derreur" id="markdown-toc-en-cas-derreur">En cas d’erreur</a></li>
+        </ul>
+      </li>
+      <li><a href="#limites" id="markdown-toc-limites">Limites</a>        <ul>
+          <li><a href="#correspondances-des-métadonnées" id="markdown-toc-correspondances-des-métadonnées">Correspondances des métadonnées</a></li>
+          <li><a href="#suppression-à-la-source" id="markdown-toc-suppression-à-la-source">Suppression à la source</a></li>
+          <li><a href="#changement-didentifiant" id="markdown-toc-changement-didentifiant">Changement d’identifiant</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
 
-<h2 id="créer-un-moissonneur">Créer un moissonneur</h2>
+<h2 id="principe">Principe</h2>
 
-<p>La création d’un moissonneur sur data.gouv.fr nécessite la création d’un compte gratuit.</p>
+<p>Le moissonnage est une technique de récupération automatisée de metadonnées en “pull” : c’est le serveur data.gouv.fr qui va chercher les metadonnées sur les sites distants.</p>
 
-<p>Pour créer un nouveau moissonneur :</p>
+<p><img src="/img/moissonnage/sequence.svg" alt="Diagramme de séquence d'un moissonnage" /></p>
 
-<ol>
-  <li><a href="https://www.data.gouv.fr/fr/login">Connectez-vous à votre compte</a> ;</li>
-  <li>Rendez-vous sur <a href="https://www.data.gouv.fr/fr/admin/">votre tableau de bord</a>, en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur <strong>Administration</strong> ;</li>
-  <li>Cliquez sur l’icône en forme de plus (<code class="highlighter-rouge">+</code>) qui se trouve à gauche de votre avatar ;</li>
-  <li>Cliquez sur <strong>Un moissonneur</strong>.</li>
-</ol>
+<h3 id="moissonnage-vs-api">Moissonnage vs. API</h3>
 
-<p>À partir de là, la création du moissonneur se déroule en 3 étapes.</p>
+<p>La publication par l’API vous donne un contrôle total sur le contenu de chaque champ, le moment de la soumission… tandis que le moissonnage, s’il ne nécessite pas de développement spécifique sur votre plateforme, est un fonctionnement fortement contraint.</p>
 
-<h3 id="1-définir-qui-publie-les-données-moissonnées">1. Définir qui publie les données moissonnées</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th> </th>
+      <th>Moissonnage</th>
+      <th>API</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pré-requis</td>
+      <td>Métadonnées dans l’un des formats supportés</td>
+      <td>Capacité de développement</td>
+    </tr>
+    <tr>
+      <td>Déclenchement</td>
+      <td>Contrôlé par data.gouv.fr</td>
+      <td>Déclenché au besoin</td>
+    </tr>
+    <tr>
+      <td>Champs</td>
+      <td>Modèle imposé par protocole</td>
+      <td>Au choix du développeur</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Une fois moissonnées, c’est-à-dire récupérées sur votre plateforme, vos données sont publiées sur data.gouv.fr. L’étape 1 vous permet de choisir le compte qui sera associé à la publication sur data.gouv.fr des données moissonnées sur votre site.</p>
+<h3 id="moissonnage-vs-geodatagouvfr">Moissonnage vs. geo.data.gouv.fr</h3>
 
-<p>Il peut s’agir de :</p>
+<p>En plus du moissonnage et de l’utilisation de l’API, il existe un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : geo.data.gouv.fr, anciennement inspire.data.gouv.fr.
+Ce site pivot permet de récupérer les métadonnées de jeux de données exposés selon <a href="https://inspire.ec.europa.eu">la directive européenne Inspire</a> (obligation légale de publication des metadonnées geographiques selon le modèle de données <strong>ISO 19115</strong>, au format de données <strong>ISO 19139</strong>).</p>
 
+<p>Ces jeux de données geospatiaux, lorsqu’ils proviennent de geo.data.gouv.fr, auront droit à une fiche de jeu de données très riche, alimentée par l’ensemble des métadonnées Inspire. Lorsque c’est le cas, il est nécessaire de s’assurer qu’ils ne remontent que par geo.data.gouv.fr et ne produisent pas de doublons. Il peut être nécessaire d’utiliser les options de filtrage de votre moissonneur ou l’option Inspire dédiée si elle existe.</p>
+
+<h3 id="moissonneurs-disponibles">Moissonneurs disponibles</h3>
+
+<p>Aujourd’hui, data.gouv.fr peut moissonner les plateformes ou formats suivants :</p>
 <ul>
-  <li>votre propre compte, pour une publication à titre individuel, sous votre propre nom ;</li>
-  <li>le compte d’une organisation dont vous êtes membre, pour une publication à titre collectif.</li>
+  <li><a href="/moissonnage/dcat/">DCAT</a></li>
+  <li><a href="/moissonnage/ckan/">CKAN</a></li>
+  <li><a href="/moissonnage/ods/">OpenDataSoft</a></li>
 </ul>
 
-<p>Si vous êtes membre d’une organisation, nous vous conseillons de publier vos jeux de données en son nom. Une fois votre choix effectué, cliquez sur le bouton <strong>Suivant</strong> pour accéder à l’étape 2.</p>
+<h3 id="métadonnées-communes">Métadonnées communes</h3>
 
-<h3 id="2-configurer-le-moissonneur">2. Configurer le moissonneur</h3>
+<p>Les jeux de données moissonnés possèdent les attributs suivants dans leur champ <code class="highlighter-rouge">extras</code> pour la traçabilité :</p>
 
-<p>L’étape 2 vous permet de configurer votre moissonneur. Cette étape est importante pour que les données récupérées par data.gouv.fr soient aussi complètes que celles publiées sur votre plateforme à l’origine.</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Attribut</th>
+      <th>Contenu</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="highlighter-rouge">harvest:domain</code></td>
+      <td>Nom de domaine moissoné</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">harvest:source_id</code></td>
+      <td>Identifiant technique du moissonneur</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">harvest:remote_id</code></td>
+      <td>Identifiant distant du jeu de données</td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">harvest:last_update</code></td>
+      <td>Date du dernier moissonnage</td>
+    </tr>
+  </tbody>
+</table>
 
-<h4 id="nom">Nom</h4>
+<h2 id="options">Options</h2>
 
-<p>Donnez un nom à votre moissonneur. Il s’agit d’une référence interne, qui vous permet de vous y retrouver si vous créez plusieurs moissonneurs. Le nom de votre moissonneur ne sera pas public.</p>
+<p>Chaque type de moissonneur possède des options spécifiques, ainsi que des options communes.
+Aujourd’hui, la seule option commune est la possibilité de filtrage.</p>
+
+<h3 id="filtrage">Filtrage</h3>
+
+<p>La filtrage donne la possibilité d’inclure ou d’exclure un sous-ensemble de jeux de données du moissonnage.</p>
+
+<p>Lorsqu’un ou plusieurs filtres sont déclarés, seuls les jeux de données remplissant <strong>toutes</strong> les conditions (<strong>ET</strong>) seront traités.</p>
+
+<h4 id="portail-multiproducteur--restriction-à-une-organisation">Portail multiproducteur : restriction à une organisation</h4>
+
+<p><img src="/img/moissonnage/harvest-filter-include.png" alt="Exemple de restriction à une seule organisation" /></p>
+
+<h4 id="exclusion-de-mots-clés">Exclusion de mots-clés</h4>
+
+<p><img src="/img/moissonnage/harvest-filter-exclude.png" alt="Exemple d'exclusion de mots-clés" /></p>
+
+<h4 id="combinaisons-multiples">Combinaisons multiples</h4>
+
+<p><img src="/img/moissonnage/harvest-filter-combined.png" alt="Exemple de combinaison de filtres" /></p>
+
+<h2 id="rapport-de-moissonnage">Rapport de moissonnage</h2>
+
+<p>Chaque moissonnage donne lieu à un rapport accessible depuis l’<a href="https://www.data.gouv.fr/admin/">interface d’administration de data.gouv.fr</a>.</p>
+
+<p>Il vous permet de comprendre ce qu’il se passe et, le cas échéant, de corriger les erreurs existantes.
+Il vous permettra aussi de vérifier que le filtrage se fait bien si vous en avez saisi un.</p>
+
+<h3 id="vue-synthétique">Vue synthétique</h3>
+
+<p><img src="/img/moissonnage/admin-harvest-summary.png" alt="Vue synthétique du rapport de moissonnage" /></p>
+
+<h3 id="détails-dun-jeu-de-données">Détails d’un jeu de données</h3>
+
+<p><img src="/img/moissonnage/admin-harvest-dataset-modal.png" alt="Détails d'un jeu de données du rapport de moissonnage" /></p>
+
+<h3 id="en-cas-derreur">En cas d’erreur</h3>
+
+<p><img src="/img/moissonnage/admin-harvest-dataset-error-modal.png" alt="Erreur sur un jeu de données du rapport de moissonnage" /></p>
 
 <ul>
-  <li><strong>Mauvais nom</strong> : Moissonneur de mon portail</li>
-  <li><strong>Bon nom</strong> : Plateforme open data Grand Lyon</li>
+  <li><strong>1</strong> correspond à l’erreur <strong>technique</strong> formulée de façon compréhensible pour un humain</li>
+  <li><strong>2</strong> contient la “<strong>stacktrace</strong>” de l’erreur qui servira à ceux qui développent des moissonneurs ou contribuent aux existants.</li>
 </ul>
 
-<p>Le nom du moissonneur est obligatoire.</p>
+<h2 id="limites">Limites</h2>
 
-<h3 id="description">Description</h3>
+<p>Le moissonnage n’a aucune connaissance de l’usage que vous faites du modèle de données. Il s’appuie uniquement sur les spécifications de chaque protocole ou plateforme pour récupérer les informations.</p>
 
-<p>Vous pouvez ajouter des précisions sur votre moissonneur dans le champ description. Là encore, il s’agit d’une référence interne qui n’a de valeur que pour vous.</p>
+<p>Il y a donc certaines limitations techniques liées aux spécificités de chaque plateforme (décrites sur la page de chaque moissonneur).</p>
 
-<p>La description est facultative.</p>
+<p>Certaines limitations sont communes et détaillées ci-dessous.</p>
 
-<h3 id="url">URL</h3>
+<h3 id="correspondances-des-métadonnées">Correspondances des métadonnées</h3>
 
-<p>Saisissez ici l’URL du portail à moissonner. Il s’agit généralement de l’URL de la page d’accueil de votre portail d’open data. L’URL permet au moissonneur de parcourir et récupérer tous vos jeux de données.</p>
+<p>Certains champs du modèle de data.gouv.fr possèdent un équivalent qui peut être sous-spécifis dans certains protocoles ou sur certaines plateformes, ou bien alors être spécifié différement, sur  plusieurs champs… Dans ce cas, la valeur du champ est récupérée en “best effort’, c’est-à-dire qu’elle va être devinée en fonction des élements à disposition.
+Se référer à la page de chaque moissonneur pour savoir lesquels sont dans ce cas pour chaque implémentation.</p>
 
-<ul>
-  <li><strong>Mauvaise source</strong> : <code class="highlighter-rouge">data.angers.fr</code></li>
-  <li><strong>Bonne source</strong> : <code class="highlighter-rouge">https://data.angers.fr</code></li>
-</ul>
+<h3 id="suppression-à-la-source">Suppression à la source</h3>
 
-<p>L’URL est obligatoire.</p>
+<p>Pour le moment, les moissonneurs ne gèrent pas la suppression à la source et ce pour éviter les suppressions en masse par erreur, ce qui entrainerait une perte des statistiques, des discussions et des ressources communautaires de chaque jeu de données.</p>
 
-<h3 id="implémentation">Implémentation</h3>
+<p>Dans le cas d’une suppression ponctuelle, nous vous invitons à supprimer manuellement le jeu de données moissonné qui a perdu sa source.</p>
 
-<p>Choisissez ici le format des métadonnées associées aux jeux de données publiés sur votre plateforme. Ce format permet au moissonneur de savoir comment lire et interpréter vos métadonnées, pour bien les retranscrire sur data.gouv.fr.</p>
+<p>Dans le cas d’une suppression massive de jeu de données, veuillez nous contacter afin de trouver une solution satisfaisante.</p>
 
-<p>Certaines implémentations permettent d’ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage. (Consultez <a href="/moissonnage/intro/#filtrage">la section dédié de la documentation de moissonnage</a> ainsi que les filtres <a href="(/moissonnage/intro/#moissonneurs-disponibles)">spécifiques de votre implémentations</a>)</p>
+<h3 id="changement-didentifiant">Changement d’identifiant</h3>
 
-<p>Le type d’implémentation est obligatoire.</p>
+<p>Les moissonneurs utilisent les identifiants de jeu de données distants pour retrouver leurs données entre deux moissonnages. Il est donc important de veiller à ce qu’un jeu de données conserve son identifiant au fil du temps et des modification successives. Dans le cas contraire, cela donnera lieu à la création d’un doublon.</p>
 
-<h3 id="actif">Actif</h3>
-
-<p>Cochez la case pour que votre moissonneur se mette au travail dès qu’il aura été validé par l’équipe en charge de data.gouv.fr. Laissez-la décochée pour activer votre moissonneur à la main.</p>
-
-<p>Ce champ est obligatoire.</p>
-
-<p>Une fois tous les champs obligatoires remplis, cliquez sur le bouton <strong>Suivant</strong> pour terminer la création de votre moissonneur.</p>
-
-<h3 id="3-demander-la-validation-du-moissonneur">3. Demander la validation du moissonneur</h3>
-
-<p>Une fois votre moissonneur configuré, ce dernier passe en attente de validation. Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.</p>
-
-<p>De votre côté, vous pouvez vérifier que votre moissonneur moissonne correctement votre site. Pour ce faire :</p>
-
-<ol>
-  <li>Cliquez sur le bouton <strong>Voir dans l’administration</strong> une fois votre moissonneur créé ;</li>
-  <li>Cliquez sur le bouton <strong>Prévisualiser</strong> ;</li>
-  <li>Vérifiez que le moissonneur récupère bien des jeux de données.</li>
-</ol>
-
-<p>Tant que votre moissonneur n’est pas validé, il ne référence aucun jeu de données sur data.gouv.fr.</p>
+<p>Il faut donc aussi veiller à ne pas supprimer puis recréer un jeu de données ou une ressource pour faire sa mise à jour.</p>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_jeux-de-donnees/demander-a-datagouvfr-de-moisonner-votre-site.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_moissonnage/intro.md">
               ✎ Editer cette page
           </a>
       </p>
