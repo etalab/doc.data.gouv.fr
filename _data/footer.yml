@@ -4,7 +4,7 @@ links:
     label: doc.data.gouv.fr
     children:
       -
-        label: Data.gouv.fr
+        label: data.gouv.fr
         url: https://www.data.gouv.fr/
       - 
         label: Données de référence
