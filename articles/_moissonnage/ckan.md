@@ -13,11 +13,11 @@ Le moissonneur utilise l'API de CKAN pour récupérer les métadonnées.
 
 ## Spécifications techniques
 
-Ce moissonneur attends l'URL racine de l'instance CKAN et non du portail (dans le cas où CKAN est couplé à Drupal par exemple).
+Ce moissonneur attend l'URL racine de l'instance CKAN et non du portail (dans le cas où CKAN est couplé à Drupal par exemple).
 
-Comme le moissonneur utilise l'API de CKAN, il nécéssite que celle-ci soit accessible.
+Comme le moissonneur utilise l'API de CKAN, il nécessite que celle-ci soit accessible.
 
-Ce moissonneur n'est pas compatible avec les changements de modèles qui peuvent être effectué par certains plugins. Les champs d'un jeu de données doivent rester les même, et le format de leur contenu aussi.
+Ce moissonneur n'est pas compatible avec les changements de modèles qui peuvent être effectués par certains plugins. Les champs d'un jeu de données doivent rester les même, et le format de leur contenu aussi.
 
 Les champs additionnels du modèle sont ignorés.
 
@@ -25,9 +25,9 @@ Les champs additionnels du modèle sont ignorés.
 
 ### Jeu de données
 
-La notion équivalente au jeu de données sur Data.gouv.fr (`Dataset`) est le `Package` dans CKAN.
+La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est le `Package` dans CKAN.
 
-| | Data.gouv.fr | CKAN | Notes |
+| | data.gouv.fr | CKAN | Notes |
 |-|--------------|------|-------|
 | Slug | `slug` | `name` | Création uniquement, si disponible |
 | Titre | `title` | `title` ||
@@ -44,22 +44,22 @@ La notion équivalente au jeu de données sur Data.gouv.fr (`Dataset`) est le `P
 
 #### Extras
 
-Certains champs sont conservés dans les attributs clés-valeurs `extras` par soucis de traçabilité:
+Certains champs sont conservés dans les attributs clés-valeurs `extras` par soucis de traçabilité :
 
-| | Data.gouv.fr `extras` | CKAN | Notes |
+| | data.gouv.fr `extras` | CKAN | Notes |
 |-|-----------------------|------|-------|
 | Identifiant distant | `harvest:remote_id` | `id` | |
 | Slug | `ckan:name` | `name` | Car `slug` peut déjà être pris |
 | URL de consultation | `remote_url` | `url` | Conservé dans `ckan:source` si URL invalide |
 {: .table }
 
-Tous les attributs `extras` de CKAN qui ne font pas l'objet d'un traitement particulier, sont aussi conservés.
+Tous les attributs `extras` de CKAN qui ne font pas l'objet d'un traitement particulier sont aussi conservés.
 
 ### Ressource
 
-La notion équivaliente à la ressource sur Data.gouv.fr (`Resource`) est aussi la `Resource` dans CKAN.
+La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est aussi la `Resource` dans CKAN.
 
-| | Data.gouv.fr | CKAN | Notes |
+| | data.gouv.fr | CKAN | Notes |
 |-|--------------|------|-------|
 | Identifiant | `id` | `id` | Un UUID valide |
 | Titre | `title` | `name` | |

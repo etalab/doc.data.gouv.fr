@@ -7,15 +7,15 @@ order: 2
 
 ## DCAT
 
-[DCAT](https://www.w3.org/TR/vocab-dcat/) est une ontologie RDF pour décrire de jeux de données.
+[DCAT](https://www.w3.org/TR/vocab-dcat/) est une ontologie RDF pour décrire des jeux de données.
 
-L'Europe a publié sont extension de DCAT, appelée [DCAT-AP](https://joinup.ec.europa.eu/release/dcat-ap/11).
+L'Europe a publié son extension de DCAT, appelée [DCAT-AP](https://joinup.ec.europa.eu/release/dcat-ap/11).
 
 ## Spécificités techniques
 
 Ce moissonneur attend l'URL d'un **catalogue** DCAT (`dcat:Catalog`).
 
-Plusieurs format sont supportés et découvrable à travers la négociation de conteu:
+Plusieurs formats sont supportés et découvrables à travers la négociation de contenu :
   - `RDF XML`
   - `JSON-LD`
   - `Turtle`
@@ -23,11 +23,11 @@ Plusieurs format sont supportés et découvrable à travers la négociation de c
   - `NT`
   - `Trig`
 
-La pagination est supporté via l'ontologie [Hydra](https://www.w3.org/community/hydra/wiki/Pagination) (ainsi que l'ancienne version)
+La pagination est supportée via l'ontologie [Hydra](https://www.w3.org/community/hydra/wiki/Pagination) (ainsi que l'ancienne version)
 
 ## Correspondance des champs du modèle
 
-Par soucis de lisibilité, les namespaces suivants sont déclarés:
+Par souci de lisibilité, les namespaces suivants sont déclarés :
  - `dcat` ⇨ `http://www.w3.org/ns/dcat#`
  - `dct` ⇨ `http://purl.org/dc/terms/`
  - `foaf` ⇨ `http://xmlns.com/foaf/0.1/`
@@ -41,9 +41,9 @@ Par soucis de lisibilité, les namespaces suivants sont déclarés:
 
 ### Jeu de données
 
-La notion équivalente au jeu de données sur Data.gouv.fr (`Dataset`) est un noeud de type `dcat:Dataset` en RDF.
+La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un noeud de type `dcat:Dataset` en RDF.
 
-| | Data.gouv.fr | RDF | Notes |
+| | data.gouv.fr | RDF | Notes |
 |-|--------------|-----|-------|
 | Titre | `title` | `dct:title` | |
 | Acronyme | `acronym` | `skos:altLabel` | |
@@ -57,9 +57,9 @@ La notion équivalente au jeu de données sur Data.gouv.fr (`Dataset`) est un no
 
 #### Extras
 
-Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par soucis de traçabilité:
+Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par soucis de traçabilité :
 
-| | Data.gouv.fr `extras` | RDF | Notes |
+| | data.gouv.fr `extras` | RDF | Notes |
 |-|--------------|-----|-------|
 | Identifiant distant | `harvest:remote_id` | `dct:identifier` | Conservé aussi sous `dct:identifier` |
 | URI | `uri` | ID du noeud | `URIRef` |
@@ -67,9 +67,9 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 
 ### Resssource
 
-La notion équivaliente à la ressource sur Data.gouv.fr (`Resource`) est un noeud de type `dcat:Distribution` en RDF.
+La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est un noeud de type `dcat:Distribution` en RDF.
 
-| | Data.gouv.fr | RDF | Notes |
+| | data.gouv.fr | RDF | Notes |
 |-|--------------|-----|-------|
 | Titre | `title` | `dct:title` | Propriété facultative, un nom est généré sinon |
 | Description | `description` | `dct:description` | Éventuellement HTML transformé en Markdown |
@@ -84,9 +84,9 @@ La notion équivaliente à la ressource sur Data.gouv.fr (`Resource`) est un noe
 
 #### Extras
 
-Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par soucis de traçabilité:
+Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par souci de traçabilité :
 
-| | Data.gouv.fr `Resource.extras` | RDF | Notes |
+| | data.gouv.fr `Resource.extras` | RDF | Notes |
 |-|--------------------------------|-----|-------|
 | Identifiant distant | `dct:identifier` | `dct:identifier` | |
 | URI | `uri` | `dct:identifier` | Si `dct:identifier` est un `URIRef` |

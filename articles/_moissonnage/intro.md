@@ -11,15 +11,14 @@ order: 1
 
 ## Principe
 
-Le moissonnage est une technique de récupération automatisée de metadonnées en pull: c'est le serveur data.gouv.fr qui va chercher les metadonnées sur les sites distant.
+Le moissonnage est une technique de récupération automatisée de metadonnées en "pull" : c'est le serveur data.gouv.fr qui va chercher les metadonnées sur les sites distants.
 
 ![Diagramme de séquence d'un moissonnage](/img/moissonnage/sequence.svg)
 
 
 ### Moissonnage vs. API
 
-Le moissonnage de par son fonctionnement est l'opposé de la soumission par l'API.
-La soumission par l'API vous donne un contrôle total sur le contenu de chaque champs, le moment de la soumission... tandis que le moissonnage, s'il ne nécéssite pas de développement spécifique sur votre plateforme, est un fonctionnement fortement contraint.
+La publication par l'API vous donne un contrôle total sur le contenu de chaque champ, le moment de la soumission... tandis que le moissonnage, s'il ne nécessite pas de développement spécifique sur votre plateforme, est un fonctionnement fortement contraint.
 
 | | Moissonnage | API |
 |-|-------------|-----|
@@ -30,21 +29,21 @@ La soumission par l'API vous donne un contrôle total sur le contenu de chaque c
 
 ### Moissonnage vs. geo.data.gouv.fr
 
-En plus du moissonnage et de l'utilisation de l'API, il existe un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr: geo.data.gouv.fr, anciennement inspire.data.gouv.fr.
+En plus du moissonnage et de l'utilisation de l'API, il existe un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : geo.data.gouv.fr, anciennement inspire.data.gouv.fr.
 Ce site pivot permet de récupérer les métadonnées de jeux de données exposés selon [la directive européenne Inspire](https://inspire.ec.europa.eu) (obligation légale de publication des metadonnées geographiques selon le modèle de données **ISO 19115**, au format de données **ISO 19139**).
 
-Ces jeux de données geospatiaux, lorsqu'ils proviennent de geo.data.gouv.fr, auront droit a une fiche de jeu de données très riche, alimentée par l'ensemble des métadonnées Inspire. Lorsque c'est le cas, il est nécéssaire de s'assurer qu'ils ne remontent que par geo.data.gouv.fr et ne produisent pas de doublons. Il peut être nécéssaire de d'utiliser les options de filtrage du votre moissonneur ou l'option Inspire dédiée si elle existe.
+Ces jeux de données geospatiaux, lorsqu'ils proviennent de geo.data.gouv.fr, auront droit à une fiche de jeu de données très riche, alimentée par l'ensemble des métadonnées Inspire. Lorsque c'est le cas, il est nécessaire de s'assurer qu'ils ne remontent que par geo.data.gouv.fr et ne produisent pas de doublons. Il peut être nécessaire d'utiliser les options de filtrage de votre moissonneur ou l'option Inspire dédiée si elle existe.
 
 ### Moissonneurs disponibles
 
-Aujourd'hui, Data.gouv.fr peut moissonner les plateformes ou formats suivants:
+Aujourd'hui, data.gouv.fr peut moissonner les plateformes ou formats suivants :
 - [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %})
 - [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %})
 - [OpenDataSoft]({{ site.baseurl }}{% link _moissonnage/ods.md %})
 
 ### Métadonnées communes
 
-Les jeux de données moissonnés possèdent les attibuts suivants dans leur champ `extras` pour la traçabilité:
+Les jeux de données moissonnés possèdent les attributs suivants dans leur champ `extras` pour la traçabilité :
 
 | Attribut | Contenu |
 |----------|---------|
@@ -67,7 +66,7 @@ La filtrage donne la possibilité d'inclure ou d'exclure un sous-ensemble de jeu
 Lorsqu'un ou plusieurs filtres sont déclarés, seuls les jeux de données remplissant **toutes** les conditions (**ET**) seront traités.
 
 
-#### Portail multiproducteur: restriction à une organisation
+#### Portail multiproducteur : restriction à une organisation
 
 ![Exemple de restriction à une seule organisation](/img/moissonnage/harvest-filter-include.png)
 
@@ -82,10 +81,10 @@ Lorsqu'un ou plusieurs filtres sont déclarés, seuls les jeux de données rempl
 
 ## Rapport de moissonnage
 
-Chaque moissonnage donne lieu a un rapport accessible depuis l'[interface d'administration de Data.gouv.fr](https://www.data.gouv.fr/admin/).
+Chaque moissonnage donne lieu à un rapport accessible depuis l'[interface d'administration de data.gouv.fr](https://www.data.gouv.fr/admin/).
 
 Il vous permet de comprendre ce qu'il se passe et, le cas échéant, de corriger les erreurs existantes.
-Il vous permettra aussi de vérifier que le filtrage se fait bien si vous en avez saisie un.
+Il vous permettra aussi de vérifier que le filtrage se fait bien si vous en avez saisi un.
 
 ### Vue synthétique
 
@@ -104,7 +103,7 @@ Il vous permettra aussi de vérifier que le filtrage se fait bien si vous en ave
 
 ## Limites
 
-Le moissonnage n'a aucune connaissance de l'usage que vous faite du modèle de données. Il s'appuie uniquement sur les spécifications de chaque protocol ou plateforme pour récupérer les informations.
+Le moissonnage n'a aucune connaissance de l'usage que vous faites du modèle de données. Il s'appuie uniquement sur les spécifications de chaque protocole ou plateforme pour récupérer les informations.
 
 Il y a donc certaines limitations techniques liées aux spécificités de chaque plateforme (décrites sur la page de chaque moissonneur).
 
@@ -112,12 +111,12 @@ Certaines limitations sont communes et détaillées ci-dessous.
 
 ### Correspondances des métadonnées
 
-Certains champs du modèle de Data.gouv.fr possèdent un équivalent qui peut être sous-spécifiés dans certains protocols ou sur certaines plateformes, ou bien alors être spécifié différement, surp lusieurs champs... Dans ce cas, la valeur du champ est récupérée en "best effort', c'est à dire qu'elle va être devinée en fonction des élements à dispoisition.
+Certains champs du modèle de data.gouv.fr possèdent un équivalent qui peut être sous-spécifis dans certains protocoles ou sur certaines plateformes, ou bien alors être spécifié différement, sur  plusieurs champs... Dans ce cas, la valeur du champ est récupérée en "best effort', c'est-à-dire qu'elle va être devinée en fonction des élements à disposition.
 Se référer à la page de chaque moissonneur pour savoir lesquels sont dans ce cas pour chaque implémentation.
 
 ### Suppression à la source
 
-Pour le moment, les moissonneurs ne gèrent pas la suppression à la source et ce pour éviter les suppressions en masse par erreur, ce qui entrainerait une perte des statistiques, des discussions et des ressources communautaires de cha que jeu de données.
+Pour le moment, les moissonneurs ne gèrent pas la suppression à la source et ce pour éviter les suppressions en masse par erreur, ce qui entrainerait une perte des statistiques, des discussions et des ressources communautaires de chaque jeu de données.
 
 Dans le cas d'une suppression ponctuelle, nous vous invitons à supprimer manuellement le jeu de données moissonné qui a perdu sa source.
 
@@ -125,6 +124,6 @@ Dans le cas d'une suppression massive de jeu de données, veuillez nous contacte
 
 ### Changement d'identifiant
 
-Les moissonneurs utilisent les identifiants de jeu de données distants pour retrouver leur données entre deux moissonnages. Il est donc important de veiller à ce qu'un jeu de données conserve son identifiant au fil du temps et des modification successives. Dans le cas contraire, cela donnera lieu à la création d'un doublon.
+Les moissonneurs utilisent les identifiants de jeu de données distants pour retrouver leurs données entre deux moissonnages. Il est donc important de veiller à ce qu'un jeu de données conserve son identifiant au fil du temps et des modification successives. Dans le cas contraire, cela donnera lieu à la création d'un doublon.
 
-Il faut donc aussi veuiller à ne pas supprimer puis recréer un jeu de données ou un ressource pour faire sa mise à jour.
+Il faut donc aussi veiller à ne pas supprimer puis recréer un jeu de données ou une ressource pour faire sa mise à jour.
