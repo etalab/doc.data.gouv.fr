@@ -29,10 +29,12 @@ La publication par l'API vous donne un contrôle total sur le contenu de chaque 
 
 ### Moissonnage vs. geo.data.gouv.fr
 
-En plus du moissonnage et de l'utilisation de l'API, il existe un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : geo.data.gouv.fr, anciennement inspire.data.gouv.fr.
+En plus du moissonnage et de l'utilisation de l'API, il existe un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : [geo.data.gouv.fr](https://geo.data.gouv.fr), anciennement inspire.data.gouv.fr.
 Ce site pivot permet de récupérer les métadonnées de jeux de données exposés selon [la directive européenne Inspire](https://inspire.ec.europa.eu) (obligation légale de publication des metadonnées geographiques selon le modèle de données **ISO 19115**, au format de données **ISO 19139**).
 
 Ces jeux de données geospatiaux, lorsqu'ils proviennent de geo.data.gouv.fr, auront droit à une fiche de jeu de données très riche, alimentée par l'ensemble des métadonnées Inspire. Lorsque c'est le cas, il est nécessaire de s'assurer qu'ils ne remontent que par geo.data.gouv.fr et ne produisent pas de doublons. Il peut être nécessaire d'utiliser les options de filtrage de votre moissonneur ou l'option Inspire dédiée si elle existe.
+
+[Vous pouvez consultez la documentation détaillée correspondante si vous êtes dans ce cas de figure.](https://geo.data.gouv.fr/fr/doc/publish-your-data)
 
 ### Moissonneurs disponibles
 
