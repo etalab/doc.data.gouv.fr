@@ -28,6 +28,8 @@ Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de m
 - [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %}) ;
 - [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %}).
 
+Il existe [un cas particulier pour les données issues d'Inspire]({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonnage-vs-geodatagouvfr), leur moissonnage se fait depuis [geo.data.gouv.fr](https://geo.data.gouv.fr).
+
 ## Créer un moissonneur
 
 La création d’un moissonneur sur data.gouv.fr nécessite la création d’un compte gratuit.
