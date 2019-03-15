@@ -599,7 +599,7 @@
         <figure class="highlight">
           <pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
      <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
-     <span class="nt">-F</span> <span class="s2">"file=/chemin/vers/le/nouveau/fichier"</span> <span class="se">\</span>
+     <span class="nt">-F</span> <span class="s2">"file=@/chemin/vers/le/nouveau/fichier"</span> <span class="se">\</span>
      <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/<span class="nv">$RESOURCE</span>/upload
 </code></pre>
         </figure>
