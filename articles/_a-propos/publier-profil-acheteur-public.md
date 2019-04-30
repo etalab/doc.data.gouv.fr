@@ -1,8 +1,7 @@
 ---
 title: Publier un profil d’acheteur public
 slug: publier-profil-acheteur
-redirect_from:
-  - /faq/profils-d-acheteur.html
+redirect_from: /faq/profils-d-acheteur.html
 ---
 
 # Publier un profil d’acheteur public
