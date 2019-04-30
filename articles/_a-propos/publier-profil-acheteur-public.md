@@ -7,9 +7,8 @@ redirect_from: /faq/profils-d-acheteur.html
 # Publier un profil d’acheteur public
 
 {:.no_toc}
-
 - TOC
-  {:toc}
+{:toc}
 
 ## Obligation légale
 
