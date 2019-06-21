@@ -11,6 +11,13 @@
   align-items: left;
 }
 
+@media (min-width: 1000px) {
+  .hero__container {
+      align-items: flex-start;
+      margin-left: 20rem+1rem;
+  }
+}
+
 .hero h1 {
   color: white;
 }
