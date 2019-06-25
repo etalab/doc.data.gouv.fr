@@ -68,6 +68,9 @@ defaults:
     values:
       layout: page
 
+sass:
+  style: compressed
+
 theme: jekyll-theme-gouvfr
 
 plugins:
