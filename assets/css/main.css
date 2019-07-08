@@ -5,6 +5,10 @@
 @import 'variables.css';
 @import 'customvariables.css';
 
+.documentation {
+  padding: 0;
+}
+
 ul {
   line-height: 1.5em;
 }
