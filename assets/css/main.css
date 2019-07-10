@@ -1,0 +1,36 @@
+@import 'hero.css';
+@import 'markdown.css';
+@import 'responsive.css';
+@import 'search.css';
+@import 'variables.css';
+@import 'customvariables.css';
+
+.documentation {
+  padding: 0;
+}
+
+ul {
+  line-height: 1.5em;
+}
+
+.return-datagouvfr {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.side-pane .side-pane__menu {
+  padding: 1.5em;
+}
+
+.side-pane__link {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.edit {
+  margin-top: 2em;
+}
