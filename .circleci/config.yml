@@ -16,4 +16,4 @@ jobs:
 
       - run:
           name: Build website
-          command: bundle exec jekyll build --verbose
+          command: bundle exec jekyll build --config _config.yml,_config_dev.yml --verbose
