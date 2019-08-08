@@ -2,7 +2,7 @@ version: '3'
 services:
   web:
     image: jekyll/jekyll:latest
-    command: jekyll serve --watch --force_polling -H 0.0.0.0 -P 4000
+    command: jekyll serve --config _config.yml,_config_dev.yml --watch --force_polling -H 0.0.0.0 -P 4000
     ports:
       - 4000:4000
       - 35729:35729
