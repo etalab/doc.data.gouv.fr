@@ -22,7 +22,7 @@ Compiler et démarrer un serveur de documentation :
 git clone https://github.com/etalab/doc.data.gouv.fr
 cd doc.data.gouv.fr
 bundle install
-bundle exec jekyll serve --config _config.yml,_config_dev.yml --incremental
+bundle exec jekyll serve
 ```
 
 La documentation apparaîtra alors à l’adresse suivante : <a href="http://localhost:4000">http://localhost:4000</a>.

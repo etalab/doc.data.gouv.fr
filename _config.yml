@@ -68,7 +68,7 @@ defaults:
 sass:
   style: compressed
 
-remote_theme: etalab/template-jekyll
+theme: jekyll-theme-gouvfr
 
 plugins:
   - jekyll-redirect-from
