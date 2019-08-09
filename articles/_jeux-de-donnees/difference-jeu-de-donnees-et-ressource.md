@@ -24,7 +24,7 @@ Un jeu de données comporte :
 - une zone de couverture spatiale (facultative) ;
 - un niveau de granularité spatiale (facultatif).
 
-### Lien (URL)
+### Liens (URL)
 
 Un jeu de données est référencé par au moins deux liens :
 1. Lien avec un _slug_ (version « machine » du titre du jeu de données) : https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-2019/ ;
@@ -47,3 +47,16 @@ Une ressource comporte :
 - un format (obligatoire) ;
 - un type mime (facultatif) ;
 - une somme de contrôle (facultative).
+
+### Liens (URL)
+
+Une ressource est référencée par deux types de liens :
+
+1. Un lien vers la représentation sur le site data.gouv.fr de la ressource : https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/#resource-50625621-18bd-43cb-8fde-6b8c24bdabb3 ;
+2. Deux liens vers le fichier (ou l'API, la page...) en lui-même :
+    - un lien direct qui peut changer quand une ressource est mise à jour : https://static.data.gouv.fr/resources/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/20190805-140412/bornes-irve-20190805.csv ;
+    - un lien stable (URL stable) qui ne change pas pendant tout le cycle de vie d'une même ressource : https://www.data.gouv.fr/fr/datasets/r/50625621-18bd-43cb-8fde-6b8c24bdabb3.
+
+Ces différents liens sont accessibles après avoir cliqué sur l'encart d'une ressource depuis la page d'un jeu de données :
+- le lien vers la représentation sur data.gouv.fr est présent dans la barre d'adresse du navigateur ;
+- les autres liens sont presentés dans la fenêtre d'informations au niveau des lignes « URL » et « URL stable ».
