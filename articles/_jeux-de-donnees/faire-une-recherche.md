@@ -24,19 +24,35 @@ Vous ne pouvez pas chercher les choses suivantes :
 - ressources ;
 - discussions.
 
-## Utiliser la page de recherche
+## Faire une recherche
 
-Vous pouvez faire une recherche sur data.gouv.fr depuis la [page de recherche](https://www.data.gouv.fr/fr/search/). La page de recherche propose une interface visuelle pour trier et filtrer les résultats de recherche.
+Vous pouvez faire une recherche sur data.gouv.fr depuis la [page de recherche](https://www.data.gouv.fr/fr/search/). Une fois votre recherche effectuée, des résultats s’affichent à l’écran.
 
-Vous avez ensuite la possibilité de trier les résultats d’une recherche selon plusieurs critères, comme le titre ou la date de création, par ordre croissant ou décroissant. Vous pouvez aussi filtrer les résultats d’une recherche pour n’en conserver qu’une petite partie, ce qui vous permet de vous concentrer sur une organisation particulière ou un type de licence en particulier.
+## Consulter les résultats
 
-## Trier les résultats de recherche
+Par défaut, les résultats de recherche sont classés par ordre de pertinence, du plus pertinent au moins pertinent. La pertinence d’un résultat de recherche est déterminée à l’aune de plusieurs indicateurs, comme :
 
-Utiliser le menu déroulant de tri pour trier vos résultats en fonction de plusieurs critères qui varient selon le type de ressource recherché : jeux de données, réutilisation, ou organisation.
+- le nombre de téléchargements du jeu de données ;
+- le nombre de réutilisations référencées ;
+- la couverture géographique des données ;
+- la couverture temporelle des données ;
+- le nombre de personnes qui suivent le jeu de données en question.
+
+[Voir la pondération de ces différents indicateurs dans le code de uData](https://github.com/opendatateam/udata/blob/065bafc28d3a8fbc14bc34de800238b25e879699/udata/core/dataset/search.py#L163;L171)
+
+## Trier et filtrer les résultats de recherche
+
+La page qui présente les résultats de recherche propose une interface visuelle pour trier et filtrer les résultats plus finement qu’à la lumière de leur seule pertinence.
+
+Vous pouvez trier les résultats d’une recherche selon plusieurs critères, comme le titre ou la date de création, par ordre croissant ou décroissant. Vous pouvez aussi filtrer les résultats d’une recherche pour n’en conserver qu’une petite partie, ce qui vous permet de vous concentrer sur une organisation particulière ou un type de licence en particulier.
+
+### Trier les résultats de recherche
+
+Utilisez le menu déroulant de tri pour trier vos résultats en fonction de plusieurs critères qui varient selon le type de ressource recherché : jeux de données, réutilisation, ou organisation.
 
 Par défaut, les tris sont effectués par ordre alphabétique quand il s’agit de textes et par ordre décroissant quand il s’agit de chiffres ou de dates. Pour effectuer un tri dans un ordre inverse, cliquez sur l’icône en forme de flèche qui pointe vers le bas, celle qui se trouve à droite du menu **Trier par**.
 
-### Trier les jeux de données
+#### Trier les jeux de données
 
 Quand vous faites une recherche sur data.gouv.fr, la page de résultat affiche l’onglet des jeux de données par défaut.
 
@@ -50,7 +66,7 @@ Vous pouvez trier les jeux de données trouvés selon plusieurs critères :
 | `Favoris`                       | Affiche en premier les jeux de données les plus suivis par des utilisateurs                     |
 | `Réutilisations`                | Affiche d’abord les jeux de données qui ont fait l’objet du plus grand nombre de réutilisations |
 
-### Trier les réutilisations
+#### Trier les réutilisations
 
 Si vous cliquez sur l’onglet réutilisations après avoir fait une recherche, vous ne verrez que les réutilisations correspondant à vos critères de recherche.
 
@@ -64,7 +80,7 @@ Vous pouvez trier les réutilisations selon plusieurs critères :
 | `Date de dernière modification` | Affiche les réutilisations les plus récemment modifiées d’abord                      |
 | `Favoris`                       | Affiche les réutilisations les plus suivies par des utilisateurs d’abord             |
 
-### Trier les organisations
+#### Trier les organisations
 
 Si vous cliquez sur l’onglet organisations après avoir fait une recherche, vous ne verrez que les organisations correspondant à vos critères de recherche.
 
@@ -77,11 +93,11 @@ Vous pouvez trier les organisations selon plusieurs critères :
 | `Favoris`         | Affiche les organisations les plus suivies par des utilisateurs d’abord                                            |
 | `Réutilisations`  | Affiche d’abord les organisations dont les jeux de données ont fait l’objet du plus grand nombre de réutilisations |
 
-## Filtrer les résultats de recherche
+### Filtrer les résultats de recherche
 
 Que vous cherchiez un jeu de données, une réutilisation ou une organisation, la page des résultats de recherche vous permet de filtrer les résultats affichés selon plusieurs critères.
 
-### Filtrer les jeux de données
+#### Filtrer les jeux de données
 
 Pour les résultats de recherche qui apparaissent sur l’onglet jeux de données, voici les filtres disponibles et leurs effets sur les résultats affichés :
 
@@ -97,7 +113,7 @@ Pour les résultats de recherche qui apparaissent sur l’onglet jeux de donnée
 | `Formats`                | N’affiche que les jeux de données publiés dans un certain format                          |
 | `Réutilisations connues` | N’affiche que les jeux de données réutilisés un certain nombre de fois                    |
 
-### Filtrer les réutilisations
+#### Filtrer les réutilisations
 
 Pour les résultats de recherche qui apparaissent sur l’onglet réutilisations, voici les filtres disponibles et leurs effets sur les résultats affichés :
 
@@ -109,7 +125,7 @@ Pour les résultats de recherche qui apparaissent sur l’onglet réutilisations
 | `Jeux de données` | N’affiche que les réutilisations qui utilisent un certain nombre de jeux de données            |
 | `Abonnés`         | N’affiche que les réutilisations qui font l’objet d’un certain suivi par d’autres utilisateurs |
 
-### Filtrer les organisations
+#### Filtrer les organisations
 
 Pour les résultats de recherche qui apparaissent sur l’onglet organisations, voici les filtres disponibles et leurs effets sur les résultats affichés :
 
