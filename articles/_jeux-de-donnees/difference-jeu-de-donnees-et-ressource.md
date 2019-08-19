@@ -27,7 +27,7 @@ Un jeu de données comporte :
 ### Liens (URL)
 
 Un jeu de données est référencé par au moins deux liens :
-1. Lien avec un _slug_ (version « machine » du titre du jeu de données) [https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-2019/](https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-2019/) ;
+1. Lien avec un _slug_ (version « machine » du titre du jeu de données) : [https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-2019/](https://www.data.gouv.fr/fr/datasets/resultats-des-elections-europeennes-2019/) ;
 2. Lien avec un identifiant permanent : [https://www.data.gouv.fr/datasets/5ceba293634f411427c7d613](https://www.data.gouv.fr/datasets/5ceba293634f411427c7d613).
 
 Le lien avec identifiant permanent ne change jamais pendant toute la durée de vie d'un même jeu de données. C'est la manière la plus fiable et la plus pérenne de partager le lien d'un jeu de données. Ce lien est accessible depuis le bouton « Détails » dans l'encart « Informations » sur la page d'un jeu de données, à la ligne « ID ».
