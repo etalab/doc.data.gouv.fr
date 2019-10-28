@@ -674,7 +674,7 @@
           <pre><code class="language-bash" data-lang="bash">curl <span class="nt">-H</span> <span class="s2">"Accept:application/json"</span> <span class="se">\</span>
      <span class="nt">-H</span> <span class="s2">"X-Api-Key:</span><span class="nv">$API_KEY</span><span class="s2">"</span> <span class="se">\</span>
      <span class="nt">-F</span> <span class="s2">"file=@/chemin/vers/le/nouveau/fichier"</span> <span class="se">\</span>
-     <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/<span class="nv">$RESOURCE</span>/upload
+     <span class="nt">-X</span> POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/<span class="nv">$RESOURCE</span>/upload/
 </code></pre>
         </figure>
       </div>
@@ -682,7 +682,7 @@
 	    <label for="snippet-api/update-resource-file-httpie">HTTPie</label>
       <div class="tab">
         <figure class="highlight">
-          <pre><code class="language-bash" data-lang="bash">http <span class="nt">-f</span> POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/<span class="nv">$RESOURCE</span>/upload <span class="se">\</span>
+          <pre><code class="language-bash" data-lang="bash">http <span class="nt">-f</span> POST <span class="nv">$API</span>/datasets/<span class="nv">$DATASET</span>/resources/<span class="nv">$RESOURCE</span>/upload/ <span class="se">\</span>
      X-Api-Key:<span class="nv">$API_KEY</span> <span class="se">\</span>
      file@/chemin/vers/le/nouveau/fichier
 </code></pre>
@@ -692,7 +692,7 @@
 	    <label for="snippet-api/update-resource-file-python">Python</label>
       <div class="tab">
         <figure class="highlight">
-          <pre><code class="language-python" data-lang="python"><span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/{}/resources/{}/upload'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">DATASET</span><span class="p">,</span> <span class="n">RESOURCE</span><span class="p">))</span>
+          <pre><code class="language-python" data-lang="python"><span class="n">url</span> <span class="o">=</span> <span class="n">api_url</span><span class="p">(</span><span class="s">'/datasets/{}/resources/{}/upload/'</span><span class="o">.</span><span class="nb">format</span><span class="p">(</span><span class="n">DATASET</span><span class="p">,</span> <span class="n">RESOURCE</span><span class="p">))</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="p">{</span>
     <span class="s">'file'</span><span class="p">:</span> <span class="nb">open</span><span class="p">(</span><span class="s">'/chemin/vers/le/nouveau/fichier'</span><span class="p">,</span> <span class="s">'rb'</span><span class="p">),</span>
 <span class="p">},</span> <span class="n">headers</span><span class="o">=</span><span class="n">HEADERS</span><span class="p">)</span>
