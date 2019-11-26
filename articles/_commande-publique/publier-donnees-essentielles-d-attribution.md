@@ -1,9 +1,9 @@
 ---
-title: Publier les données d'attribution des marchés
-slug: publier-donnees-attribution
+title: Publier les données essentielles d'attribution des marchés
+slug: publier-donnees-essentielles-attribution
 ---
 
-# Publier les données d'attribution des marchés
+# Publier les données essentielles d'attribution des marchés
 
 {:.no_toc}
 - TOC
