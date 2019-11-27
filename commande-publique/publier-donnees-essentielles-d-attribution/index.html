@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Publier un profil d’acheteur public</title>
-    <meta name="description" content="Publier un profil d’acheteur public" />
+    <title>Publier les données essentielles d&#39;attribution des marchés</title>
+    <meta name="description" content="Publier les données essentielles d’attribution des marchés" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/css/template.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/css/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/a-propos/publier-profil-acheteur-public/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/commande-publique/publier-donnees-essentielles-d-attribution/" />
     <link rel="alternate" type="application/rss+xml" title="data.gouv.fr - documentation" href="/feed.xml" />
 </head>
 
@@ -120,10 +120,6 @@
             
             <li >
                 <a class="side-pane__link" href="/a-propos/differences-utilisateur-organisatoion/">Différences entre un utilisateur et une organisation</a>
-            </li>
-            
-            <li class="active">
-                <a class="side-pane__link" href="/a-propos/publier-profil-acheteur-public/">Publier un profil d’acheteur public</a>
             </li>
             
             <li >
@@ -297,6 +293,24 @@
         
     
         
+        <a>Commande publique</a>
+        
+        <li class="side-pane__dropdown unfolded">
+            <ul class="side-pane__submenu">
+            
+            <li class="active">
+                <a class="side-pane__link" href="/commande-publique/publier-donnees-essentielles-d-attribution/">Publier les données essentielles d&#39;attribution des marchés</a>
+            </li>
+            
+            <li >
+                <a class="side-pane__link" href="/commande-publique/publier-profil-acheteur-public/">Publier un profil d’acheteur public</a>
+            </li>
+            
+            </ul>
+        </li>
+        
+    
+        
         <a>API</a>
         
         <li class="side-pane__dropdown unfolded">
@@ -335,10 +349,10 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="publier-un-profil-dacheteur-public">Publier un profil d’acheteur public</h1>
+      <h1 id="publier-les-données-essentielles-dattribution-des-marchés">Publier les données essentielles d’attribution des marchés</h1>
 
 <ul class="no_toc" id="markdown-toc">
-  <li><a href="#publier-un-profil-dacheteur-public" id="markdown-toc-publier-un-profil-dacheteur-public">Publier un profil d’acheteur public</a>    <ul>
+  <li><a href="#publier-les-données-essentielles-dattribution-des-marchés" id="markdown-toc-publier-les-données-essentielles-dattribution-des-marchés">Publier les données essentielles d’attribution des marchés</a>    <ul>
       <li><a href="#obligation-légale" id="markdown-toc-obligation-légale">Obligation légale</a></li>
       <li><a href="#structure-des-données-à-publier" id="markdown-toc-structure-des-données-à-publier">Structure des données à publier</a></li>
       <li><a href="#sources-des-données" id="markdown-toc-sources-des-données">Sources des données</a></li>
@@ -368,15 +382,6 @@
           <li><a href="#via-un-système-de-fichier" id="markdown-toc-via-un-système-de-fichier">Via un système de fichier</a></li>
           <li><a href="#via-lapi" id="markdown-toc-via-lapi">Via l’API</a>            <ul>
               <li><a href="#récupérer-la-liste-des-ressources-du-jeu-de-données" id="markdown-toc-récupérer-la-liste-des-ressources-du-jeu-de-données">Récupérer la liste des ressources du jeu de données</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#déclaration-dun-profil-dacheteur" id="markdown-toc-déclaration-dun-profil-dacheteur">Déclaration d’un profil d’acheteur</a>        <ul>
-          <li><a href="#qui-doit-déclarer" id="markdown-toc-qui-doit-déclarer">Qui doit déclarer</a></li>
-          <li><a href="#comment-déclarer" id="markdown-toc-comment-déclarer">Comment déclarer</a>            <ul>
-              <li><a href="#format-de-fichier" id="markdown-toc-format-de-fichier">Format de fichier</a></li>
-              <li><a href="#dépôt-sur-datagouvfr" id="markdown-toc-dépôt-sur-datagouvfr">Dépôt sur data.gouv.fr</a></li>
             </ul>
           </li>
         </ul>
@@ -589,44 +594,9 @@
   <p>https://data.gouv.fr/api/1/datasets/referentiel-de-donnees-marches-publics</p>
 </blockquote>
 
-<h2 id="déclaration-dun-profil-dacheteur">Déclaration d’un profil d’acheteur</h2>
-
-<h3 id="qui-doit-déclarer">Qui doit déclarer</h3>
-
-<p>La déclaration du profil d’acheteur est effectuée par l’acheteur, ou toute personne habilitée par celui-ci, sur <a href="https://data.gouv.fr">data.gouv.fr</a>). L’objectif est d’impliquer les <strong>éditeurs</strong> de profils d’acheteurs afin de simplifier la déclaration des profils d’acheteurs initialement confiée aux acheteurs publics. Dans le cas où l’éditeur n’est pas en mesure d’assurer la déclaration, l’administrateur du profil d’acheteur ou l’acheteur peut le faire directement.</p>
-
-<h3 id="comment-déclarer">Comment déclarer</h3>
-
-<h4 id="format-de-fichier">Format de fichier</h4>
-
-<p>Les éditeurs de profil d’acheteur sont invités à créer un fichier au format CSV contenant les informations suivantes :</p>
-
-<ul>
-  <li>le SIRET des acheteurs (colonne <code class="highlighter-rouge">siretAcheteur</code>) ;</li>
-  <li>l’adresse URL des profils d’acheteurs (colonne <code class="highlighter-rouge">urlProfilAcheteur</code>) ;</li>
-  <li>l’adresse URL du catalogue DCAT qui répértorie les données (colonne <code class="highlighter-rouge">urlDCAT</code>) ;</li>
-  <li>les coordonnées du ou des acheteurs concernés (colonne <code class="highlighter-rouge">coordonnees</code>).</li>
-</ul>
-
-<p>Un modèle de fichier CSV est disponible <a href="https://www.data.gouv.fr/fr/datasets/structure-du-fichier-de-declaration-de-profil-dacheteur/#">sur data.gouv.fr</a>.</p>
-
-<h4 id="dépôt-sur-datagouvfr">Dépôt sur data.gouv.fr</h4>
-
-<p>Pour chaque fiche publiée il est essentiel de demander aux éditeurs de profils d’acheteurs d’associer le mot-clé (« tag ») suivant : « decp » (données essentielles de la commande publique) afin de permettre la centralisation de l’ensemble des contributions par Etalab.</p>
-
-<p>La procédure complète pour déposer un ficher de déclaration de profil d’acheteur sur data.gouv.fr est la suivante :</p>
-
-<ol>
-  <li>Créer un compte individuel en allant sur : <a href="https://www.data.gouv.fr/fr/register">https://www.data.gouv.fr/fr/register</a> ;</li>
-  <li>Une fois celui-ci validé via l’email de confirmation, créer une organisation correspondant à votre profil d’acheteur depuis : <a href="https://www.data.gouv.fr/fr/admin/organization/new/">https://www.data.gouv.fr/fr/admin/organization/new/</a> ;</li>
-  <li>Créer un jeu de données depuis <a href="https://www.data.gouv.fr/fr/admin/dataset/new/">https://www.data.gouv.fr/fr/admin/dataset/new/</a> en choisissant lors de l’étape « Choisissez qui publie » l’organisation créée au point précédent ;</li>
-  <li>À l’étape « Décrivez votre jeu de données » renseigner un titre et éventuellement d’autres métadonnées (couverture spatiale, fréquence de mise à jour…) et <strong>renseigner le tag (mot clé) « decp »</strong> ;</li>
-  <li>À l’étape « Ajouter vos premières ressources » de la création du jeu de données, déposer le fichier CSV.</li>
-</ol>
-
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_a-propos/publier-profil-acheteur-public.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_commande-publique/publier-donnees-essentielles-d-attribution.md">
               ✎ Editer cette page
           </a>
       </p>
