@@ -54,10 +54,14 @@ collections:
     title: Moissonnage
     output: true
     order: 6
+  commande-publique:
+    title: Commande publique
+    output: true
+    order: 7
   api:
     title: API
     output: true
-    order: 7
+    order: 8
 
 defaults:
   - scope:

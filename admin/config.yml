@@ -85,3 +85,13 @@ collections:
       - {label: "Sous-titre", name: "subtitle", widget: "string"}
       - {label: "Libellé (du menu)", name: "label", widget: "string"}
       - {label: "Contenu", name: "body", widget: "markdown"}
+
+  - name: commande-publique
+    label: Commande publique
+    folder: _commande-publique
+    create: true
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Sous-titre", name: "subtitle", widget: "string"}
+      - {label: "Libellé (du menu)", name: "label", widget: "string"}
+      - {label: "Contenu", name: "body", widget: "markdown"}
