@@ -40,4 +40,4 @@ En consultant [le blog d’Etalab](https://www.etalab.gouv.fr) vous pourrez vous
 
 Nous vous invitons par ailleurs à suivre les comptes Twitter [@datagouvfr](https://twitter.com/datagouvfr) (actualité de la plateforme, annonce des nouveaux jeux de données) et [@etalab](https://twitter.com/etalab) (actualité de la mission Etalab et de l’ouverture des données publiques).
 
-L’équipe qui travaille sur cette plateforme est par ailleurs joignable par e-mail : [info@data.gouv.fr](mailto:info@data.gouv.fr).
+L’équipe qui travaille sur cette plateforme est par ailleurs joignable par e-mail : [support@data.gouv.fr](mailto:support@data.gouv.fr).
