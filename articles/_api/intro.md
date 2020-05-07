@@ -112,7 +112,7 @@ Si vous n’arrivez pas à comprendre une erreur, que vous avez besoin de suppor
 - la date et l’heure de la requête
 - un peu de contexte sur la raison de cette requête, son cadre
 
-Parfois, la réponse en erreur comprend une entête `X-Sentry-ID`. Pensez à fournir cet identifiant, il nous aidera de comprendre précisement ce qui ne va pas et, si c’est un bug, à le corriger.
+Parfois, la réponse en erreur comprend une entête `X-Sentry-ID`. Pensez à fournir cet identifiant, il nous permettra de comprendre précisement ce qui ne va pas et, si c’est un bug, à le corriger.
 
 ## Documentation de référence
 
