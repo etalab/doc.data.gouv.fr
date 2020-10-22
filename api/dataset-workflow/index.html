@@ -679,7 +679,7 @@
 
 <h3 id="remplacer-un-fichier-de-ressource">Remplacer un fichier de ressource</h3>
 
-<p>Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données…),il est possible d’utiliser <a href="/api/reference/#/datasets/upload_dataset_resource">l’API de mise à jour de fichier</a>. L’ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée sur la page du jeu de données pointera vers le nouveau fichier.</p>
+<p>Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données…),il est possible d’utiliser <a href="/api/reference/#/datasets/upload_dataset_resource">l’API de mise à jour de fichier</a>. L’ancien fichier sera supprimé.</p>
 
 <div class="tabs">      <input name="snippet-api/update-resource-file" type="radio" id="snippet-api/update-resource-file-curl" checked="checked" />
 	    <label for="snippet-api/update-resource-file-curl">CURL</label>
@@ -727,7 +727,7 @@
 
 <h3 id="suppression-dun-ressource">Suppression d’un ressource</h3>
 
-<p><a href="/api/reference/#/datasets/delete_resource">l’API de suppression de ressource</a> permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier lui n’est pas supprimé afin de ne pas pénaliser ceux qui en dépendent.</p>
+<p><a href="/api/reference/#/datasets/delete_resource">l’API de suppression de ressource</a> permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier associé est aussi supprimé.</p>
 
 <div class="tabs">      <input name="snippet-api/delete-resource" type="radio" id="snippet-api/delete-resource-curl" checked="checked" />
 	    <label for="snippet-api/delete-resource-curl">CURL</label>
