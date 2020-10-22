@@ -92,7 +92,7 @@ Cette requête permet de mettre à jour les métadonnées d’une ressource en u
 
 ### Remplacer un fichier de ressource
 
-Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données...),il est possible d’utiliser [l’API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L’ancien fichier sera toujours disponible pour ceux qui en dépendent mais la ressource affichée sur la page du jeu de données pointera vers le nouveau fichier.
+Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données...),il est possible d’utiliser [l’API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L’ancien fichier sera supprimé.
 
 {% snippets api/update-resource-file %}
 
@@ -108,7 +108,7 @@ Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jo
 
 ### Suppression d’un ressource
 
-[l’API de suppression de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_resource) permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier lui n’est pas supprimé afin de ne pas pénaliser ceux qui en dépendent.
+[l’API de suppression de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_resource) permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier associé est aussi supprimé.
 
 {% snippets api/delete-resource %}
 
