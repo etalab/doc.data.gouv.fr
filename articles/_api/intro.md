@@ -103,6 +103,16 @@ Lorsque c’est possible, l’API répondra en JSON avec le format suivant :
 }
 ```
 
+#### Erreur 423
+
+En cas d'activités suspectes ou de spams répétés, l'API pourra retourner l'erreur 423, empêchant ainsi toute nouvelle création d'utilisateur ou de contenu, à l'exception des ressources (hors ressources communautaires).
+
+```json
+{
+  "message": "Due to unusual activities, the creation of new content is currently disabled."
+}
+```
+
 #### Support
 
 Si vous n’arrivez pas à comprendre une erreur, que vous avez besoin de support et souhaitez contacter l’équipe de data.gouv.fr, pensez à fournir les éléments suivants :
