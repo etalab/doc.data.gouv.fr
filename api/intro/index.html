@@ -362,6 +362,7 @@
           <li><a href="#listes-simples" id="markdown-toc-listes-simples">Listes simples</a></li>
           <li><a href="#pagination" id="markdown-toc-pagination">Pagination</a></li>
           <li><a href="#gestion-derreurs" id="markdown-toc-gestion-derreurs">Gestion d’erreurs</a>            <ul>
+              <li><a href="#erreur-423" id="markdown-toc-erreur-423">Erreur 423</a></li>
               <li><a href="#support" id="markdown-toc-support">Support</a></li>
             </ul>
           </li>
@@ -466,6 +467,15 @@
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"un message d’erreur"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="erreur-423">Erreur 423</h4>
+
+<p>En cas d’activités suspectes ou de spams répétés, l’API pourra retourner l’erreur 423, empêchant ainsi toute nouvelle création d’utilisateur ou de contenu, à l’exception des ressources (hors ressources communautaires).</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Due to unusual activities, the creation of new content is currently disabled."</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
