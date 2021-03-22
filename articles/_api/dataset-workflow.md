@@ -51,6 +51,8 @@ La réponse en JSON contient les metadonnées du jeu de données créé, en part
 
 La fiche du jeu de données est maintenant créée et il est maintenant possible d’y ajouter des ressources.
 
+**Attention** : par défaut, un jeu de données créé via l'API est public. Afin de créer et maintenir un jeu de données en privé, il faut mettre l'attribut `private: true` dans chaque appel à l'API. Sinon, chaque modification d'un jeu de données par l'API va le passer en public.
+
 ### Ajout d’une ressource
 
 Pour créer une ressource, nous allons utiliser l’API [création d’une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource).

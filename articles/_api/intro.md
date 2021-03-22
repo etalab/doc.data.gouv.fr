@@ -27,6 +27,8 @@ Les appels d’API sont soumis aux même permissions que l’interface web.
 
 Par exemple, vous devez être membre d’une organisation pour modifier l’un de ses jeux de données.
 
+**Attention** : par défaut, un jeu de données créé via l'API est public. Afin de créer et maintenir un jeu de données en privé, il faut mettre l'attribut `private: true` dans chaque appel à l'API. Sinon, chaque modification d'un jeu de données par l'API va le passer en public.
+
 ## Formats de données
 
 ### Content-type
