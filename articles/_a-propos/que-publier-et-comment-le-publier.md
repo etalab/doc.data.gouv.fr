@@ -66,8 +66,6 @@ Nous conseillons les formats suivants pour la publication des données géograph
 - GeoJSON, Shapefile, MapInfo MIF/MID, MapInfo TAB et GML, pour les vecteurs ;
 - ECW, JPEG2000 et GeoTIFF, pour les données pixelisées (raster).
 
-[Voir la documentation de geo.data.gouv.fr](https://geo.data.gouv.fr/fr/doc/publish-your-data)
-
 #### Données hiérarchiques
 
 Si vos données comportent une structure interne, alors nous vous recommandons les formats suivants :
