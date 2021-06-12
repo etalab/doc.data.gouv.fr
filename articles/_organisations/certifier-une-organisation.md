@@ -15,4 +15,4 @@ Une fois qu’une organisation est certifiée sur [data.gouv.fr](https://www.dat
 
 ## Comment demander la certification d’une organisation
 
-Pour demander la certification d’une organisation dont vous êtes administrateur : envoyez une demande de certification par e-mail à <certification@data.gouv.fr>, en expliquant pourquoi vous souhaitez certifier votre organisation. Notre équipe examinera votre demande et prendra une décision sous quelques jours.
+Pour demander la certification d’une organisation dont vous êtes administrateur : [**envoyez une demande de certification**](https://support.data.gouv.fr/collectivite-territoriale/certification), en expliquant pourquoi vous souhaitez certifier votre organisation, une preuve de votre rôle dans celle-ci ainsi que l'URL vers votre organisation. Notre équipe examinera votre demande et prendra une décision sous quelques jours.
