@@ -41,7 +41,9 @@ Ces jeux de données geospatiaux, lorsqu'ils proviennent de geo.data.gouv.fr, au
 Aujourd'hui, data.gouv.fr peut moissonner les plateformes ou formats suivants :
 - [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %})
 - [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %})
-- [OpenDataSoft]({{ site.baseurl }}{% link _moissonnage/ods.md %})
+- [DKAN, une variante du moissonneur CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %})
+- [OpenDataSoft]({{ site.baseurl }}{% link _moissonnage/ods.md %}) ODS
+- MAAF : un moissonneur spécifique au Ministère de l'Agriculture et de l'Alimentation
 
 ### Métadonnées communes
 
