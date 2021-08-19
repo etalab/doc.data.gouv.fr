@@ -5,7 +5,7 @@ slug: voir-ou-modifier-votre-compte
 
 # Voir ou modifier votre compte
 
-Votre page de profil contient des informations au sujet de vos contributions, vos jeux de données, et vos abonnements. Cette page est visible par tout le monde, elle ne nécessite pas de compte utilisateur pour être consultée.
+> ⚠️ Attention : La page de profil utilisateur visible par tout le monde est en cours de développement suite à la [refonte graphique](https://www.data.gouv.fr/fr/posts/nouvelle-vie-nouvelle-peau-pour-data-gouv-fr/).
 
 ## À propos de votre page de profil
 
@@ -24,19 +24,12 @@ Votre profil contient les informations suivantes :
 
 L’adresse e-mail associée à votre compte n’est pas affichée sur votre profil public.
 
-## Voir votre profil
-
-Pour voir votre profil :
-
-1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Cliquez sur votre nom et prénom, en haut à droite de votre écran, puis sur **Mon profil**.
-
 ## Modifier votre profil
 
 Pour modifier les informations associées à un compte existant :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Moi**, dans la colonne de gauche.
 
 Depuis la page **Moi**, vous pouvez :

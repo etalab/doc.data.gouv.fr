@@ -7,7 +7,7 @@ slug: faire-une-recherche
 
 Utilisez notre barre de recherche pour trouver ce que vous cherchez sur data.gouv.fr parmi les jeux de données, les réutilisations de données, et les organisations.
 
-Après avoir fait une recherche sur data.gouv.fr, vous pouvez trier les résultats, ou les restreindre davantage en activant les filtres de la barre latérale.
+Après avoir fait une recherche sur data.gouv.fr, vous pouvez trier les résultats, ou les restreindre davantage en utilisant les différents filtres de recherche.
 
 ## Ce que vous pouvez chercher
 
@@ -15,14 +15,16 @@ Vous pouvez chercher les choses suivantes au sein du catalogue de data.gouv.fr :
 
 - jeux de données ;
 - réutilisations ;
-- organisations ;
-- territoires (régions, départements, communes).
+- organisations.
 
 Vous ne pouvez pas chercher les choses suivantes :
 
 - utilisateurs individuels ;
 - ressources ;
-- discussions.
+- discussions ;
+- territoires.
+
+> ⚠️ Attention : Les pages de recherche sont en développement suite à la [refonte graphique](https://www.data.gouv.fr/fr/posts/nouvelle-vie-nouvelle-peau-pour-data-gouv-fr/) et ne correspondent pas à la documentation ci-dessous.
 
 ## Utiliser la page de recherche
 

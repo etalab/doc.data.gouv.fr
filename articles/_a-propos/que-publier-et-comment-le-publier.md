@@ -26,7 +26,7 @@ Plus concrètement, un fichier Word qui contient des informations sur un projet 
 Si vous ne savez pas par où commencer, voici quelques idées de jeux de données à publier :
 
 - la liste des délibérations adoptées par une assemblée locale — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5a8f387988ee381bb2a62a46) ;
-- la liste des subventions attribuées par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5bd8fb5706e3e72ba58c0ec2) ;
+- la liste des subventions attribuées par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/610aa8d614984375f3cff7a0) ;
 - la liste des équipements publics gérés par une collectivité — [voir un exemple](https://www.data.gouv.fr/fr/datasets/595c271ca3a7296408d69b92) ;
 - la liste annuelle des prénoms des nouveaux-nés déclarés à l’état-civil — [voir un exemple](https://www.data.gouv.fr/fr/datasets/5407f862a3a7292ef9c20a61).
 
@@ -42,7 +42,7 @@ Pour chaque grand type de données, il existe un ou plusieurs format standard, c
 
 #### Données tabulaires
 
-Les données tabulaires (feuilles de calcul), gagnent à être publiées sous la forme de fichiers CSV (_comma-separated values_), reconnaissables à leur extension en `.csv`. Si le fichier que vous avez entre les mains est un fichier Excel, nous vous conseillons d’exporter vos données au format CSV. [Voir comment exporter des données au format CSV à partir d’Excel](https://www.ibm.com/support/knowledgecenter/fr/SSWU4L/WebLanding/imc_WebLanding/WebLanding_q_a_watson_assistant/Saving_a_CSV_file_with_UTF-8_encoding.html). Pourquoi du CSV et pas du XLS comme tout le monde ? Justement car tout le monde n’utilise pas Excel, qui est un logiciel payant.
+Les données tabulaires (feuilles de calcul), gagnent à être publiées sous la forme de fichiers CSV (_comma-separated values_), reconnaissables à leur extension en `.csv`. Si le fichier que vous avez entre les mains est un fichier Excel, nous vous conseillons d’exporter vos données au format CSV. [Voir comment exporter des données au format CSV à partir d’Excel](https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba). Pourquoi du CSV et pas du XLS comme tout le monde ? Justement car tout le monde n’utilise pas Excel, qui est un logiciel payant.
 
 Quand vous créez votre fichier CSV, nous vous conseillons de :
 
@@ -86,7 +86,7 @@ Même raisonnement que pour les images et les vidéos : les fichiers Word, Power
 
 #### Autres types de données
 
-Pour approfondir la question des formats, nous vous conseillons de jeter un œil au [référentiel général d’interopérabilité](https://references.modernisation.gouv.fr/interoperabilite) (disponible au format PDF), qui référence les normes et les standards au sein des systèmes d’information de l’administration.
+Pour approfondir la question des formats, nous vous conseillons de jeter un œil au [référentiel général d’interopérabilité](https://www.numerique.gouv.fr/uploads/Referentiel_General_Interoperabilite_V2.pdf) (disponible au format PDF), qui référence les normes et les standards au sein des systèmes d’information de l’administration.
 
 ### Choisir une licence
 

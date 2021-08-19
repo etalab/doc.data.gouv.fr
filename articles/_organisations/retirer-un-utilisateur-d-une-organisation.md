@@ -14,7 +14,7 @@ Seuls les administrateurs d’une organisation peuvent retirer des membres de le
 Pour retirer un membre d’une organisation dont vous êtes administrateur :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur la page de suivi de l’organisation à laquelle vous souhaitez retirer un membre, en cliquant sur le nom de votre organisation, dans la colonne de gauche ;
 4. Dans le bloc **Membres**, sur la droite de votre écran, cliquez sur le nom du membre que vous souhaitez retirer ;
 5. Dans la fenêtre qui s’ouvre alors, cliquez sur **Supprimer** ;

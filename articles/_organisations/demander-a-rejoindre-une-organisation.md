@@ -9,6 +9,8 @@ N’importe quel utilisateur peut demander à rejoindre n’importe quelle organ
 
 ## Comment demander à rejoindre une organisation
 
+> ⚠️ Attention : La page organisation est en cours de développement suite à la [refonte graphique](https://www.data.gouv.fr/fr/posts/nouvelle-vie-nouvelle-peau-pour-data-gouv-fr/) et ne correspond pas à la documentation ci-dessous.
+
 Pour faire une demande :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
@@ -22,7 +24,7 @@ Pour faire une demande :
 Pour accepter un nouvel utilisateur dans votre organisation suite à une demande de ce dernier :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Cliquez sur l’icône en forme d’enveloppe qui se trouve en haut à droite de votre écran ;
 4. Cliquez sur la ligne _Demande d’adhésion en attente_ ;
 5. Dans le bloc **Membres**, cliquez sur le bouton vert en forme de `v` pour accepter la demande — ou sur le bouton rouge (`x`) pour la rejeter

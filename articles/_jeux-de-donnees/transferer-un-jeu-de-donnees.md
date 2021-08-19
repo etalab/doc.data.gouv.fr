@@ -12,8 +12,8 @@ Un jeu de données publié au nom d’un individu ou d’une organisation peut �
 Pour transférer un jeu de données publié avec votre propre compte, à titre personnel :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
-3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Moi**, dans la colonne de gauche ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
+3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Profil**, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données que vous souhaitez transférer ;
 6. Cliquez sur la flèche située à côté du bouton **Éditer**, en haut à droite de votre écran, puis sur **Transférer** dans le menu déroulant qui apparaît alors ;
@@ -27,7 +27,7 @@ Pour transférer un jeu de données publié avec votre propre compte, à titre p
 Pour transférer un jeu de données publié pour le compte d’une organisation :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur la page de suivi de votre organisation, en cliquant sur le nom de votre organisation, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données que vous souhaitez transférer ;
@@ -42,6 +42,6 @@ Pour transférer un jeu de données publié pour le compte d’une organisation 
 Pour accepter une demande de transfert vers votre compte :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Cliquez sur l’enveloppe située en haut à droite de votre écran, puis sur le message dont le titre est **Demande de transfert en attente** ;
 4. Vérifiez que le jeu de données que vous êtes sur le point d’accepter est le bon puis cliquez sur **Accepter** pour confirmer le transfert.

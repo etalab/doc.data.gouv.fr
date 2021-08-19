@@ -12,7 +12,7 @@ Vous pouvez ajouter n’importe quel utilisateur de data.gouv.fr à une organisa
 Pour ajouter un nouvel utilisateur à une organisation dont vous êtes administrateur :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur la page de suivi de l’organisation à laquelle vous souhaitez ajouter un membre, en cliquant sur le nom de votre organisation, dans la colonne de gauche ;
 4. Dans le bloc **Membres**, sur la droite de votre écran, cliquez sur le bouton **Ajouter** ;
 5. Saisissez le prénom et le nom de l’utilisateur à ajouter, puis sélectionnez-le quand vous le voyez apparaître dans la liste ;

@@ -9,12 +9,12 @@ Les jeux de données publiés sur data.gouv.fr sont publics, ils peuvent donc ê
 
 Pour intégrer un jeu de données sur une autre page web ou sur un blog :
 
-1. Sur la page du jeu de données à intégrer, cliquez sur l’icône `</>` ;
-2. Du code (HTML) s’affiche alors dans une petite fenêtre, copiez-le ;
+1. Sur la page du jeu de données à intégrer, descendez en-dessous des ressources jusqu’à la section **Embed** ;
+2. Du code (HTML) s’affiche alors dans une petite fenêtre, copiez-le (vous pouvez utiliser) le bouton à droite pour ce faire ;
 3. Collez le code dans votre propre fichier, là où vous souhaitez afficher les données.
 
 Plusieurs jeux de données peuvent être intégrés sur une même page web. Vous pouvez aussi contrôler l’apparence du jeu de données intégré en modifiant la classe CSS `dataset-card`.
 
 ## Intégrer un catalogue de données sur un site web
 
-Pour aller plus loin qu’une simple intégration de jeux de données, une [bibliothèque Javascript](https://github.com/datakode/metaclic) (Metaclic) est disponible, qui permet de créer et personnaliser un véritable catalogue de données. [Voir un exemple de catalogue](https://datakode.github.io/metaclic/exemples/exemple_simple.html) ou [lire la documentation de Metaclic](https://github.com/datakode/metaclic/wiki).
+Pour aller plus loin qu’une simple intégration de jeux de données, une [bibliothèque Javascript](https://github.com/datakode/metaclic) (Metaclic) est disponible, qui permet de créer et personnaliser un véritable catalogue de données. [Lire la documentation de Metaclic](https://github.com/datakode/metaclic/wiki).

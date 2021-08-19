@@ -19,14 +19,16 @@ Pour télécharger un catalogue, cliquez sur l’URL associée aux données qui 
 
 Le catalogue des jeux de données est aussi publié dans plusieurs formats, pour en faciliter la consultation.
 
-Voici la liste des formats proposés et les URL (liens) correspondantes :
+Voici la liste des formats proposés avec les MIME type à utiliser ainsi que les URL (liens) correspondantes :
 
-- JSON-LD : <https://www.data.gouv.fr/catalog.jsonld> ;
-- Turtle : <https://www.data.gouv.fr/catalog.ttl> ;
-- N-Triples : <https://www.data.gouv.fr/catalog.nt> ;
-- XML-RDF : <https://www.data.gouv.fr/catalog.xml> ;
-- N3 : <https://www.data.gouv.fr/catalog.n3> ;
-- Trig : <https://www.data.gouv.fr/catalog.trig>.
+| Format    | URL                                       | MIME type                                 |
+|-----------|-------------------------------------------|-------------------------------------------|
+| RDF/XML   | <https://www.data.gouv.fr/catalog.xml>    | **application/rdf+xml**, application/xml  |
+| Turtle    | <https://www.data.gouv.fr/catalog.ttl>    | **text/turle**, application/x-turtle      |
+| N3        | <https://www.data.gouv.fr/catalog.n3>     | **text/n3**                               |
+| JSON-LD   | <https://www.data.gouv.fr/catalog.jsonld> | **application/ld+json**, application/json |
+| N-Triples | <https://www.data.gouv.fr/catalog.nt>     | **application/n-triples**                 |
+| TriG      | <https://www.data.gouv.fr/catalog.trig>   | **application/trig**                      |
 
 ## Statistiques de fréquentation de data.gouv.fr
 

@@ -11,7 +11,7 @@ La publication d’un jeu de données sur data.gouv.fr nécessite la création d
 Pour mettre en ligne un nouveau jeu de données :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [la page de création d’un jeu de données](https://www.data.gouv.fr/fr/admin/dataset/new/), en cliquant sur le bouton **CONTRIBUEZ !** qui se trouve au centre de votre écran.
+2. Rendez-vous sur [la page de création d’un jeu de données](https://www.data.gouv.fr/fr/admin/dataset/new/), en cliquant sur le bouton **Publiez un jeu de données** dans le bandeau **Participez** en bas de page.
 
 À partir de là, la publication se déroule en 4 étapes.
 
@@ -152,6 +152,19 @@ Par défaut, il s’agit de la date à laquelle vous importez votre fichier sur 
 Si vous référencez un fichier hébergé ailleurs que sur data.gouv.fr, il s’agit de la date à laquelle votre fichier a été mis en ligne.
 
 La date de publication est facultative.
+
+### Schéma
+
+Les schémas de données permettent de décrire des modèles de données : quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles etc.
+Pour en savoir plus sur les schémas, consultez [schema.data.gouv.fr](https://schema.data.gouv.fr/).
+
+Il s'agit pour ce champ de l’identifiant du schéma auquel la ressource adhère, le cas échéant.
+
+Deux cas possibles :
+- si vous importez un fichier, une validation sera effectuée sur la ressource pour s’assurer qu’elle correspond bien au fichier indiqué.
+- si vous référencez un fichier hébergé ailleurs, sur un autre site, aucune validation de correspondance au schéma n’est effectuée.
+
+Le schéma est facultatif.
 
 ### URL
 

@@ -28,7 +28,8 @@ Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de m
 - [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %}) ;
 - [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %}).
 
-Il existe [un cas particulier pour les données issues d'Inspire]({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonnage-vs-geodatagouvfr), leur moissonnage se fait depuis [geo.data.gouv.fr](https://geo.data.gouv.fr).
+Il existe [un cas particulier pour les données issues d’Inspire]({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonnage-vs-geodatagouvfr), leur moissonnage se fait depuis [geo.data.gouv.fr](https://geo.data.gouv.fr).
+> ⚠️ Attention : [geo.data.gouv.fr](https://geo.data.gouv.fr) n’est plus activement maintenu. Plus d’informations à propos [de l’extinction de geo.data.gouv.fr sont disponibles ici](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/).
 
 ## Créer un moissonneur
 
@@ -37,7 +38,7 @@ La création d’un moissonneur sur data.gouv.fr nécessite la création d’un 
 Pour créer un nouveau moissonneur :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Cliquez sur l’icône en forme de plus (`+`) qui se trouve à gauche de votre avatar ;
 4. Cliquez sur **Un moissonneur**.
 
@@ -86,7 +87,7 @@ L’URL est obligatoire.
 
 Choisissez ici le format des métadonnées associées aux jeux de données publiés sur votre plateforme. Ce format permet au moissonneur de savoir comment lire et interpréter vos métadonnées, pour bien les retranscrire sur data.gouv.fr.
 
-Certaines implémentations permettent d'ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage. (Consultez [la section dédié de la documentation de moissonnage]({{ site.baseurl }}{% link _moissonnage/intro.md %}#filtrage) ainsi que les filtres [spécifiques de votre implémentations](({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonneurs-disponibles)))
+Certaines implémentations permettent d'ajouter des filtres, dans le but d’inclure ou d’exclure certains jeux de données du moissonnage. (Consultez [la section dédié de la documentation de moissonnage]({{ site.baseurl }}{% link _moissonnage/intro.md %}#filtrage) ainsi que les filtres [spécifiques de votre implémentations]({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonneurs-disponibles))
 
 Le type d’implémentation est obligatoire.
 

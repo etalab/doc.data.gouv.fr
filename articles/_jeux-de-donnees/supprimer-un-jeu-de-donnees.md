@@ -18,8 +18,8 @@ La suppression d’un jeu de données dans son intégralité entraine la suppres
 Pour supprimer un jeu de données publié avec votre propre compte, à titre personnel :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
-3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Moi**, dans la colonne de gauche ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
+3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Profil**, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données que vous souhaitez supprimer ;
 6. Cliquez sur la flèche située à côté du bouton **Éditer**, en haut à droite de votre écran, puis sur **Supprimer** dans le menu déroulant qui apparaît alors ;
@@ -30,7 +30,7 @@ Pour supprimer un jeu de données publié avec votre propre compte, à titre per
 Pour supprimer un jeu de données publié au nom d’une organisation à laquelle vous appartenez :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur la page de suivi de votre organisation, en cliquant sur le nom de votre organisation, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données que vous souhaitez supprimer ;
@@ -46,8 +46,8 @@ La suppression d’une ressources n’entraîne pas la suppression du jeu de don
 Pour supprimer une ressource publiée avec votre propre compte, à titre personnel :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
-3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Moi**, dans la colonne de gauche ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
+3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit), en cliquant sur **Profil**, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données qui contient la ressource à supprimer ;
 6. Naviguez jusqu’à la section **Ressources** située en milieu de page ;
@@ -60,7 +60,7 @@ Pour supprimer une ressource publiée avec votre propre compte, à titre personn
 Pour supprimer une ressource publiée au nom d’une organisation à laquelle vous appartenez :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur la page de suivi de votre organisation, en cliquant sur le nom de votre organisation, dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** située en milieu de page ;
 5. Cliquez sur le jeu de données qui contient la ressource à supprimer ;
