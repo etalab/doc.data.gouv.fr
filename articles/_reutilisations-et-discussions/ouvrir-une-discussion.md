@@ -24,5 +24,5 @@ Pour créer une nouvelle discussion :
 3. Cliquez sur la zone intitulée **Démarrer une nouvelle discussion** — un formulaire s’ouvre alors ;
 4. Dans le champ **Titre** du formulaire, saisissez l’objet de votre message, par exemple : _Question sur les noms des colonnes du fichier CSV_ ;
 5. Dans le champ **Commenter**, saisissez votre message ;
-6. Pour publier votre message sur la page, cliquez sur le bouton bleu **DÉMARRER UNE DISCUSSION** ;
+6. Pour publier votre message sur la page, cliquez sur le bouton bleu **Soumettre** ;
 7. Votre message est publié et le producteur du jeu de données (ou de la réutilisation) reçoit une notification de son côté.

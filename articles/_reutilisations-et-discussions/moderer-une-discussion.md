@@ -26,7 +26,7 @@ Pour récupérer le lien d’une discussion :
 
 Pour récupérer le lien d’un commentaire spécifique :
 
-1. Cliquez sur l’icône en forme de 8 penché qui se situe à côté de la date à laquelle le commentaire en question a été publié ;
+1. Cliquez sur l’icône en forme de 8 penché qui se situe au bout de la ligne où se trouve le commentaire en question ;
 2. Copiez l’URL qui s’affiche alors dans votre navigateur, elle doit maintenant se terminer par `#discussion-XXX`.
 
 ## Ajouter un commentaire
@@ -34,8 +34,8 @@ Pour récupérer le lien d’un commentaire spécifique :
 Pour ajouter un commentaire dans une discussion existante :
 
 1. Rendez-vous au bas de la discussion ;
-2. Cliquez sur **AJOUTER UN COMMENTAIRE** ;
-3. Dans le champ **Commenter** qui s’ouvre alors, entrez votre message puis cliquez sur le bouton **ENVOYER VOTRE COMMENTAIRE** pour le publier ;
+2. Cliquez sur **Répondre** ;
+3. Dans le champ **Répondre à la discussion** qui s’ouvre alors, entrez votre message puis cliquez sur le bouton **Soumettre** pour le publier ;
 4. L’utilisateur ou l’organisation à l’origine de la discussion recevra alors une notification l’invitant à vous répondre.
 
 ## Fermer une discussion
@@ -47,7 +47,7 @@ Une discussion close ne peut plus faire l’objet de nouveaux commentaires, mais
 Pour fermer une discussion :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur votre nom et prénom, en haut à droite de votre écran, puis sur **Administration** ;
+2. Rendez-vous sur [votre tableau de bord](https://www.data.gouv.fr/fr/admin/), en cliquant sur **Administration** en haut à droite de votre écran ;
 3. Allez sur [la page de suivi de votre compte](https://www.data.gouv.fr/fr/admin/me/edit) (ou sur celle de votre organisation), en cliquant sur **Moi** (ou sur le nom de votre organisation), dans la colonne de gauche ;
 4. Naviguez jusqu’à la section **Jeux de données** (ou **Réutilisations**) située en milieu de page ;
 5. Cliquez sur le jeu de données (ou la réutilisation) auquel est associé la discussion à fermer ;

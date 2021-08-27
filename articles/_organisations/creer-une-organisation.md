@@ -29,7 +29,7 @@ Nous vous conseillons de créer une organisation si vous souhaitez :
 Pour créer une organisation :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur [la page de création d’une organisation](https://www.data.gouv.fr/fr/admin/organization/new/), en cliquant sur le bouton **CONTRIBUEZ !** qui se trouve au centre de votre écran et en cliquant sur **Créez ou trouvez votre organisation**.
+2. Rendez-vous sur [la page de création d’une organisation](https://www.data.gouv.fr/fr/admin/organization/new/), en cliquant sur le lien **Créez ou trouvez votre organisation** dans le bandeau **Participez** en bas de page.
 
 ### 1. Éviter les doublons
 

@@ -5,26 +5,12 @@ slug: signaler-un-contenu
 
 # Signaler un contenu
 
-Si vous possédez un compte utilisateur, vous pouvez signaler des jeux de données ou des réutilisations qui enfreignent les [conditions générales d’utilisation](https://www.data.gouv.fr/fr/terms/) de data.gouv.fr.
-
 Les signalements sont transmis à l’équipe technique de data.gouv.fr. Les responsables du site se réservent ensuite le droit de supprimer les données ou les réutilisations inappropriées.
 
-## Signaler un jeu de données
-
-Pour signaler un jeu de données qui vous semble inapproprié :
-
-1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur la page du jeu de données que vous souhaitez signaler ;
-3. Sous les ressources, cliquez sur le bouton rouge en forme de danger ;
-4. Cliquez sur **NOUVELLE ANOMALIE** ;
-5. Complétez les champs du formulaire puis cliquez sur **SOUMETTRE** pour avertir les modérateurs de la plateforme.
-
-## Signaler une réutilisation
-
-Pour signaler une réutilisation qui vous semble inappropriée :
-
-1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
-2. Rendez-vous sur la page de la réutilisation que vous souhaitez signaler ;
-3. Sous l’image de la réutilisation, cliquez sur le bouton rouge en forme de danger ;
-4. Cliquez sur **NOUVELLE ANOMALIE** ;
-5. Complétez les champs du formulaire puis cliquez sur **SOUMETTRE** pour avertir les modérateurs de la plateforme.
+Afin de signaler un contenu qui vous semble inapproprié :
+1. Rendez vous sur [https://support.data.gouv.fr/]() ;
+2. Sélectionnez le champ adéquat dans la partie **Qui êtes vous ?** ;
+3. Sélectionnez `Autre` dans la partie **Comment pouvons-nous vous aider ?** ;
+4. Complétez votre email dans **Contactez-nous** ;
+5. Renseignez **L’objet de votre question** en indiquant qu’il s’agit d’un *signalement* ;
+6. Remplissez le champ **Votre question** en ajoutant un lien vers le jeu de données ou la réutilisation qui vous semble inappropriés.
