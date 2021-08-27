@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>OpenDataSoft</title>
-    <meta name="description" content="Moissonnage OpenDataSoft" />
+    <title>Opendatasoft</title>
+    <meta name="description" content="Moissonnage Opendatasoft" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/css/template.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/css/main.css">
@@ -285,7 +285,7 @@
             </li>
             
             <li class="active">
-                <a class="side-pane__link" href="/moissonnage/ods/">OpenDataSoft</a>
+                <a class="side-pane__link" href="/moissonnage/ods/">Opendatasoft</a>
             </li>
             
             </ul>
@@ -349,23 +349,23 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="moissonnage-opendatasoft">Moissonnage OpenDataSoft</h1>
+      <h1 id="moissonnage-opendatasoft">Moissonnage Opendatasoft</h1>
 
-<h2 id="opendatasoft">OpenDataSoft</h2>
+<h2 id="opendatasoft">Opendatasoft</h2>
 
-<p><a href="https://www.opendatasoft.com">OpenDataSoft</a> est un service en PaaS permettant de mettre en œuvre ce qu’on appelle un datastore et le portail de données associé.</p>
+<p><a href="https://www.opendatasoft.com">Opendatasoft</a> est un service en PaaS permettant de mettre en œuvre ce qu’on appelle un datastore et le portail de données associé.</p>
 
-<p>Le moissonneur utilise l’API de chaque portail OpenDataSoft pour récupérer les métadonnées.</p>
+<p>Le moissonneur utilise l’API de chaque portail Opendatasoft pour récupérer les métadonnées.</p>
 
 <h2 id="spécifications-techniques">Spécifications techniques</h2>
 
-<p>Ce moissonneur attend l’URL racine de votre portail OpenDataSoft. C’est bien l’URL publique (<code class="highlighter-rouge">https://data.ma-compagnie.com</code>) qui est attendue, et non l’URL noire OpenDataSoft (<code class="highlighter-rouge">https://ma-compagnie.opendatasoft.com</code>).</p>
+<p>Ce moissonneur attend l’URL racine de votre portail Opendatasoft. C’est bien l’URL publique (<code class="highlighter-rouge">https://data.ma-compagnie.com</code>) qui est attendue, et non l’URL noire Opendatasoft (<code class="highlighter-rouge">https://ma-compagnie.opendatasoft.com</code>).</p>
 
-<p><strong>Attention</strong>: OpenDataSoft utilise le slug (la portion identifiant le jeu de données dans les URLs) comme identifiant technique. L’outil laisse la possibilité de changer ce slug ce qui pose un vrai problème de pérénité des identifiants. Ayez donc à l’esprit que ce changement d’identifiant créera des doublons au moissonnage.</p>
+<p><strong>Attention</strong>: Opendatasoft utilise le slug (la portion identifiant le jeu de données dans les URLs) comme identifiant technique. L’outil laisse la possibilité de changer ce slug ce qui pose un vrai problème de pérénité des identifiants. Ayez donc à l’esprit que ce changement d’identifiant créera des doublons au moissonnage.</p>
 
 <h3 id="inspire">Inspire</h3>
 
-<p>Il est possible de filtrer les jeu de données identifiés comme venant d’Inspire par OpenDataSoft (propriété <code class="highlighter-rouge">interop_metas.inspire</code>).
+<p>Il est possible de filtrer les jeu de données identifiés comme venant d’Inspire par Opendatasoft (propriété <code class="highlighter-rouge">interop_metas.inspire</code>).
 Pour cela il suffit de cocher ou non l’option <strong>Inspire</strong> du moissonneur.
 Cela permettra d’éviter des doublons pour les jeux de données déjà moissonnés par geo.data.gouv.fr.
 Il n’y a pas de règle universelle à son usage, c’est du cas par cas et il est de votre responsabilité de vérifier si ces jeux de données sont déjà pris en charge par <code class="highlighter-rouge">geo.data.gouv.fr</code>.</p>
@@ -379,7 +379,7 @@ Il n’y a pas de règle universelle à son usage, c’est du cas par cas et il 
     <tr>
       <th> </th>
       <th>data.gouv.fr</th>
-      <th>OpenDataSoft</th>
+      <th>Opendatasoft</th>
       <th>Notes</th>
     </tr>
   </thead>
@@ -444,7 +444,7 @@ Il n’y a pas de règle universelle à son usage, c’est du cas par cas et il 
     <tr>
       <th> </th>
       <th>data.gouv.fr <code class="highlighter-rouge">extras</code></th>
-      <th>OpenDataSoft</th>
+      <th>Opendatasoft</th>
       <th>Notes</th>
     </tr>
   </thead>
@@ -484,7 +484,7 @@ Il n’y a pas de règle universelle à son usage, c’est du cas par cas et il 
 
 <h3 id="ressources">Ressources</h3>
 
-<p>Il existe 3 types de ressources identifiés chez OpenDataSoft :</p>
+<p>Il existe 3 types de ressources identifiés chez Opendatasoft :</p>
 <ul>
   <li>l’API de données qui donnera lieu à plusieurs ressource sur data.gouv.fr :
     <ul>
@@ -494,13 +494,13 @@ Il n’y a pas de règle universelle à son usage, c’est du cas par cas et il 
       <li>un export au format <code class="highlighter-rouge">Shapefile</code> dans le cas de données spatiales</li>
     </ul>
   </li>
-  <li>les pièces jointes (<code class="highlighter-rouge">attachments</code> dans l’API OpenDataSoft) qui seront chacune reconnue comme une ressource</li>
-  <li>les exports alternatifs (<code class="highlighter-rouge">alternative_exports</code> dans l’API OpenDataSoft) qui seront chacun reconnu comme une ressource</li>
+  <li>les pièces jointes (<code class="highlighter-rouge">attachments</code> dans l’API Opendatasoft) qui seront chacune reconnue comme une ressource</li>
+  <li>les exports alternatifs (<code class="highlighter-rouge">alternative_exports</code> dans l’API Opendatasoft) qui seront chacun reconnu comme une ressource</li>
 </ul>
 
 <h2 id="contribuer">Contribuer</h2>
 
-<p>Le moissonneur OpenDataSoft est publié sur github dans le plugin <a href="https://github.com/opendatateam/udata-ods"><code class="highlighter-rouge">udata-ods</code></a>. Vous pouvez donc soumettre des améliorations ou signaler des anomalies.</p>
+<p>Le moissonneur Opendatasoft est publié sur github dans le plugin <a href="https://github.com/opendatateam/udata-ods"><code class="highlighter-rouge">udata-ods</code></a>. Vous pouvez donc soumettre des améliorations ou signaler des anomalies.</p>
 
 
       
