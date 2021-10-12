@@ -9,15 +9,16 @@ N’importe quel utilisateur peut demander à rejoindre n’importe quelle organ
 
 ## Comment demander à rejoindre une organisation
 
-> ⚠️ Attention : La page organisation est en cours de développement suite à la [refonte graphique](https://www.data.gouv.fr/fr/posts/nouvelle-vie-nouvelle-peau-pour-data-gouv-fr/) et ne correspond pas à la documentation ci-dessous.
+> ⚠️ Attention : La page organisation est en cours de développement suite à la [refonte graphique](https://www.data.gouv.fr/fr/posts/nouvelle-vie-nouvelle-peau-pour-data-gouv-fr/) et risque de ne pas correspondre exactement à la documentation ci-dessous.
 
 Pour faire une demande :
 
 1. [Connectez-vous à votre compte](https://www.data.gouv.fr/fr/login) ;
 2. Rendez-vous sur la page de l’organisation que vous aimeriez rejoindre ;
-3. Cliquez sur le bouton **REJOINDRE** situé sous le logo de l’organisation ;
-4. Dans la fenêtre qui s’ouvre alors, expliquez ce qui motive votre demande puis cliquez sur **ENVOYER LA DEMANDE** ;
-5. Les administrateurs de l’organisation sont informés par e-mail que vous souhaitez intégrer leur équipe.
+3. Descendez au niveau de la section **Actions** ;
+4. Cliquez sur **Demander à rejoindre l'organisation en tant que producteur** ;
+5. Dans la fenêtre qui s’ouvre alors, expliquez ce qui motive votre demande puis cliquez sur **Ok** ;
+6. Les administrateurs de l’organisation sont informés par e-mail que vous souhaitez intégrer leur équipe.
 
 ## Valider une demande d’ajout
 
