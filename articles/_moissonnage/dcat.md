@@ -49,7 +49,7 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un no
 | Acronyme | `acronym` | `skos:altLabel` | |
 | Description | `description` | `dct:description` | Éventuellement HTML transformé en Markdown |
 | Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | |
-| Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | |
+| Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | [Détection des licences]({{ site.baseurl }}{% link _moissonnage/licences.md %}) |
 | Couverture spatiale | `spatial` | ❌ | |
 | Couverture temporelle | `temporal_coverage` | `dct:temporal` | |
 | Fréquence de mise à jour | `frequency` | `dct:accrualPeriodicity` | |
