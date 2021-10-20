@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 
-    <title>Différences entre administrateur et éditeur d’une organisation</title>
-    <meta name="description" content="Différences entre administrateur et éditeur d’une organisation" />
+    <title>Licences</title>
+    <meta name="description" content="Détection des licences par le moissonnage" />
 
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/css/template.css">
     <link rel="stylesheet" type="text/css" media="screen,projection" href="https://doc.data.gouv.fr/assets/css/main.css">
-    <link rel="canonical" href="https://doc.data.gouv.fr/organisations/differences-administrateur-editeur-organisation/" />
+    <link rel="canonical" href="https://doc.data.gouv.fr/moissonnage/licences/" />
     <link rel="alternate" type="application/rss+xml" title="data.gouv.fr - documentation" href="/feed.xml" />
 </head>
 
@@ -224,7 +224,7 @@
                 <a class="side-pane__link" href="/organisations/demander-a-rejoindre-une-organisation/">Demander à rejoindre une organisation</a>
             </li>
             
-            <li class="active">
+            <li >
                 <a class="side-pane__link" href="/organisations/differences-administrateur-editeur-organisation/">Différences entre administrateur et éditeur d’une organisation</a>
             </li>
             
@@ -288,7 +288,7 @@
                 <a class="side-pane__link" href="/moissonnage/ods/">Opendatasoft</a>
             </li>
             
-            <li >
+            <li class="active">
                 <a class="side-pane__link" href="/moissonnage/licences/">Licences</a>
             </li>
             
@@ -353,36 +353,24 @@
   </div>
   <div class="main-pane">
     <div class="markdown">
-      <h1 id="différences-entre-administrateur-et-éditeur-dune-organisation">Différences entre administrateur et éditeur d’une organisation</h1>
+      <h1 id="détection-des-licences-par-le-moissonnage">Détection des licences par le moissonnage</h1>
 
-<p>L’utilisateur qui créé une organisation en devient l’administrateur. Il peut ensuite ajouter d’autres membres à l’organisation. Les nouveaux membres peuvent avoir le statut d’administrateur ou celui d’éditeur.</p>
+<p>Lors du moissonnage, la liste de référence de data.gouv.fr — <a href="https://www.data.gouv.fr/api/1/datasets/licenses/">disponible ici au format json</a> — est utilisée pour détecter la licence du jeu de données distant.</p>
 
-<p>À chaque statut correspond un niveau de permissions différent, le statut d’éditeur étant plus limité que celui d’administrateur.</p>
-
-<h2 id="Éditeur">Éditeur</h2>
-
-<p>Au sein d’une organisation, un éditeur peut :</p>
-
+<p>Cette détection utilise les attributs suivants :</p>
 <ul>
-  <li>publier des jeux de données au nom de l’organisation ;</li>
-  <li>référencer des réutilisations au nom de l’organisation ;</li>
-  <li>modifier des jeux de données existants ;</li>
-  <li>consulter les demandes d’adhésion à l’organisation.</li>
+  <li><code class="highlighter-rouge">id</code></li>
+  <li><code class="highlighter-rouge">title</code></li>
+  <li><code class="highlighter-rouge">alternate_titles</code></li>
+  <li><code class="highlighter-rouge">url</code></li>
+  <li><code class="highlighter-rouge">alternate_urls</code></li>
 </ul>
 
-<h2 id="administrateur">Administrateur</h2>
-
-<p>Un administrateur possède les mêmes droits qu’un éditeur, mais il peut, en plus :</p>
-
-<ul>
-  <li>ajouter des utilisateurs à l’organisation ;</li>
-  <li>accepter ou valider les demandes d’adhésion à l’organisation ;</li>
-  <li>supprimer l’organisation dont il est administrateur.</li>
-</ul>
+<p>Le meilleur moyen d’assurer une compatibilité parfaite est d’utiliser l’<code class="highlighter-rouge">id</code> sur le flux distant lorsque c’est possible.</p>
 
       
       <p class="edit text-center">
-          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_organisations/differences-administrateur-editeur-organisation.md">
+          <a class="button" href="https://github.com/etalab/doc.data.gouv.fr/edit/master/articles/_moissonnage/licences.md">
               ✎ Editer cette page
           </a>
       </p>
