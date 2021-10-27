@@ -65,7 +65,7 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 | URI | `uri` | ID du noeud | `URIRef` |
 {: .table }
 
-### Resssource
+### Ressource
 
 La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est un noeud de type `dcat:Distribution` en RDF.
 
