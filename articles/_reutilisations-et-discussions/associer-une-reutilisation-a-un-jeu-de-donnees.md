@@ -50,6 +50,12 @@ Indiquez le type dans lequel ranger la réutilisation.
 
 Le type est obligatoire.
 
+### Thématique
+
+Indiquez la thématique principale de la réutilisation. Si aucune ne correspond, il est possible de choisir la thématique *Autres*.
+
+La thématique est obligatoire.
+
 ### Description
 
 Saisissez ici des précisions sur :
