@@ -51,8 +51,8 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un no
 | Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | Les `RdfResource` ne sont pas supportées pour le champ `dcat:theme` |
 | Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | [Détection des licences]({{ site.baseurl }}{% link _moissonnage/licences.md %}) |
 | Couverture spatiale | `spatial` | ❌ | |
-| Couverture temporelle | `temporal_coverage` | `dct:temporal` | Séparé par `/` dans le cas de dates de début et de fin |
-| Fréquence de mise à jour | `frequency` | `dct:accrualPeriodicity` | [Dublin Core Frequency](http://dublincore.org/groups/collections/frequency/) |
+| Couverture temporelle | `temporal_coverage` | `dct:temporal` | Séparé par `/` dans le cas de dates de début et de fin, ex: 2011-01-01/2011-12-31 |
+| Fréquence de mise à jour | `frequency` | `dct:accrualPeriodicity` | [Dublin Core Frequency](http://dublincore.org/groups/collections/frequency/) ou un équivalent au plus proche des [Fréquences Européennes](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/frequency) |
 {: .table }
 
 #### Extras
