@@ -108,7 +108,7 @@ Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jo
 
 {% snippets api/update-remote-resource %}
 
-### Suppression d’un ressource
+### Suppression d’une ressource
 
 [l’API de suppression de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_resource) permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier associé est aussi supprimé.
 
