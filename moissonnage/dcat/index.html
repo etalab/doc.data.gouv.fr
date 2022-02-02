@@ -429,7 +429,7 @@
       <td>Mots-clés</td>
       <td><code class="highlighter-rouge">tags</code></td>
       <td><code class="highlighter-rouge">dcat:keyword</code> + <code class="highlighter-rouge">dcat:theme</code></td>
-      <td> </td>
+      <td>Les <code class="highlighter-rouge">RdfResource</code> ne sont pas supportées pour le champ <code class="highlighter-rouge">dcat:theme</code></td>
     </tr>
     <tr>
       <td>Licence</td>
@@ -447,13 +447,13 @@
       <td>Couverture temporelle</td>
       <td><code class="highlighter-rouge">temporal_coverage</code></td>
       <td><code class="highlighter-rouge">dct:temporal</code></td>
-      <td> </td>
+      <td>Séparé par <code class="highlighter-rouge">/</code> dans le cas de dates de début et de fin, ex: 2011-01-01/2011-12-31</td>
     </tr>
     <tr>
       <td>Fréquence de mise à jour</td>
       <td><code class="highlighter-rouge">frequency</code></td>
       <td><code class="highlighter-rouge">dct:accrualPeriodicity</code></td>
-      <td> </td>
+      <td><a href="http://dublincore.org/groups/collections/frequency/">Dublin Core Frequency</a> ou un équivalent au plus proche des <a href="https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/frequency">Fréquences Européennes</a></td>
     </tr>
   </tbody>
 </table>
