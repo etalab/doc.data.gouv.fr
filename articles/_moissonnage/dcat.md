@@ -94,6 +94,8 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 
 ## Logiciels supportés
 
+La plupart des logiciels exposant du DCAT (v1 à date) devraient être compatibles _a minima_ avec le moissonneur DCAT de data.gouv.fr. Ci-dessous quelques exemples de logiciels supportés.
+
 ### Geonetwork
 
 Si vous avez une instance de Geonetwork, vous pouvez probablement publier sur data.gouv.fr.
