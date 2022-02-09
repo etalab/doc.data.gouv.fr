@@ -40,7 +40,9 @@ Ces jeux de données geospatiaux, lorsqu'ils provenaient de geo.data.gouv.fr, av
 **Du fait de l'extinction à venir de la plateforme geo.data.gouv.fr, vous pouvez au choix**:
 
 - attendre que le Geocatalogue publie directement des flux DCAT depuis vos flux Inspire
-- si vous utilisez Geonetwork, utilisez [son end-point DCAT alternatif](/moissonnage/dcat/#geonetwork)
+- si vous utilisez Geonetwork, utilisez [son endpoint DCAT alternatif](/moissonnage/dcat/#geonetwork)
+- vous pouvez également utiliser [le moissonnage DCAT](/moissonnage/dcat) avec un grand nombre de logiciels compatibles ou avec un flux à façon
+- enfin, nous supportons également le moissonnage des plateformes [CKAN](/moissonnage/ckan) et [OpenDataSoft](/moissonnage/ods)
 
 ### Moissonneurs disponibles
 
