@@ -96,7 +96,7 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 
 ### Geonetwork
 
-Siu vous avez une instance de Geonetwork, vous pouvez probablement publier sur data.gouv.fr.
+Si vous avez une instance de Geonetwork, vous pouvez probablement publier sur data.gouv.fr.
 
 En effet, il existe un endpoint DCAT alternatif au end-point CSW habituellement utilisé comme [documenté sur la doc Geonetwork officielle](https://geonetwork-opensource.org/manuals/3.10.x/en/api/rdf-dcat.html).
 
