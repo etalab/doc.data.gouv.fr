@@ -98,7 +98,7 @@ La plupart des logiciels exposant du DCAT (v1 à date) devraient être compatibl
 
 ### Geonetwork
 
-Si vous avez une instance de Geonetwork, vous pouvez probablement publier sur data.gouv.fr.
+Si vous avez une instance de Geonetwork, vous pouvez publier sur data.gouv.fr.
 
 En effet, il existe un endpoint DCAT alternatif au endpoint CSW habituellement utilisé comme [documenté sur la doc Geonetwork officielle](https://geonetwork-opensource.org/manuals/3.10.x/en/api/rdf-dcat.html).
 
