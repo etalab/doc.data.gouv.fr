@@ -35,8 +35,6 @@ La publication par l'API vous donne un contrôle total sur le contenu de chaque 
 En plus du moissonnage et de l'utilisation de l'API, il existait un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : [geo.data.gouv.fr](https://geo.data.gouv.fr), anciennement inspire.data.gouv.fr.
 Ce site pivot permettait de récupérer les métadonnées de jeux de données exposées selon [la directive européenne Inspire](https://inspire.ec.europa.eu) (obligation légale de publication des metadonnées geographiques selon le modèle de données **ISO 19115**, au format de données **ISO 19139**).
 
-Ces jeux de données geospatiaux, lorsqu'ils provenaient de geo.data.gouv.fr, avaient droit à une fiche de jeu de données très riche, alimentée par l'ensemble des métadonnées Inspire. Il pouvait arriver que les données remontent à la fois par geo.data.gouv.fr et directement.
-
 **Du fait de l'extinction à venir de la plateforme geo.data.gouv.fr, vous pouvez au choix**:
 
 - attendre que le Geocatalogue publie directement des flux DCAT depuis vos flux Inspire
