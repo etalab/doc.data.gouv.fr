@@ -29,22 +29,26 @@ La publication par l'API vous donne un contrôle total sur le contenu de chaque 
 
 ### Moissonnage vs. geo.data.gouv.fr
 
-> /!\ Attention: [geo.data.gouv.fr](https://geo.data.gouv.fr) n’est plus activement maintenu. Plus d’informations à propos [de l’extinction de geo.data.gouv.fr sont disponibles ici](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/).
 
-En plus du moissonnage et de l'utilisation de l'API, il existe un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : [geo.data.gouv.fr](https://geo.data.gouv.fr), anciennement inspire.data.gouv.fr.
-Ce site pivot permet de récupérer les métadonnées de jeux de données exposés selon [la directive européenne Inspire](https://inspire.ec.europa.eu) (obligation légale de publication des metadonnées geographiques selon le modèle de données **ISO 19115**, au format de données **ISO 19139**).
+{% include alert.html content="<b>Attention</b>: [geo.data.gouv.fr](https://geo.data.gouv.fr) n’est plus activement maintenu. <br> Plus d’informations à propos [de l’extinction de geo.data.gouv.fr sont disponibles ici](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/)." %}
 
-Ces jeux de données geospatiaux, lorsqu'ils proviennent de geo.data.gouv.fr, auront droit à une fiche de jeu de données très riche, alimentée par l'ensemble des métadonnées Inspire. Lorsque c'est le cas, il est nécessaire de s'assurer qu'ils ne remontent que par geo.data.gouv.fr et ne produisent pas de doublons. Il peut être nécessaire d'utiliser les options de filtrage de votre moissonneur ou l'option Inspire dédiée si elle existe.
+En plus du moissonnage et de l'utilisation de l'API, il existait un autre moyen automatisé de récupération des métadonnées sur data.gouv.fr : [geo.data.gouv.fr](https://geo.data.gouv.fr), anciennement inspire.data.gouv.fr.
+Ce site pivot permettait de récupérer les métadonnées de jeux de données exposées selon [la directive européenne Inspire](https://inspire.ec.europa.eu) (obligation légale de publication des metadonnées geographiques selon le modèle de données **ISO 19115**, au format de données **ISO 19139**).
 
-[Vous pouvez consultez la documentation détaillée correspondante si vous êtes dans ce cas de figure.](https://geo.data.gouv.fr/fr/doc/publish-your-data)
+**Du fait de l'extinction à venir de la plateforme geo.data.gouv.fr, vous pouvez au choix**:
+
+- attendre que le Geocatalogue publie directement des flux DCAT depuis vos flux Inspire
+- si vous utilisez Geonetwork, utilisez [son endpoint DCAT alternatif](/moissonnage/dcat/#geonetwork)
+- vous pouvez également utiliser [le moissonnage DCAT](/moissonnage/dcat) avec un grand nombre de logiciels compatibles ou avec un flux à façon
+- enfin, nous supportons également le moissonnage des plateformes [CKAN](/moissonnage/ckan) et [OpenDataSoft](/moissonnage/ods)
 
 ### Moissonneurs disponibles
 
 Aujourd'hui, data.gouv.fr peut moissonner les plateformes ou formats suivants :
-- [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %})
-- [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %})
-- [DKAN, une variante du moissonneur CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %})
-- [OpenDataSoft]({{ site.baseurl }}{% link _moissonnage/ods.md %}) ODS
+- [DCAT](/moissonnage/dcat)
+- [CKAN](/moissonnage/ckan)
+- [DKAN, une variante du moissonneur CKAN](/moissonnage/ckan)
+- [OpenDataSoft](/moissonnage/ods) ODS
 - MAAF : un moissonneur spécifique au Ministère de l'Agriculture et de l'Alimentation
 
 ### Métadonnées communes

@@ -92,6 +92,18 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 | URI | `uri` | `dct:identifier` | Si `dct:identifier` est un `URIRef` |
 {: .table }
 
+## Logiciels supportés
+
+La plupart des logiciels exposant du DCAT (v1 à date) devraient être compatibles _a minima_ avec le moissonneur DCAT de data.gouv.fr. Ci-dessous quelques exemples de logiciels supportés.
+
+### Geonetwork
+
+Si vous avez une instance de Geonetwork, vous pouvez publier sur data.gouv.fr.
+
+En effet, il existe un endpoint DCAT alternatif au endpoint CSW habituellement utilisé comme [documenté sur la doc Geonetwork officielle](https://geonetwork-opensource.org/manuals/3.10.x/en/api/rdf-dcat.html).
+
+Ainsi <https://geosas.fr/geonetwork/srv/fre/csw> deviendra <https://geosas.fr/geonetwork/srv/fre/rdf.search> par exemple.
+
 ## Contribuer
 
 Ce moissonneur fait partie du coeur de `udata`, [son code est disponible sur github](https://github.com/opendatateam/udata/blob/master/udata/harvest/backends/dcat.py). Vous pouvez donc soumettre des améliorations ou signaler des anomalies.
