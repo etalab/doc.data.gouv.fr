@@ -21,8 +21,7 @@ Ce moissonneur attend l'URL racine de votre portail Opendatasoft. C'est bien l'U
 
 Il est possible de filtrer les jeu de données identifiés comme venant d'Inspire par Opendatasoft (propriété `interop_metas.inspire`).
 Pour cela il suffit de cocher ou non l'option **Inspire** du moissonneur.
-Cela permettra d'éviter des doublons pour les jeux de données déjà moissonnés par geo.data.gouv.fr.
-Il n'y a pas de règle universelle à son usage, c'est du cas par cas et il est de votre responsabilité de vérifier si ces jeux de données sont déjà pris en charge par `geo.data.gouv.fr`.
+Cela permettra d’éviter des doublons pour les jeux de données déjà moissonnés par ailleurs. Il n’y a pas de règle universelle à son usage, c’est du cas par cas et il est de votre responsabilité de vérifier si ces jeux de données sont déjà pris en charge par une autre source de moissonnage.
 
 ## Correspondance des champs du modèle
 

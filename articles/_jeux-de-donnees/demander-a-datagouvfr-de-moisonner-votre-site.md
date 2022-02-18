@@ -28,8 +28,7 @@ Les moissonneurs de data.gouv.fr ne fonctionnent qu’avec certains formats de m
 - [CKAN]({{ site.baseurl }}{% link _moissonnage/ckan.md %}) ;
 - [DCAT]({{ site.baseurl }}{% link _moissonnage/dcat.md %}).
 
-Il existe [un cas particulier pour les données issues d’Inspire]({{ site.baseurl }}{% link _moissonnage/intro.md %}#moissonnage-vs-geodatagouvfr), leur moissonnage se fait depuis [geo.data.gouv.fr](https://geo.data.gouv.fr).
-> ⚠️ Attention : [geo.data.gouv.fr](https://geo.data.gouv.fr) n’est plus activement maintenu. Plus d’informations à propos [de l’extinction de geo.data.gouv.fr sont disponibles ici](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/).
+{% include alert.html content="<b>Attention</b>: [geo.data.gouv.fr](https://geo.data.gouv.fr) permettait de moisonner des données issues d'Inspire mais il n’est plus activement maintenu. <br>Plus d’informations à propos [de l’extinction de geo.data.gouv.fr sont disponibles ici](https://www.data.gouv.fr/fr/posts/extinction-de-geo-data-gouv-fr/).<br>Pour des alternatives, voir [la section de la documentation **Moissonnage vs. geo.data.gouv.fr**](/moissonnage/intro/#moissonnage-vs-geodatagouvfr)." %}
 
 ## Créer un moissonneur
 
