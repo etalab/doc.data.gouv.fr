@@ -47,8 +47,8 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un no
 |-|--------------|-----|-------|
 | Titre | `title` | `dct:title` | |
 | Acronyme | `acronym` | `skos:altLabel` | |
-| Description | `description` | `dct:description` | Éventuellement HTML transformé en Markdown |
-| Mots-clés | `tags` | `dcat:keyword` | Le champ `dcat:theme` n'est plus supporté. |
+| Description | `description` | `dct:description` + `dct:abstract` | Éventuellement HTML transformé en Markdown. `dct:description` est à privilégier |
+| Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | Les `RdfResource` ne sont pas supportées pour le champ `dcat:theme`. `dcat:keyword` est à privilégier |
 | Date de création | `created_at` | `dct:issued` | |
 | Date de mise à jour | `last_modified` | `dct:modified` | |
 | Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | [Détection des licences]({{ site.baseurl }}{% link _moissonnage/licences.md %}) |
