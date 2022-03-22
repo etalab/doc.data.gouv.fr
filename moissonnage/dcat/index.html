@@ -422,14 +422,26 @@
     <tr>
       <td>Description</td>
       <td><code class="highlighter-rouge">description</code></td>
-      <td><code class="highlighter-rouge">dct:description</code></td>
-      <td>Éventuellement HTML transformé en Markdown</td>
+      <td><code class="highlighter-rouge">dct:description</code> + <code class="highlighter-rouge">dct:abstract</code></td>
+      <td>Éventuellement HTML transformé en Markdown. <code class="highlighter-rouge">dct:description</code> est à privilégier</td>
     </tr>
     <tr>
       <td>Mots-clés</td>
       <td><code class="highlighter-rouge">tags</code></td>
       <td><code class="highlighter-rouge">dcat:keyword</code> + <code class="highlighter-rouge">dcat:theme</code></td>
-      <td>Les <code class="highlighter-rouge">RdfResource</code> ne sont pas supportées pour le champ <code class="highlighter-rouge">dcat:theme</code></td>
+      <td>Les <code class="highlighter-rouge">RdfResource</code> ne sont pas supportées pour le champ <code class="highlighter-rouge">dcat:theme</code>. <code class="highlighter-rouge">dcat:keyword</code> est à privilégier</td>
+    </tr>
+    <tr>
+      <td>Date de création</td>
+      <td><code class="highlighter-rouge">created_at</code></td>
+      <td><code class="highlighter-rouge">dct:issued</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de mise à jour</td>
+      <td><code class="highlighter-rouge">last_modified</code></td>
+      <td><code class="highlighter-rouge">dct:modified</code></td>
+      <td> </td>
     </tr>
     <tr>
       <td>Licence</td>
@@ -483,6 +495,12 @@
       <td><code class="highlighter-rouge">uri</code></td>
       <td>ID du noeud</td>
       <td><code class="highlighter-rouge">URIRef</code></td>
+    </tr>
+    <tr>
+      <td>URL de consultation</td>
+      <td><code class="highlighter-rouge">remote_url</code></td>
+      <td><code class="highlighter-rouge">dcat:landingPage</code></td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
