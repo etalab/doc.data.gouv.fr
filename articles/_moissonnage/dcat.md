@@ -47,8 +47,10 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un no
 |-|--------------|-----|-------|
 | Titre | `title` | `dct:title` | |
 | Acronyme | `acronym` | `skos:altLabel` | |
-| Description | `description` | `dct:description` | Éventuellement HTML transformé en Markdown |
-| Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | Les `RdfResource` ne sont pas supportées pour le champ `dcat:theme` |
+| Description | `description` | `dct:description` + `dct:abstract` | Éventuellement HTML transformé en Markdown. `dct:description` est à privilégier |
+| Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | Les `RdfResource` ne sont pas supportées pour le champ `dcat:theme`. `dcat:keyword` est à privilégier |
+| Date de création | `created_at` | `dct:issued` | |
+| Date de mise à jour | `last_modified` | `dct:modified` | |
 | Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | [Détection des licences]({{ site.baseurl }}{% link _moissonnage/licences.md %}) |
 | Couverture spatiale | `spatial` | ❌ | |
 | Couverture temporelle | `temporal_coverage` | `dct:temporal` | Séparé par `/` dans le cas de dates de début et de fin, ex: 2011-01-01/2011-12-31 |
@@ -63,6 +65,7 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 |-|--------------|-----|-------|
 | Identifiant distant | `harvest:remote_id` | `dct:identifier` | Conservé aussi sous `dct:identifier` |
 | URI | `uri` | ID du noeud | `URIRef` |
+| URL de consultation | `remote_url` | `dcat:landingPage` | |
 {: .table }
 
 ### Ressource
