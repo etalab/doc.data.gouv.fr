@@ -107,7 +107,7 @@ Lorsque c’est possible, l’API répondra en JSON avec le format suivant :
 
 #### Erreur 423
 
-En cas d'activités suspectes ou de spams répétés, l'API pourra retourner l'erreur 423, empêchant ainsi toute nouvelle création d'utilisateur ou de contenu, à l'exception des ressources (hors ressources communautaires).
+En cas d'activités suspectes ou de spams répétés, l'API pourra retourner l'erreur 423, empêchant ainsi toute nouvelle création d'utilisateur ou de contenu, à l'exception des fichiers (hors fichiers communautaires).
 
 ```json
 {

@@ -116,7 +116,7 @@ Une fois l’étape 2 complétée, cliquez sur le bouton **Suivant**, présent e
 
 ## 3. Importer vos fichiers
 
-Une fois votre jeu de données décrit, vient le temps d’importer les fichiers ou ressources qui le composent. Pour importer votre premier fichier, cliquez sur le bouton **Choisissez un fichier de votre ordinateur**. Une fois votre fichier importé, vous pouvez le décrire en complétant le formulaire qui apparaît alors sur votre écran. Si votre jeu de données contient plusieurs fichiers, remplissez un formulaire par fichier.
+Une fois votre jeu de données décrit, vient le temps d’importer les fichiers qui le composent. Pour importer votre premier fichier, cliquez sur le bouton **Choisissez un fichier de votre ordinateur**. Une fois votre fichier importé, vous pouvez le décrire en complétant le formulaire qui apparaît alors sur votre écran. Si votre jeu de données contient plusieurs fichiers, remplissez un formulaire par fichier.
 
 ### Titre
 
@@ -158,10 +158,10 @@ La date de publication est facultative.
 Les schémas de données permettent de décrire des modèles de données : quels sont les différents champs, comment sont représentées les données, quelles sont les valeurs possibles etc.
 Pour en savoir plus sur les schémas, consultez [schema.data.gouv.fr](https://schema.data.gouv.fr/).
 
-Il s'agit pour ce champ de l’identifiant du schéma auquel la ressource adhère, le cas échéant.
+Il s'agit pour ce champ de l’identifiant du schéma auquel le fichier adhère, le cas échéant.
 
 Deux cas possibles :
-- si vous importez un fichier, une validation sera effectuée sur la ressource pour s’assurer qu’elle correspond bien au fichier indiqué.
+- si vous importez un fichier, une validation sera effectuée sur le fichier pour s’assurer qu’elle correspond bien au schéma indiqué.
 - si vous référencez un fichier hébergé ailleurs, sur un autre site, aucune validation de correspondance au schéma n’est effectuée.
 
 Le schéma est facultatif.
@@ -170,7 +170,7 @@ Le schéma est facultatif.
 
 Deux cas possibles :
 
-- si vous importez un fichier, vous ne pouvez pas modifier ce champ, car il s’agit alors de l’URL assignée par data.gouv.fr à votre ressource ;
+- si vous importez un fichier, vous ne pouvez pas modifier ce champ, car il s’agit alors de l’URL assignée par data.gouv.fr à votre fichier ;
 - si vous référencez un fichier hébergé ailleurs, sur un autre site, ajoutez ici l’URL canonique (qui ne varie pas) permettant d’accéder directement au fichier en question.
 
 L’URL est obligatoire.
@@ -179,7 +179,7 @@ L’URL est obligatoire.
 
 Là encore, deux cas à distinguer :
 
-- si vous importez votre fichier, vous n’avez rien à faire, car nous calculons la taille de votre ressource pour vous ;
+- si vous importez votre fichier, vous n’avez rien à faire, car nous calculons la taille de votre fichier pour vous ;
 - si vous référencez un fichier hébergé ailleurs, indiquez ici sa taille (en octets).
 
 La taille est facultative.
@@ -219,22 +219,22 @@ Une fois votre fichier décrit, cliquez sur le bouton **Suivant** qui se trouve 
 
 ## 4. Voir et compléter un jeu de données existant
 
-Une fois votre première ressource publiée, votre jeu de données devient accessible en ligne, vous pouvez alors :
+Une fois votre premier fichier publié, votre jeu de données devient accessible en ligne, vous pouvez alors :
 
 - voir votre jeu de données sur data.gouv.fr en cliquant sur le bouton **Voir sur le site** ;
-- ajouter d’autres ressources à votre jeu de données en cliquant sur le bouton **Voir dans l’administration** ;
+- ajouter d’autres fichiers à votre jeu de données en cliquant sur le bouton **Voir dans l’administration** ;
 - partager votre jeu de données sur les réseaux sociaux en cliquant sur l’icône associée au réseau social qui vous concerne.
 
-### Ajouter d’autres ressources à un jeu de données existant
+### Ajouter d’autres fichiers à un jeu de données existant
 
-Pour ajouter des ressources supplémentaires à un jeu de données déjà en ligne, cliquez sur le nom du jeu de données que vous souhaitez enrichir quand vous vous situez [sur la page Moi](https://www.data.gouv.fr/fr/admin/me/).
+Pour ajouter des fichiers supplémentaires à un jeu de données déjà en ligne, cliquez sur le nom du jeu de données que vous souhaitez enrichir quand vous vous situez [sur la page Moi](https://www.data.gouv.fr/fr/admin/me/).
 
 Une fois sur la page du jeu de données à modifier :
 
-1. Naviguez jusqu’au bloc intitulé **Ressources** ;
+1. Naviguez jusqu’au bloc intitulé **Fichiers** ;
 2. Cliquez sur le bouton **Ajouter** ;
 3. Cliquez sur le bouton **Choisissez un fichier de votre ordinateur** ;
-4. Complétez les informations associées à votre ressources, comme vous l’avez fait à l’étape 3 de la création de votre jeu de données ;
+4. Complétez les informations associées à votre fichier, comme vous l’avez fait à l’étape 3 de la création de votre jeu de données ;
 5. Cliquez sur le bouton **Enregistrer**.
 
-Refaites la procédure ci-dessus autant de fois que vous souhaitez ajouter de ressources à votre jeu de données.
+Refaites la procédure ci-dessus autant de fois que vous souhaitez ajouter de fichiers à votre jeu de données.

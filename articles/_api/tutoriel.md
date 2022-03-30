@@ -150,7 +150,7 @@ Il est vraiment de votre ressort de récupérer les données pertinentes pour vo
 
 Attention, vous entrez dans une zone de danger. Les modifications et suppressions de données via l'API sont définitives et nous ne proposons pas de bac à sable pour faire des tests avant de les exécuter (pour l'instant). Soyez conscient de ces responsabilités avant d'utiliser vos super pouvoirs.
 
-Si vous tentez de modifier une ressource sans le token d'authentification, une erreur 401 sera renvoyée :
+Si vous tentez de modifier un fichier sans le token d'authentification, une erreur 401 sera renvoyée :
 
 ```console
 $ http PUT $API'organizations/organization-uri-x/'
@@ -166,7 +166,7 @@ HTTP/1.1 401 UNAUTHORIZED
 }
 ```
 
-Vous devez spécifier votre Clé d'API (voir ci-dessus) et utiliser le header HTTP `X-API-KEY`. Si vous tentez de modifier une ressource que vous ne contrôlez pas, une erreur 400 sera retournée :
+Vous devez spécifier votre Clé d'API (voir ci-dessus) et utiliser le header HTTP `X-API-KEY`. Si vous tentez de modifier un fichier que vous ne contrôlez pas, une erreur 400 sera retournée :
 
 ```console
 $ http PUT $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here
@@ -194,7 +194,7 @@ HTTP/1.1 403 FORBIDDEN
 }
 ```
 
-Cela arrive si vous essayez d'accéder à une ressource que vous ne pouvez éditer avec vos accréditations. Si votre clé est valide vous devriez obtenir quelque chose comme ça:
+Cela arrive si vous essayez d'accéder à un fichier que vous ne pouvez éditer avec vos accréditations. Si votre clé est valide vous devriez obtenir quelque chose comme ça:
 
 ```json
 HTTP/1.1 200 OK
@@ -222,7 +222,7 @@ $ http PUT $API'organizations/organization-uri-x/' \
 }
 ```
 
-La ressource a été modifiée avec vos nouvelles valeurs. Finalement, vous pouvez supprimer une ressource avec le verbe HTTP approprié (attention, aucun retour arrière n'est possible en utilisant l'API pour le moment):
+Le fichier a été modifié avec vos nouvelles valeurs. Finalement, vous pouvez supprimer un fichier avec le verbe HTTP approprié (attention, aucun retour arrière n'est possible en utilisant l'API pour le moment):
 
 ```console
 $ http DELETE $API'organizations/organization-uri-x/' X-API-KEY:your.api.key.here

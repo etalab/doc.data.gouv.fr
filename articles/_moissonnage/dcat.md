@@ -68,9 +68,9 @@ Certaines propriétés sont conservées dans les attributs clés-valeurs `extras
 | URL de consultation | `remote_url` | `dcat:landingPage` | |
 {: .table }
 
-### Ressource
+### Fichier
 
-La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est un noeud de type `dcat:Distribution` en RDF.
+La notion équivalente au fichier sur data.gouv.fr (`Resource`) est un noeud de type `dcat:Distribution` en RDF.
 
 | | data.gouv.fr | RDF | Notes |
 |-|--------------|-----|-------|
