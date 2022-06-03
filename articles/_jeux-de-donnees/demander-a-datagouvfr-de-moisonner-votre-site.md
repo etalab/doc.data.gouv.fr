@@ -15,8 +15,10 @@ Un moissonneur permet d’importer toutes les données d’un portail d’open d
 
 1. Vous créez un moissonneur sur data.gouv.fr pour nous demander de surveiller votre plateforme ;
 2. Vous publiez des données sur votre plateforme d’open-data sans vous préoccuper de data.gouv.fr ;
-3. Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;
-4. Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.
+3. Vous demandez validation de votre moissonneur sur [le support data.gouv.fr](https://support.data.gouv.fr/collectivite-territoriale/referencement/moissonnage#support-tree) ;
+4. La configuration du moissonneur est validée par l'équipe en charge de data.gouv.fr ;
+5. Le moissonneur de data.gouv.fr vient automatiquement récupérer les données de votre plateforme ;
+6. Les données de votre plateforme sont référencées et visibles sur data.gouv.fr.
 
 Vous pouvez consulter [la documentation technique concernée]({{ site.baseurl }}{% link _moissonnage/intro.md %}) pour plus de détails
 
@@ -100,7 +102,7 @@ Une fois tous les champs obligatoires remplis, cliquez sur le bouton **Suivant**
 
 ### 3. Demander la validation du moissonneur
 
-Une fois votre moissonneur configuré, ce dernier passe en attente de validation. Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.
+Une fois votre moissonneur configuré, demandez validation de votre moissonneur sur [le support data.gouv.fr](https://support.data.gouv.fr/collectivite-territoriale/referencement/moissonnage#support-tree). Il va être examiné par l’équipe en charge de data.gouv.fr, pour vérifier qu’il est bien réglé. Si c’est le cas, le moissonneur sera validé et vous recevrez une notification.
 
 De votre côté, vous pouvez vérifier que votre moissonneur moissonne correctement votre site. Pour ce faire :
 
