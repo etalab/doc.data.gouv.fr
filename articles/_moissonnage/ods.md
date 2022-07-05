@@ -52,16 +52,16 @@ Certains champs sont conservés dans les attributs clés-valeurs `extras` par so
 | Données spatiales | `ods:geo` | `features.geo` | |
 {: .table }
 
-### Ressources
+### Fichiers
 
-Il existe 3 types de ressources identifiés chez Opendatasoft :
-- l'API de données qui donnera lieu à plusieurs ressource sur data.gouv.fr :
+Il existe 3 types de fichiers identifiés chez Opendatasoft :
+- l'API de données qui donnera lieu à plusieurs fichiers sur data.gouv.fr :
   - un export au format `CSV`
   - un export au format `JSON`
   - un export au format `GeoJSON` dans le cas de données spatiales
   - un export au format `Shapefile` dans le cas de données spatiales
-- les pièces jointes (`attachments` dans l'API Opendatasoft) qui seront chacune reconnue comme une ressource
-- les exports alternatifs (`alternative_exports` dans l'API Opendatasoft) qui seront chacun reconnu comme une ressource
+- les pièces jointes (`attachments` dans l'API Opendatasoft) qui seront chacune reconnue comme un fichier
+- les exports alternatifs (`alternative_exports` dans l'API Opendatasoft) qui seront chacun reconnu comme un fichier
 
 ## Contribuer
 

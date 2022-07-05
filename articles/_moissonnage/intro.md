@@ -126,7 +126,7 @@ Se référer à la page de chaque moissonneur pour savoir lesquels sont dans ce 
 
 ### Suppression à la source
 
-Pour le moment, les moissonneurs ne gèrent pas la suppression à la source et ce pour éviter les suppressions en masse par erreur, ce qui entrainerait une perte des statistiques, des discussions et des ressources communautaires de chaque jeu de données.
+Pour le moment, les moissonneurs ne gèrent pas la suppression à la source et ce pour éviter les suppressions en masse par erreur, ce qui entrainerait une perte des statistiques, des discussions et des fichiers communautaires de chaque jeu de données.
 
 Dans le cas d'une suppression ponctuelle, nous vous invitons à supprimer manuellement le jeu de données moissonné qui a perdu sa source.
 
@@ -136,4 +136,4 @@ Dans le cas d'une suppression massive de jeu de données, veuillez nous contacte
 
 Les moissonneurs utilisent les identifiants de jeu de données distants pour retrouver leurs données entre deux moissonnages. Il est donc important de veiller à ce qu'un jeu de données conserve son identifiant au fil du temps et des modification successives. Dans le cas contraire, cela donnera lieu à la création d'un doublon.
 
-Il faut donc aussi veiller à ne pas supprimer puis recréer un jeu de données ou une ressource pour faire sa mise à jour.
+Il faut donc aussi veiller à ne pas supprimer puis recréer un jeu de données ou un fichier pour faire sa mise à jour.

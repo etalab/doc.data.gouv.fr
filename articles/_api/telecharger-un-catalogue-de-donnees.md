@@ -5,12 +5,12 @@ slug: telecharger-un-catalogue-de-donnees
 
 # Télécharger un catalogue de données
 
-L’ensemble des jeux de données publiés sur data.gouv.fr constitue un jeu de données à part entière qui peut être téléchargé lui aussi, sous la forme d’un catalogue. Il en va de même pour l’ensemble des ressources, des organisations, des réutilisations, et des étiquettes associées aux jeux de données.
+L’ensemble des jeux de données publiés sur data.gouv.fr constitue un jeu de données à part entière qui peut être téléchargé lui aussi, sous la forme d’un catalogue. Il en va de même pour l’ensemble des fichiers, des organisations, des réutilisations, et des étiquettes associées aux jeux de données.
 
 Pour télécharger un catalogue, cliquez sur l’URL associée aux données qui vous intéressent :
 
 - [télécharger le catalogue des jeux de données](https://www.data.gouv.fr/datasets.csv) ;
-- [télécharger le catalogue des ressources](https://www.data.gouv.fr/resources.csv) ;
+- [télécharger le catalogue des fichiers](https://www.data.gouv.fr/resources.csv) ;
 - [télécharger le catalogue des organisations](https://www.data.gouv.fr/organizations.csv) ;
 - [télécharger le catalogue des réutilisations](https://www.data.gouv.fr/reuses.csv) ;
 - [télécharger le catalogue des étiquettes associées aux jeux de données](https://www.data.gouv.fr/tags.csv).

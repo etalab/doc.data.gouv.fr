@@ -55,9 +55,9 @@ Certains champs sont conservés dans les attributs clés-valeurs `extras` par so
 
 Tous les attributs `extras` de CKAN qui ne font pas l'objet d'un traitement particulier sont aussi conservés.
 
-### Ressource
+### Fichier
 
-La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est aussi la `Resource` dans CKAN.
+La notion équivalente au fichier sur data.gouv.fr (`Resource`) est la `Resource` dans CKAN.
 
 | | data.gouv.fr | CKAN | Notes |
 |-|--------------|------|-------|

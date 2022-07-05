@@ -20,7 +20,7 @@ Vous pouvez chercher les choses suivantes au sein du catalogue de data.gouv.fr :
 Vous ne pouvez pas chercher les choses suivantes :
 
 - utilisateurs individuels ;
-- ressources ;
+- fichiers ;
 - discussions ;
 - territoires.
 
@@ -34,7 +34,7 @@ Vous avez ensuite la possibilité de trier les résultats d’une recherche selo
 
 ## Trier les résultats de recherche
 
-Utiliser le menu déroulant de tri pour trier vos résultats en fonction de plusieurs critères qui varient selon le type de ressource recherché : jeux de données, réutilisation, ou organisation.
+Utiliser le menu déroulant de tri pour trier vos résultats en fonction de plusieurs critères qui varient selon l'élément recherché : jeux de données, réutilisation, ou organisation.
 
 Par défaut, les tris sont effectués par ordre alphabétique quand il s’agit de textes et par ordre décroissant quand il s’agit de chiffres ou de dates. Pour effectuer un tri dans un ordre inverse, cliquez sur l’icône en forme de flèche qui pointe vers le bas, celle qui se trouve à droite du menu **Trier par**.
 

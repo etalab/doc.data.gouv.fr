@@ -1,13 +1,13 @@
 ---
-title: Différences entre un jeu de données et une ressource
-slug: difference-jeu-de-donnees-et-ressource
+title: Différences entre un jeu de données et un fichier
+slug: difference-jeu-de-donnees-et-fichier
 ---
 
-# Différences entre un jeu de données et une ressource
+# Différences entre un jeu de données et un fichier
 
-La plateforme data.gouv.fr permet de créer et de consulter des jeux de données. Un jeu de données se compose de ressources, de la même manière qu’un album est composé de chansons. Dit autrement, un jeu de données peut avoir plusieurs ressources et une ressource appartient nécessairement à un jeu de données.
+La plateforme data.gouv.fr permet de créer et de consulter des jeux de données. Un jeu de données se compose de fichiers, de la même manière qu’un album est composé de chansons. Dit autrement, un jeu de données peut avoir plusieurs fichiers et un fichier appartient nécessairement à un jeu de données.
 
-À chaque jeu de données correspond une page de présentation sur data.gouv.fr, depuis laquelle peuvent être téléchargées les ressources qui y sont associées.
+À chaque jeu de données correspond une page de présentation sur data.gouv.fr, depuis laquelle peuvent être téléchargés les fichiers qui y sont associés.
 
 ## Jeu de données
 
@@ -34,9 +34,9 @@ Le lien avec identifiant permanent ne change jamais pendant toute la durée de v
 
 Le lien avec _slug_ change à chaque fois que le titre du jeu de données change. Toutefois, une redirection depuis l'ancien lien vers le nouveau est automatiquement créée quand le titre change.
 
-## Ressources
+## Fichier
 
-Une ressource comporte :
+Un fichier comporte :
 
 - un titre (obligatoire) ;
 - un type (obligatoire) ;
@@ -50,8 +50,8 @@ Une ressource comporte :
 
 ### Liens (URL)
 
-Une ressource est référencée par deux types de liens. Il s'agit de liens vers le fichier (ou l'API, la page...) en lui-même, i.e. le contenu de la ressource :
-1. un lien direct qui peut changer quand une ressource est mise à jour : [https://static.data.gouv.fr/resources/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/20190805-140412/bornes-irve-20190805.csv](https://static.data.gouv.fr/resources/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/20190805-140412/bornes-irve-20190805.csv) ;
-2. un lien stable (URL stable) qui ne change pas pendant tout le cycle de vie d'une même ressource : [https://www.data.gouv.fr/fr/datasets/r/50625621-18bd-43cb-8fde-6b8c24bdabb3](https://www.data.gouv.fr/fr/datasets/r/50625621-18bd-43cb-8fde-6b8c24bdabb3). Ce lien donne toujours accès à la dernière version du contenu de la ressource.
+Un fichier est référencé par deux types de liens. Il s'agit de liens vers le fichier (ou l'API, la page...) en lui-même :
+1. un lien direct qui peut changer quand un fichier est mis à jour : [https://static.data.gouv.fr/resources/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/20190805-140412/bornes-irve-20190805.csv](https://static.data.gouv.fr/resources/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/20190805-140412/bornes-irve-20190805.csv) ;
+2. un lien stable (URL stable) qui ne change pas pendant tout le cycle de vie d'un même fichier : [https://www.data.gouv.fr/fr/datasets/r/50625621-18bd-43cb-8fde-6b8c24bdabb3](https://www.data.gouv.fr/fr/datasets/r/50625621-18bd-43cb-8fde-6b8c24bdabb3). Ce lien donne toujours accès à la dernière version du contenu du fichier.
 
-Ces différents liens sont accessibles après avoir déroulé l'encart d'une ressource depuis la page d'un jeu de données. Les liens sont presentés dans les informations au niveau des lignes « URL » et « URL stable ».
+Ces différents liens sont accessibles après avoir déroulé l'encart d'un fichier depuis la page d'un jeu de données. Les liens sont présentés dans les informations au niveau des lignes « URL » et « URL stable ».

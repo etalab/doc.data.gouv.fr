@@ -14,7 +14,7 @@ La création d’une organisation est gratuite, elle nécessite la posession d�
 Une organisation permet de :
 
 - publier des jeux de données ;
-- associer des ressources à des jeux de données ;
+- associer des fichiers à des jeux de données ;
 - référencer des réutilisations sur des jeux de données ;
 - ouvrir des discussions liées à des données et y répondre ;
 - regrouper des utilisateurs au sein d’une même entité.

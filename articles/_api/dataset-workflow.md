@@ -35,7 +35,7 @@ Tous les exemples qui suivent sont réalisés avec un compte :
 - dont la clé d’API est `my-api-key`
 - qui est membre d’une organization dont l’identifiant est `5bbb6d6cff66bd4dc17bfd5a`.
 
-Les exemples portants sur un jeu de données existant utilisent l’identifiant `5bc04b2cff66bd680e499f4a`. Ceux portants sur une ressource existante de ce jeu de données utilisent l’identifiant `54d47250-1daf-483b-965a-3013f8c76617`.
+Les exemples portants sur un jeu de données existant utilisent l’identifiant `5bc04b2cff66bd680e499f4a`. Ceux portants sur un fichier existant de ce jeu de données utilisent l’identifiant `54d47250-1daf-483b-965a-3013f8c76617`.
 
 Pour simplifier la lecture de ces exemples, il y sera fait référence par les variables suivantes pour chaque language:
 
@@ -49,36 +49,36 @@ Pour créer un jeu de données, nous allons utiliser l’API de [création de je
 
 La réponse en JSON contient les metadonnées du jeu de données créé, en particulier l’identifiant et le slug.
 
-La fiche du jeu de données est maintenant créée et il est maintenant possible d’y ajouter des ressources.
+La fiche du jeu de données est maintenant créée et il est maintenant possible d’y ajouter des s.
 
 **Attention** : par défaut, un jeu de données créé via l'API est public. Afin de créer et maintenir un jeu de données en privé, il faut mettre l'attribut `private: true` dans chaque appel à l'API. Sinon, chaque modification d'un jeu de données par l'API va le passer en public.
 
-### Ajout d’une ressource
+### Ajout d’une 
 
-Pour créer une ressource, nous allons utiliser l’API [création d’une ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource).
+Pour créer une , nous allons utiliser l’API [création d’une ]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource).
 
-Il existe 2 cas de création de ressource :
+Il existe 2 cas de création de  :
 
-- avec envoi d’un fichier, dit ressource locale ;
-- avec référencement d’un fichier distant, dit ressource distante.
+- avec envoi d’un fichier, dit  locale ;
+- avec référencement d’un fichier distant, dit  distante.
 
 #### En envoyant un fichier
 
-Nous allons utiliser l’API d’[envoi de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_new_dataset_resource) pour envoyer le fichier.
+Nous allons utiliser l’API d’[envoi de ]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_new_dataset_resource) pour envoyer le fichier.
 
 {% snippets api/upload-resource %}
 
-La ressource est automatiquement créée et il est possible de modifier _a posteriori_ les metadonnées avec l’[API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource) comme décrit [plus bas](#mise-à-jour-des-métadonnées-dune-ressource)
+La  est automatiquement créée et il est possible de modifier _a posteriori_ les metadonnées avec l’[API de mise à jour de ]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource) comme décrit [plus bas](#mise-à-jour-des-métadonnées-dune-)
 
 #### En référençant une URL existante
 
-L’API de [création de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource) permet de créer une ressource distante. Dans notre cas, un fichier csv hébergé sur l’URL <https://url.to/ressource.csv>.
+L’API de [création de ]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/create_resource) permet de créer une  distante. Dans notre cas, un fichier csv hébergé sur l’URL <https://url.to/.csv>.
 
 {% snippets api/remote-resource %}
 
 ## Modification d’un jeu de données
 
-La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est `5bc04b2cff66bd680e499f4a` sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une ressource `54d47250-1daf-483b-965a-3013f8c76617` qui est soit distante soit locale suivant les exemples.
+La suite des opérations s’appliquent sur le même jeu de données dont l’identifiant est `5bc04b2cff66bd680e499f4a` sur lequel vous avez les permissions nécéssaires à la modification. Ce jeu de données possède une  `54d47250-1daf-483b-965a-3013f8c76617` qui est soit distante soit locale suivant les exemples.
 
 ### Mise à jour des metadonnées de la fiche
 
@@ -86,21 +86,21 @@ Cette requête permet de mettre à jour les métadonnées d’un jeu de données
 
 {% snippets api/update-dataset %}
 
-### Mise à jour des métadonnées d’une ressource
+### Mise à jour des métadonnées d’une 
 
-Cette requête permet de mettre à jour les métadonnées d’une ressource en utilisant [l’API de mise à jour de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource)
+Cette requête permet de mettre à jour les métadonnées d’une  en utilisant [l’API de mise à jour de ]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/update_resource)
 
 {% snippets api/update-resource-meta %}
 
-### Remplacer un fichier de ressource
+### Remplacer un fichier de 
 
-Dans le cas d’une mise à jour de fichier de ressource locale (correction, ajout de données...),il est possible d’utiliser [l’API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L’ancien fichier sera supprimé.
+Dans le cas d’une mise à jour de fichier de  locale (correction, ajout de données...),il est possible d’utiliser [l’API de mise à jour de fichier]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/upload_dataset_resource). L’ancien fichier sera supprimé.
 
 {% snippets api/update-resource-file %}
 
 ### Signaler une mise à jour de fichier distant
 
-Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que la fiche soit mise à jour et que les usagers le sache.
+Dans le cas d’une  distante, lorsque le fichier distant est mis à jour, il est important de le signaler afin que la fiche soit mise à jour et que les usagers le sache.
 
 <center>
   <strong>🚧 Bientôt 🚧</strong>
@@ -108,9 +108,9 @@ Dans le cas d’une ressource distante, lorsque le fichier distant est mis à jo
 
 {% snippets api/update-remote-resource %}
 
-### Suppression d’une ressource
+### Suppression d’une 
 
-[l’API de suppression de ressource]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_resource) permet de supprimer une ressource de la fiche d’un jeu de données. Le fichier associé est aussi supprimé.
+[l’API de suppression de ]({{ site.baseurl }}{% link _api/reference.md %}#/datasets/delete_resource) permet de supprimer une  de la fiche d’un jeu de données. Le fichier associé est aussi supprimé.
 
 {% snippets api/delete-resource %}
 

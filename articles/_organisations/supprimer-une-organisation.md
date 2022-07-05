@@ -7,7 +7,7 @@ slug: supprimer-une-organisation
 
 N’importe quel utilisateur peut créer une organisation mais seuls ceux qui en sont administrateurs peuvent ensuite la supprimer.
 
-Quand une organisation est supprimée, les jeux de données et les ressources qui avaient été publiés en son nom _restent en ligne_, aux mêmes URL, mais sous forme anonyme, c’est-à-dire sans être rattachés à un producteur.
+Quand une organisation est supprimée, les jeux de données et les fichiers qui avaient été publiés en son nom _restent en ligne_, aux mêmes URL, mais sous forme anonyme, c’est-à-dire sans être rattachés à un producteur.
 
 ## À propos de l’ordre des suppressions
 
