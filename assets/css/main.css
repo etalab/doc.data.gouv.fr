@@ -62,3 +62,7 @@ ul {
 .alert > p {
   display: inline;
 }
+
+.swagger-ui code {
+  background-color: var(--darker-grey);
+}
