@@ -13,6 +13,8 @@ order: 1
 
 Le point d’entrée racine de l’API est <https://www.data.gouv.fr/api/1/>.
 
+Si vous souhaitez faire des tests sur la plateforme [demo.data.gouv.fr](https://demo.data.gouv.fr), le point d'entrée racine de l'API est <https://demo.data.gouv.fr/api/1/>.
+
 Dans la suite de cette documentation, il y sera fait référence par `$API`.
 
 ## Authentification
