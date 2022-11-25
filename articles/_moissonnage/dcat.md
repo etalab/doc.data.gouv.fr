@@ -49,23 +49,24 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un no
 | Acronyme | `acronym` | `skos:altLabel` | |
 | Description | `description` | `dct:description` + `dct:abstract` | Éventuellement HTML transformé en Markdown. `dct:description` est à privilégier |
 | Mots-clés | `tags` | `dcat:keyword` + `dcat:theme` | Les `RdfResource` ne sont pas supportées pour le champ `dcat:theme`. `dcat:keyword` est à privilégier |
-| Date de création | `created_at` | `dct:issued` | |
-| Date de mise à jour | `last_modified` | `dct:modified` | |
 | Licence | `license` | `dct:license` et `dct:right` depuis `dcat:distributions` | [Détection des licences]({{ site.baseurl }}{% link _moissonnage/licences.md %}) |
 | Couverture spatiale | `spatial` | ❌ | |
 | Couverture temporelle | `temporal_coverage` | `dct:temporal` | Séparé par `/` dans le cas de dates de début et de fin, ex: 2011-01-01/2011-12-31 |
 | Fréquence de mise à jour | `frequency` | `dct:accrualPeriodicity` | [Dublin Core Frequency](http://dublincore.org/groups/collections/frequency/) ou un équivalent au plus proche des [Fréquences Européennes](https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/frequency) |
 {: .table }
 
-#### Extras
+#### Autres métadonnées
 
-Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par soucis de traçabilité :
+Certaines propriétés additionnelles sont conservées dans l'attribut `harvest` par soucis de traçabilité.
+Les informations de date sont sauvegardés dans ces métadonnées.
 
-| | data.gouv.fr `extras` | RDF | Notes |
+| | data.gouv.fr `harvest` | RDF | Notes |
 |-|--------------|-----|-------|
-| Identifiant distant | `harvest:remote_id` | `dct:identifier` | Conservé aussi sous `dct:identifier` |
+| Identifiant distant | `remote_id` | `dct:identifier` | Conservé aussi sous `dct:identifier` |
 | URI | `uri` | ID du noeud | `URIRef` |
-| URL de consultation | `remote_url` | `dcat:landingPage` | |
+| URL de consultation | `remote_url` | `dcat:landingPage` ou l'identifier RDF s'il s'agit d'une URI | |
+| Date de création | `created_at` | `dct.issued` | |
+| Date de modification | `modified_at` | `dct.modified` | |
 {: .table }
 
 ### Ressource
@@ -81,18 +82,18 @@ La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est un noeu
 | Type MIME | `mime` | `dcat:mediaType` ||
 | Format | `format` | `dct:format` ||
 | Somme de contrôle | `checksum` | `spdx:checksum` (`spdx:algorithm` + `spdx:checksumValue`) ||
-| Date de mise à jour | `modified` | `dct:modified` | |
-| Date de publication | `published` | `dct:issued` | |
 {: .table }
 
-#### Extras
+#### Autres métadonnées
 
-Certaines propriétés sont conservées dans les attributs clés-valeurs `extras` par souci de traçabilité :
+Certaines propriétés sont conservées dans l'attribut `harvest` par souci de traçabilité :
 
-| | data.gouv.fr `Resource.extras` | RDF | Notes |
+| | data.gouv.fr resource `harvest` | RDF | Notes |
 |-|--------------------------------|-----|-------|
 | Identifiant distant | `dct:identifier` | `dct:identifier` | |
 | URI | `uri` | `dct:identifier` | Si `dct:identifier` est un `URIRef` |
+| Date de création | `created_at` | `dct.issued` | |
+| Date de modification | `modified_at` | `dct.modified` | |
 {: .table }
 
 ## Logiciels supportés
@@ -106,6 +107,8 @@ Si vous avez une instance de Geonetwork, vous pouvez publier sur data.gouv.fr.
 En effet, il existe un endpoint DCAT alternatif au endpoint CSW habituellement utilisé comme [documenté sur la doc Geonetwork officielle](https://geonetwork-opensource.org/manuals/3.10.x/en/api/rdf-dcat.html).
 
 Ainsi <https://geosas.fr/geonetwork/srv/fre/csw> deviendra <https://geosas.fr/geonetwork/srv/fre/rdf.search> par exemple.
+
+GeoNetwork v4 n'est pas encore supporté au moissonnage. Voir [ces discussions](https://github.com/etalab/data.gouv.fr/issues/913).
 
 ## Contribuer
 
