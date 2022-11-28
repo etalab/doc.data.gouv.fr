@@ -432,18 +432,6 @@
       <td>Les <code class="highlighter-rouge">RdfResource</code> ne sont pas supportées pour le champ <code class="highlighter-rouge">dcat:theme</code>. <code class="highlighter-rouge">dcat:keyword</code> est à privilégier</td>
     </tr>
     <tr>
-      <td>Date de création</td>
-      <td><code class="highlighter-rouge">created_at</code></td>
-      <td><code class="highlighter-rouge">dct:issued</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Date de mise à jour</td>
-      <td><code class="highlighter-rouge">last_modified</code></td>
-      <td><code class="highlighter-rouge">dct:modified</code></td>
-      <td> </td>
-    </tr>
-    <tr>
       <td>Licence</td>
       <td><code class="highlighter-rouge">license</code></td>
       <td><code class="highlighter-rouge">dct:license</code> et <code class="highlighter-rouge">dct:right</code> depuis <code class="highlighter-rouge">dcat:distributions</code></td>
@@ -470,15 +458,16 @@
   </tbody>
 </table>
 
-<h4 id="extras">Extras</h4>
+<h4 id="autres-métadonnées">Autres métadonnées</h4>
 
-<p>Certaines propriétés sont conservées dans les attributs clés-valeurs <code class="highlighter-rouge">extras</code> par soucis de traçabilité :</p>
+<p>Certaines propriétés additionnelles sont conservées dans l’attribut <code class="highlighter-rouge">harvest</code> par soucis de traçabilité.
+Les informations de date sont sauvegardées dans ces métadonnées.</p>
 
 <table class="table">
   <thead>
     <tr>
       <th> </th>
-      <th>data.gouv.fr <code class="highlighter-rouge">extras</code></th>
+      <th>data.gouv.fr <code class="highlighter-rouge">harvest</code></th>
       <th>RDF</th>
       <th>Notes</th>
     </tr>
@@ -486,7 +475,7 @@
   <tbody>
     <tr>
       <td>Identifiant distant</td>
-      <td><code class="highlighter-rouge">harvest:remote_id</code></td>
+      <td><code class="highlighter-rouge">remote_id</code></td>
       <td><code class="highlighter-rouge">dct:identifier</code></td>
       <td>Conservé aussi sous <code class="highlighter-rouge">dct:identifier</code></td>
     </tr>
@@ -499,7 +488,19 @@
     <tr>
       <td>URL de consultation</td>
       <td><code class="highlighter-rouge">remote_url</code></td>
-      <td><code class="highlighter-rouge">dcat:landingPage</code></td>
+      <td><code class="highlighter-rouge">dcat:landingPage</code> ou l’identifier RDF s’il s’agit d’une URI</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de création</td>
+      <td><code class="highlighter-rouge">created_at</code></td>
+      <td><code class="highlighter-rouge">dct.issued</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de modification</td>
+      <td><code class="highlighter-rouge">modified_at</code></td>
+      <td><code class="highlighter-rouge">dct.modified</code></td>
       <td> </td>
     </tr>
   </tbody>
@@ -561,30 +562,18 @@
       <td><code class="highlighter-rouge">spdx:checksum</code> (<code class="highlighter-rouge">spdx:algorithm</code> + <code class="highlighter-rouge">spdx:checksumValue</code>)</td>
       <td> </td>
     </tr>
-    <tr>
-      <td>Date de mise à jour</td>
-      <td><code class="highlighter-rouge">modified</code></td>
-      <td><code class="highlighter-rouge">dct:modified</code></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Date de publication</td>
-      <td><code class="highlighter-rouge">published</code></td>
-      <td><code class="highlighter-rouge">dct:issued</code></td>
-      <td> </td>
-    </tr>
   </tbody>
 </table>
 
-<h4 id="extras-1">Extras</h4>
+<h4 id="autres-métadonnées-1">Autres métadonnées</h4>
 
-<p>Certaines propriétés sont conservées dans les attributs clés-valeurs <code class="highlighter-rouge">extras</code> par souci de traçabilité :</p>
+<p>Certaines propriétés sont conservées dans l’attribut <code class="highlighter-rouge">harvest</code> par souci de traçabilité :</p>
 
 <table class="table">
   <thead>
     <tr>
       <th> </th>
-      <th>data.gouv.fr <code class="highlighter-rouge">Resource.extras</code></th>
+      <th>data.gouv.fr resource <code class="highlighter-rouge">harvest</code></th>
       <th>RDF</th>
       <th>Notes</th>
     </tr>
@@ -602,6 +591,18 @@
       <td><code class="highlighter-rouge">dct:identifier</code></td>
       <td>Si <code class="highlighter-rouge">dct:identifier</code> est un <code class="highlighter-rouge">URIRef</code></td>
     </tr>
+    <tr>
+      <td>Date de création</td>
+      <td><code class="highlighter-rouge">created_at</code></td>
+      <td><code class="highlighter-rouge">dct.issued</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de modification</td>
+      <td><code class="highlighter-rouge">modified_at</code></td>
+      <td><code class="highlighter-rouge">dct.modified</code></td>
+      <td> </td>
+    </tr>
   </tbody>
 </table>
 
@@ -616,6 +617,8 @@
 <p>En effet, il existe un endpoint DCAT alternatif au endpoint CSW habituellement utilisé comme <a href="https://geonetwork-opensource.org/manuals/3.10.x/en/api/rdf-dcat.html">documenté sur la doc Geonetwork officielle</a>.</p>
 
 <p>Ainsi <a href="https://geosas.fr/geonetwork/srv/fre/csw">https://geosas.fr/geonetwork/srv/fre/csw</a> deviendra <a href="https://geosas.fr/geonetwork/srv/fre/rdf.search">https://geosas.fr/geonetwork/srv/fre/rdf.search</a> par exemple.</p>
+
+<p>GeoNetwork v4 n’est pas encore supporté au moissonnage. Voir <a href="https://github.com/etalab/data.gouv.fr/issues/913">ces discussions</a>.</p>
 
 <h2 id="contribuer">Contribuer</h2>
 
