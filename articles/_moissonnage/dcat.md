@@ -58,7 +58,7 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est un no
 #### Autres métadonnées
 
 Certaines propriétés additionnelles sont conservées dans l'attribut `harvest` par soucis de traçabilité.
-Les informations de date sont sauvegardés dans ces métadonnées.
+Les informations de date sont sauvegardées dans ces métadonnées.
 
 | | data.gouv.fr `harvest` | RDF | Notes |
 |-|--------------|-----|-------|
