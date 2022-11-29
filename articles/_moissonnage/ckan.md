@@ -42,18 +42,19 @@ La notion équivalente au jeu de données sur data.gouv.fr (`Dataset`) est le `P
 | Fréquence de mise à jour | `frequency` | `extras.frequency` | [Dublin Core Frequency](http://dublincore.org/groups/collections/frequency/) |
 {: .table }
 
-#### Extras
+#### Autres métadonnées
 
-Certains champs sont conservés dans les attributs clés-valeurs `extras` par soucis de traçabilité :
+Certaines propriétés additionnelles sont conservées dans l'attribut `harvest` par soucis de traçabilité.
+Les informations de date sont sauvegardées dans ces métadonnées.
 
-| | data.gouv.fr `extras` | CKAN | Notes |
+| | data.gouv.fr `harvest` | CKAN | Notes |
 |-|-----------------------|------|-------|
-| Identifiant distant | `harvest:remote_id` | `id` | |
-| Slug | `ckan:name` | `name` | Car `slug` peut déjà être pris |
+| Identifiant distant | `remote_id` | `id` | |
+| Slug | `ckan_name` | `name` | Car `slug` peut déjà être pris |
 | URL de consultation | `remote_url` | `url` | Conservé dans `ckan:source` si URL invalide |
 {: .table }
 
-Tous les attributs `extras` de CKAN qui ne font pas l'objet d'un traitement particulier sont aussi conservés.
+Tous les attributs `extras` de CKAN qui ne font pas l'objet d'un traitement particulier sont aussi conservés dans l'attribut `extras`.
 
 ### Ressource
 
@@ -68,8 +69,8 @@ La notion équivalente à la ressource sur data.gouv.fr (`Resource`) est aussi l
 | Type | `filetype` | `resource_type` | `api` ou `remote` |
 | Type MIME | `mime` | `mimetype` | |
 | Format | `format` | `format` | |
-| Date de création | `created` | `created` | |
-| Date de mise à jour | `modified` | `last_modified` | |
+| Date de création | `harvest.created_at` | `created` | |
+| Date de mise à jour | `harvest.modified_at` | `last_modified` | |
 {: .table }
 
 
