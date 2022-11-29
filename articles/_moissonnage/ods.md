@@ -51,7 +51,7 @@ Les informations de date sont sauvegardées dans ces métadonnées.
 | Référence interne | `ods_reference` | `reference` |  |
 | Présence de données | `ods_has_records` | `has_records` | |
 | Données spatiales | `ods_geo` | `features.geo` | |
-| Date de création | `modified_at` | `metas.modified` | |
+| Date de modification | `modified_at` | `metas.modified` | |
 {: .table }
 
 ### Ressources
