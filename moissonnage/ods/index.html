@@ -438,15 +438,16 @@ Cela permettra d’éviter des doublons pour les jeux de données déjà moisson
   </tbody>
 </table>
 
-<h4 id="extras">Extras</h4>
+<h4 id="autres-métadonnées">Autres métadonnées</h4>
 
-<p>Certains champs sont conservés dans les attributs clés-valeurs <code class="highlighter-rouge">extras</code> par soucis de traçabilité :</p>
+<p>Certaines propriétés additionnelles sont conservées dans l’attribut <code class="highlighter-rouge">harvest</code> par soucis de traçabilité.
+Les informations de date sont sauvegardées dans ces métadonnées.</p>
 
 <table class="table">
   <thead>
     <tr>
       <th> </th>
-      <th>data.gouv.fr <code class="highlighter-rouge">extras</code></th>
+      <th>data.gouv.fr <code class="highlighter-rouge">harvest</code></th>
       <th>Opendatasoft</th>
       <th>Notes</th>
     </tr>
@@ -460,26 +461,32 @@ Cela permettra d’éviter des doublons pour les jeux de données déjà moisson
     </tr>
     <tr>
       <td>URL de consultation</td>
-      <td><code class="highlighter-rouge">ods:url</code></td>
+      <td><code class="highlighter-rouge">ods_url</code></td>
       <td><code class="highlighter-rouge">site</code>/explore/dataset/<code class="highlighter-rouge">datasetid</code>/</td>
       <td> </td>
     </tr>
     <tr>
       <td>Référence interne</td>
-      <td><code class="highlighter-rouge">ods:reference</code></td>
+      <td><code class="highlighter-rouge">ods_reference</code></td>
       <td><code class="highlighter-rouge">reference</code></td>
       <td> </td>
     </tr>
     <tr>
       <td>Présence de données</td>
-      <td><code class="highlighter-rouge">ods:has_records</code></td>
+      <td><code class="highlighter-rouge">ods_has_records</code></td>
       <td><code class="highlighter-rouge">has_records</code></td>
       <td> </td>
     </tr>
     <tr>
       <td>Données spatiales</td>
-      <td><code class="highlighter-rouge">ods:geo</code></td>
+      <td><code class="highlighter-rouge">ods_geo</code></td>
       <td><code class="highlighter-rouge">features.geo</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Date de modification</td>
+      <td><code class="highlighter-rouge">modified_at</code></td>
+      <td><code class="highlighter-rouge">metas.modified</code></td>
       <td> </td>
     </tr>
   </tbody>
