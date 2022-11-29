@@ -39,17 +39,19 @@ Cela permettra d’éviter des doublons pour les jeux de données déjà moisson
 | Fréquence de mise à jour | `frequency` | ❌ | |
 {: .table }
 
-#### Extras
+#### Autres métadonnées
 
-Certains champs sont conservés dans les attributs clés-valeurs `extras` par soucis de traçabilité :
+Certaines propriétés additionnelles sont conservées dans l'attribut `harvest` par soucis de traçabilité.
+Les informations de date sont sauvegardées dans ces métadonnées.
 
-| | data.gouv.fr `extras` | Opendatasoft | Notes |
+| | data.gouv.fr `harvest` | Opendatasoft | Notes |
 |-|-----------------------|--------------|-------|
 | Identifiant distant | `harvest:remote_id` | `datasetid` | ⚠ Attention au changement |
-| URL de consultation | `ods:url` | `site`/explore/dataset/`datasetid`/ | |
-| Référence interne | `ods:reference` | `reference` |  |
-| Présence de données | `ods:has_records` | `has_records` | |
-| Données spatiales | `ods:geo` | `features.geo` | |
+| URL de consultation | `ods_url` | `site`/explore/dataset/`datasetid`/ | |
+| Référence interne | `ods_reference` | `reference` |  |
+| Présence de données | `ods_has_records` | `has_records` | |
+| Données spatiales | `ods_geo` | `features.geo` | |
+| Date de modification | `modified_at` | `metas.modified` | |
 {: .table }
 
 ### Ressources
