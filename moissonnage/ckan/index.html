@@ -456,15 +456,16 @@
   </tbody>
 </table>
 
-<h4 id="extras">Extras</h4>
+<h4 id="autres-métadonnées">Autres métadonnées</h4>
 
-<p>Certains champs sont conservés dans les attributs clés-valeurs <code class="highlighter-rouge">extras</code> par soucis de traçabilité :</p>
+<p>Certaines propriétés additionnelles sont conservées dans l’attribut <code class="highlighter-rouge">harvest</code> par soucis de traçabilité.
+Les informations de date sont sauvegardées dans ces métadonnées.</p>
 
 <table class="table">
   <thead>
     <tr>
       <th> </th>
-      <th>data.gouv.fr <code class="highlighter-rouge">extras</code></th>
+      <th>data.gouv.fr <code class="highlighter-rouge">harvest</code></th>
       <th>CKAN</th>
       <th>Notes</th>
     </tr>
@@ -472,13 +473,13 @@
   <tbody>
     <tr>
       <td>Identifiant distant</td>
-      <td><code class="highlighter-rouge">harvest:remote_id</code></td>
+      <td><code class="highlighter-rouge">remote_id</code></td>
       <td><code class="highlighter-rouge">id</code></td>
       <td> </td>
     </tr>
     <tr>
       <td>Slug</td>
-      <td><code class="highlighter-rouge">ckan:name</code></td>
+      <td><code class="highlighter-rouge">ckan_name</code></td>
       <td><code class="highlighter-rouge">name</code></td>
       <td>Car <code class="highlighter-rouge">slug</code> peut déjà être pris</td>
     </tr>
@@ -491,7 +492,7 @@
   </tbody>
 </table>
 
-<p>Tous les attributs <code class="highlighter-rouge">extras</code> de CKAN qui ne font pas l’objet d’un traitement particulier sont aussi conservés.</p>
+<p>Tous les attributs <code class="highlighter-rouge">extras</code> de CKAN qui ne font pas l’objet d’un traitement particulier sont aussi conservés dans l’attribut <code class="highlighter-rouge">extras</code>.</p>
 
 <h3 id="ressource">Ressource</h3>
 
@@ -551,13 +552,13 @@
     </tr>
     <tr>
       <td>Date de création</td>
-      <td><code class="highlighter-rouge">created</code></td>
+      <td><code class="highlighter-rouge">harvest.created_at</code></td>
       <td><code class="highlighter-rouge">created</code></td>
       <td> </td>
     </tr>
     <tr>
       <td>Date de mise à jour</td>
-      <td><code class="highlighter-rouge">modified</code></td>
+      <td><code class="highlighter-rouge">harvest.modified_at</code></td>
       <td><code class="highlighter-rouge">last_modified</code></td>
       <td> </td>
     </tr>
