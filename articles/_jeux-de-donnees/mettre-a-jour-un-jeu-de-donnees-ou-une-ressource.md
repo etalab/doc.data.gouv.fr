@@ -9,7 +9,7 @@ Les données publiées sur data.gouv.fr peuvent être mises à jour après leur 
 
 ## Mettre à jour un jeu de données
 
-Si vous souhaitez mettre à jour des données, mieux vaut modifier les ressources qui les contiennent plutôt que de les supprimer pour les importer à nouveau par la suite. La mise à jour est préférables à la suppression suivie d’une nouvelle publication.
+Si vous souhaitez mettre à jour des données, mieux vaut modifier les ressources qui les contiennent plutôt que de les supprimer pour les importer à nouveau par la suite. La mise à jour est préférable à la suppression suivie d’une nouvelle publication.
 
 ### Modifier un jeu de données publié en votre nom
 
