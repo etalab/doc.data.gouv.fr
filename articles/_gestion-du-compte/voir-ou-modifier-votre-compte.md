@@ -37,3 +37,4 @@ Depuis la page **Moi**, vous pouvez :
 - ajouter ou modifier votre **image de profil**, en la survolant avec le pointeur de votre souris puis en cliquant sur **Changer** ;
 - changer votre **prénom**, **nom**, **site web**, et **à propos** (biographie), en cliquant sur le bouton **Éditer**, qui se trouve en haut à droite de votre écran — une fois vos modifications effectuées, cliquez sur le bouton **Enregistrer** ;
 - changer votre **mot de passe**, en cliquant sur la flèche orientée vers le bas qui se situe à droite du bouton Éditer, puis en sélectionnant **Changer le mot de passe** dans le menu déroulant.
+- changer votre **adresse email**, en cliquant sur la flèche orientée vers le bas qui se situe à droite du bouton Éditer, puis en sélectionnant **Modifier l'adresse email** dans le menu déroulant.
