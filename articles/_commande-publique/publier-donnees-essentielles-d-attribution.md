@@ -17,7 +17,7 @@ La publication devient obligatoire sur data.gouv.fr à partir du 1er janvier 202
 
 ## Structure des données à publier
 
-La structure des données à publier **jusqu'au 31 décembre 2023** est définie par [des schémas de données aux formats XML et JSON dont vous trouverez la documentation sur ce lien]([https://github.com/etalab/format-commande-publique](https://schema.data.gouv.fr/139bercy/format-commande-publique/1.5.0/)).
+La structure des données à publier **jusqu'au 31 décembre 2023** est définie par [des schémas de données aux formats XML et JSON dont vous trouverez la documentation sur ce lien](https://schema.data.gouv.fr/139bercy/format-commande-publique/1.5.0/).
 
 La structure des données à publier **à partir du 1er janvier 2024** est définie par [des schémas de données aux formats XML et JSON dont vous trouverez la documentation sur ce lien](https://schema.data.gouv.fr/139bercy/format-commande-publique/2.0.0/).
 
