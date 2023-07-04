@@ -15,7 +15,13 @@ buttons:
     default: faq/integrateur
 ---
 
-# À propos d’Etalab
+# 💡 Une nouvelle documentation est disponible ! 
+
+[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://etalab-2.gitbook.io/guides/)
+
+
+
+## À propos d’Etalab
 
 Etalab accompagne l’ouverture des données publiques de l’État et des administrations. À ce titre, Etalab développe et anime la plateforme ouverte des données publiques [data.gouv.fr](https://www.data.gouv.fr), plateforme qui héberge les jeux de données et recense leurs réutilisations.
 
