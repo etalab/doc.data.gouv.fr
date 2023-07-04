@@ -7,6 +7,9 @@ options:
   displayOperationId: true
   docExpansion: none
 ---
+# 💡 Une nouvelle documentation est disponible ! 
+
+[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://etalab-2.gitbook.io/guides/)
 
 # Documentation de référence de l’API
 
