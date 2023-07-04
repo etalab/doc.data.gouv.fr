@@ -9,7 +9,7 @@ options:
 ---
 # 💡 Une nouvelle documentation est disponible ! 
 
-[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://etalab-2.gitbook.io/guides/)
+[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://guides.data.gouv.fr/publier-des-donnees/guide-data.gouv.fr/api)
 
 # Documentation de référence de l’API
 

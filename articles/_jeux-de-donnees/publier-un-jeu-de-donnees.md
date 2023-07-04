@@ -5,7 +5,7 @@ redirect_from: /jeux-de-donnees/publier-un-jeu-de-donnes/
 ---
 # 💡 Une nouvelle documentation est disponible ! 
 
-[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees)
+[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://guides.data.gouv.fr/publier-des-donnees/guide-data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees)
 
 # Publier un jeu de données
 
