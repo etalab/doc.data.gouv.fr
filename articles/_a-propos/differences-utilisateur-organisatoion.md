@@ -3,6 +3,10 @@ title: Différences entre un utilisateur et une organisation
 slug: differences-utilisateur-organisation
 ---
 
+# 💡 Une nouvelle documentation est disponible ! 
+
+[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr](https://etalab-2.gitbook.io/guides/)
+
 # Différences entre un utilisateur et une organisation
 
 Quand vous créez un compte sur data.gouv.fr, vous devenez utilisateur de la plateforme. Votre compte peut ensuite être ajouté à n’importe quelle organisation. Une organisation est une entité qui peut rassembler plusieurs utilisateurs. Un même utilisateur peut appartenir à plusieurs organisations.

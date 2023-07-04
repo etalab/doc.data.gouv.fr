@@ -3,6 +3,10 @@ title: Créer une organisation
 slug: creer-une-organisation
 ---
 
+# 💡 Une nouvelle documentation est disponible ! 
+
+[Découvrez la nouvelle version beta des guides et de la documentation de data.gouv.fr.](https://etalab-2.gitbook.io/guides/publier-des-donnees/guide-data.gouv.fr/organisation)
+
 # Créer une organisation
 
 Une organisation est une entité au travers de laquelle plusieurs utilisateurs peuvent collaborer sur des jeux de données. Une organisation peut contenir plusieurs utilisateurs ; un même utilisateur peut quant à lui appartenir à plusieurs organisations. Les administrateurs et les éditeurs d’une organisation peuvent en contrôler les membres et les publications au moyen d’une section spécifique de l’interface administrateur.
