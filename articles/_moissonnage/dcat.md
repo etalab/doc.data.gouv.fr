@@ -110,6 +110,12 @@ Ainsi <https://geosas.fr/geonetwork/srv/fre/csw> deviendra <https://geosas.fr/ge
 
 GeoNetwork v4 n'est pas encore supporté au moissonnage. Voir [ces discussions](https://github.com/etalab/data.gouv.fr/issues/913).
 
+### Isogeo
+
+Les portails Isogeo exposent du DCAT et sont donc moissonnables par data.gouv.fr.
+
+Cette [documentation officielle](https://help.isogeo.com/admin/fr/features/publish/harvest_datagouv_fr.html) explique en détail la mise en place d'un moissonneur DCAT pour un portail Isogeo.
+
 ## Contribuer
 
 Ce moissonneur fait partie du coeur de `udata`, [son code est disponible sur github](https://github.com/opendatateam/udata/blob/master/udata/harvest/backends/dcat.py). Vous pouvez donc soumettre des améliorations ou signaler des anomalies.
