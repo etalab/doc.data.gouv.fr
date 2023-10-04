@@ -32,4 +32,4 @@ Voici la liste des formats proposés avec les MIME type à utiliser ainsi que le
 
 ## Statistiques de fréquentation de data.gouv.fr
 
-Des statistiques sur la fréquentation de data.gouv.fr sont consultables en ligne sur le site [stats.data.gouv.fr](https://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=1&period=range&date=previous30#?idSite=1&period=range&date=previous30&category=Dashboard_Dashboard&subcategory=1).
+Des statistiques sur la fréquentation de data.gouv.fr sont consultables en ligne sur le site [stats.data.gouv.fr](https://stats.data.gouv.fr/index.php?module=CoreHome&action=index&idSite=109&period=range&date=previous30#?idSite=1&period=range&date=previous30&category=Dashboard_Dashboard&subcategory=1).
