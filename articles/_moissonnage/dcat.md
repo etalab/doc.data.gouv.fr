@@ -100,15 +100,40 @@ Certaines propriétés sont conservées dans l'attribut `harvest` par souci de t
 
 La plupart des logiciels exposant du DCAT (v1 à date) devraient être compatibles _a minima_ avec le moissonneur DCAT de data.gouv.fr. Ci-dessous quelques exemples de logiciels supportés.
 
-### Geonetwork
+### GeoNetwork
 
 Si vous avez une instance de Geonetwork, vous pouvez publier sur data.gouv.fr.
 
+### GeoNetwork v2 ou v3
 En effet, il existe un endpoint DCAT alternatif au endpoint CSW habituellement utilisé comme [documenté sur la doc Geonetwork officielle](https://geonetwork-opensource.org/manuals/3.10.x/en/api/rdf-dcat.html).
 
 Ainsi <https://geosas.fr/geonetwork/srv/fre/csw> deviendra <https://geosas.fr/geonetwork/srv/fre/rdf.search> par exemple.
 
-GeoNetwork v4 n'est pas encore supporté au moissonnage. Voir [ces discussions](https://github.com/etalab/data.gouv.fr/issues/913).
+### GeoNetwork v4
+
+GeoNetwork v4 est maintenant supporté au moissonnage via [CSW avec l'export DCAT](https://github.com/geonetwork/core-geonetwork/wiki/DCAT-enhancements) !
+Il faut alors choisir le moissonneur de type `csw-dcat` et configurer l'URL pour pointer vers l'endpoint csw, ex :  <https://geosas.fr/geonetwork/srv/fre/csw>.
+
+Une requête POST est alors effectuée par le moissonneur avec la requête suivant :
+```
+<csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2"
+                xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                service="CSW" version="2.0.2" resultType="results"
+                startPosition="1" maxPosition="200"
+                outputSchema="http://www.w3.org/ns/dcat#">
+      <csw:Query typeNames="gmd:MD_Metadata">
+          <csw:ElementSetName>full</csw:ElementSetName>
+          <ogc:SortBy xmlns:ogc="http://www.opengis.net/ogc">
+              <ogc:SortProperty>
+                  <ogc:PropertyName>identifier</ogc:PropertyName>
+              <ogc:SortOrder>ASC</ogc:SortOrder>
+              </ogc:SortProperty>
+          </ogc:SortBy>
+      </csw:Query>
+  </csw:GetRecords>
+```
+
+Attention, si des entrées du catalogue cible ne sont pas convertibles en DCAT, il faut mettre en place [un sous-portail dédié](https://geonetwork-opensource.org/manuals/4.0.x/fr/administrator-guide/configuring-the-catalog/portal-configuration.html#configuring-a-sub-portal) en filtrant par exemple sur les entrées de type `documentStandard` pour n'exposer que les entrées compatibles.
 
 ### Isogeo
 
